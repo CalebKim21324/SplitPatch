@@ -30,9 +30,9 @@ LOWER_IS_BETTER = {"duel_ttk_l9"}
 class Setup:
     """Champion at a level with n items, against a dummy."""
 
-    def __init__(self, kit: Kit, champ: str, level: int, n_items: int, dummy: str, item_override=None):
+    def __init__(self, kit: Kit, champ: str, level: int, n_items: int, dummy: str, override=None):
         self.kit, self.champ = kit, champ
-        items = kits.build_stats(champ, n_items, item_override)
+        items = kits.build_stats(champ, n_items, override)
         bonus_as = sum(_uptime(ab) * at_rank(ab.bonus_as, ability_rank(kit, k, level)) * 100
                        for k, ab in kit.abilities.items() if ab.bonus_as and not k.startswith("P_"))
         items = items.__class__(**{**items.__dict__, "as_pct": items.as_pct + bonus_as})

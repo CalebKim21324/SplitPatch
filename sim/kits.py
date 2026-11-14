@@ -45,10 +45,16 @@ def build(champ: str) -> list[int]:
     return b["core"] + ([b["item4"]] if b["item4"] else [])
 
 
-def build_stats(champ: str, n_items: int, item_override: dict[int, dict] | None = None) -> ItemStats:
-    """Summed stats of the first n items of the champion's build. `item_override` swaps in edited items."""
-    catalog = {**items(), **(item_override or {})}
-    return ItemStats.total([catalog[i]["stats"] for i in build(champ)[:n_items]])
+def build_stats(champ: str, n_items: int, override: dict | None = None) -> ItemStats:
+    """Summed stats of the first n items of the champion's build.
+
+    override = {"items": {id: item_dict}, "build": [ids]}: swap in edited items and/or a different
+    build order (used by the item blast-radius check).
+    """
+    override = override or {}
+    catalog = {**items(), **override.get("items", {})}
+    order = override.get("build") or build(champ)
+    return ItemStats.total([catalog[i]["stats"] for i in order[:n_items]])
 
 
 def dummies() -> dict[str, dict]:

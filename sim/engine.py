@@ -56,6 +56,7 @@ class ItemStats:
     armor_pen_pct: float = 0
     magic_pen: float = 0
     magic_pen_pct: float = 0
+    critical_strike_damage: float = 0   # bonus crit damage % (Infinity Edge)
 
     @classmethod
     def total(cls, items: list[dict]) -> "ItemStats":
@@ -79,6 +80,7 @@ class Stats:
     attack_range: float
     ah: float
     crit: float          # 0..1
+    crit_mult: float     # 2.0 + bonus crit damage
     lethality: float
     armor_pen_pct: float
     magic_pen: float
@@ -108,6 +110,7 @@ def champion_stats(kit: Kit, level: int, items: ItemStats = ItemStats()) -> Stat
         attack_range=b.range,
         ah=items.ah,
         crit=items.crit_pct / 100,
+        crit_mult=CRIT_MULT + items.critical_strike_damage / 100,
         lethality=items.lethality,
         armor_pen_pct=items.armor_pen_pct,
         magic_pen=items.magic_pen,
@@ -205,7 +208,7 @@ def auto_damage(kit: Kit, s: Stats, t_hp: float, t: Target, auto_key: str | None
         dmg = mitigate(raw_damage(ab, ability_rank(kit, auto_key, s.level), s, t_hp, t),
                        ab.damage_type or "magic", s, t)
     else:
-        dmg = mitigate(s.ad * (1 + s.crit * (CRIT_MULT - 1)), "physical", s, t)
+        dmg = mitigate(s.ad * (1 + s.crit * (s.crit_mult - 1)), "physical", s, t)
     for key, ab in kit.abilities.items():
         if "on_hit" in ab.tags:
             rank = ability_rank(kit, key, s.level)
