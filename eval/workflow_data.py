@@ -30,6 +30,8 @@ def main() -> int:
             "blast": blast_radius(i, scaled(i, 1.10)),
         })
     report["builds"] = {c: [catalog[i]["name"] for i in kits.build(c)] for c in kits.CHAMPIONS}
+    run = ROOT / "proposals" / "26.22" / "summary.json"
+    report["run"] = json.loads(run.read_text(encoding="utf-8")) if run.exists() else None
     (ROOT / "runs/workflow_data.json").write_text(json.dumps(report, default=float), encoding="utf-8")
     print(f"wrote runs/workflow_data.json ({(ROOT / 'runs/workflow_data.json').stat().st_size // 1024} KB)")
     return 0

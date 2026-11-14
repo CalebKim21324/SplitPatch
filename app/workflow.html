@@ -109,6 +109,24 @@ svg text{font-family:var(--f-mono);font-size:11px;fill:var(--muted)}
 select{font:500 14px var(--f-body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 .note{font-size:13px;color:var(--muted);max-width:75ch}
 .honest{border-left:3px solid var(--warn);padding-left:14px}
+.decisions{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
+.dec{all:unset;cursor:pointer;border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:grid;gap:6px;background:var(--surface)}
+.dec[aria-selected="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.dec:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.run-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+@media (max-width:900px){.run-grid{grid-template-columns:1fr}}
+.timeline{display:grid;gap:8px;max-height:560px;overflow:auto;padding-right:4px}
+.ev{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px;font-size:13px}
+.ev .dot{width:10px;height:10px;border-radius:50%;margin-top:5px;background:var(--line);justify-self:center}
+.ev.pass .dot{background:var(--buff)}.ev.fail .dot{background:var(--nerf)}.ev.say .dot{background:var(--accent)}
+.ev pre{margin:4px 0 0;font:12px/1.45 var(--f-mono);white-space:pre-wrap;word-break:break-word;color:var(--muted)}
+.notes-doc{border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:8px;background:var(--bg)}
+.notes-doc ul{margin:0;padding-left:20px}
+.tip{font-size:14px;display:grid;gap:4px}
+.tip .old{color:var(--muted);text-decoration:line-through}
+mark{background:color-mix(in srgb,var(--warn) 25%,transparent);color:inherit;border-radius:3px;padding:0 2px}
+.complaints{display:flex;flex-wrap:wrap;gap:6px}
+.pass-t{color:var(--buff);font-weight:600}.fail-t{color:var(--nerf);font-weight:600}
 footer{font-size:12px;color:var(--muted);display:grid;gap:6px}
 footer a{color:var(--accent)}
 @media (prefers-reduced-motion:no-preference){.fill{transition:width .3s ease,left .3s ease}}
@@ -124,6 +142,11 @@ footer a{color:var(--accent)}
     <div class="ctl"><label id="lbl-region">Server</label><div class="seg" id="region" role="group" aria-labelledby="lbl-region"></div></div>
   </div>
 </header>
+
+<section class="section" aria-labelledby="h-run">
+  <div class="section-head"><h2 id="h-run">Patch run</h2><span class="eyebrow" id="run-sub"></span></div>
+  <div id="run"></div>
+</section>
 
 <section class="section" aria-labelledby="h-loop">
   <div class="section-head"><h2 id="h-loop">The loop</h2><span class="loopback">verify FAIL → back to propose (max 5) · monitor → refit prediction after next patch</span></div>
@@ -318,6 +341,45 @@ function renderTrust(){
   <p class="note">These are weak to negative. The simulator measures kit power from numbers; pro presence for Lee Sin and Qiyana comes from engage and mobility it barely models, and win rate falls as popularity rises. That is why the simulator only sizes changes and checks direction (all five Riot changes move our indices the right way), while the decision to act comes from the stats. Next step: tune index weights on patches 26.16–26.19 and report the test-patch numbers.</p>`;
 }
 
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const show=v=>Array.isArray(v)?v.map(x=>+x.toFixed(4)).join("/"):+(+v).toFixed(4);
+function fillTip(text,vals,changed){return esc(text).replace(/\{(\w+)\}/g,(m,k)=>{if(!(k in vals))return m;const s=show(vals[k]);return changed.includes(k)?`<mark>${s}</mark>`:s})}
+function renderRun(){
+  const R=DATA.run,el=$("#run");
+  if(!R){el.innerHTML=`<div class="panel"><p class="note">No agent run recorded yet. Run <span class="mono">python -m agent.run_patch --patch 26.22</span> and rebuild this page.</p></div>`;return}
+  $("#run-sub").textContent=`patch ${R.patch} · integrity ${R.integrity_changed.length?"CHANGED":"OK"}`;
+  if(!state.runChamp||!R.traces.some(t=>t.champion===state.runChamp))state.runChamp=(R.traces.find(t=>t.notes)||R.traces[0]).champion;
+  const decs=R.traces.map(t=>{const cat=t.diagnosis.category;const patched=!!t.notes;
+    return `<button class="dec" data-c="${esc(t.champion)}" aria-selected="${state.runChamp===t.champion}"><b>${esc(t.champion)}</b><span class="chip c-${cat}">${LABEL[cat]||cat}</span><span class="note">${patched?"verified patch + notes":esc(t.decision.split("(")[0])}</span></button>`}).join("");
+  const t=R.traces.find(x=>x.champion===state.runChamp);
+  const comp=t.sentiment.complaints;
+  const compHtml=comp&&comp.complaints.length?`<div class="complaints">${comp.complaints.sort((a,b)=>b.count-a.count).map(c=>`<span class="slot">${c.tag} · ${c.direction} · ${c.count}</span>`).join("")}</div><p class="note">${comp.n_posts} posts read${t.sentiment.planted_injection?" (including one planted prompt-injection post)":""}. Lever hints passed to the agent: ${t.diagnosis.lever_hints.length?t.diagnosis.lever_hints.join(", "):"none"}.</p>`:`<p class="note">${t.sentiment.n_posts} posts, no structured complaints.</p>`;
+  let right="";
+  if(t.agent_log){
+    const evs=[];
+    t.agent_log.forEach(e=>{
+      if(e.say&&e.say.length)evs.push(`<div class="ev say"><span class="dot"></span><div><b>Agent, turn ${e.turn}</b><pre>${esc(e.say.join("\n").slice(0,700))}</pre></div></div>`);
+      if(e.tool){const r=e.result;
+        if(e.tool==="submit_proposal"){const ok=r.result==="PASS";evs.push(`<div class="ev ${ok?"pass":"fail"}"><span class="dot"></span><div><b>submit_proposal → <span class="${ok?"pass-t":"fail-t"}">${r.result}</span></b><pre>${esc(ok?`solo ${pct(r.index_delta.soloq_index,2)} · pro ${pct(r.index_delta.pro_index,2)}`:(r.failures||[r.reason]).join("\n"))}</pre></div></div>`)}
+        else if(e.tool==="run_sim"&&r.index_delta){const call=t.agent_log.find(x=>x.turn===e.turn&&x.tool_calls)?.tool_calls.filter(c=>c.name==="run_sim")||[];evs.push(`<div class="ev"><span class="dot"></span><div><b>run_sim</b><pre>solo ${pct(r.index_delta.soloq_index,2)} · pro ${pct(r.index_delta.pro_index,2)}</pre></div></div>`)}
+        else evs.push(`<div class="ev"><span class="dot"></span><div><b>${esc(e.tool)}</b></div></div>`)}});
+    right=`<div class="panel section"><h3>Agent trace</h3><p class="note">${t.agent.outcome} after ${t.submissions.length} submission(s) · ${t.agent.usage.input_tokens.toLocaleString()} in / ${t.agent.usage.output_tokens.toLocaleString()} out tokens</p><div class="timeline">${evs.join("")}</div></div>`;
+  }else right=`<div class="panel section"><h3>Decision</h3><p>${esc(t.decision)}</p><div class="reasons">${t.diagnosis.reasons.map(x=>`<span>${esc(x)}</span>`).join("")}</div></div>`;
+  let notes="";
+  if(t.notes){const n=t.notes.output,diff=t.agent.proposal;
+    const groups={};n.patch_note.lines.forEach(l=>{(groups[l.label]=groups[l.label]||[]).push(l)});
+    const tips=n.tooltips.map(tp=>{const changed=diff.changes.filter(c=>c.field.split(".")[1]===tp.ability).map(c=>c.field.split(".")[2]);
+      const oldVals={...tp.values};diff.changes.forEach(c=>{const [_,ab,f]=c.field.split(".");if(ab===tp.ability)oldVals[f]=c.from});
+      return `<div class="tip"><span class="eyebrow">Tooltip · ${esc(tp.ability)}</span><span class="old">${fillTip(tp.text,oldVals,[])}</span><span>${fillTip(tp.text,tp.values,changed)}</span></div>`}).join("");
+    notes=`<div class="panel section"><div class="section-head"><h3>Recommended patch notes</h3><span class="${t.notes.checker_passed?"pass-t":"fail-t"} mono">checker ${t.notes.checker_passed?"PASS":"FAIL"} · ${t.notes.attempts} writer attempt(s)</span></div>
+      <div class="notes-doc"><b style="font-family:var(--f-display);font-size:18px">${esc(t.champion)}</b><i>${esc(n.patch_note.context)}</i>
+      ${Object.entries(groups).map(([lab,ls])=>`<div><b>${esc(lab)}</b><ul>${ls.map(l=>`<li>${esc(l.text)}</li>`).join("")}</ul></div>`).join("")}</div>
+      <p class="note">Rationale from the agent: ${esc(diff.rationale)}</p>${tips}</div>`}
+  el.innerHTML=`<div class="section"><div class="decisions">${decs}</div>
+    <div class="run-grid"><div class="section"><div class="panel section"><h3>${esc(t.champion)}: what players are saying</h3>${compHtml}</div>${notes}</div>${right}</div></div>`;
+  el.querySelector(".decisions").onclick=e=>{const b=e.target.closest(".dec");if(!b)return;state.runChamp=b.dataset.c;save();renderRun()};
+}
+
 function render(){seg($("#patch"),PATCHES,"patch");seg($("#region"),["global","kr"],"region",v=>v==="kr"?"Korea":"Global");renderLoop();renderBoard();renderTrace()}
-render();renderRiot();renderItems();renderTrust();
+render();renderRun();renderRiot();renderItems();renderTrust();
 </script>
