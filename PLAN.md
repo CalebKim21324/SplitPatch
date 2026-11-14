@@ -6,6 +6,17 @@ DevHacks '26, Riot Track 2 (Agentic development)
 
 ---
 
+## 0. Scope update (Sat 14 Nov), overrides the sections below where they conflict
+
+- **Main story: solo queue balance from stats + community feedback.** Pro-jail is now a secondary pillar (a guardrail and a talking point), not the headline. In the 26.16–26.22 data no champion is pro-jailed: Azir's per-patch pro presence is 0–8%.
+- **Featured case: `POPULAR_WEAK`**, meaning a low win rate while the pick rate is still high (WR < 49.5% and PR ≥ 5%). Lots of players are on it and losing, so a small targeted buff has the biggest impact. Target: `soloq_index` +2% to +6%, `pro_index` ≤ +3%.
+- `OVERALL_WEAK` no longer requires low pro presence (WR < 48% and presence not high).
+- **Patch window: 26.16–26.22** (Data Dragon 16.16.1–16.22.1), not 3 hand-picked patches. Stats patch p is answered by Riot's change in p+1, which gives 6 backtest rows per champion. 26.22 is the live prediction.
+- **Sources:** kits from wiki.leagueoflegends.com; solo queue from lolalytics (Emerald+); pro presence from gol.gg (no pro games on 26.19/26.21/26.22). See `data/stats/SOURCES.md`.
+- **Pitch:** Riot balances every two weeks by hand from WR/PR/BR and a flood of feedback. SplitPatch turns that into verified, targeted proposals: sentiment picks the lever, stats decide whether and how much, and an independent verifier proves the change does what it claims.
+
+---
+
 ## 1. The problem (lead the pitch with this)
 
 - Riot balances on a two-week patch cycle. Each patch, designers have to combine win rate, pick rate, ban rate, pro presence and a flood of player feedback, all by hand.

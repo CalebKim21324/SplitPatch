@@ -5,8 +5,8 @@ from agent.diagnose import diagnose
 from schemas import Category, Complaints, ProRow, SoloQRow
 
 
-def rows(wr, br, presence):
-    return (SoloQRow(patch="1.1", champion="F", wr=wr, pr=5, br=br, games=1000),
+def rows(wr, br, presence, pr=2):
+    return (SoloQRow(patch="1.1", champion="F", wr=wr, pr=pr, br=br, games=1000),
             ProRow(patch="1.1", champion="F", presence=presence, picks=1, bans=1, wr=50, games=10))
 
 
@@ -21,6 +21,16 @@ def rows(wr, br, presence):
 ])
 def test_categories(wr, br, pres, cat):
     assert diagnose(*rows(wr, br, pres)).category == cat
+
+
+@pytest.mark.parametrize("wr,pr,cat", [
+    (49.0, 8, Category.POPULAR_WEAK),
+    (49.0, 3, Category.HOLD),          # weak-ish but unpopular
+    (47.0, 8, Category.OVERALL_WEAK),  # very weak wins over popular
+    (50.0, 8, Category.HOLD),
+])
+def test_popular_weak(wr, pr, cat):
+    assert diagnose(*rows(wr, 5, 15, pr=pr)).category == cat
 
 
 def test_pro_jail_target_bands():

@@ -1,6 +1,6 @@
 # SplitPatch — Claude Code instructions
 
-Read `PLAN.md` first. It is the spec. Build in the order of its section 9 prompts.
+Read `PLAN.md` first. It is the spec. Its section 0 (scope update) overrides older sections: solo queue stats + Reddit is the main story, pro-jail is secondary. Build in the order of its section 9 prompts.
 
 ## What this is
 A League of Legends balance agent for DevHacks '26 (Riot Track 2). Its job is to separate pro-play power from solo queue power. The pipeline:

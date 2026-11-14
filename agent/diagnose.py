@@ -21,6 +21,8 @@ class Thresholds:
     wr_strong: float = 52.5
     wr_weak: float = 48.0
     wr_pro_jail: float = 49.0
+    pr_high: float = 5.0
+    wr_popular_weak: float = 49.5
 
 
 TARGETS: dict[Category, Target] = {
@@ -28,6 +30,8 @@ TARGETS: dict[Category, Target] = {
     Category.OVERALL_STRONG: Target(pro_index=Band(lo=-0.08, hi=-0.03), soloq_index=Band(lo=-0.08, hi=-0.03)),
     Category.OVERALL_WEAK: Target(soloq_index=Band(lo=0.03, hi=0.08)),
     Category.SOLOQ_ONLY_STRONG: Target(soloq_index=Band(lo=-0.08, hi=-0.03), pro_index=Band(lo=-0.01)),
+    # Popular but losing: a small, targeted solo queue buff; don't let pro power jump.
+    Category.POPULAR_WEAK: Target(soloq_index=Band(lo=0.02, hi=0.06), pro_index=Band(hi=0.03)),
     Category.HOLD: Target(pro_index=Band(lo=0.0, hi=0.0), soloq_index=Band(lo=0.0, hi=0.0)),
 }
 
@@ -37,14 +41,15 @@ _ALLOWED = {
     Category.OVERALL_STRONG: {"nerf"},
     Category.SOLOQ_ONLY_STRONG: {"nerf"},
     Category.OVERALL_WEAK: {"buff"},
+    Category.POPULAR_WEAK: {"buff"},
     Category.HOLD: set(),
 }
 
 
 def categorize(soloq: SoloQRow, pro: ProRow, t: Thresholds = Thresholds()) -> tuple[Category, list[str]]:
-    wr, br, pres = soloq.wr, soloq.br, pro.presence
+    wr, pr, br, pres = soloq.wr, soloq.pr, soloq.br, pro.presence
     hi, lo = pres >= t.presence_high, pres < t.presence_low
-    facts = f"soloq WR {wr:.1f}%, BR {br:.1f}%, pro presence {pres:.1f}%"
+    facts = f"soloq WR {wr:.2f}%, PR {pr:.2f}%, BR {br:.2f}%, pro presence {pres:.1f}%"
 
     if hi and wr < t.wr_pro_jail:
         return Category.PRO_JAIL, [facts, f"presence >= {t.presence_high} and WR < {t.wr_pro_jail}"]
@@ -52,8 +57,10 @@ def categorize(soloq: SoloQRow, pro: ProRow, t: Thresholds = Thresholds()) -> tu
         return Category.OVERALL_STRONG, [facts, f"WR > {t.wr_strong} and (presence >= {t.presence_high} or BR >= {t.br_high})"]
     if wr > t.wr_strong and lo:
         return Category.SOLOQ_ONLY_STRONG, [facts, f"WR > {t.wr_strong} and presence < {t.presence_low}"]
-    if wr < t.wr_weak and lo:
-        return Category.OVERALL_WEAK, [facts, f"WR < {t.wr_weak} and presence < {t.presence_low}"]
+    if wr < t.wr_weak and not hi:
+        return Category.OVERALL_WEAK, [facts, f"WR < {t.wr_weak} and presence < {t.presence_high}"]
+    if wr < t.wr_popular_weak and pr >= t.pr_high:
+        return Category.POPULAR_WEAK, [facts, f"WR < {t.wr_popular_weak} and PR >= {t.pr_high}"]
     return Category.HOLD, [facts, "no rule matched"]
 
 
