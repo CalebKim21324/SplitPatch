@@ -32,6 +32,18 @@ def main() -> int:
     report["builds"] = {c: [catalog[i]["name"] for i in kits.build(c)] for c in kits.CHAMPIONS}
     run = ROOT / "proposals" / "26.22" / "summary.json"
     report["run"] = json.loads(run.read_text(encoding="utf-8")) if run.exists() else None
+    from eval import mutation_test
+    from tests.test_notes import KIT, PLANTED, PROPOSAL, notes as planted_notes
+    from notes.checker import check
+    mut = mutation_test.run()
+    report["evidence"] = {
+        "mutation": {"rejected": sum(r for _, r, _ in mut), "total": len(mut),
+                     "cases": [{"name": n, "rejected": r, "why": w[0] if w else ""} for n, r, w in mut]},
+        "notes_planted": {"cases": [{"name": n, "caught": bool(check(planted_notes(m), PROPOSAL, KIT))}
+                                    for n, m in PLANTED.items()]},
+    }
+    report["evidence"]["notes_planted"]["caught"] = sum(c["caught"] for c in report["evidence"]["notes_planted"]["cases"])
+    report["evidence"]["notes_planted"]["total"] = len(PLANTED)
     bt_rows, bt_scores = ROOT / "runs/backtest/rows.json", ROOT / "runs/backtest/scores.json"
     report["backtest"] = None
     if bt_rows.exists() and bt_scores.exists():
