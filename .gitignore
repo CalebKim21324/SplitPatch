@@ -15,5 +15,6 @@ Thumbs.db
 .vscode/
 
 # Generated reports
-runs/*.json
+runs/sim_report.json
+runs/workflow_data.json
 runs/*.html
