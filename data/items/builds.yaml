@@ -1,0 +1,70 @@
+# Most common build per champion, lolalytics Emerald+ global, patch 26.22.
+# core = items 1-3 in order, item4 = most common 4th item. Item ids are Data Dragon ids.
+patch: '26.22'
+champions:
+  Azir:
+    lane: middle
+    skill_order: WQE
+    start:
+    - 1056
+    - 2003
+    core:
+    - 3115
+    - 3020
+    - 4645
+    item4: 3089
+  Kalista:
+    lane: bottom
+    skill_order: EQW
+    start:
+    - 1086
+    - 2003
+    core:
+    - 3087
+    - 3008
+    - 3124
+    item4: 3302
+  Garen:
+    lane: top
+    skill_order: EQW
+    start:
+    - 1054
+    - 2003
+    core:
+    - 3006
+    - 6631
+    - 3046
+    item4: 3033
+  Viego:
+    lane: jungle
+    skill_order: QEW
+    start:
+    - 1102
+    - 2003
+    core:
+    - 6672
+    - 3047
+    - 6676
+    item4: 6673
+  Qiyana:
+    lane: middle
+    skill_order: QWE
+    start:
+    - 1055
+    - 2003
+    core:
+    - 6699
+    - 3158
+    - 2520
+    item4: 6694
+  Lee Sin:
+    lane: jungle
+    skill_order: QWE
+    start:
+    - 1101
+    - 2003
+    core:
+    - 6692
+    - 3047
+    - 3071
+    item4: 6333

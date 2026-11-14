@@ -1,0 +1,633 @@
+# Data Dragon 16.22.1 item.json. Stats parsed from each item's <stats> block.
+# Percent stats use *_pct keys (50 = 50%). Passives are text only (not simulated).
+version: 16.22.1
+items:
+  1054:
+    name: Doran's Shield
+    gold: 450
+    stats:
+      hp: 110.0
+    passive: Enduring Focus Restore 4 Health every 5 seconds. After taking damage
+      from a champion, restore Health over 8 seconds. Helping Hand Attacks deal 5
+      bonus physical damage to minions.
+  1055:
+    name: Doran's Blade
+    gold: 450
+    stats:
+      ad: 10.0
+      hp: 80.0
+      omnivamp_pct: 2.5
+    passive: null
+  1056:
+    name: Doran's Ring
+    gold: 400
+    stats:
+      ap: 18.0
+      hp: 90.0
+    passive: Drain Restore 1 Mana every second, increased to 2 Mana per second for
+      5 seconds after dealing damage to an enemy champion. If you can't gain Mana,
+      heal for 45% of this value instead. Helping Hand Attacks deal 5 bonus physical
+      damage to minions.
+  1086:
+    name: Doran's Bow
+    gold: 400
+    stats:
+      ad: 7.0
+      as_pct: 15.0
+      omnivamp_pct: 1.5
+    passive: null
+  1101:
+    name: Scorchclaw Pup
+    gold: 450
+    stats: {}
+    passive: Jungle Companions Summon a Scorchclaw that assists you against monsters.
+      The companion grows as you hunt monsters, empowering your Smite . When fully
+      grown, it completes your Jungle Quest and periodically imbues your next Attack
+      or Ability to burn enemies and Slow them. Killing large monsters readie
+  1102:
+    name: Gustwalker Hatchling
+    gold: 450
+    stats: {}
+    passive: Jungle Companions Summon a Gustwalker that assists you against monsters.
+      The companion grows as you hunt monsters, empowering your Smite . When fully
+      grown, it completes your Jungle Quest and grants Move Speed upon entering brush,
+      increased when killing large monsters.
+  2003:
+    name: Health Potion
+    gold: 50
+    stats: {}
+    passive: Consume Restores 120 Health over 15 seconds.
+  2503:
+    name: Blackfire Torch
+    gold: 2800
+    stats:
+      ap: 80.0
+      mp: 600.0
+      ah: 20.0
+    passive: Baleful Blaze Damaging Abilities deals bonus magic damage for 3 seconds.
+      Blackfire For each enemy champion, epic and large monster affected by your Baleful
+      Blaze , gain 4% Ability Power .
+  2510:
+    name: Dusk and Dawn
+    gold: 3100
+    stats:
+      hp: 300.0
+      ap: 60.0
+      ah: 20.0
+      as_pct: 20.0
+    passive: Spellblade (0s) After using an Ability, your next Attack deals bonus
+      magic damage and heals you for On-Hit and then applies On-Hit effects an additional
+      time.
+  2520:
+    name: Bastionbreaker
+    gold: 3000
+    stats:
+      ad: 55.0
+      lethality: 18.0
+      ah: 15.0
+    passive: Shaped Charge (0s) Dealing Ability damage to a Champion or Epic Monster
+      deals an additional true damage . Sabotage Taking down a champion within 3 seconds
+      of damaging them grants Sabotage for 25000 seconds. While you have Sabotage,
+      your next Attack against an Epic Monster or Turret deals an addition
+  3006:
+    name: Berserker's Greaves
+    gold: 1100
+    stats:
+      as_pct: 30.0
+      ms: 45.0
+    passive: null
+  3008:
+    name: Gluttonous Greaves
+    gold: 1100
+    stats:
+      ms: 45.0
+      omnivamp_pct: 4.0
+    passive: Slay Gain 0.6% Omnivamp on Champion takedown, stacking up to 10 times.
+  3020:
+    name: Sorcerer's Shoes
+    gold: 1100
+    stats:
+      magic_pen: 12.0
+      ms: 45.0
+    passive: null
+  3026:
+    name: Guardian Angel
+    gold: 3200
+    stats:
+      ad: 55.0
+      armor: 45.0
+    passive: Rebirth Upon taking lethal damage, restores 50% base Health and 100%
+      max Mana after 4 seconds of Stasis .
+  3031:
+    name: Infinity Edge
+    gold: 3500
+    stats:
+      ad: 75.0
+      crit_pct: 25.0
+      critical_strike_damage: 30.0
+    passive: null
+  3032:
+    name: Yun Tal Wildarrows
+    gold: 3000
+    stats:
+      ad: 50.0
+      as_pct: 45.0
+      crit_pct: 0.0
+    passive: Practice Makes Lethal On-Attack, gain Critical Strike Chance permanently
+      up to 25%. Flurry On-Attacking an enemy champion, gain 30% Attack Speed for
+      6 seconds (30 second cooldown). Attacks reduce this cooldown by 1 second, increased
+      to 2 seconds for Critical Strikes.
+  3033:
+    name: Mortal Reminder
+    gold: 3000
+    stats:
+      ad: 35.0
+      armor_pen_pct: 30.0
+      crit_pct: 25.0
+    passive: Grievous Wounds Dealing physical damage applies 40% Wounds to enemy champions
+      for 3 seconds.
+  3036:
+    name: Lord Dominik's Regards
+    gold: 3300
+    stats:
+      ad: 35.0
+      armor_pen_pct: 35.0
+      crit_pct: 25.0
+    passive: Giant Slayer Deal up to 15% bonus damage against champions based on their
+      bonus Health. Maximum damage bonus reached at 1500 bonus Health.
+  3046:
+    name: Phantom Dancer
+    gold: 2650
+    stats:
+      as_pct: 65.0
+      crit_pct: 25.0
+      ms_pct: 10.0
+    passive: Spectral Waltz Become Ghosted .
+  3047:
+    name: Plated Steelcaps
+    gold: 1200
+    stats:
+      armor: 25.0
+      ms: 45.0
+    passive: Plating Reduces incoming damage from Attacks by 10%.
+  3053:
+    name: Sterak's Gage
+    gold: 3200
+    stats:
+      hp: 400.0
+      tenacity_pct: 20.0
+    passive: The Claws that Catch Gain bonus Attack Damage . Lifeline Taking damage
+      that would reduce your Health below 30% grants a decaying Shield for 4.5 seconds.
+  3068:
+    name: Sunfire Aegis
+    gold: 2800
+    stats:
+      hp: 350.0
+      armor: 50.0
+      ah: 10.0
+    passive: Immolate After taking or dealing damage, deal magic damage per second
+      to nearby enemies for 3 seconds.
+  3071:
+    name: Black Cleaver
+    gold: 3000
+    stats:
+      ad: 45.0
+      hp: 400.0
+      ah: 20.0
+    passive: Carve Dealing physical damage to champions reduces the target's Armor
+      by 6% for 6 seconds. (stacks 5 times). Fervor Dealing physical damage grants
+      Move Speed for 2 seconds.
+  3072:
+    name: Bloodthirster
+    gold: 3400
+    stats:
+      ad: 80.0
+      lifesteal_pct: 15.0
+    passive: Ichorshield Convert excess healing from your Lifesteal to a Shield .
+  3074:
+    name: Ravenous Hydra
+    gold: 3300
+    stats:
+      ad: 65.0
+      ah: 15.0
+      lifesteal_pct: 12.0
+    passive: Cleave Attacks deal physical damage to nearby enemies. Ravenous Crescent
+      Deal physical damage to enemies around you. Your Life Steal applies to this
+      damage.
+  3078:
+    name: Trinity Force
+    gold: 3333
+    stats:
+      ad: 36.0
+      as_pct: 30.0
+      hp: 333.0
+      ah: 15.0
+    passive: Spellblade After using an Ability, your next Attack deals bonus physical
+      damage On-Hit . Quicken Attacking grants 20 Move Speed for 2 seconds.
+  3085:
+    name: Runaan's Hurricane
+    gold: 2650
+    stats:
+      as_pct: 40.0
+      crit_pct: 25.0
+      ms_pct: 5.0
+    passive: Wind's Fury Attacks fire bolts at 2 additional enemies near the target.
+      Each bolt deals physical damage and applies On-Hit effects.
+  3087:
+    name: Statikk Shiv
+    gold: 3000
+    stats:
+      ad: 45.0
+      ap: 45.0
+      as_pct: 30.0
+      ms_pct: 4.0
+    passive: Electrospark Your Energized Attacks fire chain lightning, applying On-Hit
+      effects and dealing magic damage to nearby targets. Electroshock Basic Attacks
+      grant extra Energized stacks.
+  3089:
+    name: Rabadon's Deathcap
+    gold: 3500
+    stats:
+      ap: 130.0
+    passive: Magical Opus Increases your total Ability Power by 30% .
+  3091:
+    name: Wit's End
+    gold: 2800
+    stats:
+      as_pct: 50.0
+      mr: 45.0
+      tenacity_pct: 20.0
+    passive: Fray Attacks deal bonus magic damage On-Hit .
+  3100:
+    name: Lich Bane
+    gold: 2900
+    stats:
+      ap: 100.0
+      ms_pct: 6.0
+      ah: 10.0
+    passive: Spellblade After using an Ability, your next Attack deals bonus magic
+      damage On-Hit .
+  3102:
+    name: Banshee's Veil
+    gold: 3000
+    stats:
+      ap: 105.0
+      mr: 40.0
+    passive: Annul Grants a Spell Shield that blocks the next enemy Ability.
+  3115:
+    name: Nashor's Tooth
+    gold: 2900
+    stats:
+      ap: 80.0
+      as_pct: 50.0
+      ah: 15.0
+    passive: Icathian Bite Attacks deal bonus magic damage On-Hit .
+  3116:
+    name: Rylai's Crystal Scepter
+    gold: 2600
+    stats:
+      ap: 65.0
+      hp: 400.0
+    passive: Rimefrost Damaging Abilities Slow enemies by 30% for 1 second.
+  3124:
+    name: Guinsoo's Rageblade
+    gold: 3000
+    stats:
+      ad: 30.0
+      ap: 30.0
+      as_pct: 25.0
+    passive: Wrath Attacks deal 30 bonus magic damage On-Hit . Seething Strike Attacks
+      grant 8% Attack Speed for 4 seconds. (stacks 4 times). While fully stacked,
+      every third Attack applies On-Hit effects twice.
+  3135:
+    name: Void Staff
+    gold: 3000
+    stats:
+      ap: 95.0
+      magic_pen_pct: 40.0
+    passive: null
+  3139:
+    name: Mercurial Scimitar
+    gold: 3200
+    stats:
+      ad: 50.0
+      mr: 35.0
+      lifesteal_pct: 10.0
+    passive: ACTIVE Quicksilver Removes all crowd control debuffs (excluding Airborne
+      ) and grants Move Speed.
+  3142:
+    name: Youmuu's Ghostblade
+    gold: 2800
+    stats:
+      ad: 55.0
+      lethality: 18.0
+      ms_pct: 4.0
+    passive: Haunt Gain Move Speed while out of combat. Wraith Step Gain Move Speed
+      and Ghosting for seconds.
+  3143:
+    name: Randuin's Omen
+    gold: 2700
+    stats:
+      hp: 350.0
+      armor: 75.0
+    passive: Resilience Receive 30% less damage from Critical Strikes. Humility Slow
+      nearby enemies by 70% for 2 seconds.
+  3146:
+    name: Hextech Gunblade
+    gold: 3000
+    stats:
+      ap: 80.0
+      ad: 40.0
+      omnivamp_pct: 10.0
+    passive: ACTIVE (0s) Lightning Bolt Shocks the target enemy champion, dealing
+      magic damage and slowing them by 25% for 1.5 seconds.
+  3152:
+    name: Hextech Rocketbelt
+    gold: 2650
+    stats:
+      ap: 60.0
+      hp: 350.0
+      ah: 10.0
+    passive: Supersonic Dash in target direction, unleashing missiles that deal magic
+      damage .
+  3153:
+    name: Blade of The Ruined King
+    gold: 3200
+    stats:
+      ad: 40.0
+      as_pct: 25.0
+      lifesteal_pct: 10.0
+    passive: Mist's Edge Attacks deal a percentage of enemy's current Health as bonus
+      physical damage On-Hit . Clawing Shadows Attacking a champion 3 times Slows
+      them by 30% for 1 second.
+  3156:
+    name: Maw of Malmortius
+    gold: 3100
+    stats:
+      ad: 60.0
+      ah: 15.0
+      mr: 40.0
+    passive: Lifeline Taking magic damage that would reduce your Health below 30%
+      grants a magic damage Shield for 3 seconds and 10% Omnivamp until end of combat.
+  3157:
+    name: Zhonya's Hourglass
+    gold: 3250
+    stats:
+      ap: 105.0
+      armor: 50.0
+    passive: Time Stop Enter Stasis for 2.5 seconds.
+  3158:
+    name: Ionian Boots of Lucidity
+    gold: 900
+    stats:
+      ah: 10.0
+      ms: 45.0
+    passive: Ionian Insight Gain 10 Summoner Spell Haste.
+  3161:
+    name: Spear of Shojin
+    gold: 3100
+    stats:
+      ad: 45.0
+      hp: 450.0
+    passive: Dragonforce Gain 25 Basic Ability Haste. Focused Will Dealing damage
+      with Abilities increases your Champion's Ability and Passive damage by 3% for
+      6 seconds. (stacks 4 times).
+  3179:
+    name: Umbral Glaive
+    gold: 2800
+    stats:
+      ad: 60.0
+      lethality: 18.0
+      ah: 15.0
+    passive: Nightstalker After being unseen by enemies briefly, your next attack
+      against a champion deals an additional true damage . Blackout When you are near
+      enemy Stealth Wards and traps, reveal them briefly. While revealing wards, your
+      attacks deal bonus damage to them.
+  3302:
+    name: Terminus
+    gold: 3000
+    stats:
+      ad: 30.0
+      as_pct: 35.0
+    passive: 'Shadow Attacks deal bonus magic damage On-Hit . Juxtaposition Alternate
+      between Light and Dark Attacks against champions: Light Attacks grant Armor
+      and Magic Resist for 5s. Dark Attacks grant 10% Armor Penetration and Magic
+      Penetration for 5s.'
+  3742:
+    name: Dead Man's Plate
+    gold: 2900
+    stats:
+      hp: 350.0
+      armor: 55.0
+      ms_pct: 4.0
+    passive: Shipwrecker While moving, build up to 20 bonus Move Speed . Your next
+      Attack discharges built up Move Speed to deal bonus physical damage . Unsinkable
+      Reduce the effectiveness of Slows by 15%.
+  3748:
+    name: Titanic Hydra
+    gold: 3300
+    stats:
+      ad: 40.0
+      hp: 600.0
+    passive: Cleave Attacks deal physical damage on-hit and to enemies behind the
+      target. Titanic Crescent Empower your next Cleave to deal bonus physical damage
+      On-Hit and deal bonus physical damage to enemies behind the target.
+  3814:
+    name: Edge of Night
+    gold: 3000
+    stats:
+      ad: 50.0
+      lethality: 15.0
+      hp: 250.0
+    passive: Annul Grants a Spell Shield that blocks the next enemy Ability.
+  4401:
+    name: Force of Nature
+    gold: 2800
+    stats:
+      hp: 400.0
+      mr: 55.0
+      ms_pct: 4.0
+    passive: Steadfast Gain 70 Magic Resist and 6% bonus Move Speed after taking magic
+      damage from Champions 8 times.
+  4628:
+    name: Horizon Focus
+    gold: 2700
+    stats:
+      ap: 75.0
+      ah: 25.0
+    passive: Hypershot Dealing Ability damage to champions at 600 range or greater
+      Reveals them for 6 seconds. Focus When Hypershot is triggered, Reveal all other
+      enemy champions within 1400 range of them for 3 seconds.
+  4645:
+    name: Shadowflame
+    gold: 3200
+    stats:
+      ap: 110.0
+      magic_pen: 15.0
+    passive: Cinderbloom Magic and true damage Critically Strike enemies below 40%
+      Health, dealing 20% increased damage.
+  4646:
+    name: Stormsurge
+    gold: 2800
+    stats:
+      ap: 90.0
+      magic_pen: 15.0
+      ms_pct: 6.0
+    passive: Stormraider Dealing 25% of a champion's maximum Health within 2.5s applies
+      Squall to them. Squall After 2 seconds, deal magic damage . If the target dies
+      before Squall triggers, it damages nearby enemies.
+  6333:
+    name: Death's Dance
+    gold: 3300
+    stats:
+      ad: 60.0
+      armor: 50.0
+      ah: 15.0
+    passive: Ignore Pain A percentage of damage taken is dealt to you over 3 seconds
+      instead. Defy When a champion that you damaged within 3 seconds dies, cleanse
+      Ignore Pain's remaining damage and restore Health over 2 seconds.
+  6610:
+    name: Sundered Sky
+    gold: 3100
+    stats:
+      ad: 40.0
+      hp: 400.0
+      ah: 10.0
+    passive: Lightshield Strike Your first Attack against a champion Critically Strikes
+      and restores Health .
+  6631:
+    name: Stridebreaker
+    gold: 3300
+    stats:
+      ad: 40.0
+      as_pct: 25.0
+      hp: 450.0
+    passive: Cleave Attacks deal physical damage to nearby enemies. Breaking Shockwave
+      Deal physical damage and Slow nearby enemies by 35%. Gain 35% decaying Move
+      Speed per champion hit for 3 seconds.
+  6653:
+    name: Liandry's Torment
+    gold: 3000
+    stats:
+      ap: 60.0
+      hp: 300.0
+    passive: Torment Damaging Abilities burn enemies for 2% max Health magic damage
+      per second for 3 seconds. Suffering For each second in combat with enemy champions,
+      deal 2% bonus damage, up to 6%.
+  6655:
+    name: Luden's Echo
+    gold: 2750
+    stats:
+      ap: 100.0
+      mp: 600.0
+      ah: 10.0
+    passive: Echo Damaging Abilities fire 6 Echoes that deal bonus magic damage to
+      the target and nearby enemies. Remaining Echoes fire on the primary target,
+      dealing 20% damage.
+  6665:
+    name: Jak'Sho, The Protean
+    gold: 3200
+    stats:
+      hp: 350.0
+      armor: 45.0
+      mr: 45.0
+    passive: Voidborn Resilience After 5 seconds of champion combat, increase your
+      bonus Armor and Magic Resist by 30% until end of combat.
+  6672:
+    name: Kraken Slayer
+    gold: 3000
+    stats:
+      ad: 45.0
+      as_pct: 40.0
+      ms_pct: 4.0
+    passive: Bring It Down Every third Attack deals bonus physical damage On-Hit ,
+      increased based on their missing Health.
+  6673:
+    name: Immortal Shieldbow
+    gold: 3000
+    stats:
+      ad: 55.0
+      crit_pct: 25.0
+    passive: Lifeline Taking damage that would reduce your Health below 30% grants
+      a Shield for 3 seconds.
+  6676:
+    name: The Collector
+    gold: 3000
+    stats:
+      ad: 50.0
+      lethality: 10.0
+      crit_pct: 25.0
+    passive: Death Your damage executes champions that are below 5% Health. Taxes
+      Champion kills grant 25 bonus gold .
+  6692:
+    name: Eclipse
+    gold: 2900
+    stats:
+      ad: 60.0
+      ah: 15.0
+    passive: Ever Rising Moon Hitting a champion with 2 separate Attacks or Abilities
+      within 2 seconds grants you a Shield for 2 seconds.
+  6694:
+    name: Serylda's Grudge
+    gold: 3000
+    stats:
+      ad: 45.0
+      armor_pen_pct: 35.0
+      ah: 15.0
+    passive: Bitter Cold Damaging Abilities Slow enemies below 50% Health by 30% for
+      1 second.
+  6695:
+    name: Serpent's Fang
+    gold: 2500
+    stats:
+      ad: 55.0
+      lethality: 15.0
+    passive: Shield Reaver Damaging an enemy champion reduces Shields they gain by
+      % for 3 seconds. If they were not already affected by Shield Reaver , reduce
+      Shields on them by %.
+  6696:
+    name: Axiom Arc
+    gold: 2750
+    stats:
+      ad: 55.0
+      lethality: 18.0
+      ah: 20.0
+    passive: Flux When a champion that you damaged within 3 seconds dies, refund some
+      of your Ultimate Ability's total cooldown.
+  6697:
+    name: Hubris
+    gold: 2800
+    stats:
+      ad: 55.0
+      lethality: 18.0
+      ah: 10.0
+    passive: Eminence When a champion that you damaged within 3 seconds dies, gain
+      Attack Damage plus per champion killed for 90 seconds.
+  6698:
+    name: Profane Hydra
+    gold: 2850
+    stats:
+      ad: 55.0
+      lethality: 18.0
+      ah: 10.0
+    passive: Cleave Attacks deal physical damage to nearby enemies. Heretical Cleave
+      Deal physical damage around you.
+  6699:
+    name: Voltaic Cyclosword
+    gold: 3000
+    stats:
+      ad: 55.0
+      lethality: 10.0
+      ah: 10.0
+    passive: Galvanize Damaging an Enemy Champions with an ability triggers Energized
+      if it is ready. Firmament Your Energized Attack deals % target's Current Health
+      as bonus physical damage and grants you bonus Lethality for 4 seconds.
+  8010:
+    name: Bloodletter's Curse
+    gold: 2900
+    stats:
+      ap: 65.0
+      hp: 400.0
+      ah: 15.0
+    passive: Vile Decay Dealing magic damage with abilities or passives to champions
+      reduces their Magic Resist by 7.5% for 6 seconds. (Stacks 4 times).
