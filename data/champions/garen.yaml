@@ -1,0 +1,49 @@
+# Garen. Base stats: Data Dragon champion.json. Ability numbers: wiki, hand-checked.
+# Every null is a TODO. Never fill in a number that wasn't checked against a source.
+name: Garen
+patch: null        # TODO: patch these numbers are valid for
+base:
+  hp: null         # TODO ddragon
+  hp_per_lvl: null
+  mp: null
+  mp_per_lvl: null
+  armor: null
+  armor_per_lvl: null
+  mr: null
+  mr_per_lvl: null
+  ad: null
+  ad_per_lvl: null
+  as: null
+  as_per_lvl: null
+  ms: null
+  range: null
+abilities:
+  P_perseverance:
+    type: buff
+    cooldown: null
+    tags: [sustain]
+  Q_decisive_strike:
+    type: damage
+    base: null       # TODO wiki
+    ad_ratio: null
+    ap_ratio: null
+    cooldown: null
+    tags: [burst]
+  W_courage:
+    type: buff
+    cooldown: null
+    tags: [shield, survivability]
+  E_judgment:
+    type: damage
+    base: null       # TODO wiki
+    ad_ratio: null
+    ap_ratio: null
+    cooldown: null
+    tags: [sustained]
+  R_demacian_justice:
+    type: damage
+    base: null       # TODO wiki
+    ad_ratio: null
+    ap_ratio: null
+    cooldown: null
+    tags: [execute]

@@ -1,0 +1,58 @@
+# Azir. Base stats: Data Dragon champion.json. Ability numbers: wiki, hand-checked.
+# Every null is a TODO. Never fill in a number that wasn't checked against a source.
+name: Azir
+patch: null        # TODO: patch these numbers are valid for
+base:
+  hp: null         # TODO ddragon
+  hp_per_lvl: null
+  mp: null
+  mp_per_lvl: null
+  armor: null
+  armor_per_lvl: null
+  mr: null
+  mr_per_lvl: null
+  ad: null
+  ad_per_lvl: null
+  as: null
+  as_per_lvl: null
+  ms: null
+  range: null
+abilities:
+  P_shurimas_legacy:
+    type: utility
+    cooldown: null   # TODO wiki
+    tags: [zone]
+    notes: "Sun Disc turret. Approximated as a flat zone effect."
+  Q_conquering_sands:
+    type: damage
+    base: null       # TODO wiki, per rank
+    ap_ratio: null
+    cooldown: null
+    mana_cost: null
+    range: null
+    cc_duration: null  # slow
+    tags: [poke]
+  W_soldier_attack:
+    type: damage
+    base: null       # TODO wiki, per champion level
+    ap_ratio: null
+    cooldown: null   # soldier recharge
+    mana_cost: null
+    range: null
+    hits: null       # TODO: soldier attacks per standard trade
+    tags: [sustained, zone]
+  E_shifting_sands:
+    type: mobility
+    base: null       # shield
+    ap_ratio: null
+    cooldown: null
+    mana_cost: null
+    tags: [mobility, shield]
+  R_emperors_divide:
+    type: cc
+    base: null
+    ap_ratio: null
+    cc_duration: null
+    cooldown: null
+    mana_cost: null
+    tags: [utility, disengage]

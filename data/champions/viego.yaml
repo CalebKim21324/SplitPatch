@@ -1,0 +1,47 @@
+# Viego. Base stats: Data Dragon champion.json. Ability numbers: wiki, hand-checked.
+# Every null is a TODO. Never fill in a number that wasn't checked against a source.
+name: Viego
+patch: null        # TODO: patch these numbers are valid for
+base:
+  hp: null         # TODO ddragon
+  hp_per_lvl: null
+  mp: null
+  mp_per_lvl: null
+  armor: null
+  armor_per_lvl: null
+  mr: null
+  mr_per_lvl: null
+  ad: null
+  ad_per_lvl: null
+  as: null
+  as_per_lvl: null
+  ms: null
+  range: null
+abilities:
+  P_sovereigns_domination:
+    type: utility
+    cooldown: null
+    tags: [reset]
+  Q_blade_of_the_ruined_king:
+    type: damage
+    base: null       # TODO wiki
+    ad_ratio: null
+    ap_ratio: null
+    cooldown: null
+    tags: [burst]
+  W_spectral_maw:
+    type: cc
+    cc_duration: null
+    cooldown: null
+    tags: [engage]
+  E_harrowed_path:
+    type: buff
+    cooldown: null
+    tags: [stealth]
+  R_heartbreaker:
+    type: damage
+    base: null       # TODO wiki
+    ad_ratio: null
+    ap_ratio: null
+    cooldown: null
+    tags: [execute]
