@@ -19,16 +19,19 @@ class SoloQRow(BaseModel):
 
 
 class ProRow(BaseModel):
-    """One row of data/stats/pro.csv. presence/wr are percentages."""
+    """One row of data/stats/pro.csv. presence/wr are percentages.
+
+    gol.gg publishes only presence per patch; the other columns are blank (None) there.
+    """
 
     model_config = ConfigDict(extra="forbid")
     patch: str
     champion: str
     presence: float = Field(ge=0, le=100)
-    picks: int = Field(ge=0)
-    bans: int = Field(ge=0)
-    wr: float | None = Field(default=None, ge=0, le=100)  # undefined when picks == 0
-    games: int = Field(ge=0)
+    picks: int | None = Field(default=None, ge=0)
+    bans: int | None = Field(default=None, ge=0)
+    wr: float | None = Field(default=None, ge=0, le=100)
+    games: int | None = Field(default=None, ge=0)
 
 
 class Band(BaseModel):
