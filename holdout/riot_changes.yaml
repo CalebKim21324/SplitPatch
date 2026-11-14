@@ -1,0 +1,28 @@
+# Riot's real changes, 26.17-26.22. Loaded ONLY by eval/. Never exposed to agent tools.
+# Backtest row (champion, stats patch p) is answered by Riot's change in patch p+1.
+# Source: wiki.leagueoflegends.com/en-us/<Champion>/Patch_history, verbatim, read 2026-11-14.
+# Patches/champions not listed here = no balance change (HOLD).
+# lever: damage | defense | mana | cooldown | utility (PLAN.md 4, lever agreement)
+changes:
+  - champion: Viego
+    patch: "26.18"
+    direction: buff
+    lever: damage
+    fields:
+      - field: base.ad_per_lvl
+        from: 3.5
+        to: 4.0
+    unmodeled: "Sovereign's Domination heal now also scales with 0.4% per 100 bonus health."
+  - champion: Azir
+    patch: "26.21"
+    direction: buff
+    lever: mana
+    fields:
+      - field: base.mp_per_lvl
+        from: 40
+        to: 50
+
+# Non-balance entries in window (count as HOLD):
+#   Viego 26.22: passive bug fix (jungle treat while transformed).
+#   Viego 26.16: bug fix. Kalista 26.16 MR change and Azir 26.16 Q buff happen at the window start,
+#   so they answer 26.15 stats, which are outside our data.

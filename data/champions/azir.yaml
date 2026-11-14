@@ -1,58 +1,74 @@
-# Azir. Base stats: Data Dragon champion.json. Ability numbers: wiki, hand-checked.
-# Every null is a TODO. Never fill in a number that wasn't checked against a source.
+# Azir, patch 26.22. Ratios/percentages are fractions (35% AP -> 0.35).
+# Base stats: Data Dragon 16.22.1 (per-patch values in base_stats.csv; AD growth from wiki).
+# Abilities: wiki.leagueoflegends.com/en-us/Azir, verbatim, read 2026-11-14. SPOT-CHECK every number.
+# Ability changes in window: V26.16 Q base damage (already in these numbers). V26.21 is base stats only.
 name: Azir
-patch: null        # TODO: patch these numbers are valid for
+patch: "26.22"
 base:
-  hp: null         # TODO ddragon
-  hp_per_lvl: null
-  mp: null
-  mp_per_lvl: null
-  armor: null
-  armor_per_lvl: null
-  mr: null
-  mr_per_lvl: null
-  ad: null
-  ad_per_lvl: null
-  as: null
-  as_per_lvl: null
-  ms: null
-  range: null
+  hp: 575
+  hp_per_lvl: 108
+  mp: 320
+  mp_per_lvl: 50          # 40 before V26.21
+  armor: 25
+  armor_per_lvl: 5.0
+  mr: 30
+  mr_per_lvl: 1.3
+  ad: 56
+  ad_per_lvl: 3.5         # wiki infobox (ddragon reports 0)
+  as: 0.625
+  as_per_lvl: 5.0
+  ms: 330
+  range: 525
 abilities:
   P_shurimas_legacy:
     type: utility
-    cooldown: null   # TODO wiki
-    tags: [zone]
-    notes: "Sun Disc turret. Approximated as a flat zone effect."
+    cooldown: [90]        # static
+    range: 700
+    tags: [zone, siege]
+    notes: "Sun Disc turret, 1750 hp, 230-440 (by level) +40% AP magic damage. Modeled as a zone tag only."
   Q_conquering_sands:
     type: damage
-    base: null       # TODO wiki, per rank
-    ap_ratio: null
-    cooldown: null
-    mana_cost: null
-    range: null
-    cc_duration: null  # slow
-    tags: [poke]
+    damage_type: magic
+    base: [75, 95, 115, 135, 155]
+    ap_ratio: [0.35, 0.40, 0.45, 0.50, 0.55]
+    cooldown: [14, 12, 10, 8, 6]
+    mana_cost: [70, 80, 90, 100, 110]
+    range: 740
+    slow: 0.25
+    slow_duration: 1
+    tags: [poke, zone]
   W_soldier_attack:
     type: damage
-    base: null       # TODO wiki, per champion level
-    ap_ratio: null
-    cooldown: null   # soldier recharge
-    mana_cost: null
-    range: null
-    hits: null       # TODO: soldier attacks per standard trade
+    damage_type: magic
+    base: [50, 65, 80, 95, 110]
+    base_by_level: [0, 72]          # "0 - 72 (based on level)"
+    ap_ratio: [0.35, 0.425, 0.50, 0.575, 0.65]   # V26.06; wiki "Pets" line 35/40/45/50/55 is stale
+    cooldown: [12, 10.5, 9, 7.5, 6] # soldier recharge, 2 stocks; cast cooldown 1.5
+    mana_cost: [40, 35, 30, 25, 20]
+    range: 525
+    hits: null                      # TODO: soldier attacks per standard trade (sim choice, not a game number)
     tags: [sustained, zone]
+    notes: "Soldier lasts 10s, attacks at Azir's attack speed, soldier attack range 375/425."
   E_shifting_sands:
     type: mobility
-    base: null       # shield
-    ap_ratio: null
-    cooldown: null
-    mana_cost: null
+    damage_type: magic
+    base: [70, 110, 150, 190, 230]
+    ap_ratio: 0.60
+    shield: [70, 110, 150, 190, 230]
+    shield_ap_ratio: 0.60
+    duration: 1.5
+    cooldown: [22, 20.5, 19, 17.5, 16]
+    mana_cost: [60]
+    range: 1100
     tags: [mobility, shield]
   R_emperors_divide:
     type: cc
-    base: null
-    ap_ratio: null
-    cc_duration: null
-    cooldown: null
-    mana_cost: null
-    tags: [utility, disengage]
+    damage_type: magic
+    base: [200, 400, 600]
+    ap_ratio: 0.75
+    cc_duration: 1.0                # "knocked away over 1 second" (knockback duration not listed)
+    cooldown: [120, 105, 90]
+    mana_cost: [100]
+    range: 400
+    tags: [utility, disengage, zone]
+    notes: "Wall stands 5s; width 620/720/820."

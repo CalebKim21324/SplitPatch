@@ -1,47 +1,61 @@
-# Viego. Base stats: Data Dragon champion.json. Ability numbers: wiki, hand-checked.
-# Every null is a TODO. Never fill in a number that wasn't checked against a source.
+# Viego, patch 26.22. Ratios/percentages are fractions.
+# Base stats: Data Dragon 16.22.1 (AD growth from wiki). Abilities: wiki, verbatim, read 2026-11-14.
+# SPOT-CHECK every number. Changes in window: V26.18 AD growth 3.5->4 (base_stats.csv) and
+# passive heal gained "+0.4% per 100 bonus health" (not modeled numerically).
 name: Viego
-patch: null        # TODO: patch these numbers are valid for
+patch: "26.22"
 base:
-  hp: null         # TODO ddragon
-  hp_per_lvl: null
-  mp: null
-  mp_per_lvl: null
-  armor: null
-  armor_per_lvl: null
-  mr: null
-  mr_per_lvl: null
-  ad: null
-  ad_per_lvl: null
-  as: null
-  as_per_lvl: null
-  ms: null
-  range: null
+  hp: 630
+  hp_per_lvl: 109
+  mp: 0                   # manaless (ddragon placeholder 10000)
+  mp_per_lvl: 0
+  armor: 34
+  armor_per_lvl: 4.6
+  mr: 32
+  mr_per_lvl: 2.05
+  ad: 57
+  ad_per_lvl: 4.0         # wiki; 3.5 before V26.18
+  as: 0.658
+  as_per_lvl: 2.75
+  ms: 345
+  range: 200
 abilities:
   P_sovereigns_domination:
     type: utility
-    cooldown: null
-    tags: [reset]
+    tags: [reset, sustain]
+    notes: "Takedown heal 2% (+2.5%/100 bonus AD, +2%/100 AP, +0.4%/100 bonus hp, +5%/100% bonus AS) of target max hp; possession."
   Q_blade_of_the_ruined_king:
     type: damage
-    base: null       # TODO wiki
-    ad_ratio: null
-    ap_ratio: null
-    cooldown: null
-    tags: [burst]
+    damage_type: physical
+    base: [25, 40, 55, 70, 85]
+    ad_ratio: 0.70
+    pct_current_hp: [0.02, 0.03, 0.04, 0.05, 0.06]   # passive on-hit
+    min_damage: [10, 15, 20, 25, 30]                 # on-hit floor
+    cooldown: [5, 4.5, 4, 3.5, 3]
+    range: 600
+    tags: [burst, sustained]
+    notes: "Marked target: second strike 20% AD (+15% AP), heals."
   W_spectral_maw:
     type: cc
-    cc_duration: null
-    cooldown: null
+    damage_type: magic
+    base: [80, 135, 190, 245, 300]
+    ap_ratio: 1.0
+    cc_duration: 1.25                # stun 0.25-1.25 by channel time; max used
+    cooldown: [8]
+    range: 900
     tags: [engage]
   E_harrowed_path:
     type: buff
-    cooldown: null
+    bonus_as: [0.30, 0.35, 0.40, 0.45, 0.50]
+    bonus_ms: [0.25, 0.275, 0.30, 0.325, 0.35]       # (+4% per 100 AP)
+    duration: 8
+    cooldown: [14, 12, 10, 8, 6]
     tags: [stealth]
   R_heartbreaker:
     type: damage
-    base: null       # TODO wiki
-    ad_ratio: null
-    ap_ratio: null
-    cooldown: null
+    damage_type: physical
+    ad_ratio: 1.20
+    pct_missing_hp: [0.12, 0.16, 0.20]               # (+5% per 100 bonus AD)
+    cooldown: [120, 100, 80]
+    range: 500
     tags: [execute]

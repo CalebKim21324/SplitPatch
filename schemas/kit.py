@@ -15,6 +15,7 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 Num = float | None
 PerRank = list[float] | None
+Ratio = float | list[float] | None  # scalar, or per rank
 
 ABILITY_KEY = re.compile(r"^(P|Q|W|E|R)_[a-z0-9_]+$")
 AbilityType = Literal["damage", "cc", "buff", "utility", "mobility"]
@@ -44,20 +45,41 @@ class BaseStats(Strict):
 
 
 class Ability(Strict):
+    """All ratios and percentages are fractions (35% AP -> 0.35). Lists are per rank."""
+
     type: AbilityType
-    base: PerRank = None           # damage / shield / heal per rank
-    ap_ratio: Num = None
-    ad_ratio: Num = None           # total AD ratio
-    bonus_ad_ratio: Num = None
+    damage_type: Literal["physical", "magic", "true"] | None = None
+    base: PerRank = None           # damage per rank
+    base_by_level: PerRank = None  # [lvl1, lvl18] flat bonus "based on level", added to base
+    ap_ratio: Ratio = None
+    ad_ratio: Ratio = None         # total AD ratio
+    bonus_ad_ratio: Ratio = None
+    pct_max_hp: PerRank = None     # of target's maximum health
+    pct_current_hp: PerRank = None
+    pct_missing_hp: PerRank = None
+    min_damage: PerRank = None     # floor for %-health damage
+    stack_base: PerRank = None     # per extra stack (e.g. each extra Rend spear)
+    stack_ad_ratio: Ratio = None
+    stack_ap_ratio: Ratio = None
+    shield: PerRank = None
+    shield_ap_ratio: Ratio = None
+    shield_bonus_hp_ratio: Ratio = None
+    damage_reduction: PerRank = None
+    duration: Num = None           # buff / shield / damage-reduction duration (s)
+    bonus_as: PerRank = None
+    bonus_ms: Ratio = None
+    slow: Ratio = None
+    slow_duration: Num = None
+    cc_duration: Ratio = None      # stun / knock-up / silence seconds, scalar or per rank
     cooldown: PerRank = None
     mana_cost: PerRank = None
     range: Num = None
-    cc_duration: Num = None
     hits: Num = None               # hits per cast in the standard combo (see SIMPLIFICATIONS.md)
     tags: list[str] = []
     notes: str | None = None       # free text, never read by the sim
 
-    @field_validator("base", "cooldown", "mana_cost")
+    @field_validator("base", "base_by_level", "cooldown", "mana_cost", "pct_max_hp", "pct_current_hp",
+                     "pct_missing_hp", "min_damage", "stack_base", "shield", "damage_reduction", "bonus_as")
     @classmethod
     def _non_empty(cls, v: PerRank) -> PerRank:
         if v is not None and len(v) == 0:
@@ -83,8 +105,8 @@ class Kit(Strict):
         """Dotted paths of fields still None (only fields relevant to the ability type count)."""
         out = [f"base.{k}" for k, v in self.base.model_dump().items() if v is None]
         for key, ab in self.abilities.items():
-            want = {"cooldown"}
-            if ab.type == "damage":
+            want = set() if key.startswith("P_") else {"cooldown"}
+            if ab.type == "damage" and not (ab.pct_current_hp or ab.pct_missing_hp or ab.ad_ratio):
                 want |= {"base"}
             if ab.type == "cc":
                 want |= {"cc_duration"}
