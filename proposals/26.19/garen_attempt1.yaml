@@ -1,0 +1,30 @@
+champion: Garen
+patch: '26.19'
+category: SOLOQ_ONLY_STRONG
+changes:
+- field: base.ad
+  from: 69.0
+  to: 66.0
+- field: abilities.E_judgment.base
+  from:
+  - 4.0
+  - 7.0
+  - 10.0
+  - 13.0
+  - 16.0
+  to:
+  - 3.2
+  - 6.0
+  - 9.0
+  - 12.5
+  - 16.0
+rationale: Garen is winning too much in solo queue (52.8% global, 53.0% KR) and isn't
+  played in pro at all (0% presence). The problem is how hard he hits in lane, not
+  how he does late. So this patch cuts his early damage and leaves his late game alone.
+  Base AD goes from 69 to 66, which makes his early autos, Q and E trades weaker.
+  The lower ranks of Judgment (E) lose some base damage per spin (4/7/10/13 -> 3.2/6/9/12.5),
+  and the max rank stays at 16. Garen maxes E first, so this weakens the early spin
+  trades that win his lane without changing how strong the ability is at max rank.
+  In the sim, solo queue power drops about 1.0% (target band -3% to -0.5%). Pro power
+  stays flat to slightly up (+0.2%, target is no lower than -0.5%), so his already
+  low pro presence isn't hurt any further.

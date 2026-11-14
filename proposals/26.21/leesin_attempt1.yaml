@@ -1,0 +1,41 @@
+champion: Lee Sin
+patch: '26.21'
+category: POPULAR_WEAK
+changes:
+- field: abilities.Q_sonic_wave.base
+  from:
+  - 60.0
+  - 90.0
+  - 120.0
+  - 150.0
+  - 180.0
+  to:
+  - 72.0
+  - 105.0
+  - 130.0
+  - 150.0
+  - 180.0
+- field: abilities.Q_resonating_strike.base
+  from:
+  - 60.0
+  - 90.0
+  - 120.0
+  - 150.0
+  - 180.0
+  to:
+  - 72.0
+  - 105.0
+  - 130.0
+  - 150.0
+  - 180.0
+- field: base.ad
+  from: 66.0
+  to: 68.0
+rationale: 'Lee Sin is popular but underperforming in global solo queue (49.47% WR
+  at 12.4% PR), while pro presence is already high (54%) so we must not add late-game
+  or coordinated power. We buff his early game only: Sonic Wave and Resonating Strike
+  base damage go up at ranks 1-3 (60/90/120 -> 72/105/130), with ranks 4-5 untouched,
+  plus +2 base AD (66 -> 68) to make his level 1-6 trades and early clears feel better.
+  No ratios, late ranks, cooldowns or utility (R, W shield, E slow) are touched, so
+  his late scaling and pro value stay flat. Sim: soloq_index +1.13% (target +0.5%
+  to +3%), pro_index -0.18% (target at most +1%).'

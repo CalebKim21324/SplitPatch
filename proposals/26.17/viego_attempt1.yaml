@@ -1,0 +1,37 @@
+champion: Viego
+patch: '26.17'
+category: POPULAR_WEAK
+changes:
+- field: abilities.Q_blade_of_the_ruined_king.base
+  from:
+  - 25.0
+  - 40.0
+  - 55.0
+  - 70.0
+  - 85.0
+  to:
+  - 30.0
+  - 48.0
+  - 66.0
+  - 80.0
+  - 90.0
+- field: abilities.Q_blade_on_hit.pct_current_hp
+  from:
+  - 0.02
+  - 0.03
+  - 0.04
+  - 0.05
+  - 0.06
+  to:
+  - 0.024
+  - 0.035
+  - 0.045
+  - 0.055
+  - 0.06
+rationale: 'Viego is played a lot but underperforms in solo queue (KR WR 48.8% at
+  6.7% PR), while pro presence is already low and doesn''t need help. We''re buffing
+  his early game through Blade of the Ruined King: more Q base damage at early and
+  mid ranks, and more %current-HP on-hit at ranks 1-4. Rank 5 on-hit is unchanged.
+  This makes his early clears, ganks and skirmishes stronger, which is where solo
+  queue Viego struggles. His late-game ceiling, ratios, ultimate and utility stay
+  the same, so coordinated/pro play is barely affected (sim: soloq +0.95%, pro -0.2%).'

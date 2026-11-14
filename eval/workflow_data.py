@@ -32,6 +32,17 @@ def main() -> int:
     report["builds"] = {c: [catalog[i]["name"] for i in kits.build(c)] for c in kits.CHAMPIONS}
     run = ROOT / "proposals" / "26.22" / "summary.json"
     report["run"] = json.loads(run.read_text(encoding="utf-8")) if run.exists() else None
+    bt_rows, bt_scores = ROOT / "runs/backtest/rows.json", ROOT / "runs/backtest/scores.json"
+    report["backtest"] = None
+    if bt_rows.exists() and bt_scores.exists():
+        from eval.backtest import nxt, riot_answers
+        ans = riot_answers()
+        rows = json.loads(bt_rows.read_text(encoding="utf-8"))
+        report["backtest"] = {"scores": json.loads(bt_scores.read_text(encoding="utf-8")), "rows": [
+            {"champion": r["champion"], "patch": r["patch"], "rule": r["rule"],
+             "splitpatch": {k: r["splitpatch"][k] for k in ("direction", "category", "outcome", "lever")},
+             "one_shot": {"direction": r["one_shot"]["direction"]} if "one_shot" in r else None,
+             "riot": (ans.get((r["champion"], nxt(r["patch"]))) or {}).get("direction", "hold")} for r in rows]}
     (ROOT / "runs/workflow_data.json").write_text(json.dumps(report, default=float), encoding="utf-8")
     print(f"wrote runs/workflow_data.json ({(ROOT / 'runs/workflow_data.json').stat().st_size // 1024} KB)")
     return 0

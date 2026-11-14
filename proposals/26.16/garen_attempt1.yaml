@@ -1,0 +1,40 @@
+champion: Garen
+patch: '26.16'
+category: SOLOQ_ONLY_STRONG
+changes:
+- field: abilities.E_judgment.ad_ratio
+  from:
+  - 0.4
+  - 0.43
+  - 0.46
+  - 0.49
+  - 0.52
+  to:
+  - 0.34
+  - 0.38
+  - 0.43
+  - 0.48
+  - 0.52
+- field: abilities.E_judgment.base
+  from:
+  - 4.0
+  - 7.0
+  - 10.0
+  - 13.0
+  - 16.0
+  to:
+  - 3.5
+  - 6.0
+  - 9.0
+  - 12.5
+  - 16.0
+rationale: 'Garen is winning too much in solo queue (53.2% WR globally, 7% pick) while
+  having zero pro presence, so we want to take power out of his lane without touching
+  his late game. His lane dominance comes from early Judgment (E) spins: max-first
+  E lets him win extended trades from levels 1-6. We lower Judgment''s early-rank
+  damage (AD ratio 0.40/0.43/0.46 -> 0.34/0.38/0.43, base 4/7/10/13 -> 3.5/6/9/12.5)
+  while leaving rank 5 untouched. This cuts his level-6 trade damage by ~5% (soloq
+  index -1.2%, mid-band) and leaves late DPS, siege, and utility unchanged, so his
+  pro/late-game power isn''t reduced (pro index +0.8%). We didn''t use base HP because
+  the sim showed it had no effect, and we didn''t use base AD because it also lowers
+  late-game DPS.'

@@ -1,0 +1,28 @@
+champion: Lee Sin
+patch: '26.16'
+category: OVERALL_STRONG
+changes:
+- field: abilities.Q_sonic_wave.base
+  from:
+  - 60.0
+  - 90.0
+  - 120.0
+  - 150.0
+  - 180.0
+  to:
+  - 55.0
+  - 82.0
+  - 110.0
+  - 137.0
+  - 165.0
+- field: base.ad
+  from: 66.0
+  to: 64.0
+rationale: 'Lee Sin is overperforming in high-elo solo queue (KR 52.5% WR with 54%
+  ban rate) while holding 43% pro presence, so he''s strong across the board. We''re
+  taking a light pass at his core damage rather than his identity: Sonic Wave base
+  damage goes from 60/90/120/150/180 to 55/82/110/137/165 (about -8% at every rank)
+  and base AD drops from 66 to 64. Together these trim his early skirmish and gank
+  damage (roughly -2% lane trade) and slightly shave his late damage, without touching
+  the Insec/kick utility or the mobility that defines the champion. Sim: soloq index
+  -0.73%, pro index -0.34%, both within target.'

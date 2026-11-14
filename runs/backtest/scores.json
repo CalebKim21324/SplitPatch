@@ -1,0 +1,62 @@
+{
+ "train": {
+  "n": 18,
+  "riot_changes": 2,
+  "rule": {
+   "direction_agreement": "13/18",
+   "lever_agreement": "0/2"
+  },
+  "one_shot": {
+   "direction_agreement": "4/18",
+   "lever_agreement": "1/2"
+  },
+  "splitpatch": {
+   "direction_agreement": "11/18",
+   "lever_agreement": "1/2"
+  },
+  "verification": {
+   "splitpatch_passed": "7/7",
+   "one_shot_passed": "3/6"
+  }
+ },
+ "test": {
+  "n": 18,
+  "riot_changes": 3,
+  "rule": {
+   "direction_agreement": "12/18",
+   "lever_agreement": "0/3"
+  },
+  "one_shot": {
+   "direction_agreement": "7/18",
+   "lever_agreement": "2/3"
+  },
+  "splitpatch": {
+   "direction_agreement": "10/18",
+   "lever_agreement": "1/3"
+  },
+  "verification": {
+   "splitpatch_passed": "7/7",
+   "one_shot_passed": "5/6"
+  }
+ },
+ "all": {
+  "n": 36,
+  "riot_changes": 5,
+  "rule": {
+   "direction_agreement": "25/36",
+   "lever_agreement": "0/5"
+  },
+  "one_shot": {
+   "direction_agreement": "11/36",
+   "lever_agreement": "3/5"
+  },
+  "splitpatch": {
+   "direction_agreement": "21/36",
+   "lever_agreement": "2/5"
+  },
+  "verification": {
+   "splitpatch_passed": "14/14",
+   "one_shot_passed": "8/12"
+  }
+ }
+}

@@ -1,0 +1,28 @@
+champion: Garen
+patch: '26.20'
+category: SOLOQ_ONLY_STRONG
+changes:
+- field: abilities.E_judgment.base
+  from:
+  - 4.0
+  - 7.0
+  - 10.0
+  - 13.0
+  - 16.0
+  to:
+  - 3.2
+  - 5.6
+  - 8.0
+  - 13.0
+  - 16.0
+- field: base.ad
+  from: 69.0
+  to: 68.0
+rationale: 'Garen is over-performing in solo queue (52.7% global, 53.5% KR WR) with
+  zero pro presence, so this is a pure early/lane-power problem. Judgment (E) is his
+  main laning trade tool and he maxes it first, so we trim its base damage on ranks
+  1-3 only (4/7/10 -> 3.2/5.6/8), leaving ranks 4-5 and the AD ratios untouched. A
+  1-point base AD shave (69 -> 68) slightly softens level-1 trades and early last-hitting.
+  Sim: lane trade at L6 drops ~3.7%, soloq_index -0.86%; late DPS and siege are essentially
+  unchanged and pro_index stays flat/slightly up, so his late-game and pro viability
+  are not hurt.'

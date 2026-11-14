@@ -1,0 +1,28 @@
+champion: Garen
+patch: '26.18'
+category: SOLOQ_ONLY_STRONG
+changes:
+- field: abilities.E_judgment.base
+  from:
+  - 4.0
+  - 7.0
+  - 10.0
+  - 13.0
+  - 16.0
+  to:
+  - 3.2
+  - 5.6
+  - 8.0
+  - 13.0
+  - 16.0
+- field: base.ad
+  from: 69.0
+  to: 66.0
+rationale: 'Garen is winning too much in solo queue (52.8% global, 53.3% KR) with
+  zero pro presence, so the problem is his early-lane bullying rather than his late-game
+  or coordinated value. We''re toning down his laning: base AD 69 -> 66 and Judgment
+  (E) base damage at ranks 1-3 from 4/7/10 to 3.2/5.6/8 (ranks 4-5 unchanged). This
+  makes his early spins and level 6 trades weaker (lane trade -5.5%) while leaving
+  his late-game spin damage and ultimate untouched, so he isn''t pushed further out
+  of pro play. Sim: soloq_index -1.3%, pro_index +0.45%, both inside their target
+  bands.'

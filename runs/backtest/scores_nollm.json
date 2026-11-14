@@ -1,0 +1,62 @@
+{
+ "train": {
+  "n": 18,
+  "riot_changes": 2,
+  "rule": {
+   "direction_agreement": "13/18",
+   "lever_agreement": "0/2"
+  },
+  "one_shot": {
+   "direction_agreement": "n/a",
+   "lever_agreement": "n/a"
+  },
+  "splitpatch": {
+   "direction_agreement": "11/18",
+   "lever_agreement": "0/2"
+  },
+  "verification": {
+   "splitpatch_passed": "0/7",
+   "one_shot_passed": "0/0"
+  }
+ },
+ "test": {
+  "n": 18,
+  "riot_changes": 3,
+  "rule": {
+   "direction_agreement": "12/18",
+   "lever_agreement": "0/3"
+  },
+  "one_shot": {
+   "direction_agreement": "n/a",
+   "lever_agreement": "n/a"
+  },
+  "splitpatch": {
+   "direction_agreement": "10/18",
+   "lever_agreement": "0/3"
+  },
+  "verification": {
+   "splitpatch_passed": "0/7",
+   "one_shot_passed": "0/0"
+  }
+ },
+ "all": {
+  "n": 36,
+  "riot_changes": 5,
+  "rule": {
+   "direction_agreement": "25/36",
+   "lever_agreement": "0/5"
+  },
+  "one_shot": {
+   "direction_agreement": "n/a",
+   "lever_agreement": "n/a"
+  },
+  "splitpatch": {
+   "direction_agreement": "21/36",
+   "lever_agreement": "0/5"
+  },
+  "verification": {
+   "splitpatch_passed": "0/14",
+   "one_shot_passed": "0/0"
+  }
+ }
+}

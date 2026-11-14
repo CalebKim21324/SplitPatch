@@ -182,6 +182,11 @@ footer a{color:var(--accent)}
   </div>
 </section>
 
+<section class="section" aria-labelledby="h-bt">
+  <div class="section-head"><h2 id="h-bt">Backtest against Riot</h2><span class="eyebrow">stats patch → Riot's change one patch later</span></div>
+  <div id="bt"></div>
+</section>
+
 <section class="section" aria-labelledby="h-riot">
   <div class="section-head"><h2 id="h-riot">Riot's real changes, through our simulator</h2></div>
   <p class="note">Each Riot change in the window, applied to the champion's kit from the patch before and run through the same simulator the verifier uses. "We flagged" is our diagnosis on that earlier patch, before Riot acted.</p>
@@ -381,6 +386,23 @@ function renderRun(){
   el.querySelector(".decisions").onclick=e=>{const b=e.target.closest(".dec");if(!b)return;state.runChamp=b.dataset.c;save();renderRun()};
 }
 
+function renderBacktest(){
+  const B=DATA.backtest,el=$("#bt");
+  if(!B){el.innerHTML=`<div class="panel"><p class="note">Backtest not run yet.</p></div>`;return}
+  const S=B.scores,names={rule:"Rule baseline",one_shot:"LLM one-shot",splitpatch:"SplitPatch"};
+  const sb=`<div class="panel scroll"><table><thead><tr><th>System</th><th class="r">Direction agrees · test</th><th class="r">Direction agrees · all</th><th class="r">Same lever as Riot · all</th><th class="r">Passes verifier · all</th></tr></thead><tbody>
+    ${["rule","one_shot","splitpatch"].map(k=>`<tr style="cursor:default"><td class="champ">${names[k]}</td><td class="r num">${S.test[k].direction_agreement}</td><td class="r num">${S.all[k].direction_agreement}</td><td class="r num">${S.all[k].lever_agreement}</td><td class="r num">${k==="splitpatch"?S.all.verification.splitpatch_passed:k==="one_shot"?S.all.verification.one_shot_passed:"—"}</td></tr>`).join("")}
+  </tbody></table></div>`;
+  const sym=d=>d==="buff"?`<span class="riot-buff">▲</span>`:d==="nerf"?`<span class="riot-nerf">▼</span>`:`<span class="riot-none">·</span>`;
+  const pats=[...new Set(B.rows.map(r=>r.patch))].sort((a,b)=>+a.split(".")[1]-+b.split(".")[1]);
+  const grid=`<div class="panel scroll"><table><thead><tr><th>Champion</th>${pats.map(p=>`<th class="r">${p}→${"26."+(+p.split(".")[1]+1)}</th>`).join("")}</tr></thead><tbody>
+    ${CHAMPS.map(c=>`<tr style="cursor:default"><td class="champ">${c}</td>${pats.map(p=>{const r=B.rows.find(x=>x.champion===c&&x.patch===p);if(!r)return"<td></td>";
+      const riot=r.riot||"hold",sp=r.splitpatch.direction,hit=sp===riot;
+      return `<td class="r mono" style="font-size:13px" title="Riot ${riot} · SplitPatch ${sp} · rule ${r.rule.direction} · one-shot ${r.one_shot?r.one_shot.direction:"-"}">R ${sym(riot)} · S <span style="${hit?"":"opacity:.55"}">${sym(sp)}</span> · 1 ${r.one_shot?sym(r.one_shot.direction):"-"}</td>`}).join("")}</tr>`).join("")}
+  </tbody></table></div>`;
+  el.innerHTML=`<div class="section">${sb}${grid}<p class="note">R = Riot's real change one patch later (from the held-out answer key), S = SplitPatch, 1 = LLM one-shot. ▲ buff, ▼ nerf, · hold. Test = 26.19–26.21; thresholds were set looking at 26.16–26.18. Only ${S.all.riot_changes} of ${S.all.n} rows had a Riot balance change, so "hold" dominates the agreement numbers.</p></div>`;
+}
+
 function render(){seg($("#patch"),PATCHES,"patch");seg($("#region"),["global","kr"],"region",v=>v==="kr"?"Korea":"Global");renderLoop();renderBoard();renderTrace()}
-render();renderRun();renderRiot();renderItems();renderTrust();
+render();renderRun();renderBacktest();renderRiot();renderItems();renderTrust();
 </script>

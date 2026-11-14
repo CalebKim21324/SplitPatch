@@ -1,0 +1,28 @@
+champion: Qiyana
+patch: '26.20'
+category: OVERALL_STRONG
+changes:
+- field: abilities.Q_edge_of_ixtal.base
+  from:
+  - 80.0
+  - 110.0
+  - 140.0
+  - 170.0
+  - 200.0
+  to:
+  - 65.0
+  - 95.0
+  - 125.0
+  - 155.0
+  - 185.0
+- field: abilities.Q_edge_of_ixtal.bonus_ad_ratio
+  from: 0.9
+  to: 0.8
+rationale: 'Qiyana is strong across the board: 54.8% WR in KR with 57% pro presence.
+  Edge of Ixtal is her main damage tool in both lane trades and late-game teamfight
+  burst, so we''re toning down this one ability rather than spreading nerfs across
+  her kit. Base damage -15 at all ranks hits her early lane trading and solo queue
+  snowballing hardest. Bonus AD ratio 0.9 -> 0.8 trims her itemized late burst, which
+  is what keeps her a pick in pro play. In simulation solo queue power drops ~1.2%
+  and pro power drops ~0.5%, both comfortably inside the targets. Her mobility, elemental
+  utility and ult are unchanged, so she plays the same way.'

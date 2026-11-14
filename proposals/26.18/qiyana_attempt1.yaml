@@ -1,0 +1,29 @@
+champion: Qiyana
+patch: '26.18'
+category: OVERALL_STRONG
+changes:
+- field: abilities.Q_edge_of_ixtal.base
+  from:
+  - 80.0
+  - 110.0
+  - 140.0
+  - 170.0
+  - 200.0
+  to:
+  - 70.0
+  - 100.0
+  - 130.0
+  - 160.0
+  - 190.0
+- field: abilities.Q_edge_of_ixtal.bonus_ad_ratio
+  from: 0.9
+  to: 0.8
+rationale: 'Qiyana is strong across the board: 53.8% WR in KR solo queue and 61% pro
+  presence. Edge of Ixtal is her core damage tool from the first trade through late-game
+  skirmishes, so one targeted nerf to it addresses both. The flat base damage cut
+  (-10 at all ranks) trims her early lane trades and solo-queue snowball. The bonus
+  AD ratio cut (0.9 -> 0.8) lowers her itemized late-game burst, which is where pro
+  play gets its value. Players will read this as a single, clear "Q hits a little
+  less hard" change. Her elemental utility, mobility and ultimate engage stay untouched,
+  so her identity is preserved. Sim: soloq_index -0.90%, pro_index -0.44%, both inside
+  the target bands.'

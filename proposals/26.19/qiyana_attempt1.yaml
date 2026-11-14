@@ -1,0 +1,28 @@
+champion: Qiyana
+patch: '26.19'
+category: OVERALL_STRONG
+changes:
+- field: abilities.Q_edge_of_ixtal.base
+  from:
+  - 80.0
+  - 110.0
+  - 140.0
+  - 170.0
+  - 200.0
+  to:
+  - 65.0
+  - 95.0
+  - 125.0
+  - 155.0
+  - 185.0
+- field: abilities.R_supreme_display_of_talent.bonus_ad_ratio
+  from: 1.25
+  to: 1.1
+rationale: 'Qiyana is strong at both ends: 54.5% WR in KR solo queue alongside 61%
+  pro presence. Two targeted nerfs: (1) Edge of Ixtal (Q) base damage reduced by 15
+  at all ranks (80-200 -> 65-185). This trims her lane trading and early skirmish
+  burst, which is the main lever for solo queue power. (2) Supreme Display of Talent
+  (R) bonus AD ratio 125% -> 110%. This lowers her late-game teamfight one-shot potential,
+  which coordinated pro play gets the most out of, while keeping the ultimate''s identity
+  (stun, % max HP) intact. Sim: soloq_index -0.88%, pro_index -0.39%, both inside
+  the target bands.'

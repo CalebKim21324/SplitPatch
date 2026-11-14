@@ -1,0 +1,27 @@
+champion: Qiyana
+patch: '26.21'
+category: OVERALL_STRONG
+changes:
+- field: abilities.Q_edge_of_ixtal.base
+  from:
+  - 70.0
+  - 100.0
+  - 130.0
+  - 160.0
+  - 190.0
+  to:
+  - 60.0
+  - 90.0
+  - 120.0
+  - 150.0
+  - 180.0
+- field: abilities.Q_edge_of_ixtal.bonus_ad_ratio
+  from: 0.9
+  to: 0.8
+rationale: "Qiyana is strong overall: 52.5%+ win rate in high-elo KR solo queue alongside\
+  \ 57% pro presence. Edge of Ixtal is her core damage tool both in lane and in late-game\
+  \ assassinations, so we're toning it down across the board: base damage -10 at all\
+  \ ranks hits her lane trades and early skirmishes (solo queue), while the bonus\
+  \ AD ratio 0.9 -> 0.8 trims her itemized late-game burst that pro teams rely on.\
+  \ Her mobility, ult engage and elemental utility are untouched, so her identity\
+  \ stays intact \u2014 she just kills a bit less reliably with Q."
