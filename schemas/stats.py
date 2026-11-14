@@ -11,6 +11,7 @@ class SoloQRow(BaseModel):
 
     model_config = ConfigDict(extra="forbid")
     patch: str
+    region: str = "global"  # "global" or a server, e.g. "kr"
     champion: str
     wr: float = Field(ge=0, le=100)
     pr: float = Field(ge=0, le=100)

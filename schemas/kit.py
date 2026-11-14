@@ -75,6 +75,7 @@ class Ability(Strict):
     mana_cost: PerRank = None
     range: Num = None
     hits: Num = None               # hits per cast in the standard combo (see SIMPLIFICATIONS.md)
+    recast_of: str | None = None   # second cast sharing another ability's cooldown (e.g. Lee Sin Q2)
     tags: list[str] = []
     notes: str | None = None       # free text, never read by the sim
 
@@ -105,8 +106,10 @@ class Kit(Strict):
         """Dotted paths of fields still None (only fields relevant to the ability type count)."""
         out = [f"base.{k}" for k, v in self.base.model_dump().items() if v is None]
         for key, ab in self.abilities.items():
-            want = set() if key.startswith("P_") else {"cooldown"}
-            if ab.type == "damage" and not (ab.pct_current_hp or ab.pct_missing_hp or ab.ad_ratio):
+            want = set() if key.startswith("P_") or ab.recast_of else {"cooldown"}
+            sources = (ab.base, ab.base_by_level, ab.ad_ratio, ab.bonus_ad_ratio,
+                       ab.pct_max_hp, ab.pct_current_hp, ab.pct_missing_hp)
+            if ab.type == "damage" and all(s is None for s in sources):
                 want |= {"base"}
             if ab.type == "cc":
                 want |= {"cc_duration"}

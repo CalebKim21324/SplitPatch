@@ -63,7 +63,10 @@ WIKI_AD_PER_LVL = {
     "Kalista": [("26.16", 4.75)],               # infobox "57+4.75", no change in window
     "Garen": [("26.16", 4.5)],                  # infobox "69+4.5", no change in window
     "Viego": [("26.16", 3.5), ("26.18", 4.0)],  # V26.18 "Attack damage growth increased to 4 from 3.5."
+    "Qiyana": [("26.16", 3.1)],                 # infobox "64+3.1", no change in window
+    "LeeSin": [("26.16", 3.4)],                 # infobox "66+3.4" (V26.12), no change in window
 }
+DISPLAY = {"LeeSin": "Lee Sin"}  # ddragon id -> name used in our CSVs
 MANALESS_MP = 10000  # Data Dragon placeholder for manaless champions
 
 
@@ -80,6 +83,11 @@ def apply_overrides(name: str, patch: str, stats: dict[str, float]) -> dict[str,
     return stats
 
 
+def ddragon_id(name: str) -> str:
+    """'azir' -> 'Azir'; ids with inner capitals ('LeeSin') are kept as given."""
+    return name if any(c.isupper() for c in name[1:]) else name.capitalize()
+
+
 def patch_label(version: str) -> str:
     """Data Dragon 16.22.1 -> game patch 26.22 (Riot's 2026 patches use ddragon major 16)."""
     major, minor = version.split(".")[:2]
@@ -93,8 +101,8 @@ def write_csv(versions: list[str], champions: list[str], out: Path) -> None:
         w.writeheader()
         for v in versions:
             for name in champions:
-                champ, patch = name.capitalize(), patch_label(v)
-                w.writerow({"patch": patch, "ddragon": v, "champion": champ,
+                champ, patch = ddragon_id(name), patch_label(v)
+                w.writerow({"patch": patch, "ddragon": v, "champion": DISPLAY.get(champ, champ),
                             **apply_overrides(champ, patch, fetch_stats(v, champ))})
     print(f"wrote {out.relative_to(ROOT)}")
 
@@ -118,7 +126,7 @@ def main() -> int:
         ap.error("--version and at least one champion are required")
     for name in a.champions:
         path = ROOT / "data" / "champions" / f"{name.lower()}.yaml"
-        stats = fetch_stats(a.version, name.capitalize())
+        stats = fetch_stats(a.version, ddragon_id(name))
         print(f"{name} @ {a.version}: {stats}")
         if a.write:
             path.write_text(rewrite(path.read_text(encoding="utf-8"), stats, a.version), encoding="utf-8")

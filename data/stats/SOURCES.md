@@ -1,9 +1,10 @@
 # Stats sources
 
 ## soloq.csv
-lolalytics.com, Ranked Solo/Duo, Emerald+, global, champion's main lane
-(Azir mid, Kalista bottom, Garen top, Viego jungle). Read 2026-11-14.
-URL pattern: `https://lolalytics.com/lol/<champ>/build/?tier=emerald_plus&lane=<lane>&patch=16.<n>`
+lolalytics.com, Ranked Solo/Duo, Emerald+, champion's main lane
+(Azir mid, Kalista bottom, Garen top, Viego jungle, Qiyana mid, Lee Sin jungle). Read 2026-11-14.
+`region` = `global` or `kr` (Korean server, `&region=kr`).
+URL pattern: `https://lolalytics.com/lol/<champ>/build/?tier=emerald_plus&lane=<lane>[&region=kr]&patch=16.<n>`
 (lolalytics labels patch 26.n as 16.n). Azir 26.21 WR shown on the page only as "49%".
 26.22 is the live patch, so its sample is still growing.
 

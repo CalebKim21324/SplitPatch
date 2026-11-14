@@ -22,10 +22,18 @@ BASE = "https://gol.gg/champion"
 SEASON = "season-S16/split-ALL/tournament-ALL/"
 
 
-def get(url: str) -> str:
+def get(url: str, tries: int = 4) -> str:
+    import time
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read().decode("utf-8", errors="replace")
+    for i in range(tries):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                time.sleep(1)  # be polite to gol.gg
+                return r.read().decode("utf-8", errors="replace")
+        except OSError:
+            if i == tries - 1:
+                raise
+            time.sleep(5 * (i + 1))
 
 
 def champion_ids(list_html: str) -> dict[str, str]:

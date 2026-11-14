@@ -1,0 +1,72 @@
+# Qiyana, patch 26.22. Ratios/percentages are fractions.
+# Base stats: Data Dragon 16.22.1 (AD growth from wiki). Abilities: wiki, verbatim, read 2026-11-14.
+# SPOT-CHECK every number. Changes in window (holdout/riot_changes.yaml): V26.17 Q buff, V26.21 Q nerf.
+# Wiki inconsistency: V26.17 lists the buff under Elemental Wrath, V26.21 lists the nerf under
+# Edge of Ixtal; the current page shows both at 70/100/130/160/190 (+90% bonus AD).
+name: Qiyana
+patch: "26.22"
+base:
+  hp: 590
+  hp_per_lvl: 115
+  mp: 375
+  mp_per_lvl: 60
+  armor: 31
+  armor_per_lvl: 4.5
+  mr: 32
+  mr_per_lvl: 2.05
+  ad: 64
+  ad_per_lvl: 3.1         # wiki infobox (ddragon reports 0)
+  as: 0.688
+  as_per_lvl: 2.1
+  ms: 335
+  range: 150
+abilities:
+  P_royal_privilege:
+    type: damage
+    damage_type: physical
+    base_by_level: [15, 91]
+    bonus_ad_ratio: 0.25
+    ap_ratio: 0.30
+    tags: [burst]
+    notes: "First attack/ability on a new target; per-target cooldown not listed."
+  Q_edge_of_ixtal:
+    type: damage
+    damage_type: physical
+    base: [70, 100, 130, 160, 190]
+    bonus_ad_ratio: 0.90
+    cooldown: [7]
+    mana_cost: [35]
+    range: 525
+    tags: [burst, execute]
+    notes: "Elemental Wrath (range 865): terrain +60% damage vs targets below 50% hp; river root 0.5s then 20% slow 1s; brush invisibility + 20% MS. 160% vs monsters."
+  W_terrashape:
+    type: damage
+    damage_type: magic
+    base: [8, 16, 24, 32, 40]        # on-hit bonus while holding an element
+    bonus_ad_ratio: 0.20
+    ap_ratio: 0.45
+    bonus_as: [0.15, 0.20, 0.25, 0.30, 0.35]
+    cooldown: [7]
+    mana_cost: [25, 30, 35, 40, 45]
+    range: 1100
+    tags: [on_hit, mobility]
+  E_audacity:
+    type: damage
+    damage_type: physical
+    base: [50, 90, 130, 170, 210]
+    bonus_ad_ratio: 0.50
+    cooldown: [11, 10, 9, 8, 7]
+    mana_cost: [40, 45, 50, 55, 60]
+    range: 650
+    tags: [mobility, burst]
+  R_supreme_display_of_talent:
+    type: cc
+    damage_type: physical
+    base: [100, 200, 300]
+    bonus_ad_ratio: 1.25
+    pct_max_hp: [0.10, 0.10, 0.10]
+    cc_duration: 1.0                 # stun 0.5-1 by proximity; max used
+    cooldown: [120]
+    mana_cost: [100]
+    range: 875
+    tags: [engage, burst]

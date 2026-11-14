@@ -13,6 +13,8 @@ DevHacks '26, Riot Track 2 (Agentic development)
 - `OVERALL_WEAK` no longer requires low pro presence (WR < 48% and presence not high).
 - **Patch window: 26.16–26.22** (Data Dragon 16.16.1–16.22.1), not 3 hand-picked patches. Stats patch p is answered by Riot's change in p+1, which gives 6 backtest rows per champion. 26.22 is the live prediction.
 - **Sources:** kits from wiki.leagueoflegends.com; solo queue from lolalytics (Emerald+); pro presence from gol.gg (no pro games on 26.19/26.21/26.22). See `data/stats/SOURCES.md`.
+- **Workflow v2: `docs/WORKFLOW.md`** is the current pipeline spec (signals, diagnoser v2, regions, item path with blast radius). It overrides PLAN.md 3.4 and extends 3.5-3.7 and section 4.
+- **Pool: 6 champions**: Azir, Kalista, Garen, Viego, Qiyana, Lee Sin, with global + KR solo queue stats.
 - **Pitch:** Riot balances every two weeks by hand from WR/PR/BR and a flood of feedback. SplitPatch turns that into verified, targeted proposals: sentiment picks the lever, stats decide whether and how much, and an independent verifier proves the change does what it claims.
 
 ---

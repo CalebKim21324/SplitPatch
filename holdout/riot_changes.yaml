@@ -21,8 +21,39 @@ changes:
       - field: base.mp_per_lvl
         from: 40
         to: 50
+  - champion: Qiyana
+    patch: "26.17"
+    direction: buff
+    lever: damage
+    fields:
+      - field: abilities.Q_edge_of_ixtal.base
+        from: [70, 100, 130, 160, 190]
+        to: [80, 110, 140, 170, 200]
+      - field: abilities.Q_edge_of_ixtal.bonus_ad_ratio
+        from: 0.85
+        to: 0.90
+    unmodeled: "Monster damage reduced to 160% from 175% (jungle nerf). Wiki lists this under Elemental Wrath."
+  - champion: Qiyana
+    patch: "26.21"
+    direction: nerf
+    lever: damage
+    fields:
+      - field: abilities.Q_edge_of_ixtal.base
+        from: [80, 110, 140, 170, 200]
+        to: [70, 100, 130, 160, 190]
+  - champion: Lee Sin
+    patch: "26.21"
+    direction: nerf
+    lever: damage
+    fields:
+      - field: abilities.W_safeguard.cooldown
+        from: [7]
+        to: [8]
+      - field: abilities.R_dragons_rage.base
+        from: [175, 400, 625]
+        to: [150, 350, 550]
 
 # Non-balance entries in window (count as HOLD):
 #   Viego 26.22: passive bug fix (jungle treat while transformed).
-#   Viego 26.16: bug fix. Kalista 26.16 MR change and Azir 26.16 Q buff happen at the window start,
+#   Viego 26.16: bug fix. Lee Sin 26.21 Tempest bug fix (stealth reveal). Kalista 26.16 MR change and Azir 26.16 Q buff happen at the window start,
 #   so they answer 26.15 stats, which are outside our data.
