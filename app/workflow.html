@@ -342,8 +342,9 @@ function renderTrust(){
 }
 
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const show=v=>Array.isArray(v)?v.map(x=>+x.toFixed(4)).join("/"):+(+v).toFixed(4);
-function fillTip(text,vals,changed){return esc(text).replace(/\{(\w+)\}/g,(m,k)=>{if(!(k in vals))return m;const s=show(vals[k]);return changed.includes(k)?`<mark>${s}</mark>`:s})}
+const PCT=new Set(["ap_ratio","ad_ratio","bonus_ad_ratio","pct_max_hp","pct_current_hp","pct_missing_hp","stack_ad_ratio","stack_ap_ratio","shield_ap_ratio","shield_bonus_hp_ratio","damage_reduction","bonus_as","bonus_ms","slow"]);
+const show=(v,k)=>{let a=Array.isArray(v)?v:[v];if(new Set(a).size===1)a=a.slice(0,1);return a.map(x=>PCT.has(k)?+(x*100).toFixed(2)+"%":+(+x).toFixed(4)).join("/")};
+function fillTip(text,vals,changed){return esc(text).replace(/\{(\w+)\}/g,(m,k)=>{if(!(k in vals))return m;const s=show(vals[k],k);return changed.includes(k)?`<mark>${s}</mark>`:s})}
 function renderRun(){
   const R=DATA.run,el=$("#run");
   if(!R){el.innerHTML=`<div class="panel"><p class="note">No agent run recorded yet. Run <span class="mono">python -m agent.run_patch --patch 26.22</span> and rebuild this page.</p></div>`;return}

@@ -3,11 +3,11 @@
   {
    "champion": "Azir",
    "patch": "26.16",
-   "soloq_index": 1.0377,
-   "pro_index": 1.1816,
+   "soloq_index": 1.0375,
+   "pro_index": 1.1844,
    "metrics": {
     "lane_trade_l6": 388.6519,
-    "duel_ttk_l9": 4.25,
+    "duel_ttk_l9": 4.2,
     "mana_casts_to_oom": 6.8286,
     "late_dps_l16": 620.8972,
     "siege_score": 459.4639,
@@ -42,11 +42,11 @@
   {
    "champion": "Azir",
    "patch": "26.17",
-   "soloq_index": 1.0368,
-   "pro_index": 1.181,
+   "soloq_index": 1.0366,
+   "pro_index": 1.184,
    "metrics": {
     "lane_trade_l6": 388.6519,
-    "duel_ttk_l9": 4.25,
+    "duel_ttk_l9": 4.2,
     "mana_casts_to_oom": 6.8286,
     "late_dps_l16": 620.8972,
     "siege_score": 459.4639,
@@ -81,11 +81,11 @@
   {
    "champion": "Azir",
    "patch": "26.18",
-   "soloq_index": 1.0364,
-   "pro_index": 1.1783,
+   "soloq_index": 1.0362,
+   "pro_index": 1.1813,
    "metrics": {
     "lane_trade_l6": 388.6519,
-    "duel_ttk_l9": 4.25,
+    "duel_ttk_l9": 4.2,
     "mana_casts_to_oom": 6.8286,
     "late_dps_l16": 620.8972,
     "siege_score": 459.4639,
@@ -120,11 +120,11 @@
   {
    "champion": "Azir",
    "patch": "26.19",
-   "soloq_index": 1.0364,
-   "pro_index": 1.1783,
+   "soloq_index": 1.0362,
+   "pro_index": 1.1813,
    "metrics": {
     "lane_trade_l6": 388.6519,
-    "duel_ttk_l9": 4.25,
+    "duel_ttk_l9": 4.2,
     "mana_casts_to_oom": 6.8286,
     "late_dps_l16": 620.8972,
     "siege_score": 459.4639,
@@ -159,11 +159,11 @@
   {
    "champion": "Azir",
    "patch": "26.20",
-   "soloq_index": 1.0364,
-   "pro_index": 1.1783,
+   "soloq_index": 1.0362,
+   "pro_index": 1.1813,
    "metrics": {
     "lane_trade_l6": 388.6519,
-    "duel_ttk_l9": 4.25,
+    "duel_ttk_l9": 4.2,
     "mana_casts_to_oom": 6.8286,
     "late_dps_l16": 620.8972,
     "siege_score": 459.4639,
@@ -198,11 +198,11 @@
   {
    "champion": "Azir",
    "patch": "26.21",
-   "soloq_index": 1.0562,
-   "pro_index": 1.1796,
+   "soloq_index": 1.056,
+   "pro_index": 1.1824,
    "metrics": {
     "lane_trade_l6": 388.6519,
-    "duel_ttk_l9": 4.25,
+    "duel_ttk_l9": 4.2,
     "mana_casts_to_oom": 7.3929,
     "late_dps_l16": 620.8972,
     "siege_score": 459.4639,
@@ -237,11 +237,11 @@
   {
    "champion": "Azir",
    "patch": "26.22",
-   "soloq_index": 1.0562,
-   "pro_index": 1.1796,
+   "soloq_index": 1.056,
+   "pro_index": 1.1824,
    "metrics": {
     "lane_trade_l6": 388.6519,
-    "duel_ttk_l9": 4.25,
+    "duel_ttk_l9": 4.2,
     "mana_casts_to_oom": 7.3929,
     "late_dps_l16": 620.8972,
     "siege_score": 459.4639,
@@ -276,16 +276,16 @@
   {
    "champion": "Kalista",
    "patch": "26.16",
-   "soloq_index": 0.9359,
-   "pro_index": 0.9677,
+   "soloq_index": 0.9323,
+   "pro_index": 0.9761,
    "metrics": {
     "lane_trade_l6": 635.5053,
     "duel_ttk_l9": 7.2,
     "mana_casts_to_oom": 5.3083,
-    "late_dps_l16": 445.5211,
-    "siege_score": 534.6254,
+    "late_dps_l16": 456.9017,
+    "siege_score": 548.2821,
     "utility_cc_per_10s": 0.6917,
-    "scaling_ratio": 3.287
+    "scaling_ratio": 3.1859
    },
    "presence": 16.0,
    "pro_patch": "26.16",
@@ -315,16 +315,16 @@
   {
    "champion": "Kalista",
    "patch": "26.17",
-   "soloq_index": 0.9345,
-   "pro_index": 0.9671,
+   "soloq_index": 0.9309,
+   "pro_index": 0.9757,
    "metrics": {
     "lane_trade_l6": 635.5053,
     "duel_ttk_l9": 7.2,
     "mana_casts_to_oom": 5.3083,
-    "late_dps_l16": 445.5211,
-    "siege_score": 534.6254,
+    "late_dps_l16": 456.9017,
+    "siege_score": 548.2821,
     "utility_cc_per_10s": 0.6917,
-    "scaling_ratio": 3.287
+    "scaling_ratio": 3.1859
    },
    "presence": 21.0,
    "pro_patch": "26.17",
@@ -354,16 +354,16 @@
   {
    "champion": "Kalista",
    "patch": "26.18",
-   "soloq_index": 0.9338,
-   "pro_index": 0.9646,
+   "soloq_index": 0.9302,
+   "pro_index": 0.9731,
    "metrics": {
     "lane_trade_l6": 635.5053,
     "duel_ttk_l9": 7.2,
     "mana_casts_to_oom": 5.3083,
-    "late_dps_l16": 445.5211,
-    "siege_score": 534.6254,
+    "late_dps_l16": 456.9017,
+    "siege_score": 548.2821,
     "utility_cc_per_10s": 0.6917,
-    "scaling_ratio": 3.287
+    "scaling_ratio": 3.1859
    },
    "presence": 33.0,
    "pro_patch": "26.18",
@@ -393,16 +393,16 @@
   {
    "champion": "Kalista",
    "patch": "26.19",
-   "soloq_index": 0.9338,
-   "pro_index": 0.9646,
+   "soloq_index": 0.9302,
+   "pro_index": 0.9731,
    "metrics": {
     "lane_trade_l6": 635.5053,
     "duel_ttk_l9": 7.2,
     "mana_casts_to_oom": 5.3083,
-    "late_dps_l16": 445.5211,
-    "siege_score": 534.6254,
+    "late_dps_l16": 456.9017,
+    "siege_score": 548.2821,
     "utility_cc_per_10s": 0.6917,
-    "scaling_ratio": 3.287
+    "scaling_ratio": 3.1859
    },
    "presence": 33.0,
    "pro_patch": "26.18",
@@ -432,16 +432,16 @@
   {
    "champion": "Kalista",
    "patch": "26.20",
-   "soloq_index": 0.9338,
-   "pro_index": 0.9646,
+   "soloq_index": 0.9302,
+   "pro_index": 0.9731,
    "metrics": {
     "lane_trade_l6": 635.5053,
     "duel_ttk_l9": 7.2,
     "mana_casts_to_oom": 5.3083,
-    "late_dps_l16": 445.5211,
-    "siege_score": 534.6254,
+    "late_dps_l16": 456.9017,
+    "siege_score": 548.2821,
     "utility_cc_per_10s": 0.6917,
-    "scaling_ratio": 3.287
+    "scaling_ratio": 3.1859
    },
    "presence": 22.0,
    "pro_patch": "26.20",
@@ -471,16 +471,16 @@
   {
    "champion": "Kalista",
    "patch": "26.21",
-   "soloq_index": 0.9326,
-   "pro_index": 0.9658,
+   "soloq_index": 0.9289,
+   "pro_index": 0.9743,
    "metrics": {
     "lane_trade_l6": 635.5053,
     "duel_ttk_l9": 7.2,
     "mana_casts_to_oom": 5.3083,
-    "late_dps_l16": 445.5211,
-    "siege_score": 534.6254,
+    "late_dps_l16": 456.9017,
+    "siege_score": 548.2821,
     "utility_cc_per_10s": 0.6917,
-    "scaling_ratio": 3.287
+    "scaling_ratio": 3.1859
    },
    "presence": 22.0,
    "pro_patch": "26.20",
@@ -510,16 +510,16 @@
   {
    "champion": "Kalista",
    "patch": "26.22",
-   "soloq_index": 0.9326,
-   "pro_index": 0.9658,
+   "soloq_index": 0.9289,
+   "pro_index": 0.9743,
    "metrics": {
     "lane_trade_l6": 635.5053,
     "duel_ttk_l9": 7.2,
     "mana_casts_to_oom": 5.3083,
-    "late_dps_l16": 445.5211,
-    "siege_score": 534.6254,
+    "late_dps_l16": 456.9017,
+    "siege_score": 548.2821,
     "utility_cc_per_10s": 0.6917,
-    "scaling_ratio": 3.287
+    "scaling_ratio": 3.1859
    },
    "presence": 22.0,
    "pro_patch": "26.20",
@@ -549,8 +549,8 @@
   {
    "champion": "Garen",
    "patch": "26.16",
-   "soloq_index": 1.0381,
-   "pro_index": 1.0727,
+   "soloq_index": 1.0333,
+   "pro_index": 1.0767,
    "metrics": {
     "lane_trade_l6": 361.7622,
     "duel_ttk_l9": 5.4,
@@ -588,8 +588,8 @@
   {
    "champion": "Garen",
    "patch": "26.17",
-   "soloq_index": 1.0373,
-   "pro_index": 1.0723,
+   "soloq_index": 1.0325,
+   "pro_index": 1.0765,
    "metrics": {
     "lane_trade_l6": 361.7622,
     "duel_ttk_l9": 5.4,
@@ -627,8 +627,8 @@
   {
    "champion": "Garen",
    "patch": "26.18",
-   "soloq_index": 1.0369,
-   "pro_index": 1.0704,
+   "soloq_index": 1.0321,
+   "pro_index": 1.0746,
    "metrics": {
     "lane_trade_l6": 361.7622,
     "duel_ttk_l9": 5.4,
@@ -666,8 +666,8 @@
   {
    "champion": "Garen",
    "patch": "26.19",
-   "soloq_index": 1.0369,
-   "pro_index": 1.0704,
+   "soloq_index": 1.0321,
+   "pro_index": 1.0746,
    "metrics": {
     "lane_trade_l6": 361.7622,
     "duel_ttk_l9": 5.4,
@@ -705,8 +705,8 @@
   {
    "champion": "Garen",
    "patch": "26.20",
-   "soloq_index": 1.0369,
-   "pro_index": 1.0704,
+   "soloq_index": 1.0321,
+   "pro_index": 1.0746,
    "metrics": {
     "lane_trade_l6": 361.7622,
     "duel_ttk_l9": 5.4,
@@ -744,8 +744,8 @@
   {
    "champion": "Garen",
    "patch": "26.21",
-   "soloq_index": 1.0331,
-   "pro_index": 1.0712,
+   "soloq_index": 1.0283,
+   "pro_index": 1.0752,
    "metrics": {
     "lane_trade_l6": 361.7622,
     "duel_ttk_l9": 5.4,
@@ -783,8 +783,8 @@
   {
    "champion": "Garen",
    "patch": "26.22",
-   "soloq_index": 1.0331,
-   "pro_index": 1.0712,
+   "soloq_index": 1.0283,
+   "pro_index": 1.0752,
    "metrics": {
     "lane_trade_l6": 361.7622,
     "duel_ttk_l9": 5.4,
@@ -822,11 +822,11 @@
   {
    "champion": "Viego",
    "patch": "26.16",
-   "soloq_index": 1.0645,
-   "pro_index": 1.0115,
+   "soloq_index": 1.0648,
+   "pro_index": 1.0134,
    "metrics": {
     "lane_trade_l6": 469.0161,
-    "duel_ttk_l9": 6.1,
+    "duel_ttk_l9": 6.02,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 448.2193,
     "siege_score": 403.3974,
@@ -861,11 +861,11 @@
   {
    "champion": "Viego",
    "patch": "26.17",
-   "soloq_index": 1.0635,
-   "pro_index": 1.011,
+   "soloq_index": 1.0638,
+   "pro_index": 1.0131,
    "metrics": {
     "lane_trade_l6": 469.0161,
-    "duel_ttk_l9": 6.1,
+    "duel_ttk_l9": 6.02,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 448.2193,
     "siege_score": 403.3974,
@@ -900,11 +900,11 @@
   {
    "champion": "Viego",
    "patch": "26.18",
-   "soloq_index": 1.0663,
-   "pro_index": 1.0221,
+   "soloq_index": 1.0666,
+   "pro_index": 1.0241,
    "metrics": {
     "lane_trade_l6": 474.0043,
-    "duel_ttk_l9": 6.1,
+    "duel_ttk_l9": 6.02,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 458.2585,
     "siege_score": 412.4327,
@@ -939,11 +939,11 @@
   {
    "champion": "Viego",
    "patch": "26.19",
-   "soloq_index": 1.0663,
-   "pro_index": 1.0221,
+   "soloq_index": 1.0666,
+   "pro_index": 1.0241,
    "metrics": {
     "lane_trade_l6": 474.0043,
-    "duel_ttk_l9": 6.1,
+    "duel_ttk_l9": 6.02,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 458.2585,
     "siege_score": 412.4327,
@@ -978,11 +978,11 @@
   {
    "champion": "Viego",
    "patch": "26.20",
-   "soloq_index": 1.0663,
-   "pro_index": 1.0221,
+   "soloq_index": 1.0666,
+   "pro_index": 1.0241,
    "metrics": {
     "lane_trade_l6": 474.0043,
-    "duel_ttk_l9": 6.1,
+    "duel_ttk_l9": 6.02,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 458.2585,
     "siege_score": 412.4327,
@@ -1017,11 +1017,11 @@
   {
    "champion": "Viego",
    "patch": "26.21",
-   "soloq_index": 1.0627,
-   "pro_index": 1.0232,
+   "soloq_index": 1.063,
+   "pro_index": 1.025,
    "metrics": {
     "lane_trade_l6": 474.0043,
-    "duel_ttk_l9": 6.1,
+    "duel_ttk_l9": 6.02,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 458.2585,
     "siege_score": 412.4327,
@@ -1056,11 +1056,11 @@
   {
    "champion": "Viego",
    "patch": "26.22",
-   "soloq_index": 1.0627,
-   "pro_index": 1.0232,
+   "soloq_index": 1.063,
+   "pro_index": 1.025,
    "metrics": {
     "lane_trade_l6": 474.0043,
-    "duel_ttk_l9": 6.1,
+    "duel_ttk_l9": 6.02,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 458.2585,
     "siege_score": 412.4327,
@@ -1095,16 +1095,16 @@
   {
    "champion": "Qiyana",
    "patch": "26.16",
-   "soloq_index": 0.868,
-   "pro_index": 0.7399,
+   "soloq_index": 0.8713,
+   "pro_index": 0.7219,
    "metrics": {
     "lane_trade_l6": 461.9811,
-    "duel_ttk_l9": 9.2,
+    "duel_ttk_l9": 8.96,
     "mana_casts_to_oom": 8.16,
     "late_dps_l16": 393.7373,
     "siege_score": 433.111,
     "utility_cc_per_10s": 0.125,
-    "scaling_ratio": 2.9155
+    "scaling_ratio": 2.6716
    },
    "presence": 11.0,
    "pro_patch": "26.16",
@@ -1134,16 +1134,16 @@
   {
    "champion": "Qiyana",
    "patch": "26.17",
-   "soloq_index": 0.8735,
-   "pro_index": 0.7425,
+   "soloq_index": 0.8768,
+   "pro_index": 0.7235,
    "metrics": {
     "lane_trade_l6": 471.7243,
-    "duel_ttk_l9": 9.2,
+    "duel_ttk_l9": 8.96,
     "mana_casts_to_oom": 8.16,
     "late_dps_l16": 396.295,
     "siege_score": 435.9245,
     "utility_cc_per_10s": 0.125,
-    "scaling_ratio": 2.9152
+    "scaling_ratio": 2.6569
    },
    "presence": 18.0,
    "pro_patch": "26.17",
@@ -1173,16 +1173,16 @@
   {
    "champion": "Qiyana",
    "patch": "26.18",
-   "soloq_index": 0.873,
-   "pro_index": 0.7404,
+   "soloq_index": 0.8763,
+   "pro_index": 0.7214,
    "metrics": {
     "lane_trade_l6": 471.7243,
-    "duel_ttk_l9": 9.2,
+    "duel_ttk_l9": 8.96,
     "mana_casts_to_oom": 8.16,
     "late_dps_l16": 396.295,
     "siege_score": 435.9245,
     "utility_cc_per_10s": 0.125,
-    "scaling_ratio": 2.9152
+    "scaling_ratio": 2.6569
    },
    "presence": 61.0,
    "pro_patch": "26.18",
@@ -1212,16 +1212,16 @@
   {
    "champion": "Qiyana",
    "patch": "26.19",
-   "soloq_index": 0.873,
-   "pro_index": 0.7404,
+   "soloq_index": 0.8763,
+   "pro_index": 0.7214,
    "metrics": {
     "lane_trade_l6": 471.7243,
-    "duel_ttk_l9": 9.2,
+    "duel_ttk_l9": 8.96,
     "mana_casts_to_oom": 8.16,
     "late_dps_l16": 396.295,
     "siege_score": 435.9245,
     "utility_cc_per_10s": 0.125,
-    "scaling_ratio": 2.9152
+    "scaling_ratio": 2.6569
    },
    "presence": 61.0,
    "pro_patch": "26.18",
@@ -1251,16 +1251,16 @@
   {
    "champion": "Qiyana",
    "patch": "26.20",
-   "soloq_index": 0.873,
-   "pro_index": 0.7404,
+   "soloq_index": 0.8763,
+   "pro_index": 0.7214,
    "metrics": {
     "lane_trade_l6": 471.7243,
-    "duel_ttk_l9": 9.2,
+    "duel_ttk_l9": 8.96,
     "mana_casts_to_oom": 8.16,
     "late_dps_l16": 396.295,
     "siege_score": 435.9245,
     "utility_cc_per_10s": 0.125,
-    "scaling_ratio": 2.9152
+    "scaling_ratio": 2.6569
    },
    "presence": 57.0,
    "pro_patch": "26.20",
@@ -1290,16 +1290,16 @@
   {
    "champion": "Qiyana",
    "patch": "26.21",
-   "soloq_index": 0.8651,
-   "pro_index": 0.7401,
+   "soloq_index": 0.8684,
+   "pro_index": 0.7219,
    "metrics": {
     "lane_trade_l6": 464.0826,
-    "duel_ttk_l9": 9.2,
+    "duel_ttk_l9": 8.96,
     "mana_casts_to_oom": 8.16,
     "late_dps_l16": 394.854,
     "siege_score": 434.3394,
     "utility_cc_per_10s": 0.125,
-    "scaling_ratio": 2.9196
+    "scaling_ratio": 2.6722
    },
    "presence": 57.0,
    "pro_patch": "26.20",
@@ -1329,16 +1329,16 @@
   {
    "champion": "Qiyana",
    "patch": "26.22",
-   "soloq_index": 0.8651,
-   "pro_index": 0.7401,
+   "soloq_index": 0.8684,
+   "pro_index": 0.7219,
    "metrics": {
     "lane_trade_l6": 464.0826,
-    "duel_ttk_l9": 9.2,
+    "duel_ttk_l9": 8.96,
     "mana_casts_to_oom": 8.16,
     "late_dps_l16": 394.854,
     "siege_score": 434.3394,
     "utility_cc_per_10s": 0.125,
-    "scaling_ratio": 2.9196
+    "scaling_ratio": 2.6722
    },
    "presence": 57.0,
    "pro_patch": "26.20",
@@ -1368,11 +1368,11 @@
   {
    "champion": "Lee Sin",
    "patch": "26.16",
-   "soloq_index": 1.1727,
-   "pro_index": 1.0265,
+   "soloq_index": 1.1738,
+   "pro_index": 1.0275,
    "metrics": {
     "lane_trade_l6": 662.4701,
-    "duel_ttk_l9": 6.5,
+    "duel_ttk_l9": 6.4,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 324.3507,
     "siege_score": 405.4383,
@@ -1407,11 +1407,11 @@
   {
    "champion": "Lee Sin",
    "patch": "26.17",
-   "soloq_index": 1.1712,
-   "pro_index": 1.0261,
+   "soloq_index": 1.1723,
+   "pro_index": 1.0272,
    "metrics": {
     "lane_trade_l6": 662.4701,
-    "duel_ttk_l9": 6.5,
+    "duel_ttk_l9": 6.4,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 324.3507,
     "siege_score": 405.4383,
@@ -1446,11 +1446,11 @@
   {
    "champion": "Lee Sin",
    "patch": "26.18",
-   "soloq_index": 1.1705,
-   "pro_index": 1.0243,
+   "soloq_index": 1.1716,
+   "pro_index": 1.0254,
    "metrics": {
     "lane_trade_l6": 662.4701,
-    "duel_ttk_l9": 6.5,
+    "duel_ttk_l9": 6.4,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 324.3507,
     "siege_score": 405.4383,
@@ -1485,11 +1485,11 @@
   {
    "champion": "Lee Sin",
    "patch": "26.19",
-   "soloq_index": 1.1705,
-   "pro_index": 1.0243,
+   "soloq_index": 1.1716,
+   "pro_index": 1.0254,
    "metrics": {
     "lane_trade_l6": 662.4701,
-    "duel_ttk_l9": 6.5,
+    "duel_ttk_l9": 6.4,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 324.3507,
     "siege_score": 405.4383,
@@ -1524,11 +1524,11 @@
   {
    "champion": "Lee Sin",
    "patch": "26.20",
-   "soloq_index": 1.1705,
-   "pro_index": 1.0243,
+   "soloq_index": 1.1716,
+   "pro_index": 1.0254,
    "metrics": {
     "lane_trade_l6": 662.4701,
-    "duel_ttk_l9": 6.5,
+    "duel_ttk_l9": 6.4,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 324.3507,
     "siege_score": 405.4383,
@@ -1563,11 +1563,11 @@
   {
    "champion": "Lee Sin",
    "patch": "26.21",
-   "soloq_index": 1.1672,
-   "pro_index": 1.0202,
+   "soloq_index": 1.1683,
+   "pro_index": 1.0212,
    "metrics": {
     "lane_trade_l6": 662.4701,
-    "duel_ttk_l9": 6.5,
+    "duel_ttk_l9": 6.4,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 320.6518,
     "siege_score": 400.8147,
@@ -1602,11 +1602,11 @@
   {
    "champion": "Lee Sin",
    "patch": "26.22",
-   "soloq_index": 1.1672,
-   "pro_index": 1.0202,
+   "soloq_index": 1.1683,
+   "pro_index": 1.0212,
    "metrics": {
     "lane_trade_l6": 662.4701,
-    "duel_ttk_l9": 6.5,
+    "duel_ttk_l9": 6.4,
     "mana_casts_to_oom": 10.0,
     "late_dps_l16": 320.6518,
     "siege_score": 400.8147,
@@ -1641,15 +1641,15 @@
  ],
  "calibration": {
   "all": {
-   "pro_index_vs_presence": -0.6188690688947719,
-   "soloq_index_vs_wr_global": -0.025152146044039567,
-   "soloq_index_vs_wr_kr": -0.3744424322362665,
+   "pro_index_vs_presence": -0.6329217138089729,
+   "soloq_index_vs_wr_global": -0.14880334143473734,
+   "soloq_index_vs_wr_kr": -0.47415852090763616,
    "n": 42
   },
   "train": {
-   "pro_index_vs_presence": -0.5199744119006647,
-   "soloq_index_vs_wr_global": -0.03657742206546531,
-   "soloq_index_vs_wr_kr": -0.3030041765819694,
+   "pro_index_vs_presence": -0.5383110410357008,
+   "soloq_index_vs_wr_global": -0.26562175547540284,
+   "soloq_index_vs_wr_kr": -0.4745324029803831,
    "n": 24
   }
  },
@@ -1667,7 +1667,7 @@
    ],
    "delta": {
     "soloq_index": 0.0031,
-    "pro_index": 0.0132
+    "pro_index": 0.013
    },
    "wr_before": {
     "global": 50.35,
@@ -1739,8 +1739,8 @@
     }
    ],
    "delta": {
-    "soloq_index": 0.0075,
-    "pro_index": 0.0042
+    "soloq_index": 0.0076,
+    "pro_index": 0.0026
    },
    "wr_before": {
     "global": 50.37,
@@ -1780,7 +1780,7 @@
    ],
    "delta": {
     "soloq_index": -0.0058,
-    "pro_index": -0.0019
+    "pro_index": -0.0006
    },
    "wr_before": {
     "global": 51.49,

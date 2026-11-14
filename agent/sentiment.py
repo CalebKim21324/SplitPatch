@@ -26,7 +26,7 @@ For each post, decide whether it complains that the champion is too weak or too 
 specific way, using only these tags: mana, survivability, damage, cooldown, range, cc, mobility,
 too_strong. direction is "buff" if the post wants the champion stronger, "nerf" if weaker.
 Posts that are memes, questions, art, builds or off-topic are not complaints.
-Group by (tag, direction). count = number of posts in that group. example_ids = up to 5 post ids.
+Group by (tag, direction). The too_strong tag always has direction "nerf". count = number of posts in that group. example_ids = up to 5 post ids.
 n_posts = the total number of posts you were given."""
 
 SCHEMA = {
@@ -77,6 +77,14 @@ def extract(champ: str, patch: str, extra: list[dict] | None = None, save: bool 
     for c in data["complaints"]:
         c["example_ids"] = [i for i in c["example_ids"] if i in ids][:5]  # no invented ids
         c["count"] = min(c["count"], len(posts))
+        if c["tag"] == "too_strong":
+            c["direction"] = "nerf"  # "too strong" can only mean the post wants a nerf
+    merged: dict = {}
+    for c in data["complaints"]:  # re-merge groups that collapsed onto the same (tag, direction)
+        m = merged.setdefault((c["tag"], c["direction"]), {**c, "count": 0, "example_ids": []})
+        m["count"] = min(m["count"] + c["count"], len(posts))
+        m["example_ids"] = (m["example_ids"] + c["example_ids"])[:5]
+    data["complaints"] = list(merged.values())
     out = Complaints.model_validate(data)  # rejects anything off-schema
     if save:
         complaints_path(champ, patch).write_text(out.model_dump_json(indent=1), encoding="utf-8")

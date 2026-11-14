@@ -1,0 +1,21 @@
+{
+ "complaints": [
+  {
+   "tag": "damage",
+   "direction": "buff",
+   "count": 1,
+   "example_ids": [
+    "t3_1xthu9m"
+   ]
+  },
+  {
+   "tag": "mobility",
+   "direction": "buff",
+   "count": 1,
+   "example_ids": [
+    "t3_1xthu9m"
+   ]
+  }
+ ],
+ "n_posts": 25
+}

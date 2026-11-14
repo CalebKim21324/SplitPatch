@@ -1,0 +1,15 @@
+champion: Garen
+patch: '26.22'
+category: SOLOQ_ONLY_STRONG
+changes:
+- field: base.ad
+  from: 69.0
+  to: 65.0
+rationale: 'Garen is overperforming in solo queue (52.8% global WR, 6.2% pick rate)
+  while having zero pro presence, so the target is his early/mid lane power and not
+  his late-game teamfight role. There were no community complaints to steer the lever,
+  so we chose the simplest, most legible one: base AD 69 -> 65. This weakens his level
+  1-6 trades and his Q/E damage in lane (lane trade at L6 -361.8 -> 348.4), but it
+  is a flat value that becomes a much smaller share of his damage once items come
+  in. Sim: soloq_index -0.88% (target -3% to -0.5%), pro_index -0.03% (target >= -0.5%),
+  so pro play is effectively untouched.'

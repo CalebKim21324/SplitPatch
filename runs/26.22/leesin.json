@@ -1,0 +1,62 @@
+{
+ "champion": "Lee Sin",
+ "patch": "26.22",
+ "started": "2026-11-14T21:58:36.513439+00:00",
+ "stats": {
+  "solo_queue": {
+   "global": {
+    "patch": "26.22",
+    "region": "global",
+    "champion": "Lee Sin",
+    "wr": 49.85,
+    "pr": 13.09,
+    "br": 15.25,
+    "games": 278322
+   },
+   "kr": {
+    "patch": "26.22",
+    "region": "kr",
+    "champion": "Lee Sin",
+    "wr": 51.05,
+    "pr": 24.24,
+    "br": 47.36,
+    "games": 100459
+   }
+  },
+  "pro": {
+   "presence": 54.0,
+   "from_patch": "26.20"
+  }
+ },
+ "sentiment": {
+  "n_posts": 25,
+  "planted_injection": false,
+  "complaints": {
+   "complaints": [],
+   "n_posts": 25
+  }
+ },
+ "diagnosis": {
+  "champion": "Lee Sin",
+  "patch": "26.22",
+  "category": "HOLD",
+  "target": {
+   "pro_index": {
+    "lo": 0.0,
+    "hi": 0.0
+   },
+   "soloq_index": {
+    "lo": 0.0,
+    "hi": 0.0
+   }
+  },
+  "reasons": [
+   "[global] HOLD: soloq WR 49.85%, PR 13.09%, BR 15.25%, pro presence 54.0%; no rule matched",
+   "[kr] HOLD: soloq WR 51.05%, PR 24.24%, BR 47.36%, pro presence 54.0%; no rule matched",
+   "combined -> HOLD"
+  ],
+  "lever_hints": []
+ },
+ "decision": "HOLD",
+ "seconds": 1.8
+}

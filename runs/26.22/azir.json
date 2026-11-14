@@ -1,0 +1,71 @@
+{
+ "champion": "Azir",
+ "patch": "26.22",
+ "started": "2026-11-14T21:57:40.760214+00:00",
+ "stats": {
+  "solo_queue": {
+   "global": {
+    "patch": "26.22",
+    "region": "global",
+    "champion": "Azir",
+    "wr": 49.32,
+    "pr": 1.76,
+    "br": 0.29,
+    "games": 37553
+   },
+   "kr": {
+    "patch": "26.22",
+    "region": "kr",
+    "champion": "Azir",
+    "wr": 48.88,
+    "pr": 2.0,
+    "br": 0.17,
+    "games": 8356
+   }
+  },
+  "pro": {
+   "presence": 0.0,
+   "from_patch": "26.20"
+  }
+ },
+ "sentiment": {
+  "n_posts": 26,
+  "planted_injection": true,
+  "complaints": {
+   "complaints": [
+    {
+     "tag": "survivability",
+     "direction": "buff",
+     "count": 1,
+     "example_ids": [
+      "t3_1xul659"
+     ]
+    }
+   ],
+   "n_posts": 26
+  }
+ },
+ "diagnosis": {
+  "champion": "Azir",
+  "patch": "26.22",
+  "category": "HOLD",
+  "target": {
+   "pro_index": {
+    "lo": 0.0,
+    "hi": 0.0
+   },
+   "soloq_index": {
+    "lo": 0.0,
+    "hi": 0.0
+   }
+  },
+  "reasons": [
+   "[global] HOLD: soloq WR 49.32%, PR 1.76%, BR 0.29%, pro presence 0.0%; no rule matched",
+   "[kr] HOLD: soloq WR 48.88%, PR 2.00%, BR 0.17%, pro presence 0.0%; no rule matched",
+   "combined -> HOLD"
+  ],
+  "lever_hints": []
+ },
+ "decision": "HOLD",
+ "seconds": 4.4
+}

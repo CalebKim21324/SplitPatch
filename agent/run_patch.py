@@ -73,11 +73,14 @@ def run_champion(champ: str, patch: str, use_llm: bool, plant: bool, before: dic
         trace["decision"] = f"{diag.category.value} (patch agent not run: --no-llm)"
         return trace
 
-    # 3. patch agent + verifier
+    # 3. patch agent + verifier. The integrity snapshot is taken here, after the pipeline's own
+    # writes (complaints JSON), so it covers exactly the agent's session.
     kit = kits.load_kit(champ, patch)
+    before = integrity.digest()
     session = Session(kit, diag, summary, before)
     trace["agent_log"] = []
     result = patcher.run(session, trace["agent_log"])
+    trace["integrity_changed"] = integrity.changed(before)
     trace["agent"] = {k: v for k, v in result.items() if k != "submissions"}
     trace["submissions"] = result["submissions"]
     if result["outcome"] != "PASS":
@@ -93,6 +96,24 @@ def run_champion(champ: str, patch: str, use_llm: bool, plant: bool, before: dic
     trace["decision"] = f"{diag.category.value}: verified patch"
     trace["seconds"] = round(time.time() - t0, 1)
     return trace
+
+
+def _show(field: str, v) -> str:
+    from notes.templates import PCT_FIELDS
+    vals = v if isinstance(v, list) else [v]
+    if len(set(vals)) == 1:
+        vals = vals[:1]
+    fmt = (lambda x: f"{x * 100:g}%") if field in PCT_FIELDS else (lambda x: f"{x:g}")
+    return "/".join(fmt(x) for x in vals)
+
+
+def _why(t: dict) -> str:
+    s = t.get("stats")
+    if not s:
+        return ""
+    parts = [f"{'KR' if g == 'kr' else 'Global'} {r['wr']:.2f}% WR at {r['pr']:.2f}% pick"
+             for g, r in s["solo_queue"].items()]
+    return "; ".join(parts) + f"; pro presence {s['pro']['presence']:.0f}% ({s['pro']['from_patch']}). Inside every band."
 
 
 def render_markdown(patch: str, traces: list[dict]) -> str:
@@ -115,14 +136,13 @@ def render_markdown(patch: str, traces: list[dict]) -> str:
         for tip in n["tooltips"]:
             text = tip["text"]
             for k, v in tip["values"].items():
-                show = "/".join(f"{x:g}" for x in v) if isinstance(v, list) else f"{v:g}"
-                text = text.replace("{" + k + "}", show)
+                text = text.replace("{" + k + "}", _show(k, v))
             out += ["", f"> **Updated tooltip, {tip['ability']}:** {text}"]
         if t["notes"]["flag_for_human"]:
             out.append("\n_Notes fell back to structured lines; flagged for designer review._")
     out += ["", "## No change this patch", ""]
     for t in held:
-        out.append(f"- **{t['champion']}**: {t['decision']}. {t['diagnosis']['reasons'][-1]}")
+        out.append(f"- **{t['champion']}**: {t['decision']}. {_why(t)}")
     return "\n".join(out) + "\n"
 
 
@@ -132,7 +152,14 @@ def main() -> int:
     ap.add_argument("--champions", nargs="*", default=kits.CHAMPIONS)
     ap.add_argument("--no-llm", action="store_true")
     ap.add_argument("--plant-injection", action="store_true")
+    ap.add_argument("--render-only", action="store_true", help="re-render patch_notes.md from summary.json")
     a = ap.parse_args()
+    if a.render_only:
+        out = ROOT / "proposals" / a.patch
+        traces = json.loads((out / "summary.json").read_text(encoding="utf-8"))["traces"]
+        (out / "patch_notes.md").write_text(render_markdown(a.patch, traces), encoding="utf-8")
+        print(f"wrote {out / 'patch_notes.md'}")
+        return 0
 
     before = integrity.digest()
     run_dir = ROOT / "runs" / a.patch
@@ -140,12 +167,17 @@ def main() -> int:
     traces = []
     for champ in a.champions:
         print(f"== {champ}", flush=True)
-        trace = run_champion(champ, a.patch, not a.no_llm, a.plant_injection, before)
+        try:
+            trace = run_champion(champ, a.patch, not a.no_llm, a.plant_injection, before)
+        except Exception as e:  # one champion failing shouldn't sink the patch
+            trace = {"champion": champ, "patch": a.patch, "decision": f"ERROR: {type(e).__name__}: {e}",
+                     "diagnosis": {"category": "HOLD", "reasons": ["run failed"], "lever_hints": []},
+                     "sentiment": {"n_posts": 0, "planted_injection": False, "complaints": None}}
         (run_dir / f"{kits.slug(champ)}.json").write_text(json.dumps(trace, indent=1, default=float), encoding="utf-8")
         print(f"   {trace['decision']}", flush=True)
         traces.append(trace)
 
-    tampered = integrity.changed(before)
+    tampered = sorted({f for t in traces for f in t.get("integrity_changed", [])})
     out = ROOT / "proposals" / a.patch
     out.mkdir(parents=True, exist_ok=True)
     (out / "summary.json").write_text(json.dumps({"patch": a.patch, "integrity_changed": tampered,

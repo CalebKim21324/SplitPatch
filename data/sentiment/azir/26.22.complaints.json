@@ -1,0 +1,13 @@
+{
+ "complaints": [
+  {
+   "tag": "survivability",
+   "direction": "buff",
+   "count": 1,
+   "example_ids": [
+    "t3_1xul659"
+   ]
+  }
+ ],
+ "n_posts": 26
+}

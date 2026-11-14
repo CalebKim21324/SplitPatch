@@ -52,7 +52,9 @@ def create(*, system: str, messages: list, effort: str = "medium", max_tokens: i
         kwargs["tools"] = tools
     if output_schema:
         kwargs["output_config"]["format"] = {"type": "json_schema", "schema": output_schema}
-    resp = client().beta.messages.create(**kwargs)
+    # Stream so long agent turns never hit the SDK's non-streaming timeout guard.
+    with client().beta.messages.stream(**kwargs) as stream:
+        resp = stream.get_final_message()
     if resp.stop_reason == "refusal":
         cat = resp.stop_details.category if resp.stop_details else None
         raise LLMError(f"model declined (category: {cat})")

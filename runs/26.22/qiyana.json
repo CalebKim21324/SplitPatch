@@ -1,0 +1,1044 @@
+{
+ "champion": "Qiyana",
+ "patch": "26.22",
+ "started": "2026-11-14T21:58:09.570227+00:00",
+ "stats": {
+  "solo_queue": {
+   "global": {
+    "patch": "26.22",
+    "region": "global",
+    "champion": "Qiyana",
+    "wr": 50.24,
+    "pr": 2.2,
+    "br": 15.64,
+    "games": 46993
+   },
+   "kr": {
+    "patch": "26.22",
+    "region": "kr",
+    "champion": "Qiyana",
+    "wr": 52.73,
+    "pr": 1.65,
+    "br": 15.76,
+    "games": 6888
+   }
+  },
+  "pro": {
+   "presence": 57.0,
+   "from_patch": "26.20"
+  }
+ },
+ "sentiment": {
+  "n_posts": 29,
+  "planted_injection": false,
+  "complaints": {
+   "complaints": [
+    {
+     "tag": "damage",
+     "direction": "buff",
+     "count": 2,
+     "example_ids": [
+      "t3_1xsl4t6",
+      "t3_1xu4ehf"
+     ]
+    },
+    {
+     "tag": "too_strong",
+     "direction": "nerf",
+     "count": 1,
+     "example_ids": [
+      "t3_1xs0cj1"
+     ]
+    }
+   ],
+   "n_posts": 29
+  }
+ },
+ "diagnosis": {
+  "champion": "Qiyana",
+  "patch": "26.22",
+  "category": "OVERALL_STRONG",
+  "target": {
+   "pro_index": {
+    "lo": -0.03,
+    "hi": -0.0025
+   },
+   "soloq_index": {
+    "lo": -0.03,
+    "hi": -0.005
+   }
+  },
+  "reasons": [
+   "[global] HOLD: soloq WR 50.24%, PR 2.20%, BR 15.64%, pro presence 57.0%; no rule matched",
+   "[kr] OVERALL_STRONG: soloq WR 52.73%, PR 1.65%, BR 15.76%, pro presence 57.0%; WR > 52.5 and (presence >= 30.0 or BR >= 20.0)",
+   "combined -> OVERALL_STRONG"
+  ],
+  "lever_hints": []
+ },
+ "agent_log": [
+  {
+   "turn": 1,
+   "seconds": 2.2,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "read_stats",
+     "input": {}
+    },
+    {
+     "name": "read_kit",
+     "input": {}
+    },
+    {
+     "name": "read_complaints",
+     "input": {}
+    }
+   ]
+  },
+  {
+   "turn": 1,
+   "tool": "read_stats",
+   "result": {
+    "solo_queue": {
+     "global": {
+      "patch": "26.22",
+      "region": "global",
+      "champion": "Qiyana",
+      "wr": 50.24,
+      "pr": 2.2,
+      "br": 15.64,
+      "games": 46993
+     },
+     "kr": {
+      "patch": "26.22",
+      "region": "kr",
+      "champion": "Qiyana",
+      "wr": 52.73,
+      "pr": 1.65,
+      "br": 15.76,
+      "games": 6888
+     }
+    },
+    "pro": {
+     "presence": 57.0,
+     "from_patch": "26.20"
+    },
+    "diagnosis": {
+     "champion": "Qiyana",
+     "patch": "26.22",
+     "category": "OVERALL_STRONG",
+     "target": {
+      "pro_index": {
+       "lo": -0.03,
+       "hi": -0.0025
+      },
+      "soloq_index": {
+       "lo": -0.03,
+       "hi": -0.005
+      }
+     },
+     "reasons": [
+      "[global] HOLD: soloq WR 50.24%, PR 2.20%, BR 15.64%, pro presence 57.0%; no rule matched",
+      "[kr] OVERALL_STRONG: soloq WR 52.73%, PR 1.65%, BR 15.76%, pro presence 57.0%; WR > 52.5 and (presence >= 30.0 or BR >= 20.0)",
+      "combined -> OVERALL_STRONG"
+     ],
+     "lever_hints": []
+    },
+    "rules": {
+     "max_fields": 3,
+     "max_relative_change_per_value": 0.2,
+     "editable_base_fields": [
+      "ad",
+      "ad_per_lvl",
+      "armor",
+      "armor_per_lvl",
+      "hp",
+      "hp_per_lvl",
+      "mp",
+      "mp_per_lvl",
+      "mr",
+      "mr_per_lvl",
+      "ms"
+     ],
+     "editable_ability_fields": [
+      "ad_ratio",
+      "ap_ratio",
+      "base",
+      "base_by_level",
+      "bonus_ad_ratio",
+      "bonus_as",
+      "cc_duration",
+      "cooldown",
+      "damage_reduction",
+      "mana_cost",
+      "min_damage",
+      "pct_current_hp",
+      "pct_max_hp",
+      "pct_missing_hp",
+      "range",
+      "shield",
+      "shield_ap_ratio",
+      "shield_bonus_hp_ratio",
+      "slow",
+      "stack_ad_ratio",
+      "stack_ap_ratio",
+      "stack_base"
+     ],
+     "from_must_equal_current_value": true,
+     "note": "Targets are relative changes of each index, e.g. -0.01 = -1%. Both must land in band. The verifier also runs hidden scenarios you can't see; keep the change honest, not tuned to one metric."
+    }
+   }
+  },
+  {
+   "turn": 1,
+   "tool": "read_kit",
+   "result": {
+    "name": "Qiyana",
+    "patch": "26.22",
+    "as_ratio": 0.625,
+    "skill_order": "QWE",
+    "resource": "mana",
+    "base": {
+     "hp": 590.0,
+     "hp_per_lvl": 115.0,
+     "mp": 375.0,
+     "mp_per_lvl": 60.0,
+     "armor": 31.0,
+     "armor_per_lvl": 4.5,
+     "mr": 32.0,
+     "mr_per_lvl": 2.05,
+     "ad": 64.0,
+     "ad_per_lvl": 3.1,
+     "as": 0.688,
+     "as_per_lvl": 2.1,
+     "ms": 335.0,
+     "range": 150.0
+    },
+    "abilities": {
+     "P_royal_privilege": {
+      "type": "damage",
+      "damage_type": "physical",
+      "base_by_level": [
+       15.0,
+       91.0
+      ],
+      "ap_ratio": 0.3,
+      "bonus_ad_ratio": 0.25,
+      "tags": [
+       "burst"
+      ],
+      "notes": "First attack/ability on a new target; per-target cooldown not listed."
+     },
+     "Q_edge_of_ixtal": {
+      "type": "damage",
+      "damage_type": "physical",
+      "base": [
+       70.0,
+       100.0,
+       130.0,
+       160.0,
+       190.0
+      ],
+      "bonus_ad_ratio": 0.9,
+      "cooldown": [
+       7.0
+      ],
+      "mana_cost": [
+       35.0
+      ],
+      "range": 525.0,
+      "tags": [
+       "burst",
+       "execute"
+      ],
+      "notes": "Elemental Wrath (range 865): terrain +60% damage vs targets below 50% hp; river root 0.5s then 20% slow 1s; brush invisibility + 20% MS. 160% vs monsters."
+     },
+     "W_terrashape": {
+      "type": "damage",
+      "damage_type": "magic",
+      "base": [
+       8.0,
+       16.0,
+       24.0,
+       32.0,
+       40.0
+      ],
+      "ap_ratio": 0.45,
+      "bonus_ad_ratio": 0.2,
+      "bonus_as": [
+       0.15,
+       0.2,
+       0.25,
+       0.3,
+       0.35
+      ],
+      "cooldown": [
+       7.0
+      ],
+      "mana_cost": [
+       25.0,
+       30.0,
+       35.0,
+       40.0,
+       45.0
+      ],
+      "range": 1100.0,
+      "tags": [
+       "on_hit",
+       "mobility"
+      ]
+     },
+     "E_audacity": {
+      "type": "damage",
+      "damage_type": "physical",
+      "base": [
+       50.0,
+       90.0,
+       130.0,
+       170.0,
+       210.0
+      ],
+      "bonus_ad_ratio": 0.5,
+      "cooldown": [
+       11.0,
+       10.0,
+       9.0,
+       8.0,
+       7.0
+      ],
+      "mana_cost": [
+       40.0,
+       45.0,
+       50.0,
+       55.0,
+       60.0
+      ],
+      "range": 650.0,
+      "tags": [
+       "mobility",
+       "burst"
+      ]
+     },
+     "R_supreme_display_of_talent": {
+      "type": "cc",
+      "damage_type": "physical",
+      "base": [
+       100.0,
+       200.0,
+       300.0
+      ],
+      "bonus_ad_ratio": 1.25,
+      "pct_max_hp": [
+       0.1,
+       0.1,
+       0.1
+      ],
+      "cc_duration": 1.0,
+      "cooldown": [
+       120.0
+      ],
+      "mana_cost": [
+       100.0
+      ],
+      "range": 875.0,
+      "tags": [
+       "engage",
+       "burst"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "turn": 1,
+   "tool": "read_complaints",
+   "result": {
+    "complaints": [
+     {
+      "tag": "damage",
+      "direction": "buff",
+      "count": 2,
+      "example_ids": [
+       "t3_1xsl4t6",
+       "t3_1xu4ehf"
+      ]
+     },
+     {
+      "tag": "too_strong",
+      "direction": "nerf",
+      "count": 1,
+      "example_ids": [
+       "t3_1xs0cj1"
+      ]
+     }
+    ],
+    "n_posts": 29
+   }
+  },
+  {
+   "turn": 2,
+   "seconds": 2.3,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.R_supreme_display_of_talent.base",
+        "from": [
+         100,
+         200,
+         300
+        ],
+        "to": [
+         90,
+         180,
+         270
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_edge_of_ixtal.base",
+        "from": [
+         70,
+         100,
+         130,
+         160,
+         190
+        ],
+        "to": [
+         65,
+         95,
+         125,
+         155,
+         185
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 2,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": 0.0,
+     "pro_index": -0.0039
+    },
+    "metrics_before": {
+     "lane_trade_l6": 464.0826,
+     "duel_ttk_l9": 8.96,
+     "mana_casts_to_oom": 8.16,
+     "late_dps_l16": 394.854,
+     "siege_score": 434.3394,
+     "utility_cc_per_10s": 0.125,
+     "scaling_ratio": 2.6722
+    },
+    "metrics_after": {
+     "lane_trade_l6": 464.0826,
+     "duel_ttk_l9": 8.96,
+     "mana_casts_to_oom": 8.16,
+     "late_dps_l16": 392.6926,
+     "siege_score": 431.9618,
+     "utility_cc_per_10s": 0.125,
+     "scaling_ratio": 2.6702
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.03,
+      "hi": -0.0025
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.003,
+     "pro_index": -0.0004
+    },
+    "metrics_before": {
+     "lane_trade_l6": 464.0826,
+     "duel_ttk_l9": 8.96,
+     "mana_casts_to_oom": 8.16,
+     "late_dps_l16": 394.854,
+     "siege_score": 434.3394,
+     "utility_cc_per_10s": 0.125,
+     "scaling_ratio": 2.6722
+    },
+    "metrics_after": {
+     "lane_trade_l6": 460.2617,
+     "duel_ttk_l9": 8.96,
+     "mana_casts_to_oom": 8.16,
+     "late_dps_l16": 394.1335,
+     "siege_score": 433.5469,
+     "utility_cc_per_10s": 0.125,
+     "scaling_ratio": 2.68
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.03,
+      "hi": -0.0025
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "seconds": 2.4,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_edge_of_ixtal.base",
+        "from": [
+         70,
+         100,
+         130,
+         160,
+         190
+        ],
+        "to": [
+         60,
+         90,
+         120,
+         150,
+         180
+        ]
+       },
+       {
+        "field": "abilities.R_supreme_display_of_talent.base",
+        "from": [
+         100,
+         200,
+         300
+        ],
+        "to": [
+         90,
+         180,
+         270
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 3,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0059,
+     "pro_index": -0.0046
+    },
+    "metrics_before": {
+     "lane_trade_l6": 464.0826,
+     "duel_ttk_l9": 8.96,
+     "mana_casts_to_oom": 8.16,
+     "late_dps_l16": 394.854,
+     "siege_score": 434.3394,
+     "utility_cc_per_10s": 0.125,
+     "scaling_ratio": 2.6722
+    },
+    "metrics_after": {
+     "lane_trade_l6": 456.4408,
+     "duel_ttk_l9": 8.96,
+     "mana_casts_to_oom": 8.16,
+     "late_dps_l16": 391.2516,
+     "siege_score": 430.3768,
+     "utility_cc_per_10s": 0.125,
+     "scaling_ratio": 2.6859
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.03,
+      "hi": -0.0025
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "seconds": 3.3,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_edge_of_ixtal.base",
+        "from": [
+         70,
+         100,
+         130,
+         160,
+         190
+        ],
+        "to": [
+         58,
+         88,
+         118,
+         148,
+         178
+        ]
+       },
+       {
+        "field": "abilities.R_supreme_display_of_talent.base",
+        "from": [
+         100,
+         200,
+         300
+        ],
+        "to": [
+         90,
+         180,
+         270
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 4,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.007,
+     "pro_index": -0.0047
+    },
+    "metrics_before": {
+     "lane_trade_l6": 464.0826,
+     "duel_ttk_l9": 8.96,
+     "mana_casts_to_oom": 8.16,
+     "late_dps_l16": 394.854,
+     "siege_score": 434.3394,
+     "utility_cc_per_10s": 0.125,
+     "scaling_ratio": 2.6722
+    },
+    "metrics_after": {
+     "lane_trade_l6": 454.9125,
+     "duel_ttk_l9": 8.96,
+     "mana_casts_to_oom": 8.16,
+     "late_dps_l16": 390.9634,
+     "siege_score": 430.0598,
+     "utility_cc_per_10s": 0.125,
+     "scaling_ratio": 2.6891
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.03,
+      "hi": -0.0025
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "seconds": 4.8,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "submit_proposal",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_edge_of_ixtal.base",
+        "from": [
+         70,
+         100,
+         130,
+         160,
+         190
+        ],
+        "to": [
+         58,
+         88,
+         118,
+         148,
+         178
+        ]
+       },
+       {
+        "field": "abilities.R_supreme_display_of_talent.base",
+        "from": [
+         100,
+         200,
+         300
+        ],
+        "to": [
+         90,
+         180,
+         270
+        ]
+       }
+      ],
+      "rationale": "Qiyana is strong in both settings: 52.7% WR in KR solo queue and 57% pro presence. We're taking two small, readable cuts to her burst. Edge of Ixtal base damage goes down by a flat 12 at every rank (70/100/130/160/190 -> 58/88/118/148/178). That lowers her lane trades and early all-ins, which is where her solo queue strength comes from. Supreme Display of Talent base damage drops 10% (100/200/300 -> 90/180/270). That trims the coordinated teamfight and engage burst that drives her pro presence. Her ratios, cooldowns, CC and mobility stay the same, so she plays the same way, just with a bit less burst. Sim: soloq_index -0.70%, pro_index -0.47%, both inside the target bands."
+     }
+    }
+   ]
+  },
+  {
+   "turn": 5,
+   "tool": "submit_proposal",
+   "result": {
+    "result": "PASS",
+    "index_delta": {
+     "soloq_index": -0.007,
+     "pro_index": -0.0047
+    }
+   }
+  }
+ ],
+ "integrity_changed": [],
+ "agent": {
+  "outcome": "PASS",
+  "usage": {
+   "input_tokens": 21360,
+   "output_tokens": 1264
+  },
+  "proposal": {
+   "champion": "Qiyana",
+   "patch": "26.22",
+   "category": "OVERALL_STRONG",
+   "changes": [
+    {
+     "field": "abilities.Q_edge_of_ixtal.base",
+     "from": [
+      70.0,
+      100.0,
+      130.0,
+      160.0,
+      190.0
+     ],
+     "to": [
+      58.0,
+      88.0,
+      118.0,
+      148.0,
+      178.0
+     ]
+    },
+    {
+     "field": "abilities.R_supreme_display_of_talent.base",
+     "from": [
+      100.0,
+      200.0,
+      300.0
+     ],
+     "to": [
+      90.0,
+      180.0,
+      270.0
+     ]
+    }
+   ],
+   "rationale": "Qiyana is strong in both settings: 52.7% WR in KR solo queue and 57% pro presence. We're taking two small, readable cuts to her burst. Edge of Ixtal base damage goes down by a flat 12 at every rank (70/100/130/160/190 -> 58/88/118/148/178). That lowers her lane trades and early all-ins, which is where her solo queue strength comes from. Supreme Display of Talent base damage drops 10% (100/200/300 -> 90/180/270). That trims the coordinated teamfight and engage burst that drives her pro presence. Her ratios, cooldowns, CC and mobility stay the same, so she plays the same way, just with a bit less burst. Sim: soloq_index -0.70%, pro_index -0.47%, both inside the target bands."
+  }
+ },
+ "submissions": [
+  {
+   "attempt": 1,
+   "proposal": {
+    "champion": "Qiyana",
+    "patch": "26.22",
+    "category": "OVERALL_STRONG",
+    "changes": [
+     {
+      "field": "abilities.Q_edge_of_ixtal.base",
+      "from": [
+       70.0,
+       100.0,
+       130.0,
+       160.0,
+       190.0
+      ],
+      "to": [
+       58.0,
+       88.0,
+       118.0,
+       148.0,
+       178.0
+      ]
+     },
+     {
+      "field": "abilities.R_supreme_display_of_talent.base",
+      "from": [
+       100.0,
+       200.0,
+       300.0
+      ],
+      "to": [
+       90.0,
+       180.0,
+       270.0
+      ]
+     }
+    ],
+    "rationale": "Qiyana is strong in both settings: 52.7% WR in KR solo queue and 57% pro presence. We're taking two small, readable cuts to her burst. Edge of Ixtal base damage goes down by a flat 12 at every rank (70/100/130/160/190 -> 58/88/118/148/178). That lowers her lane trades and early all-ins, which is where her solo queue strength comes from. Supreme Display of Talent base damage drops 10% (100/200/300 -> 90/180/270). That trims the coordinated teamfight and engage burst that drives her pro presence. Her ratios, cooldowns, CC and mobility stay the same, so she plays the same way, just with a bit less burst. Sim: soloq_index -0.70%, pro_index -0.47%, both inside the target bands."
+   },
+   "file": "proposals/26.22/qiyana_attempt1.yaml",
+   "verifier": {
+    "passed": true,
+    "checks": [
+     {
+      "name": "schema",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "limits",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "integrity",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "target",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "holdout",
+      "ok": true,
+      "detail": "ok"
+     }
+    ],
+    "deltas": {
+     "soloq_index": -0.007,
+     "pro_index": -0.0047
+    },
+    "holdout": {
+     "tank_duel_l13": -0.011,
+     "skirmish_burst_l11": -0.0158
+    }
+   }
+  }
+ ],
+ "notes_attempts": [
+  {
+   "attempt": 1,
+   "notes": {
+    "patch_note": {
+     "champion": "Qiyana",
+     "context": "Qiyana is overperforming in both solo queue and pro play, so we're trimming the base damage on her lane trades and teamfight engages while leaving her ratios, cooldowns, crowd control and mobility untouched so she plays the same, just with a bit less burst.",
+     "lines": [
+      {
+       "field": "abilities.Q_edge_of_ixtal.base",
+       "label": "Q - Edge of Ixtal",
+       "from": [
+        70.0,
+        100.0,
+        130.0,
+        160.0,
+        190.0
+       ],
+       "to": [
+        58.0,
+        88.0,
+        118.0,
+        148.0,
+        178.0
+       ],
+       "text": "Base damage reduced: 70/100/130/160/190 \u2192 58/88/118/148/178"
+      },
+      {
+       "field": "abilities.R_supreme_display_of_talent.base",
+       "label": "R - Supreme Display of Talent",
+       "from": [
+        100.0,
+        200.0,
+        300.0
+       ],
+       "to": [
+        90.0,
+        180.0,
+        270.0
+       ],
+       "text": "Base damage reduced: 100/200/300 \u2192 90/180/270"
+      }
+     ]
+    },
+    "tooltips": [
+     {
+      "ability": "Q_edge_of_ixtal",
+      "text": "Qiyana swings her weapon, dealing {base} (+ {bonus_ad_ratio} bonus AD) physical damage to enemies struck. Cooldown: {cooldown} seconds. Cost: {mana_cost} mana.",
+      "values": {
+       "base": [
+        58.0,
+        88.0,
+        118.0,
+        148.0,
+        178.0
+       ],
+       "bonus_ad_ratio": 0.9,
+       "cooldown": [
+        7.0
+       ],
+       "mana_cost": [
+        35.0
+       ]
+      }
+     },
+     {
+      "ability": "R_supreme_display_of_talent",
+      "text": "Qiyana unleashes a shockwave that deals {base} (+ {bonus_ad_ratio} bonus AD) (+ {pct_max_hp} of the target's maximum health) physical damage and holds enemies in crowd control for {cc_duration} seconds. Cooldown: {cooldown} seconds. Cost: {mana_cost} mana.",
+      "values": {
+       "base": [
+        90.0,
+        180.0,
+        270.0
+       ],
+       "bonus_ad_ratio": 1.25,
+       "pct_max_hp": [
+        0.1,
+        0.1,
+        0.1
+       ],
+       "cc_duration": 1.0,
+       "cooldown": [
+        120.0
+       ],
+       "mana_cost": [
+        100.0
+       ]
+      }
+     }
+    ]
+   },
+   "errors": []
+  }
+ ],
+ "notes": {
+  "checker_passed": true,
+  "flag_for_human": false,
+  "attempts": 1,
+  "last_errors": [],
+  "output": {
+   "patch_note": {
+    "champion": "Qiyana",
+    "context": "Qiyana is overperforming in both solo queue and pro play, so we're trimming the base damage on her lane trades and teamfight engages while leaving her ratios, cooldowns, crowd control and mobility untouched so she plays the same, just with a bit less burst.",
+    "lines": [
+     {
+      "field": "abilities.Q_edge_of_ixtal.base",
+      "label": "Q - Edge of Ixtal",
+      "from": [
+       70.0,
+       100.0,
+       130.0,
+       160.0,
+       190.0
+      ],
+      "to": [
+       58.0,
+       88.0,
+       118.0,
+       148.0,
+       178.0
+      ],
+      "text": "Base damage reduced: 70/100/130/160/190 \u2192 58/88/118/148/178"
+     },
+     {
+      "field": "abilities.R_supreme_display_of_talent.base",
+      "label": "R - Supreme Display of Talent",
+      "from": [
+       100.0,
+       200.0,
+       300.0
+      ],
+      "to": [
+       90.0,
+       180.0,
+       270.0
+      ],
+      "text": "Base damage reduced: 100/200/300 \u2192 90/180/270"
+     }
+    ]
+   },
+   "tooltips": [
+    {
+     "ability": "Q_edge_of_ixtal",
+     "text": "Qiyana swings her weapon, dealing {base} (+ {bonus_ad_ratio} bonus AD) physical damage to enemies struck. Cooldown: {cooldown} seconds. Cost: {mana_cost} mana.",
+     "values": {
+      "base": [
+       58.0,
+       88.0,
+       118.0,
+       148.0,
+       178.0
+      ],
+      "bonus_ad_ratio": 0.9,
+      "cooldown": [
+       7.0
+      ],
+      "mana_cost": [
+       35.0
+      ]
+     }
+    },
+    {
+     "ability": "R_supreme_display_of_talent",
+     "text": "Qiyana unleashes a shockwave that deals {base} (+ {bonus_ad_ratio} bonus AD) (+ {pct_max_hp} of the target's maximum health) physical damage and holds enemies in crowd control for {cc_duration} seconds. Cooldown: {cooldown} seconds. Cost: {mana_cost} mana.",
+     "values": {
+      "base": [
+       90.0,
+       180.0,
+       270.0
+      ],
+      "bonus_ad_ratio": 1.25,
+      "pct_max_hp": [
+       0.1,
+       0.1,
+       0.1
+      ],
+      "cc_duration": 1.0,
+      "cooldown": [
+       120.0
+      ],
+      "mana_cost": [
+       100.0
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "decision": "OVERALL_STRONG: verified patch",
+ "seconds": 26.9
+}

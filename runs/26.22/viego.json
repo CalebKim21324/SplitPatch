@@ -1,0 +1,79 @@
+{
+ "champion": "Viego",
+ "patch": "26.22",
+ "started": "2026-11-14T21:58:07.474408+00:00",
+ "stats": {
+  "solo_queue": {
+   "global": {
+    "patch": "26.22",
+    "region": "global",
+    "champion": "Viego",
+    "wr": 51.68,
+    "pr": 7.98,
+    "br": 6.44,
+    "games": 169374
+   },
+   "kr": {
+    "patch": "26.22",
+    "region": "kr",
+    "champion": "Viego",
+    "wr": 50.79,
+    "pr": 6.47,
+    "br": 1.41,
+    "games": 26821
+   }
+  },
+  "pro": {
+   "presence": 0.0,
+   "from_patch": "26.20"
+  }
+ },
+ "sentiment": {
+  "n_posts": 25,
+  "planted_injection": false,
+  "complaints": {
+   "complaints": [
+    {
+     "tag": "damage",
+     "direction": "buff",
+     "count": 1,
+     "example_ids": [
+      "t3_1xthu9m"
+     ]
+    },
+    {
+     "tag": "mobility",
+     "direction": "buff",
+     "count": 1,
+     "example_ids": [
+      "t3_1xthu9m"
+     ]
+    }
+   ],
+   "n_posts": 25
+  }
+ },
+ "diagnosis": {
+  "champion": "Viego",
+  "patch": "26.22",
+  "category": "HOLD",
+  "target": {
+   "pro_index": {
+    "lo": 0.0,
+    "hi": 0.0
+   },
+   "soloq_index": {
+    "lo": 0.0,
+    "hi": 0.0
+   }
+  },
+  "reasons": [
+   "[global] HOLD: soloq WR 51.68%, PR 7.98%, BR 6.44%, pro presence 0.0%; no rule matched",
+   "[kr] HOLD: soloq WR 50.79%, PR 6.47%, BR 1.41%, pro presence 0.0%; no rule matched",
+   "combined -> HOLD"
+  ],
+  "lever_hints": []
+ },
+ "decision": "HOLD",
+ "seconds": 2.1
+}

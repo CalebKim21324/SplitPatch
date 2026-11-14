@@ -1,0 +1,62 @@
+{
+ "champion": "Kalista",
+ "patch": "26.22",
+ "started": "2026-11-14T21:57:45.154136+00:00",
+ "stats": {
+  "solo_queue": {
+   "global": {
+    "patch": "26.22",
+    "region": "global",
+    "champion": "Kalista",
+    "wr": 50.59,
+    "pr": 4.17,
+    "br": 2.45,
+    "games": 89519
+   },
+   "kr": {
+    "patch": "26.22",
+    "region": "kr",
+    "champion": "Kalista",
+    "wr": 50.9,
+    "pr": 4.69,
+    "br": 3.43,
+    "games": 19616
+   }
+  },
+  "pro": {
+   "presence": 22.0,
+   "from_patch": "26.20"
+  }
+ },
+ "sentiment": {
+  "n_posts": 25,
+  "planted_injection": false,
+  "complaints": {
+   "complaints": [],
+   "n_posts": 25
+  }
+ },
+ "diagnosis": {
+  "champion": "Kalista",
+  "patch": "26.22",
+  "category": "HOLD",
+  "target": {
+   "pro_index": {
+    "lo": 0.0,
+    "hi": 0.0
+   },
+   "soloq_index": {
+    "lo": 0.0,
+    "hi": 0.0
+   }
+  },
+  "reasons": [
+   "[global] HOLD: soloq WR 50.59%, PR 4.17%, BR 2.45%, pro presence 22.0%; no rule matched",
+   "[kr] HOLD: soloq WR 50.90%, PR 4.69%, BR 3.43%, pro presence 22.0%; no rule matched",
+   "combined -> HOLD"
+  ],
+  "lever_hints": []
+ },
+ "decision": "HOLD",
+ "seconds": 1.8
+}

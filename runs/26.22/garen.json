@@ -1,0 +1,728 @@
+{
+ "champion": "Garen",
+ "patch": "26.22",
+ "started": "2026-11-14T21:57:46.963659+00:00",
+ "stats": {
+  "solo_queue": {
+   "global": {
+    "patch": "26.22",
+    "region": "global",
+    "champion": "Garen",
+    "wr": 52.78,
+    "pr": 6.22,
+    "br": 4.54,
+    "games": 131548
+   },
+   "kr": {
+    "patch": "26.22",
+    "region": "kr",
+    "champion": "Garen",
+    "wr": 52.39,
+    "pr": 3.1,
+    "br": 1.45,
+    "games": 12947
+   }
+  },
+  "pro": {
+   "presence": 0.0,
+   "from_patch": "26.20"
+  }
+ },
+ "sentiment": {
+  "n_posts": 25,
+  "planted_injection": false,
+  "complaints": {
+   "complaints": [],
+   "n_posts": 25
+  }
+ },
+ "diagnosis": {
+  "champion": "Garen",
+  "patch": "26.22",
+  "category": "SOLOQ_ONLY_STRONG",
+  "target": {
+   "pro_index": {
+    "lo": -0.005,
+    "hi": null
+   },
+   "soloq_index": {
+    "lo": -0.03,
+    "hi": -0.005
+   }
+  },
+  "reasons": [
+   "[global] SOLOQ_ONLY_STRONG: soloq WR 52.78%, PR 6.22%, BR 4.54%, pro presence 0.0%; WR > 52.5 and presence < 10.0",
+   "[kr] HOLD: soloq WR 52.39%, PR 3.10%, BR 1.45%, pro presence 0.0%; no rule matched",
+   "combined -> SOLOQ_ONLY_STRONG"
+  ],
+  "lever_hints": []
+ },
+ "agent_log": [
+  {
+   "turn": 1,
+   "seconds": 2.3,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "read_stats",
+     "input": {}
+    },
+    {
+     "name": "read_kit",
+     "input": {}
+    },
+    {
+     "name": "read_complaints",
+     "input": {}
+    }
+   ]
+  },
+  {
+   "turn": 1,
+   "tool": "read_stats",
+   "result": {
+    "solo_queue": {
+     "global": {
+      "patch": "26.22",
+      "region": "global",
+      "champion": "Garen",
+      "wr": 52.78,
+      "pr": 6.22,
+      "br": 4.54,
+      "games": 131548
+     },
+     "kr": {
+      "patch": "26.22",
+      "region": "kr",
+      "champion": "Garen",
+      "wr": 52.39,
+      "pr": 3.1,
+      "br": 1.45,
+      "games": 12947
+     }
+    },
+    "pro": {
+     "presence": 0.0,
+     "from_patch": "26.20"
+    },
+    "diagnosis": {
+     "champion": "Garen",
+     "patch": "26.22",
+     "category": "SOLOQ_ONLY_STRONG",
+     "target": {
+      "pro_index": {
+       "lo": -0.005,
+       "hi": null
+      },
+      "soloq_index": {
+       "lo": -0.03,
+       "hi": -0.005
+      }
+     },
+     "reasons": [
+      "[global] SOLOQ_ONLY_STRONG: soloq WR 52.78%, PR 6.22%, BR 4.54%, pro presence 0.0%; WR > 52.5 and presence < 10.0",
+      "[kr] HOLD: soloq WR 52.39%, PR 3.10%, BR 1.45%, pro presence 0.0%; no rule matched",
+      "combined -> SOLOQ_ONLY_STRONG"
+     ],
+     "lever_hints": []
+    },
+    "rules": {
+     "max_fields": 3,
+     "max_relative_change_per_value": 0.2,
+     "editable_base_fields": [
+      "ad",
+      "ad_per_lvl",
+      "armor",
+      "armor_per_lvl",
+      "hp",
+      "hp_per_lvl",
+      "mp",
+      "mp_per_lvl",
+      "mr",
+      "mr_per_lvl",
+      "ms"
+     ],
+     "editable_ability_fields": [
+      "ad_ratio",
+      "ap_ratio",
+      "base",
+      "base_by_level",
+      "bonus_ad_ratio",
+      "bonus_as",
+      "cc_duration",
+      "cooldown",
+      "damage_reduction",
+      "mana_cost",
+      "min_damage",
+      "pct_current_hp",
+      "pct_max_hp",
+      "pct_missing_hp",
+      "range",
+      "shield",
+      "shield_ap_ratio",
+      "shield_bonus_hp_ratio",
+      "slow",
+      "stack_ad_ratio",
+      "stack_ap_ratio",
+      "stack_base"
+     ],
+     "from_must_equal_current_value": true,
+     "note": "Targets are relative changes of each index, e.g. -0.01 = -1%. Both must land in band. The verifier also runs hidden scenarios you can't see; keep the change honest, not tuned to one metric."
+    }
+   }
+  },
+  {
+   "turn": 1,
+   "tool": "read_kit",
+   "result": {
+    "name": "Garen",
+    "patch": "26.22",
+    "skill_order": "EQW",
+    "resource": "none",
+    "base": {
+     "hp": 690.0,
+     "hp_per_lvl": 98.0,
+     "mp": 0.0,
+     "mp_per_lvl": 0.0,
+     "armor": 38.0,
+     "armor_per_lvl": 4.2,
+     "mr": 32.0,
+     "mr_per_lvl": 1.55,
+     "ad": 69.0,
+     "ad_per_lvl": 4.5,
+     "as": 0.625,
+     "as_per_lvl": 3.65,
+     "ms": 340.0,
+     "range": 175.0
+    },
+    "abilities": {
+     "P_perseverance": {
+      "type": "buff",
+      "tags": [
+       "sustain"
+      ],
+      "notes": "Regen 1.5%-10.1% (by level) max hp per 5s; off for 8s after champion/epic/turret damage."
+     },
+     "Q_decisive_strike": {
+      "type": "damage",
+      "damage_type": "physical",
+      "base": [
+       30.0,
+       60.0,
+       90.0,
+       120.0,
+       150.0
+      ],
+      "ad_ratio": 0.5,
+      "bonus_ms": 0.35,
+      "cc_duration": 1.5,
+      "cooldown": [
+       8.0
+      ],
+      "tags": [
+       "burst"
+      ]
+     },
+     "W_courage": {
+      "type": "buff",
+      "shield": [
+       65.0,
+       85.0,
+       105.0,
+       125.0,
+       145.0
+      ],
+      "shield_bonus_hp_ratio": 0.18,
+      "damage_reduction": [
+       0.25,
+       0.29,
+       0.33,
+       0.37,
+       0.41
+      ],
+      "duration": 4.0,
+      "cooldown": [
+       22.0,
+       19.5,
+       17.0,
+       14.5,
+       12.0
+      ],
+      "tags": [
+       "shield",
+       "survivability"
+      ],
+      "notes": "Shield and 60% tenacity for first 0.75s. Passive: up to 30 bonus armor/MR from kills."
+     },
+     "E_judgment": {
+      "type": "damage",
+      "damage_type": "physical",
+      "base": [
+       4.0,
+       7.0,
+       10.0,
+       13.0,
+       16.0
+      ],
+      "ad_ratio": [
+       0.4,
+       0.43,
+       0.46,
+       0.49,
+       0.52
+      ],
+      "cooldown": [
+       9.0,
+       8.25,
+       7.5,
+       6.75,
+       6.0
+      ],
+      "range": 325.0,
+      "hits": 7.0,
+      "tags": [
+       "sustained"
+      ],
+      "notes": "+25% damage to nearest enemy; 25% armor shred after 6 hits on a champion."
+     },
+     "R_demacian_justice": {
+      "type": "damage",
+      "damage_type": "true",
+      "base": [
+       125.0,
+       200.0,
+       275.0
+      ],
+      "pct_missing_hp": [
+       0.25,
+       0.3,
+       0.35
+      ],
+      "cooldown": [
+       120.0,
+       100.0,
+       80.0
+      ],
+      "range": 400.0,
+      "tags": [
+       "execute"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "turn": 1,
+   "tool": "read_complaints",
+   "result": {
+    "complaints": [],
+    "n_posts": 25
+   }
+  },
+  {
+   "turn": 2,
+   "seconds": 3.4,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "base.ad",
+        "from": [
+         69.0
+        ],
+        "to": [
+         67.0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.E_judgment.ad_ratio",
+        "from": [
+         0.4,
+         0.43,
+         0.46,
+         0.49,
+         0.52
+        ],
+        "to": [
+         0.36,
+         0.4,
+         0.44,
+         0.48,
+         0.52
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 2,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0044,
+     "pro_index": -0.0002
+    },
+    "metrics_before": {
+     "lane_trade_l6": 361.7622,
+     "duel_ttk_l9": 5.4,
+     "mana_casts_to_oom": 10.0,
+     "late_dps_l16": 517.3739,
+     "siege_score": 206.9495,
+     "utility_cc_per_10s": 1.875,
+     "scaling_ratio": 3.8232
+    },
+    "metrics_after": {
+     "lane_trade_l6": 355.0605,
+     "duel_ttk_l9": 5.4,
+     "mana_casts_to_oom": 10.0,
+     "late_dps_l16": 513.0316,
+     "siege_score": 205.2126,
+     "utility_cc_per_10s": 1.875,
+     "scaling_ratio": 3.8623
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.005,
+      "hi": null
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0056,
+     "pro_index": 0.0039
+    },
+    "metrics_before": {
+     "lane_trade_l6": 361.7622,
+     "duel_ttk_l9": 5.4,
+     "mana_casts_to_oom": 10.0,
+     "late_dps_l16": 517.3739,
+     "siege_score": 206.9495,
+     "utility_cc_per_10s": 1.875,
+     "scaling_ratio": 3.8232
+    },
+    "metrics_after": {
+     "lane_trade_l6": 353.1376,
+     "duel_ttk_l9": 5.4,
+     "mana_casts_to_oom": 10.0,
+     "late_dps_l16": 517.3739,
+     "siege_score": 206.9495,
+     "utility_cc_per_10s": 1.875,
+     "scaling_ratio": 3.8742
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.005,
+      "hi": null
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "seconds": 2.9,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "base.ad",
+        "from": [
+         69.0
+        ],
+        "to": [
+         65.0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.E_judgment.base",
+        "from": [
+         4.0,
+         7.0,
+         10.0,
+         13.0,
+         16.0
+        ],
+        "to": [
+         3.2,
+         6.0,
+         9.0,
+         12.5,
+         16.0
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 3,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0088,
+     "pro_index": -0.0003
+    },
+    "metrics_before": {
+     "lane_trade_l6": 361.7622,
+     "duel_ttk_l9": 5.4,
+     "mana_casts_to_oom": 10.0,
+     "late_dps_l16": 517.3739,
+     "siege_score": 206.9495,
+     "utility_cc_per_10s": 1.875,
+     "scaling_ratio": 3.8232
+    },
+    "metrics_after": {
+     "lane_trade_l6": 348.3588,
+     "duel_ttk_l9": 5.4,
+     "mana_casts_to_oom": 10.0,
+     "late_dps_l16": 508.6894,
+     "siege_score": 203.4757,
+     "utility_cc_per_10s": 1.875,
+     "scaling_ratio": 3.9028
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.005,
+      "hi": null
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0032,
+     "pro_index": 0.0022
+    },
+    "metrics_before": {
+     "lane_trade_l6": 361.7622,
+     "duel_ttk_l9": 5.4,
+     "mana_casts_to_oom": 10.0,
+     "late_dps_l16": 517.3739,
+     "siege_score": 206.9495,
+     "utility_cc_per_10s": 1.875,
+     "scaling_ratio": 3.8232
+    },
+    "metrics_after": {
+     "lane_trade_l6": 356.7927,
+     "duel_ttk_l9": 5.4,
+     "mana_casts_to_oom": 10.0,
+     "late_dps_l16": 517.3739,
+     "siege_score": 206.9495,
+     "utility_cc_per_10s": 1.875,
+     "scaling_ratio": 3.8524
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.005,
+      "hi": null
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "seconds": 4.4,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "submit_proposal",
+     "input": {
+      "changes": [
+       {
+        "field": "base.ad",
+        "from": [
+         69.0
+        ],
+        "to": [
+         65.0
+        ]
+       }
+      ],
+      "rationale": "Garen is overperforming in solo queue (52.8% global WR, 6.2% pick rate) while having zero pro presence, so the target is his early/mid lane power and not his late-game teamfight role. There were no community complaints to steer the lever, so we chose the simplest, most legible one: base AD 69 -> 65. This weakens his level 1-6 trades and his Q/E damage in lane (lane trade at L6 -361.8 -> 348.4), but it is a flat value that becomes a much smaller share of his damage once items come in. Sim: soloq_index -0.88% (target -3% to -0.5%), pro_index -0.03% (target >= -0.5%), so pro play is effectively untouched."
+     }
+    }
+   ]
+  },
+  {
+   "turn": 4,
+   "tool": "submit_proposal",
+   "result": {
+    "result": "PASS",
+    "index_delta": {
+     "soloq_index": -0.0088,
+     "pro_index": -0.0003
+    }
+   }
+  }
+ ],
+ "integrity_changed": [],
+ "agent": {
+  "outcome": "PASS",
+  "usage": {
+   "input_tokens": 15185,
+   "output_tokens": 1016
+  },
+  "proposal": {
+   "champion": "Garen",
+   "patch": "26.22",
+   "category": "SOLOQ_ONLY_STRONG",
+   "changes": [
+    {
+     "field": "base.ad",
+     "from": 69.0,
+     "to": 65.0
+    }
+   ],
+   "rationale": "Garen is overperforming in solo queue (52.8% global WR, 6.2% pick rate) while having zero pro presence, so the target is his early/mid lane power and not his late-game teamfight role. There were no community complaints to steer the lever, so we chose the simplest, most legible one: base AD 69 -> 65. This weakens his level 1-6 trades and his Q/E damage in lane (lane trade at L6 -361.8 -> 348.4), but it is a flat value that becomes a much smaller share of his damage once items come in. Sim: soloq_index -0.88% (target -3% to -0.5%), pro_index -0.03% (target >= -0.5%), so pro play is effectively untouched."
+  }
+ },
+ "submissions": [
+  {
+   "attempt": 1,
+   "proposal": {
+    "champion": "Garen",
+    "patch": "26.22",
+    "category": "SOLOQ_ONLY_STRONG",
+    "changes": [
+     {
+      "field": "base.ad",
+      "from": 69.0,
+      "to": 65.0
+     }
+    ],
+    "rationale": "Garen is overperforming in solo queue (52.8% global WR, 6.2% pick rate) while having zero pro presence, so the target is his early/mid lane power and not his late-game teamfight role. There were no community complaints to steer the lever, so we chose the simplest, most legible one: base AD 69 -> 65. This weakens his level 1-6 trades and his Q/E damage in lane (lane trade at L6 -361.8 -> 348.4), but it is a flat value that becomes a much smaller share of his damage once items come in. Sim: soloq_index -0.88% (target -3% to -0.5%), pro_index -0.03% (target >= -0.5%), so pro play is effectively untouched."
+   },
+   "file": "proposals/26.22/garen_attempt1.yaml",
+   "verifier": {
+    "passed": true,
+    "checks": [
+     {
+      "name": "schema",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "limits",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "integrity",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "target",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "holdout",
+      "ok": true,
+      "detail": "ok"
+     }
+    ],
+    "deltas": {
+     "soloq_index": -0.0088,
+     "pro_index": -0.0003
+    },
+    "holdout": {
+     "tank_duel_l13": -0.0207,
+     "skirmish_burst_l11": -0.0213
+    }
+   }
+  }
+ ],
+ "notes_attempts": [
+  {
+   "attempt": 1,
+   "notes": {
+    "patch_note": {
+     "champion": "Garen",
+     "context": "Garen has been a little too oppressive in solo queue lanes, so we're trimming his base attack damage to soften his early trades while leaving his late-game teamfighting role intact.",
+     "lines": [
+      {
+       "field": "base.ad",
+       "label": "Base Attack Damage",
+       "from": 69.0,
+       "to": 65.0,
+       "text": "Base attack damage reduced: 69 \u2192 65"
+      }
+     ]
+    },
+    "tooltips": []
+   },
+   "errors": []
+  }
+ ],
+ "notes": {
+  "checker_passed": true,
+  "flag_for_human": false,
+  "attempts": 1,
+  "last_errors": [],
+  "output": {
+   "patch_note": {
+    "champion": "Garen",
+    "context": "Garen has been a little too oppressive in solo queue lanes, so we're trimming his base attack damage to soften his early trades while leaving his late-game teamfighting role intact.",
+    "lines": [
+     {
+      "field": "base.ad",
+      "label": "Base Attack Damage",
+      "from": 69.0,
+      "to": 65.0,
+      "text": "Base attack damage reduced: 69 \u2192 65"
+     }
+    ]
+   },
+   "tooltips": []
+  }
+ },
+ "decision": "SOLOQ_ONLY_STRONG: verified patch",
+ "seconds": 20.5
+}
