@@ -35,8 +35,9 @@ def test_popular_weak(wr, pr, cat):
 
 def test_pro_jail_target_bands():
     d = diagnose(*rows(47, 5, 60))
-    assert d.target.pro_index.contains(-0.10) and not d.target.pro_index.contains(-0.02)
-    assert d.target.soloq_index.contains(0.05) and not d.target.soloq_index.contains(-0.02)
+    # bands recalibrated to the sim's scale (see TARGETS in agent/diagnose.py)
+    assert d.target.pro_index.contains(-0.015) and not d.target.pro_index.contains(-0.002)
+    assert d.target.soloq_index.contains(0.05) and not d.target.soloq_index.contains(-0.01)
 
 
 def test_buff_requests_ignored_when_strong():

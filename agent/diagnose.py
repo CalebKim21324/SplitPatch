@@ -25,13 +25,16 @@ class Thresholds:
     wr_popular_weak: float = 49.5
 
 
+# Bands are calibrated to the scale of OUR indices: Riot's five real changes in 26.17-26.22 move
+# them 0.3%-2.2% (eval/sim_report.py), so a target of "-3% to -8%" (PLAN.md 3.4) was unreachable
+# for any patch inside the 20% size limit. Bands below sit in Riot's observed range.
 TARGETS: dict[Category, Target] = {
-    Category.PRO_JAIL: Target(pro_index=Band(lo=-0.15, hi=-0.08), soloq_index=Band(lo=-0.01)),
-    Category.OVERALL_STRONG: Target(pro_index=Band(lo=-0.08, hi=-0.03), soloq_index=Band(lo=-0.08, hi=-0.03)),
-    Category.OVERALL_WEAK: Target(soloq_index=Band(lo=0.03, hi=0.08)),
-    Category.SOLOQ_ONLY_STRONG: Target(soloq_index=Band(lo=-0.08, hi=-0.03), pro_index=Band(lo=-0.01)),
+    Category.PRO_JAIL: Target(pro_index=Band(lo=-0.03, hi=-0.0075), soloq_index=Band(lo=-0.0025)),
+    Category.OVERALL_STRONG: Target(pro_index=Band(lo=-0.03, hi=-0.0025), soloq_index=Band(lo=-0.03, hi=-0.005)),
+    Category.OVERALL_WEAK: Target(soloq_index=Band(lo=0.0075, hi=0.03)),
+    Category.SOLOQ_ONLY_STRONG: Target(soloq_index=Band(lo=-0.03, hi=-0.005), pro_index=Band(lo=-0.005)),
     # Popular but losing: a small, targeted solo queue buff; don't let pro power jump.
-    Category.POPULAR_WEAK: Target(soloq_index=Band(lo=0.02, hi=0.06), pro_index=Band(hi=0.03)),
+    Category.POPULAR_WEAK: Target(soloq_index=Band(lo=0.005, hi=0.03), pro_index=Band(hi=0.01)),
     Category.HOLD: Target(pro_index=Band(lo=0.0, hi=0.0), soloq_index=Band(lo=0.0, hi=0.0)),
 }
 
@@ -83,3 +86,32 @@ def diagnose(soloq: SoloQRow, pro: ProRow, complaints: Complaints | None = None,
     return Diagnosis(champion=soloq.champion, patch=soloq.patch, category=category,
                      target=TARGETS[category], reasons=reasons,
                      lever_hints=lever_hints(category, complaints))
+
+
+STRONG = (Category.PRO_JAIL, Category.OVERALL_STRONG, Category.SOLOQ_ONLY_STRONG)
+_SEVERITY = {Category.OVERALL_STRONG: 3, Category.PRO_JAIL: 2, Category.SOLOQ_ONLY_STRONG: 1}
+
+
+def diagnose_regions(rows: dict[str, SoloQRow], pro: ProRow, complaints: Complaints | None = None,
+                     t: Thresholds = Thresholds()) -> Diagnosis:
+    """Combine per-server diagnoses (docs/WORKFLOW.md step 2).
+
+    Nerf if strong on ANY server (most severe wins). Popular-weak if popular-weak on any server and
+    strong on none. Overall-weak only if weak on EVERY server (Riot's buff asymmetry). Else hold.
+    """
+    per = {r: diagnose(s, pro.model_copy(update={"patch": s.patch}), complaints, t) for r, s in rows.items()}
+    cats = {r: d.category for r, d in per.items()}
+    reasons = [f"[{r}] {d.category.value}: {'; '.join(d.reasons)}" for r, d in per.items()]
+    strong = [c for c in cats.values() if c in STRONG]
+    if strong:
+        cat = max(strong, key=_SEVERITY.get)
+    elif Category.POPULAR_WEAK in cats.values():
+        cat = Category.POPULAR_WEAK
+    elif all(c == Category.OVERALL_WEAK for c in cats.values()):
+        cat = Category.OVERALL_WEAK
+    else:
+        cat = Category.HOLD
+    first = next(iter(rows.values()))
+    reasons.append(f"combined -> {cat.value}")
+    return Diagnosis(champion=first.champion, patch=first.patch, category=cat, target=TARGETS[cat],
+                     reasons=reasons, lever_hints=lever_hints(cat, complaints))

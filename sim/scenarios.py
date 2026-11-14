@@ -14,7 +14,7 @@ from schemas import Kit
 from sim import kits
 from sim.engine import Fight, Stats, Target, ability_rank, at_rank, champion_stats, cooldown, raw_damage
 
-DT = 0.05
+DT = 0.02
 MAX_TTK = 60.0
 MANALESS_CAP = 10        # trades before oom for manaless / energy champions
 DISENGAGE_BONUS = 1.0
