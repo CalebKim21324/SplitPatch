@@ -4,6 +4,8 @@
 # Ability changes in window: V26.16 Q base damage (already in these numbers). V26.21 is base stats only.
 name: Azir
 patch: "26.22"
+as_ratio: 0.694       # wiki infobox "AS ratio"
+skill_order: "WQE"     # lolalytics 26.22 Emerald+, most common max order
 base:
   hp: 575
   hp_per_lvl: 108
@@ -46,7 +48,7 @@ abilities:
     cooldown: [12, 10.5, 9, 7.5, 6] # soldier recharge, 2 stocks; cast cooldown 1.5
     mana_cost: [40, 35, 30, 25, 20]
     range: 525
-    hits: null                      # TODO: soldier attacks per standard trade (sim choice, not a game number)
+    # soldier attacks are Azir's auto in fights (sim/combos.yaml `auto`)
     tags: [sustained, zone]
     notes: "Soldier lasts 10s, attacks at Azir's attack speed, soldier attack range 375/425."
   E_shifting_sands:

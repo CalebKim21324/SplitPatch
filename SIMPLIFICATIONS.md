@@ -16,3 +16,11 @@ Every place the sim or data differs from real League mechanics. Judges will ask.
 | Lee Sin | Energy stored in `mp` / `mana_cost`; energy regen and Flurry refunds not modeled yet | Kit DSL has one resource field |
 | Lee Sin Q2 | Missing-health amplification (0-100%) in notes; sim must pick a target-health assumption | No fight-state model |
 | Qiyana | Elements: only the terrain execute bonus is a candidate for modeling; river root and brush stealth are notes | Positional effects |
+| Sim targets | Dummies = class-average base stats (Data Dragon primary tag Mage/Fighter/Tank), no items, never fight back | No opponent model |
+| Sim builds | Every champion builds its 26.22 most common core + 4th item (lolalytics) on every patch; item passives not simulated | Data Dragon has no passive numbers |
+| Sim combos | Trade combos and sustained rotations in `sim/combos.yaml` are design choices; cast times, travel time, positioning ignored | Deterministic, fast |
+| Sim rotation | Execute abilities fire below 40% target hp; stacking abilities (Kalista E) at 5+ stacks | Simple, explainable policy |
+| Bonus AS | Ability bonus AS counted at average uptime (duration / cooldown); passive-only AS (Lee Sin Flurry) excluded | No combat timeline for passives |
+| Mana | Trades-to-oom ignores mana regen; manaless and energy champions capped at 10 | Lane-length proxy |
+| Indices | Ratio to pool mean (not z-score) so relative changes are defined; equal weights until tuned on train patches | z-score near 0 makes "-8%" meaningless |
+| Utility | CC seconds per 10 s at lvl 16 + 0.5 x slow seconds + 1.0 disengage tag bonus | Hand-set weights |

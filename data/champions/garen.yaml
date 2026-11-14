@@ -3,6 +3,8 @@
 # SPOT-CHECK every number. No Garen changes in 26.16-26.22 (last change V26.14).
 name: Garen
 patch: "26.22"
+resource: none
+skill_order: "EQW"     # lolalytics 26.22 Emerald+, most common max order
 base:
   hp: 690
   hp_per_lvl: 98

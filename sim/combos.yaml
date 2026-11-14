@@ -1,0 +1,18 @@
+# Scenario inputs per champion. These are SIM DESIGN CHOICES, not game numbers (SIMPLIFICATIONS.md).
+#   auto:  ability that replaces the basic attack in fights (Azir's soldiers attack for him)
+#   trade: the standard short trade / gank combo, executed instantly (lane_trade_l6, mana_casts_to_oom)
+# Sustained fights (duel_ttk_l9, late_dps_l16) use a generic rotation: abilities on cooldown,
+# execute-tagged abilities below 40% target hp, stacking abilities at 5+ stacks.
+Azir:
+  auto: W_soldier_attack
+  trade: [Q_conquering_sands, AA, AA, AA]
+Kalista:
+  trade: [AA, AA, Q_pierce, AA, E_rend]
+Garen:
+  trade: [Q_decisive_strike, E_judgment, AA]
+Viego:
+  trade: [Q_blade_of_the_ruined_king, AA, AA, W_spectral_maw, AA]
+Qiyana:
+  trade: [E_audacity, P_royal_privilege, Q_edge_of_ixtal, AA, AA]
+Lee Sin:
+  trade: [Q_sonic_wave, Q_resonating_strike, AA, E_tempest, AA, AA]

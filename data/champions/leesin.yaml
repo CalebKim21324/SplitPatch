@@ -4,6 +4,8 @@
 # Resource is ENERGY (200, regen 50/5s): `mp` holds energy and mana_cost holds energy cost.
 name: Lee Sin
 patch: "26.22"
+resource: energy
+skill_order: "QWE"     # lolalytics 26.22 Emerald+, most common max order
 base:
   hp: 645
   hp_per_lvl: 108

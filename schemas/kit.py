@@ -91,6 +91,9 @@ class Ability(Strict):
 class Kit(Strict):
     name: str
     patch: str | None = None       # patch these numbers are valid for
+    as_ratio: Num = None           # attack speed ratio when it differs from base AS (wiki infobox)
+    skill_order: str | None = None # basic-ability max order, e.g. "WQE" (lolalytics)
+    resource: Literal["mana", "energy", "none"] = "mana"
     base: BaseStats
     abilities: dict[str, Ability]
 

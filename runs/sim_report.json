@@ -1,0 +1,1844 @@
+{
+ "rows": [
+  {
+   "champion": "Azir",
+   "patch": "26.16",
+   "soloq_index": 1.0377,
+   "pro_index": 1.1816,
+   "metrics": {
+    "lane_trade_l6": 388.6519,
+    "duel_ttk_l9": 4.25,
+    "mana_casts_to_oom": 6.8286,
+    "late_dps_l16": 620.8972,
+    "siege_score": 459.4639,
+    "utility_cc_per_10s": 1.3674,
+    "scaling_ratio": 3.7411
+   },
+   "presence": 7.0,
+   "pro_patch": "26.16",
+   "global": {
+    "wr": 48.96,
+    "pr": 1.97,
+    "br": 0.33,
+    "games": 56878,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 48.96%, PR 1.97%, BR 0.33%, pro presence 7.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 48.52,
+    "pr": 2.65,
+    "br": 0.23,
+    "games": 14743,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 48.52%, PR 2.65%, BR 0.23%, pro presence 7.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Azir",
+   "patch": "26.17",
+   "soloq_index": 1.0368,
+   "pro_index": 1.181,
+   "metrics": {
+    "lane_trade_l6": 388.6519,
+    "duel_ttk_l9": 4.25,
+    "mana_casts_to_oom": 6.8286,
+    "late_dps_l16": 620.8972,
+    "siege_score": 459.4639,
+    "utility_cc_per_10s": 1.3674,
+    "scaling_ratio": 3.7411
+   },
+   "presence": 8.0,
+   "pro_patch": "26.17",
+   "global": {
+    "wr": 49.22,
+    "pr": 1.74,
+    "br": 0.3,
+    "games": 51015,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 49.22%, PR 1.74%, BR 0.30%, pro presence 8.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 48.75,
+    "pr": 2.17,
+    "br": 0.19,
+    "games": 11910,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 48.75%, PR 2.17%, BR 0.19%, pro presence 8.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Azir",
+   "patch": "26.18",
+   "soloq_index": 1.0364,
+   "pro_index": 1.1783,
+   "metrics": {
+    "lane_trade_l6": 388.6519,
+    "duel_ttk_l9": 4.25,
+    "mana_casts_to_oom": 6.8286,
+    "late_dps_l16": 620.8972,
+    "siege_score": 459.4639,
+    "utility_cc_per_10s": 1.3674,
+    "scaling_ratio": 3.7411
+   },
+   "presence": 2.0,
+   "pro_patch": "26.18",
+   "global": {
+    "wr": 48.95,
+    "pr": 1.81,
+    "br": 0.3,
+    "games": 44955,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 48.95%, PR 1.81%, BR 0.30%, pro presence 2.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 48.71,
+    "pr": 2.11,
+    "br": 0.17,
+    "games": 9836,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 48.71%, PR 2.11%, BR 0.17%, pro presence 2.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Azir",
+   "patch": "26.19",
+   "soloq_index": 1.0364,
+   "pro_index": 1.1783,
+   "metrics": {
+    "lane_trade_l6": 388.6519,
+    "duel_ttk_l9": 4.25,
+    "mana_casts_to_oom": 6.8286,
+    "late_dps_l16": 620.8972,
+    "siege_score": 459.4639,
+    "utility_cc_per_10s": 1.3674,
+    "scaling_ratio": 3.7411
+   },
+   "presence": 2.0,
+   "pro_patch": "26.18",
+   "global": {
+    "wr": 48.91,
+    "pr": 1.75,
+    "br": 0.29,
+    "games": 47497,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 48.91%, PR 1.75%, BR 0.29%, pro presence 2.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 48.35,
+    "pr": 1.91,
+    "br": 0.18,
+    "games": 9901,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 48.35%, PR 1.91%, BR 0.18%, pro presence 2.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Azir",
+   "patch": "26.20",
+   "soloq_index": 1.0364,
+   "pro_index": 1.1783,
+   "metrics": {
+    "lane_trade_l6": 388.6519,
+    "duel_ttk_l9": 4.25,
+    "mana_casts_to_oom": 6.8286,
+    "late_dps_l16": 620.8972,
+    "siege_score": 459.4639,
+    "utility_cc_per_10s": 1.3674,
+    "scaling_ratio": 3.7411
+   },
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 48.45,
+    "pr": 1.79,
+    "br": 0.29,
+    "games": 48891,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 48.45%, PR 1.79%, BR 0.29%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 48.88,
+    "pr": 1.91,
+    "br": 0.15,
+    "games": 9539,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 48.88%, PR 1.91%, BR 0.15%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Azir",
+   "patch": "26.21",
+   "soloq_index": 1.0562,
+   "pro_index": 1.1796,
+   "metrics": {
+    "lane_trade_l6": 388.6519,
+    "duel_ttk_l9": 4.25,
+    "mana_casts_to_oom": 7.3929,
+    "late_dps_l16": 620.8972,
+    "siege_score": 459.4639,
+    "utility_cc_per_10s": 1.3674,
+    "scaling_ratio": 3.7411
+   },
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 49.0,
+    "pr": 1.93,
+    "br": 0.32,
+    "games": 54573,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 49.00%, PR 1.93%, BR 0.32%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 48.78,
+    "pr": 2.16,
+    "br": 0.22,
+    "games": 10894,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 48.78%, PR 2.16%, BR 0.22%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Azir",
+   "patch": "26.22",
+   "soloq_index": 1.0562,
+   "pro_index": 1.1796,
+   "metrics": {
+    "lane_trade_l6": 388.6519,
+    "duel_ttk_l9": 4.25,
+    "mana_casts_to_oom": 7.3929,
+    "late_dps_l16": 620.8972,
+    "siege_score": 459.4639,
+    "utility_cc_per_10s": 1.3674,
+    "scaling_ratio": 3.7411
+   },
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 49.32,
+    "pr": 1.76,
+    "br": 0.29,
+    "games": 37553,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 49.32%, PR 1.76%, BR 0.29%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 48.88,
+    "pr": 2.0,
+    "br": 0.17,
+    "games": 8356,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 48.88%, PR 2.00%, BR 0.17%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Kalista",
+   "patch": "26.16",
+   "soloq_index": 0.9359,
+   "pro_index": 0.9677,
+   "metrics": {
+    "lane_trade_l6": 635.5053,
+    "duel_ttk_l9": 7.2,
+    "mana_casts_to_oom": 5.3083,
+    "late_dps_l16": 445.5211,
+    "siege_score": 534.6254,
+    "utility_cc_per_10s": 0.6917,
+    "scaling_ratio": 3.287
+   },
+   "presence": 16.0,
+   "pro_patch": "26.16",
+   "global": {
+    "wr": 51.37,
+    "pr": 2.12,
+    "br": 0.39,
+    "games": 61395,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.37%, PR 2.12%, BR 0.39%, pro presence 16.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 52.15,
+    "pr": 2.27,
+    "br": 0.37,
+    "games": 12720,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 52.15%, PR 2.27%, BR 0.37%, pro presence 16.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Kalista",
+   "patch": "26.17",
+   "soloq_index": 0.9345,
+   "pro_index": 0.9671,
+   "metrics": {
+    "lane_trade_l6": 635.5053,
+    "duel_ttk_l9": 7.2,
+    "mana_casts_to_oom": 5.3083,
+    "late_dps_l16": 445.5211,
+    "siege_score": 534.6254,
+    "utility_cc_per_10s": 0.6917,
+    "scaling_ratio": 3.287
+   },
+   "presence": 21.0,
+   "pro_patch": "26.17",
+   "global": {
+    "wr": 50.73,
+    "pr": 3.0,
+    "br": 0.69,
+    "games": 88222,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.73%, PR 3.00%, BR 0.69%, pro presence 21.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 50.86,
+    "pr": 4.14,
+    "br": 1.09,
+    "games": 22863,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.86%, PR 4.14%, BR 1.09%, pro presence 21.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Kalista",
+   "patch": "26.18",
+   "soloq_index": 0.9338,
+   "pro_index": 0.9646,
+   "metrics": {
+    "lane_trade_l6": 635.5053,
+    "duel_ttk_l9": 7.2,
+    "mana_casts_to_oom": 5.3083,
+    "late_dps_l16": 445.5211,
+    "siege_score": 534.6254,
+    "utility_cc_per_10s": 0.6917,
+    "scaling_ratio": 3.287
+   },
+   "presence": 33.0,
+   "pro_patch": "26.18",
+   "global": {
+    "wr": 50.68,
+    "pr": 3.44,
+    "br": 0.96,
+    "games": 85422,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.68%, PR 3.44%, BR 0.96%, pro presence 33.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 51.62,
+    "pr": 4.66,
+    "br": 1.73,
+    "games": 21818,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.62%, PR 4.66%, BR 1.73%, pro presence 33.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Kalista",
+   "patch": "26.19",
+   "soloq_index": 0.9338,
+   "pro_index": 0.9646,
+   "metrics": {
+    "lane_trade_l6": 635.5053,
+    "duel_ttk_l9": 7.2,
+    "mana_casts_to_oom": 5.3083,
+    "late_dps_l16": 445.5211,
+    "siege_score": 534.6254,
+    "utility_cc_per_10s": 0.6917,
+    "scaling_ratio": 3.287
+   },
+   "presence": 33.0,
+   "pro_patch": "26.18",
+   "global": {
+    "wr": 50.98,
+    "pr": 3.47,
+    "br": 1.06,
+    "games": 94701,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.98%, PR 3.47%, BR 1.06%, pro presence 33.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 52.01,
+    "pr": 3.99,
+    "br": 1.41,
+    "games": 20808,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 52.01%, PR 3.99%, BR 1.41%, pro presence 33.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Kalista",
+   "patch": "26.20",
+   "soloq_index": 0.9338,
+   "pro_index": 0.9646,
+   "metrics": {
+    "lane_trade_l6": 635.5053,
+    "duel_ttk_l9": 7.2,
+    "mana_casts_to_oom": 5.3083,
+    "late_dps_l16": 445.5211,
+    "siege_score": 534.6254,
+    "utility_cc_per_10s": 0.6917,
+    "scaling_ratio": 3.287
+   },
+   "presence": 22.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 50.68,
+    "pr": 3.73,
+    "br": 1.27,
+    "games": 101929,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.68%, PR 3.73%, BR 1.27%, pro presence 22.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 51.49,
+    "pr": 4.25,
+    "br": 1.63,
+    "games": 21309,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.49%, PR 4.25%, BR 1.63%, pro presence 22.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Kalista",
+   "patch": "26.21",
+   "soloq_index": 0.9326,
+   "pro_index": 0.9658,
+   "metrics": {
+    "lane_trade_l6": 635.5053,
+    "duel_ttk_l9": 7.2,
+    "mana_casts_to_oom": 5.3083,
+    "late_dps_l16": 445.5211,
+    "siege_score": 534.6254,
+    "utility_cc_per_10s": 0.6917,
+    "scaling_ratio": 3.287
+   },
+   "presence": 22.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 50.47,
+    "pr": 4.77,
+    "br": 2.09,
+    "games": 135112,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.47%, PR 4.77%, BR 2.09%, pro presence 22.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 51.34,
+    "pr": 5.08,
+    "br": 2.72,
+    "games": 25664,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.34%, PR 5.08%, BR 2.72%, pro presence 22.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Kalista",
+   "patch": "26.22",
+   "soloq_index": 0.9326,
+   "pro_index": 0.9658,
+   "metrics": {
+    "lane_trade_l6": 635.5053,
+    "duel_ttk_l9": 7.2,
+    "mana_casts_to_oom": 5.3083,
+    "late_dps_l16": 445.5211,
+    "siege_score": 534.6254,
+    "utility_cc_per_10s": 0.6917,
+    "scaling_ratio": 3.287
+   },
+   "presence": 22.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 50.59,
+    "pr": 4.17,
+    "br": 2.45,
+    "games": 89519,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.59%, PR 4.17%, BR 2.45%, pro presence 22.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 50.9,
+    "pr": 4.69,
+    "br": 3.43,
+    "games": 19616,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.90%, PR 4.69%, BR 3.43%, pro presence 22.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Garen",
+   "patch": "26.16",
+   "soloq_index": 1.0381,
+   "pro_index": 1.0727,
+   "metrics": {
+    "lane_trade_l6": 361.7622,
+    "duel_ttk_l9": 5.4,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 517.3739,
+    "siege_score": 206.9495,
+    "utility_cc_per_10s": 1.875,
+    "scaling_ratio": 3.8232
+   },
+   "presence": 0.0,
+   "pro_patch": "26.16",
+   "global": {
+    "wr": 53.23,
+    "pr": 7.15,
+    "br": 5.72,
+    "games": 204440,
+    "category": "SOLOQ_ONLY_STRONG",
+    "reasons": [
+     "soloq WR 53.23%, PR 7.15%, BR 5.72%, pro presence 0.0%",
+     "WR > 52.5 and presence < 10.0"
+    ]
+   },
+   "kr": {
+    "wr": 52.23,
+    "pr": 3.86,
+    "br": 1.94,
+    "games": 21623,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 52.23%, PR 3.86%, BR 1.94%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Garen",
+   "patch": "26.17",
+   "soloq_index": 1.0373,
+   "pro_index": 1.0723,
+   "metrics": {
+    "lane_trade_l6": 361.7622,
+    "duel_ttk_l9": 5.4,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 517.3739,
+    "siege_score": 206.9495,
+    "utility_cc_per_10s": 1.875,
+    "scaling_ratio": 3.8232
+   },
+   "presence": 1.0,
+   "pro_patch": "26.17",
+   "global": {
+    "wr": 53.18,
+    "pr": 7.16,
+    "br": 5.3,
+    "games": 207766,
+    "category": "SOLOQ_ONLY_STRONG",
+    "reasons": [
+     "soloq WR 53.18%, PR 7.16%, BR 5.30%, pro presence 1.0%",
+     "WR > 52.5 and presence < 10.0"
+    ]
+   },
+   "kr": {
+    "wr": 52.71,
+    "pr": 3.71,
+    "br": 1.76,
+    "games": 20487,
+    "category": "SOLOQ_ONLY_STRONG",
+    "reasons": [
+     "soloq WR 52.71%, PR 3.71%, BR 1.76%, pro presence 1.0%",
+     "WR > 52.5 and presence < 10.0"
+    ]
+   }
+  },
+  {
+   "champion": "Garen",
+   "patch": "26.18",
+   "soloq_index": 1.0369,
+   "pro_index": 1.0704,
+   "metrics": {
+    "lane_trade_l6": 361.7622,
+    "duel_ttk_l9": 5.4,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 517.3739,
+    "siege_score": 206.9495,
+    "utility_cc_per_10s": 1.875,
+    "scaling_ratio": 3.8232
+   },
+   "presence": 0.0,
+   "pro_patch": "26.18",
+   "global": {
+    "wr": 52.81,
+    "pr": 6.8,
+    "br": 4.97,
+    "games": 166971,
+    "category": "SOLOQ_ONLY_STRONG",
+    "reasons": [
+     "soloq WR 52.81%, PR 6.80%, BR 4.97%, pro presence 0.0%",
+     "WR > 52.5 and presence < 10.0"
+    ]
+   },
+   "kr": {
+    "wr": 53.3,
+    "pr": 3.81,
+    "br": 1.6,
+    "games": 17820,
+    "category": "SOLOQ_ONLY_STRONG",
+    "reasons": [
+     "soloq WR 53.30%, PR 3.81%, BR 1.60%, pro presence 0.0%",
+     "WR > 52.5 and presence < 10.0"
+    ]
+   }
+  },
+  {
+   "champion": "Garen",
+   "patch": "26.19",
+   "soloq_index": 1.0369,
+   "pro_index": 1.0704,
+   "metrics": {
+    "lane_trade_l6": 361.7622,
+    "duel_ttk_l9": 5.4,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 517.3739,
+    "siege_score": 206.9495,
+    "utility_cc_per_10s": 1.875,
+    "scaling_ratio": 3.8232
+   },
+   "presence": 0.0,
+   "pro_patch": "26.18",
+   "global": {
+    "wr": 52.83,
+    "pr": 6.43,
+    "br": 4.74,
+    "games": 173267,
+    "category": "SOLOQ_ONLY_STRONG",
+    "reasons": [
+     "soloq WR 52.83%, PR 6.43%, BR 4.74%, pro presence 0.0%",
+     "WR > 52.5 and presence < 10.0"
+    ]
+   },
+   "kr": {
+    "wr": 52.97,
+    "pr": 3.77,
+    "br": 1.63,
+    "games": 19552,
+    "category": "SOLOQ_ONLY_STRONG",
+    "reasons": [
+     "soloq WR 52.97%, PR 3.77%, BR 1.63%, pro presence 0.0%",
+     "WR > 52.5 and presence < 10.0"
+    ]
+   }
+  },
+  {
+   "champion": "Garen",
+   "patch": "26.20",
+   "soloq_index": 1.0369,
+   "pro_index": 1.0704,
+   "metrics": {
+    "lane_trade_l6": 361.7622,
+    "duel_ttk_l9": 5.4,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 517.3739,
+    "siege_score": 206.9495,
+    "utility_cc_per_10s": 1.875,
+    "scaling_ratio": 3.8232
+   },
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 52.74,
+    "pr": 6.21,
+    "br": 4.56,
+    "games": 167965,
+    "category": "SOLOQ_ONLY_STRONG",
+    "reasons": [
+     "soloq WR 52.74%, PR 6.21%, BR 4.56%, pro presence 0.0%",
+     "WR > 52.5 and presence < 10.0"
+    ]
+   },
+   "kr": {
+    "wr": 53.52,
+    "pr": 3.37,
+    "br": 1.47,
+    "games": 16912,
+    "category": "SOLOQ_ONLY_STRONG",
+    "reasons": [
+     "soloq WR 53.52%, PR 3.37%, BR 1.47%, pro presence 0.0%",
+     "WR > 52.5 and presence < 10.0"
+    ]
+   }
+  },
+  {
+   "champion": "Garen",
+   "patch": "26.21",
+   "soloq_index": 1.0331,
+   "pro_index": 1.0712,
+   "metrics": {
+    "lane_trade_l6": 361.7622,
+    "duel_ttk_l9": 5.4,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 517.3739,
+    "siege_score": 206.9495,
+    "utility_cc_per_10s": 1.875,
+    "scaling_ratio": 3.8232
+   },
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 52.93,
+    "pr": 6.3,
+    "br": 4.6,
+    "games": 176034,
+    "category": "SOLOQ_ONLY_STRONG",
+    "reasons": [
+     "soloq WR 52.93%, PR 6.30%, BR 4.60%, pro presence 0.0%",
+     "WR > 52.5 and presence < 10.0"
+    ]
+   },
+   "kr": {
+    "wr": 52.42,
+    "pr": 3.22,
+    "br": 1.46,
+    "games": 16260,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 52.42%, PR 3.22%, BR 1.46%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Garen",
+   "patch": "26.22",
+   "soloq_index": 1.0331,
+   "pro_index": 1.0712,
+   "metrics": {
+    "lane_trade_l6": 361.7622,
+    "duel_ttk_l9": 5.4,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 517.3739,
+    "siege_score": 206.9495,
+    "utility_cc_per_10s": 1.875,
+    "scaling_ratio": 3.8232
+   },
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 52.78,
+    "pr": 6.22,
+    "br": 4.54,
+    "games": 131548,
+    "category": "SOLOQ_ONLY_STRONG",
+    "reasons": [
+     "soloq WR 52.78%, PR 6.22%, BR 4.54%, pro presence 0.0%",
+     "WR > 52.5 and presence < 10.0"
+    ]
+   },
+   "kr": {
+    "wr": 52.39,
+    "pr": 3.1,
+    "br": 1.45,
+    "games": 12947,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 52.39%, PR 3.10%, BR 1.45%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Viego",
+   "patch": "26.16",
+   "soloq_index": 1.0645,
+   "pro_index": 1.0115,
+   "metrics": {
+    "lane_trade_l6": 469.0161,
+    "duel_ttk_l9": 6.1,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 448.2193,
+    "siege_score": 403.3974,
+    "utility_cc_per_10s": 1.5625,
+    "scaling_ratio": 2.7713
+   },
+   "presence": 1.0,
+   "pro_patch": "26.16",
+   "global": {
+    "wr": 50.54,
+    "pr": 9.61,
+    "br": 8.43,
+    "games": 275880,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.54%, PR 9.61%, BR 8.43%, pro presence 1.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 48.93,
+    "pr": 6.99,
+    "br": 1.29,
+    "games": 38934,
+    "category": "POPULAR_WEAK",
+    "reasons": [
+     "soloq WR 48.93%, PR 6.99%, BR 1.29%, pro presence 1.0%",
+     "WR < 49.5 and PR >= 5.0"
+    ]
+   }
+  },
+  {
+   "champion": "Viego",
+   "patch": "26.17",
+   "soloq_index": 1.0635,
+   "pro_index": 1.011,
+   "metrics": {
+    "lane_trade_l6": 469.0161,
+    "duel_ttk_l9": 6.1,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 448.2193,
+    "siege_score": 403.3974,
+    "utility_cc_per_10s": 1.5625,
+    "scaling_ratio": 2.7713
+   },
+   "presence": 2.0,
+   "pro_patch": "26.17",
+   "global": {
+    "wr": 50.35,
+    "pr": 8.83,
+    "br": 7.76,
+    "games": 257244,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.35%, PR 8.83%, BR 7.76%, pro presence 2.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 48.82,
+    "pr": 6.65,
+    "br": 1.32,
+    "games": 36289,
+    "category": "POPULAR_WEAK",
+    "reasons": [
+     "soloq WR 48.82%, PR 6.65%, BR 1.32%, pro presence 2.0%",
+     "WR < 49.5 and PR >= 5.0"
+    ]
+   }
+  },
+  {
+   "champion": "Viego",
+   "patch": "26.18",
+   "soloq_index": 1.0663,
+   "pro_index": 1.0221,
+   "metrics": {
+    "lane_trade_l6": 474.0043,
+    "duel_ttk_l9": 6.1,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 458.2585,
+    "siege_score": 412.4327,
+    "utility_cc_per_10s": 1.5625,
+    "scaling_ratio": 2.7989
+   },
+   "presence": 3.0,
+   "pro_patch": "26.18",
+   "global": {
+    "wr": 51.24,
+    "pr": 9.5,
+    "br": 8.35,
+    "games": 234188,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.24%, PR 9.50%, BR 8.35%, pro presence 3.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 50.39,
+    "pr": 7.77,
+    "br": 1.83,
+    "games": 36049,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.39%, PR 7.77%, BR 1.83%, pro presence 3.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Viego",
+   "patch": "26.19",
+   "soloq_index": 1.0663,
+   "pro_index": 1.0221,
+   "metrics": {
+    "lane_trade_l6": 474.0043,
+    "duel_ttk_l9": 6.1,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 458.2585,
+    "siege_score": 412.4327,
+    "utility_cc_per_10s": 1.5625,
+    "scaling_ratio": 2.7989
+   },
+   "presence": 3.0,
+   "pro_patch": "26.18",
+   "global": {
+    "wr": 51.17,
+    "pr": 8.6,
+    "br": 7.55,
+    "games": 232468,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.17%, PR 8.60%, BR 7.55%, pro presence 3.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 50.1,
+    "pr": 7.08,
+    "br": 1.8,
+    "games": 36551,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.10%, PR 7.08%, BR 1.80%, pro presence 3.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Viego",
+   "patch": "26.20",
+   "soloq_index": 1.0663,
+   "pro_index": 1.0221,
+   "metrics": {
+    "lane_trade_l6": 474.0043,
+    "duel_ttk_l9": 6.1,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 458.2585,
+    "siege_score": 412.4327,
+    "utility_cc_per_10s": 1.5625,
+    "scaling_ratio": 2.7989
+   },
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 51.02,
+    "pr": 8.37,
+    "br": 6.93,
+    "games": 227125,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.02%, PR 8.37%, BR 6.93%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 49.75,
+    "pr": 6.96,
+    "br": 1.52,
+    "games": 34688,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 49.75%, PR 6.96%, BR 1.52%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Viego",
+   "patch": "26.21",
+   "soloq_index": 1.0627,
+   "pro_index": 1.0232,
+   "metrics": {
+    "lane_trade_l6": 474.0043,
+    "duel_ttk_l9": 6.1,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 458.2585,
+    "siege_score": 412.4327,
+    "utility_cc_per_10s": 1.5625,
+    "scaling_ratio": 2.7989
+   },
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 51.5,
+    "pr": 8.26,
+    "br": 6.85,
+    "games": 231733,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.50%, PR 8.26%, BR 6.85%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 50.44,
+    "pr": 6.72,
+    "br": 1.51,
+    "games": 33730,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.44%, PR 6.72%, BR 1.51%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Viego",
+   "patch": "26.22",
+   "soloq_index": 1.0627,
+   "pro_index": 1.0232,
+   "metrics": {
+    "lane_trade_l6": 474.0043,
+    "duel_ttk_l9": 6.1,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 458.2585,
+    "siege_score": 412.4327,
+    "utility_cc_per_10s": 1.5625,
+    "scaling_ratio": 2.7989
+   },
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 51.68,
+    "pr": 7.98,
+    "br": 6.44,
+    "games": 169374,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.68%, PR 7.98%, BR 6.44%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 50.79,
+    "pr": 6.47,
+    "br": 1.41,
+    "games": 26821,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.79%, PR 6.47%, BR 1.41%, pro presence 0.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Qiyana",
+   "patch": "26.16",
+   "soloq_index": 0.868,
+   "pro_index": 0.7399,
+   "metrics": {
+    "lane_trade_l6": 461.9811,
+    "duel_ttk_l9": 9.2,
+    "mana_casts_to_oom": 8.16,
+    "late_dps_l16": 393.7373,
+    "siege_score": 433.111,
+    "utility_cc_per_10s": 0.125,
+    "scaling_ratio": 2.9155
+   },
+   "presence": 11.0,
+   "pro_patch": "26.16",
+   "global": {
+    "wr": 50.37,
+    "pr": 2.18,
+    "br": 2.63,
+    "games": 62862,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.37%, PR 2.18%, BR 2.63%, pro presence 11.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 54.32,
+    "pr": 1.55,
+    "br": 2.5,
+    "games": 8662,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 54.32%, PR 1.55%, BR 2.50%, pro presence 11.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Qiyana",
+   "patch": "26.17",
+   "soloq_index": 0.8735,
+   "pro_index": 0.7425,
+   "metrics": {
+    "lane_trade_l6": 471.7243,
+    "duel_ttk_l9": 9.2,
+    "mana_casts_to_oom": 8.16,
+    "late_dps_l16": 396.295,
+    "siege_score": 435.9245,
+    "utility_cc_per_10s": 0.125,
+    "scaling_ratio": 2.9152
+   },
+   "presence": 18.0,
+   "pro_patch": "26.17",
+   "global": {
+    "wr": 51.76,
+    "pr": 3.05,
+    "br": 6.35,
+    "games": 89251,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.76%, PR 3.05%, BR 6.35%, pro presence 18.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 54.19,
+    "pr": 2.24,
+    "br": 6.56,
+    "games": 12268,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 54.19%, PR 2.24%, BR 6.56%, pro presence 18.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Qiyana",
+   "patch": "26.18",
+   "soloq_index": 0.873,
+   "pro_index": 0.7404,
+   "metrics": {
+    "lane_trade_l6": 471.7243,
+    "duel_ttk_l9": 9.2,
+    "mana_casts_to_oom": 8.16,
+    "late_dps_l16": 396.295,
+    "siege_score": 435.9245,
+    "utility_cc_per_10s": 0.125,
+    "scaling_ratio": 2.9152
+   },
+   "presence": 61.0,
+   "pro_patch": "26.18",
+   "global": {
+    "wr": 51.59,
+    "pr": 2.82,
+    "br": 8.22,
+    "games": 69851,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.59%, PR 2.82%, BR 8.22%, pro presence 61.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 53.84,
+    "pr": 1.99,
+    "br": 10.66,
+    "games": 9250,
+    "category": "OVERALL_STRONG",
+    "reasons": [
+     "soloq WR 53.84%, PR 1.99%, BR 10.66%, pro presence 61.0%",
+     "WR > 52.5 and (presence >= 30.0 or BR >= 20.0)"
+    ]
+   }
+  },
+  {
+   "champion": "Qiyana",
+   "patch": "26.19",
+   "soloq_index": 0.873,
+   "pro_index": 0.7404,
+   "metrics": {
+    "lane_trade_l6": 471.7243,
+    "duel_ttk_l9": 9.2,
+    "mana_casts_to_oom": 8.16,
+    "late_dps_l16": 396.295,
+    "siege_score": 435.9245,
+    "utility_cc_per_10s": 0.125,
+    "scaling_ratio": 2.9152
+   },
+   "presence": 61.0,
+   "pro_patch": "26.18",
+   "global": {
+    "wr": 51.59,
+    "pr": 2.82,
+    "br": 10.82,
+    "games": 76686,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.59%, PR 2.82%, BR 10.82%, pro presence 61.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 54.47,
+    "pr": 1.92,
+    "br": 13.98,
+    "games": 9927,
+    "category": "OVERALL_STRONG",
+    "reasons": [
+     "soloq WR 54.47%, PR 1.92%, BR 13.98%, pro presence 61.0%",
+     "WR > 52.5 and (presence >= 30.0 or BR >= 20.0)"
+    ]
+   }
+  },
+  {
+   "champion": "Qiyana",
+   "patch": "26.20",
+   "soloq_index": 0.873,
+   "pro_index": 0.7404,
+   "metrics": {
+    "lane_trade_l6": 471.7243,
+    "duel_ttk_l9": 9.2,
+    "mana_casts_to_oom": 8.16,
+    "late_dps_l16": 396.295,
+    "siege_score": 435.9245,
+    "utility_cc_per_10s": 0.125,
+    "scaling_ratio": 2.9152
+   },
+   "presence": 57.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 51.49,
+    "pr": 2.76,
+    "br": 14.21,
+    "games": 75416,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.49%, PR 2.76%, BR 14.21%, pro presence 57.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 54.82,
+    "pr": 1.79,
+    "br": 18.2,
+    "games": 8978,
+    "category": "OVERALL_STRONG",
+    "reasons": [
+     "soloq WR 54.82%, PR 1.79%, BR 18.20%, pro presence 57.0%",
+     "WR > 52.5 and (presence >= 30.0 or BR >= 20.0)"
+    ]
+   }
+  },
+  {
+   "champion": "Qiyana",
+   "patch": "26.21",
+   "soloq_index": 0.8651,
+   "pro_index": 0.7401,
+   "metrics": {
+    "lane_trade_l6": 464.0826,
+    "duel_ttk_l9": 9.2,
+    "mana_casts_to_oom": 8.16,
+    "late_dps_l16": 394.854,
+    "siege_score": 434.3394,
+    "utility_cc_per_10s": 0.125,
+    "scaling_ratio": 2.9196
+   },
+   "presence": 57.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 50.07,
+    "pr": 2.47,
+    "br": 14.61,
+    "games": 69668,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.07%, PR 2.47%, BR 14.61%, pro presence 57.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 52.54,
+    "pr": 1.8,
+    "br": 15.58,
+    "games": 9064,
+    "category": "OVERALL_STRONG",
+    "reasons": [
+     "soloq WR 52.54%, PR 1.80%, BR 15.58%, pro presence 57.0%",
+     "WR > 52.5 and (presence >= 30.0 or BR >= 20.0)"
+    ]
+   }
+  },
+  {
+   "champion": "Qiyana",
+   "patch": "26.22",
+   "soloq_index": 0.8651,
+   "pro_index": 0.7401,
+   "metrics": {
+    "lane_trade_l6": 464.0826,
+    "duel_ttk_l9": 9.2,
+    "mana_casts_to_oom": 8.16,
+    "late_dps_l16": 394.854,
+    "siege_score": 434.3394,
+    "utility_cc_per_10s": 0.125,
+    "scaling_ratio": 2.9196
+   },
+   "presence": 57.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 50.24,
+    "pr": 2.2,
+    "br": 15.64,
+    "games": 46993,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.24%, PR 2.20%, BR 15.64%, pro presence 57.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 52.73,
+    "pr": 1.65,
+    "br": 15.76,
+    "games": 6888,
+    "category": "OVERALL_STRONG",
+    "reasons": [
+     "soloq WR 52.73%, PR 1.65%, BR 15.76%, pro presence 57.0%",
+     "WR > 52.5 and (presence >= 30.0 or BR >= 20.0)"
+    ]
+   }
+  },
+  {
+   "champion": "Lee Sin",
+   "patch": "26.16",
+   "soloq_index": 1.1727,
+   "pro_index": 1.0265,
+   "metrics": {
+    "lane_trade_l6": 662.4701,
+    "duel_ttk_l9": 6.5,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 324.3507,
+    "siege_score": 405.4383,
+    "utility_cc_per_10s": 2.3125,
+    "scaling_ratio": 2.0232
+   },
+   "presence": 43.0,
+   "pro_patch": "26.16",
+   "global": {
+    "wr": 51.26,
+    "pr": 13.36,
+    "br": 16.08,
+    "games": 383586,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.26%, PR 13.36%, BR 16.08%, pro presence 43.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 52.54,
+    "pr": 26.29,
+    "br": 54.07,
+    "games": 146449,
+    "category": "OVERALL_STRONG",
+    "reasons": [
+     "soloq WR 52.54%, PR 26.29%, BR 54.07%, pro presence 43.0%",
+     "WR > 52.5 and (presence >= 30.0 or BR >= 20.0)"
+    ]
+   }
+  },
+  {
+   "champion": "Lee Sin",
+   "patch": "26.17",
+   "soloq_index": 1.1712,
+   "pro_index": 1.0261,
+   "metrics": {
+    "lane_trade_l6": 662.4701,
+    "duel_ttk_l9": 6.5,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 324.3507,
+    "siege_score": 405.4383,
+    "utility_cc_per_10s": 2.3125,
+    "scaling_ratio": 2.0232
+   },
+   "presence": 44.0,
+   "pro_patch": "26.17",
+   "global": {
+    "wr": 50.91,
+    "pr": 13.29,
+    "br": 16.49,
+    "games": 387303,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.91%, PR 13.29%, BR 16.49%, pro presence 44.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 52.41,
+    "pr": 25.62,
+    "br": 55.64,
+    "games": 139908,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 52.41%, PR 25.62%, BR 55.64%, pro presence 44.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Lee Sin",
+   "patch": "26.18",
+   "soloq_index": 1.1705,
+   "pro_index": 1.0243,
+   "metrics": {
+    "lane_trade_l6": 662.4701,
+    "duel_ttk_l9": 6.5,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 324.3507,
+    "siege_score": 405.4383,
+    "utility_cc_per_10s": 2.3125,
+    "scaling_ratio": 2.0232
+   },
+   "presence": 57.0,
+   "pro_patch": "26.18",
+   "global": {
+    "wr": 50.52,
+    "pr": 13.31,
+    "br": 16.89,
+    "games": 328040,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.52%, PR 13.31%, BR 16.89%, pro presence 57.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 51.99,
+    "pr": 25.53,
+    "br": 56.72,
+    "games": 118412,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.99%, PR 25.53%, BR 56.72%, pro presence 57.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Lee Sin",
+   "patch": "26.19",
+   "soloq_index": 1.1705,
+   "pro_index": 1.0243,
+   "metrics": {
+    "lane_trade_l6": 662.4701,
+    "duel_ttk_l9": 6.5,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 324.3507,
+    "siege_score": 405.4383,
+    "utility_cc_per_10s": 2.3125,
+    "scaling_ratio": 2.0232
+   },
+   "presence": 57.0,
+   "pro_patch": "26.18",
+   "global": {
+    "wr": 50.81,
+    "pr": 12.79,
+    "br": 17.02,
+    "games": 345807,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.81%, PR 12.79%, BR 17.02%, pro presence 57.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 52.21,
+    "pr": 24.5,
+    "br": 56.29,
+    "games": 126440,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 52.21%, PR 24.50%, BR 56.29%, pro presence 57.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Lee Sin",
+   "patch": "26.20",
+   "soloq_index": 1.1705,
+   "pro_index": 1.0243,
+   "metrics": {
+    "lane_trade_l6": 662.4701,
+    "duel_ttk_l9": 6.5,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 324.3507,
+    "siege_score": 405.4383,
+    "utility_cc_per_10s": 2.3125,
+    "scaling_ratio": 2.0232
+   },
+   "presence": 54.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 50.79,
+    "pr": 13.01,
+    "br": 16.67,
+    "games": 352902,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.79%, PR 13.01%, BR 16.67%, pro presence 54.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 52.45,
+    "pr": 24.65,
+    "br": 56.14,
+    "games": 122832,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 52.45%, PR 24.65%, BR 56.14%, pro presence 54.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Lee Sin",
+   "patch": "26.21",
+   "soloq_index": 1.1672,
+   "pro_index": 1.0202,
+   "metrics": {
+    "lane_trade_l6": 662.4701,
+    "duel_ttk_l9": 6.5,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 320.6518,
+    "siege_score": 400.8147,
+    "utility_cc_per_10s": 2.3125,
+    "scaling_ratio": 2.0207
+   },
+   "presence": 54.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 49.47,
+    "pr": 12.41,
+    "br": 14.66,
+    "games": 348210,
+    "category": "POPULAR_WEAK",
+    "reasons": [
+     "soloq WR 49.47%, PR 12.41%, BR 14.66%, pro presence 54.0%",
+     "WR < 49.5 and PR >= 5.0"
+    ]
+   },
+   "kr": {
+    "wr": 50.76,
+    "pr": 22.97,
+    "br": 48.17,
+    "games": 115204,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 50.76%, PR 22.97%, BR 48.17%, pro presence 54.0%",
+     "no rule matched"
+    ]
+   }
+  },
+  {
+   "champion": "Lee Sin",
+   "patch": "26.22",
+   "soloq_index": 1.1672,
+   "pro_index": 1.0202,
+   "metrics": {
+    "lane_trade_l6": 662.4701,
+    "duel_ttk_l9": 6.5,
+    "mana_casts_to_oom": 10.0,
+    "late_dps_l16": 320.6518,
+    "siege_score": 400.8147,
+    "utility_cc_per_10s": 2.3125,
+    "scaling_ratio": 2.0207
+   },
+   "presence": 54.0,
+   "pro_patch": "26.20",
+   "global": {
+    "wr": 49.85,
+    "pr": 13.09,
+    "br": 15.25,
+    "games": 278322,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 49.85%, PR 13.09%, BR 15.25%, pro presence 54.0%",
+     "no rule matched"
+    ]
+   },
+   "kr": {
+    "wr": 51.05,
+    "pr": 24.24,
+    "br": 47.36,
+    "games": 100459,
+    "category": "HOLD",
+    "reasons": [
+     "soloq WR 51.05%, PR 24.24%, BR 47.36%, pro presence 54.0%",
+     "no rule matched"
+    ]
+   }
+  }
+ ],
+ "calibration": {
+  "all": {
+   "pro_index_vs_presence": -0.6188690688947719,
+   "soloq_index_vs_wr_global": -0.025152146044039567,
+   "soloq_index_vs_wr_kr": -0.3744424322362665,
+   "n": 42
+  },
+  "train": {
+   "pro_index_vs_presence": -0.5199744119006647,
+   "soloq_index_vs_wr_global": -0.03657742206546531,
+   "soloq_index_vs_wr_kr": -0.3030041765819694,
+   "n": 24
+  }
+ },
+ "riot_changes": [
+  {
+   "champion": "Viego",
+   "patch": "26.18",
+   "direction": "buff",
+   "fields": [
+    {
+     "field": "base.ad_per_lvl",
+     "from": 3.5,
+     "to": 4.0
+    }
+   ],
+   "delta": {
+    "soloq_index": 0.0031,
+    "pro_index": 0.0132
+   },
+   "wr_before": {
+    "global": 50.35,
+    "kr": 48.82
+   },
+   "wr_after": {
+    "global": 51.24,
+    "kr": 50.39
+   },
+   "diagnosis_before": {
+    "global": "HOLD",
+    "kr": "POPULAR_WEAK"
+   }
+  },
+  {
+   "champion": "Azir",
+   "patch": "26.21",
+   "direction": "buff",
+   "fields": [
+    {
+     "field": "base.mp_per_lvl",
+     "from": 40,
+     "to": 50
+    }
+   ],
+   "delta": {
+    "soloq_index": 0.0216,
+    "pro_index": 0.0
+   },
+   "wr_before": {
+    "global": 48.45,
+    "kr": 48.88
+   },
+   "wr_after": {
+    "global": 49.0,
+    "kr": 48.78
+   },
+   "diagnosis_before": {
+    "global": "HOLD",
+    "kr": "HOLD"
+   }
+  },
+  {
+   "champion": "Qiyana",
+   "patch": "26.17",
+   "direction": "buff",
+   "fields": [
+    {
+     "field": "abilities.Q_edge_of_ixtal.base",
+     "from": [
+      70,
+      100,
+      130,
+      160,
+      190
+     ],
+     "to": [
+      80,
+      110,
+      140,
+      170,
+      200
+     ]
+    },
+    {
+     "field": "abilities.Q_edge_of_ixtal.bonus_ad_ratio",
+     "from": 0.85,
+     "to": 0.9
+    }
+   ],
+   "delta": {
+    "soloq_index": 0.0075,
+    "pro_index": 0.0042
+   },
+   "wr_before": {
+    "global": 50.37,
+    "kr": 54.32
+   },
+   "wr_after": {
+    "global": 51.76,
+    "kr": 54.19
+   },
+   "diagnosis_before": {
+    "global": "HOLD",
+    "kr": "HOLD"
+   }
+  },
+  {
+   "champion": "Qiyana",
+   "patch": "26.21",
+   "direction": "nerf",
+   "fields": [
+    {
+     "field": "abilities.Q_edge_of_ixtal.base",
+     "from": [
+      80,
+      110,
+      140,
+      170,
+      200
+     ],
+     "to": [
+      70,
+      100,
+      130,
+      160,
+      190
+     ]
+    }
+   ],
+   "delta": {
+    "soloq_index": -0.0058,
+    "pro_index": -0.0019
+   },
+   "wr_before": {
+    "global": 51.49,
+    "kr": 54.82
+   },
+   "wr_after": {
+    "global": 50.07,
+    "kr": 52.54
+   },
+   "diagnosis_before": {
+    "global": "HOLD",
+    "kr": "OVERALL_STRONG"
+   }
+  },
+  {
+   "champion": "Lee Sin",
+   "patch": "26.21",
+   "direction": "nerf",
+   "fields": [
+    {
+     "field": "abilities.W_safeguard.cooldown",
+     "from": [
+      7
+     ],
+     "to": [
+      8
+     ]
+    },
+    {
+     "field": "abilities.R_dragons_rage.base",
+     "from": [
+      175,
+      400,
+      625
+     ],
+     "to": [
+      150,
+      350,
+      550
+     ]
+    }
+   ],
+   "delta": {
+    "soloq_index": 0.0,
+    "pro_index": -0.0049
+   },
+   "wr_before": {
+    "global": 50.79,
+    "kr": 52.45
+   },
+   "wr_after": {
+    "global": 49.47,
+    "kr": 50.76
+   },
+   "diagnosis_before": {
+    "global": "HOLD",
+    "kr": "HOLD"
+   }
+  }
+ ]
+}

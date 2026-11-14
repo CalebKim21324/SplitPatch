@@ -5,6 +5,8 @@
 # Edge of Ixtal; the current page shows both at 70/100/130/160/190 (+90% bonus AD).
 name: Qiyana
 patch: "26.22"
+as_ratio: 0.625       # wiki infobox "AS ratio"
+skill_order: "QWE"     # lolalytics 26.22 Emerald+, most common max order
 base:
   hp: 590
   hp_per_lvl: 115

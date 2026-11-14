@@ -4,6 +4,8 @@
 # passive heal gained "+0.4% per 100 bonus health" (not modeled numerically).
 name: Viego
 patch: "26.22"
+resource: none
+skill_order: "QEW"     # lolalytics 26.22 Emerald+, most common max order
 base:
   hp: 630
   hp_per_lvl: 109
@@ -29,12 +31,17 @@ abilities:
     damage_type: physical
     base: [25, 40, 55, 70, 85]
     ad_ratio: 0.70
-    pct_current_hp: [0.02, 0.03, 0.04, 0.05, 0.06]   # passive on-hit
-    min_damage: [10, 15, 20, 25, 30]                 # on-hit floor
     cooldown: [5, 4.5, 4, 3.5, 3]
     range: 600
-    tags: [burst, sustained]
+    tags: [burst]
     notes: "Marked target: second strike 20% AD (+15% AP), heals."
+  Q_blade_on_hit:
+    type: damage
+    damage_type: physical
+    pct_current_hp: [0.02, 0.03, 0.04, 0.05, 0.06]   # Q passive, applied on every attack
+    min_damage: [10, 15, 20, 25, 30]                 # floor
+    recast_of: Q_blade_of_the_ruined_king
+    tags: [on_hit, sustained]
   W_spectral_maw:
     type: cc
     damage_type: magic
