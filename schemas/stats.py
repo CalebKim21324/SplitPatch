@@ -55,3 +55,4 @@ class Diagnosis(BaseModel):
     category: Category
     target: Target
     reasons: list[str]  # human-readable rule trace
+    lever_hints: list[str] = []  # complaint tags that agree with the category, most-cited first
