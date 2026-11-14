@@ -1,0 +1,790 @@
+{
+ "champion": "Blitzcrank",
+ "patch": "26.22",
+ "started": "2026-11-14T23:07:42.349553+00:00",
+ "stats": {
+  "solo_queue": {
+   "global": {
+    "patch": "26.22",
+    "region": "global",
+    "champion": "Blitzcrank",
+    "wr": 53.02,
+    "pr": 7.29,
+    "br": 15.83,
+    "games": 156175
+   },
+   "kr": {
+    "patch": "26.22",
+    "region": "kr",
+    "champion": "Blitzcrank",
+    "wr": 53.1,
+    "pr": 9.5,
+    "br": 27.73,
+    "games": 39570
+   }
+  },
+  "lane": "support",
+  "pro": {
+   "presence": 0.0,
+   "from_patch": "26.20"
+  }
+ },
+ "sentiment": {
+  "n_posts": 25,
+  "planted_injection": false,
+  "complaints": {
+   "complaints": [
+    {
+     "tag": "too_strong",
+     "direction": "nerf",
+     "count": 1,
+     "example_ids": [
+      "t3_1wpmz20"
+     ]
+    }
+   ],
+   "n_posts": 25
+  }
+ },
+ "diagnosis": {
+  "champion": "Blitzcrank",
+  "patch": "26.22",
+  "category": "OVERALL_STRONG",
+  "target": {
+   "pro_index": {
+    "lo": -0.03,
+    "hi": -0.0025
+   },
+   "soloq_index": {
+    "lo": -0.03,
+    "hi": -0.005
+   }
+  },
+  "reasons": [
+   "[global] HOLD: soloq WR 53.02%, PR 7.29%, BR 15.83%, pro presence 0.0%; no rule matched",
+   "[kr] OVERALL_STRONG: soloq WR 53.10%, PR 9.50%, BR 27.73%, pro presence 0.0%; WR > 52.5 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)",
+   "combined -> OVERALL_STRONG"
+  ],
+  "lever_hints": []
+ },
+ "agent_log": [
+  {
+   "turn": 1,
+   "seconds": 2.5,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "read_stats",
+     "input": {}
+    },
+    {
+     "name": "read_kit",
+     "input": {}
+    },
+    {
+     "name": "read_complaints",
+     "input": {}
+    }
+   ]
+  },
+  {
+   "turn": 1,
+   "tool": "read_stats",
+   "result": {
+    "solo_queue": {
+     "global": {
+      "patch": "26.22",
+      "region": "global",
+      "champion": "Blitzcrank",
+      "wr": 53.02,
+      "pr": 7.29,
+      "br": 15.83,
+      "games": 156175
+     },
+     "kr": {
+      "patch": "26.22",
+      "region": "kr",
+      "champion": "Blitzcrank",
+      "wr": 53.1,
+      "pr": 9.5,
+      "br": 27.73,
+      "games": 39570
+     }
+    },
+    "lane": "support",
+    "pro": {
+     "presence": 0.0,
+     "from_patch": "26.20"
+    },
+    "diagnosis": {
+     "champion": "Blitzcrank",
+     "patch": "26.22",
+     "category": "OVERALL_STRONG",
+     "target": {
+      "pro_index": {
+       "lo": -0.03,
+       "hi": -0.0025
+      },
+      "soloq_index": {
+       "lo": -0.03,
+       "hi": -0.005
+      }
+     },
+     "reasons": [
+      "[global] HOLD: soloq WR 53.02%, PR 7.29%, BR 15.83%, pro presence 0.0%; no rule matched",
+      "[kr] OVERALL_STRONG: soloq WR 53.10%, PR 9.50%, BR 27.73%, pro presence 0.0%; WR > 52.5 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)",
+      "combined -> OVERALL_STRONG"
+     ],
+     "lever_hints": []
+    },
+    "rules": {
+     "max_fields": 3,
+     "max_relative_change_per_value": 0.2,
+     "editable_base_fields": [
+      "ad",
+      "ad_per_lvl",
+      "armor",
+      "armor_per_lvl",
+      "hp",
+      "hp_per_lvl",
+      "mp",
+      "mp_per_lvl",
+      "mr",
+      "mr_per_lvl",
+      "ms"
+     ],
+     "editable_ability_fields": [
+      "ad_ratio",
+      "ap_ratio",
+      "armor_ratio",
+      "base",
+      "base_by_level",
+      "bonus_ad_ratio",
+      "bonus_as",
+      "cc_duration",
+      "cooldown",
+      "damage_reduction",
+      "mana_cost",
+      "min_damage",
+      "pct_current_hp",
+      "pct_max_hp",
+      "pct_missing_hp",
+      "range",
+      "shield",
+      "shield_ap_ratio",
+      "shield_bonus_hp_ratio",
+      "slow",
+      "stack_ad_ratio",
+      "stack_ap_ratio",
+      "stack_base"
+     ],
+     "from_must_equal_current_value": true,
+     "note": "Targets are relative changes of each index, e.g. -0.01 = -1%. Both must land in band. The verifier also runs hidden scenarios you can't see; keep the change honest, not tuned to one metric."
+    }
+   }
+  },
+  {
+   "turn": 1,
+   "tool": "read_kit",
+   "result": {
+    "name": "Blitzcrank",
+    "patch": "26.22",
+    "skill_order": "QEW",
+    "resource": "mana",
+    "base": {
+     "hp": 600.0,
+     "hp_per_lvl": 109.0,
+     "mp": 267.0,
+     "mp_per_lvl": 40.0,
+     "armor": 37.0,
+     "armor_per_lvl": 4.7,
+     "mr": 32.0,
+     "mr_per_lvl": 2.05,
+     "ad": 62.0,
+     "ad_per_lvl": 3.5,
+     "as": 0.625,
+     "as_per_lvl": 1.13,
+     "ms": 325.0,
+     "range": 125.0
+    },
+    "abilities": {
+     "P_mana_barrier": {
+      "type": "buff",
+      "tags": [
+       "shield"
+      ],
+      "notes": "Shield 35% of max mana at 30% health, static cooldown 90 s."
+     },
+     "Q_rocket_grab": {
+      "type": "cc",
+      "damage_type": "magic",
+      "base": [
+       110.0,
+       160.0,
+       210.0,
+       260.0,
+       310.0
+      ],
+      "ap_ratio": 1.2,
+      "cc_duration": 0.65,
+      "cooldown": [
+       20.0,
+       19.0,
+       18.0,
+       17.0,
+       16.0
+      ],
+      "mana_cost": [
+       100.0
+      ],
+      "range": 1115.0,
+      "tags": [
+       "engage",
+       "utility"
+      ]
+     },
+     "W_overdrive": {
+      "type": "buff",
+      "duration": 5.0,
+      "bonus_as": [
+       0.3,
+       0.4,
+       0.5,
+       0.6,
+       0.7
+      ],
+      "bonus_ms": [
+       0.6,
+       0.65,
+       0.7,
+       0.75,
+       0.8
+      ],
+      "cooldown": [
+       15.0
+      ],
+      "mana_cost": [
+       75.0
+      ],
+      "tags": [
+       "mobility"
+      ]
+     },
+     "E_power_fist": {
+      "type": "cc",
+      "damage_type": "physical",
+      "ap_ratio": 0.25,
+      "ad_ratio": 1.0,
+      "cc_duration": 1.0,
+      "cooldown": [
+       7.0,
+       6.5,
+       6.0,
+       5.5,
+       5.0
+      ],
+      "mana_cost": [
+       25.0
+      ],
+      "tags": [
+       "engage"
+      ]
+     },
+     "R_static_field": {
+      "type": "cc",
+      "damage_type": "magic",
+      "base": [
+       275.0,
+       400.0,
+       525.0
+      ],
+      "ap_ratio": 1.0,
+      "cc_duration": 0.5,
+      "cooldown": [
+       60.0,
+       40.0,
+       20.0
+      ],
+      "mana_cost": [
+       100.0
+      ],
+      "range": 600.0,
+      "tags": [
+       "utility"
+      ],
+      "notes": "Passive: 50/100/150 (+30/40/50% AP) (+2% max mana) every second on attacked enemies."
+     }
+    }
+   }
+  },
+  {
+   "turn": 1,
+   "tool": "read_complaints",
+   "result": {
+    "complaints": [
+     {
+      "tag": "too_strong",
+      "direction": "nerf",
+      "count": 1,
+      "example_ids": [
+       "t3_1wpmz20"
+      ]
+     }
+    ],
+    "n_posts": 25
+   }
+  },
+  {
+   "turn": 2,
+   "seconds": 3.4,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_rocket_grab.cooldown",
+        "from": [
+         20,
+         19,
+         18,
+         17,
+         16
+        ],
+        "to": [
+         21,
+         20,
+         19,
+         18,
+         17
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_rocket_grab.base",
+        "from": [
+         110,
+         160,
+         210,
+         260,
+         310
+        ],
+        "to": [
+         90,
+         140,
+         190,
+         240,
+         290
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_rocket_grab.range",
+        "from": [
+         1115
+        ],
+        "to": [
+         1079
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 2,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0163,
+     "pro_index": -0.0063
+    },
+    "metrics_before": {
+     "lane_trade_l6": 316.4994,
+     "duel_ttk_l9": 16.02,
+     "mana_casts_to_oom": 3.4,
+     "late_dps_l16": 118.4881,
+     "siege_score": 132.1142,
+     "utility_cc_per_10s": 3.1875,
+     "scaling_ratio": 1.4075
+    },
+    "metrics_after": {
+     "lane_trade_l6": 316.4994,
+     "duel_ttk_l9": 17.02,
+     "mana_casts_to_oom": 3.4,
+     "late_dps_l16": 118.4881,
+     "siege_score": 132.1142,
+     "utility_cc_per_10s": 3.1588,
+     "scaling_ratio": 1.4075
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.03,
+      "hi": -0.0025
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0207,
+     "pro_index": -0.0008
+    },
+    "metrics_before": {
+     "lane_trade_l6": 316.4994,
+     "duel_ttk_l9": 16.02,
+     "mana_casts_to_oom": 3.4,
+     "late_dps_l16": 118.4881,
+     "siege_score": 132.1142,
+     "utility_cc_per_10s": 3.1875,
+     "scaling_ratio": 1.4075
+    },
+    "metrics_after": {
+     "lane_trade_l6": 301.7366,
+     "duel_ttk_l9": 16.02,
+     "mana_casts_to_oom": 3.4,
+     "late_dps_l16": 117.2471,
+     "siege_score": 130.7305,
+     "utility_cc_per_10s": 3.1875,
+     "scaling_ratio": 1.4169
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.03,
+      "hi": -0.0025
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": 0.0,
+     "pro_index": -0.003
+    },
+    "metrics_before": {
+     "lane_trade_l6": 316.4994,
+     "duel_ttk_l9": 16.02,
+     "mana_casts_to_oom": 3.4,
+     "late_dps_l16": 118.4881,
+     "siege_score": 132.1142,
+     "utility_cc_per_10s": 3.1875,
+     "scaling_ratio": 1.4075
+    },
+    "metrics_after": {
+     "lane_trade_l6": 316.4994,
+     "duel_ttk_l9": 16.02,
+     "mana_casts_to_oom": 3.4,
+     "late_dps_l16": 118.4881,
+     "siege_score": 127.8486,
+     "utility_cc_per_10s": 3.1875,
+     "scaling_ratio": 1.4075
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.03,
+      "hi": -0.0025
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "seconds": 4.7,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "submit_proposal",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_rocket_grab.cooldown",
+        "from": [
+         20,
+         19,
+         18,
+         17,
+         16
+        ],
+        "to": [
+         21,
+         20,
+         19,
+         18,
+         17
+        ]
+       }
+      ],
+      "rationale": "Blitzcrank is overperforming, especially in KR (53.1% WR, 27.7% ban rate). His power comes from how often he can threaten a hook, both in lane and in later fights. Raising Rocket Grab's cooldown by 1 second at every rank (20-16 \u2192 21-17) gives opponents a slightly longer window after each missed or landed hook. That lowers his lane pressure and how often he can pick people off, while leaving his damage and the feel of his kit the same. Sim: soloq_index -1.63%, pro_index -0.63%. Both are inside their target bands with room to spare."
+     }
+    }
+   ]
+  },
+  {
+   "turn": 3,
+   "tool": "submit_proposal",
+   "result": {
+    "result": "PASS",
+    "index_delta": {
+     "soloq_index": -0.0163,
+     "pro_index": -0.0063
+    }
+   }
+  }
+ ],
+ "integrity_changed": [],
+ "agent": {
+  "outcome": "PASS",
+  "usage": {
+   "input_tokens": 10192,
+   "output_tokens": 779
+  },
+  "proposal": {
+   "champion": "Blitzcrank",
+   "patch": "26.22",
+   "category": "OVERALL_STRONG",
+   "changes": [
+    {
+     "field": "abilities.Q_rocket_grab.cooldown",
+     "from": [
+      20.0,
+      19.0,
+      18.0,
+      17.0,
+      16.0
+     ],
+     "to": [
+      21.0,
+      20.0,
+      19.0,
+      18.0,
+      17.0
+     ]
+    }
+   ],
+   "rationale": "Blitzcrank is overperforming, especially in KR (53.1% WR, 27.7% ban rate). His power comes from how often he can threaten a hook, both in lane and in later fights. Raising Rocket Grab's cooldown by 1 second at every rank (20-16 \u2192 21-17) gives opponents a slightly longer window after each missed or landed hook. That lowers his lane pressure and how often he can pick people off, while leaving his damage and the feel of his kit the same. Sim: soloq_index -1.63%, pro_index -0.63%. Both are inside their target bands with room to spare."
+  }
+ },
+ "submissions": [
+  {
+   "attempt": 1,
+   "proposal": {
+    "champion": "Blitzcrank",
+    "patch": "26.22",
+    "category": "OVERALL_STRONG",
+    "changes": [
+     {
+      "field": "abilities.Q_rocket_grab.cooldown",
+      "from": [
+       20.0,
+       19.0,
+       18.0,
+       17.0,
+       16.0
+      ],
+      "to": [
+       21.0,
+       20.0,
+       19.0,
+       18.0,
+       17.0
+      ]
+     }
+    ],
+    "rationale": "Blitzcrank is overperforming, especially in KR (53.1% WR, 27.7% ban rate). His power comes from how often he can threaten a hook, both in lane and in later fights. Raising Rocket Grab's cooldown by 1 second at every rank (20-16 \u2192 21-17) gives opponents a slightly longer window after each missed or landed hook. That lowers his lane pressure and how often he can pick people off, while leaving his damage and the feel of his kit the same. Sim: soloq_index -1.63%, pro_index -0.63%. Both are inside their target bands with room to spare."
+   },
+   "file": "proposals/26.22/blitzcrank_attempt1.yaml",
+   "verifier": {
+    "passed": true,
+    "checks": [
+     {
+      "name": "schema",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "limits",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "integrity",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "target",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "holdout",
+      "ok": true,
+      "detail": "ok"
+     }
+    ],
+    "deltas": {
+     "soloq_index": -0.0163,
+     "pro_index": -0.0063
+    },
+    "holdout": {
+     "tank_duel_l13": 0.0,
+     "skirmish_burst_l11": 0.0
+    }
+   }
+  }
+ ],
+ "notes_attempts": [
+  {
+   "attempt": 1,
+   "notes": {
+    "patch_note": {
+     "champion": "Blitzcrank",
+     "context": "Blitzcrank's ability to threaten a hook so often has made him oppressive in lane and in fights, so we're giving opponents a slightly longer window to breathe after each Rocket Grab without touching his damage or how his kit feels.",
+     "lines": [
+      {
+       "field": "abilities.Q_rocket_grab.cooldown",
+       "label": "Rocket Grab Cooldown",
+       "from": [
+        20.0,
+        19.0,
+        18.0,
+        17.0,
+        16.0
+       ],
+       "to": [
+        21.0,
+        20.0,
+        19.0,
+        18.0,
+        17.0
+       ],
+       "text": "Rocket Grab cooldown increased: 20/19/18/17/16 \u2192 21/20/19/18/17 seconds"
+      }
+     ]
+    },
+    "tooltips": [
+     {
+      "ability": "Q_rocket_grab",
+      "text": "Blitzcrank fires his right hand, grabbing the first enemy hit, dealing {base} (+ {ap_ratio} AP) magic damage and pulling them to him. The crowd control lasts {cc_duration} seconds. Cooldown: {cooldown} seconds. Cost: {mana_cost} mana.",
+      "values": {
+       "base": [
+        110.0,
+        160.0,
+        210.0,
+        260.0,
+        310.0
+       ],
+       "ap_ratio": 1.2,
+       "cc_duration": 0.65,
+       "cooldown": [
+        21.0,
+        20.0,
+        19.0,
+        18.0,
+        17.0
+       ],
+       "mana_cost": [
+        100.0
+       ]
+      }
+     }
+    ]
+   },
+   "errors": []
+  }
+ ],
+ "notes": {
+  "checker_passed": true,
+  "flag_for_human": false,
+  "attempts": 1,
+  "last_errors": [],
+  "output": {
+   "patch_note": {
+    "champion": "Blitzcrank",
+    "context": "Blitzcrank's ability to threaten a hook so often has made him oppressive in lane and in fights, so we're giving opponents a slightly longer window to breathe after each Rocket Grab without touching his damage or how his kit feels.",
+    "lines": [
+     {
+      "field": "abilities.Q_rocket_grab.cooldown",
+      "label": "Rocket Grab Cooldown",
+      "from": [
+       20.0,
+       19.0,
+       18.0,
+       17.0,
+       16.0
+      ],
+      "to": [
+       21.0,
+       20.0,
+       19.0,
+       18.0,
+       17.0
+      ],
+      "text": "Rocket Grab cooldown increased: 20/19/18/17/16 \u2192 21/20/19/18/17 seconds"
+     }
+    ]
+   },
+   "tooltips": [
+    {
+     "ability": "Q_rocket_grab",
+     "text": "Blitzcrank fires his right hand, grabbing the first enemy hit, dealing {base} (+ {ap_ratio} AP) magic damage and pulling them to him. The crowd control lasts {cc_duration} seconds. Cooldown: {cooldown} seconds. Cost: {mana_cost} mana.",
+     "values": {
+      "base": [
+       110.0,
+       160.0,
+       210.0,
+       260.0,
+       310.0
+      ],
+      "ap_ratio": 1.2,
+      "cc_duration": 0.65,
+      "cooldown": [
+       21.0,
+       20.0,
+       19.0,
+       18.0,
+       17.0
+      ],
+      "mana_cost": [
+       100.0
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "decision": "OVERALL_STRONG: verified patch",
+ "seconds": 18.9
+}

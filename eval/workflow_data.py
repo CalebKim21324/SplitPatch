@@ -32,6 +32,19 @@ def main() -> int:
     report["builds"] = {c: [catalog[i]["name"] for i in kits.build(c)] for c in kits.CHAMPIONS}
     run = ROOT / "proposals" / "26.22" / "summary.json"
     report["run"] = json.loads(run.read_text(encoding="utf-8")) if run.exists() else None
+    inj = ROOT / "proposals" / "26.22_six_champion_run" / "summary.json"
+    report["injection"] = None
+    if inj.exists():
+        az = next((t for t in json.loads(inj.read_text(encoding="utf-8"))["traces"] if t["champion"] == "Azir"), None)
+        report["injection"] = az["sentiment"] if az else None
+    scan_p = ROOT / "data" / "stats" / "scan_26.22.json"
+    if scan_p.exists():
+        sc = json.loads(scan_p.read_text(encoding="utf-8"))
+        for r in sc["results"]:
+            r.pop("reasons", None)
+        report["scan"] = sc
+    else:
+        report["scan"] = None
     from eval import mutation_test
     from tests.test_notes import KIT, PLANTED, PROPOSAL, notes as planted_notes
     from notes.checker import check

@@ -1,0 +1,13 @@
+{
+ "complaints": [
+  {
+   "tag": "too_strong",
+   "direction": "nerf",
+   "count": 1,
+   "example_ids": [
+    "t3_1xm97pw"
+   ]
+  }
+ ],
+ "n_posts": 25
+}

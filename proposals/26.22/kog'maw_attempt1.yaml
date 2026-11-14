@@ -1,0 +1,25 @@
+champion: Kog'Maw
+patch: '26.22'
+category: SOLOQ_ONLY_STRONG
+changes:
+- field: abilities.Q_caustic_spittle.base
+  from:
+  - 80.0
+  - 125.0
+  - 170.0
+  - 215.0
+  - 260.0
+  to:
+  - 65.0
+  - 110.0
+  - 160.0
+  - 215.0
+  - 260.0
+rationale: 'Kog''Maw is winning 54.5% in global solo queue with very low pro presence
+  (3%). His solo queue power comes from bullying the lane early, not from his late-game
+  scaling, which pro teams build around. We''re cutting Caustic Spittle''s (Q) damage
+  at early ranks (80/125/170 -> 65/110/160) and leaving ranks 4-5 unchanged. This
+  makes his early trades weaker (L6 lane trade 281 -> 270) and leaves his late-game
+  DPS, siege power and utility as they are. Sim: soloq_index -0.94% (target -3% to
+  -0.5%), pro_index +0.46% (target >= -0.5%). We chose this over a base AD nerf because
+  base AD also cuts his late DPS and siege, which pro play relies on.'

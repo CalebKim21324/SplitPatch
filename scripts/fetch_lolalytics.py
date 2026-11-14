@@ -25,6 +25,8 @@ ROOT = Path(__file__).resolve().parents[1]
 CHAMPS = {  # name in our CSVs -> (lolalytics slug, lane)
     "Azir": ("azir", "middle"), "Kalista": ("kalista", "bottom"), "Garen": ("garen", "top"),
     "Viego": ("viego", "jungle"), "Qiyana": ("qiyana", "middle"), "Lee Sin": ("leesin", "jungle"),
+    "Ezreal": ("ezreal", "bottom"), "Blitzcrank": ("blitzcrank", "support"), "Malphite": ("malphite", "top"),
+    "Kog'Maw": ("kogmaw", "bottom"), "Jayce": ("jayce", "top"),
 }
 TOP_N = 8  # options kept per slot
 

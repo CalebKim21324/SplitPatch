@@ -184,7 +184,7 @@ def raw_damage(ab: Ability, rank: int, s: Stats, t_hp: float, t: Target, stacks:
     if ab.base_by_level:
         dmg += lerp_level(ab.base_by_level, s.level)
     dmg += at_rank(ab.ad_ratio, rank) * s.ad + at_rank(ab.bonus_ad_ratio, rank) * s.bonus_ad
-    dmg += at_rank(ab.ap_ratio, rank) * s.ap
+    dmg += at_rank(ab.ap_ratio, rank) * s.ap + at_rank(ab.armor_ratio, rank) * s.armor
     pct = (at_rank(ab.pct_max_hp, rank) * t.max_hp + at_rank(ab.pct_current_hp, rank) * t_hp
            + at_rank(ab.pct_missing_hp, rank) * (t.max_hp - t_hp))
     if ab.min_damage:

@@ -1,0 +1,970 @@
+{
+ "champion": "Jayce",
+ "patch": "26.22",
+ "started": "2026-11-14T23:09:28.228084+00:00",
+ "stats": {
+  "solo_queue": {
+   "global": {
+    "patch": "26.22",
+    "region": "global",
+    "champion": "Jayce",
+    "wr": 49.3,
+    "pr": 5.93,
+    "br": 7.32,
+    "games": 126832
+   },
+   "kr": {
+    "patch": "26.22",
+    "region": "kr",
+    "champion": "Jayce",
+    "wr": 50.15,
+    "pr": 10.32,
+    "br": 15.86,
+    "games": 42977
+   }
+  },
+  "lane": "top",
+  "pro": {
+   "presence": 41.0,
+   "from_patch": "26.20"
+  }
+ },
+ "sentiment": {
+  "n_posts": 25,
+  "planted_injection": false,
+  "complaints": {
+   "complaints": [
+    {
+     "tag": "too_strong",
+     "direction": "nerf",
+     "count": 1,
+     "example_ids": [
+      "t3_1xm97pw"
+     ]
+    }
+   ],
+   "n_posts": 25
+  }
+ },
+ "diagnosis": {
+  "champion": "Jayce",
+  "patch": "26.22",
+  "category": "POPULAR_WEAK",
+  "target": {
+   "pro_index": {
+    "lo": null,
+    "hi": 0.01
+   },
+   "soloq_index": {
+    "lo": 0.005,
+    "hi": 0.03
+   }
+  },
+  "reasons": [
+   "[global] POPULAR_WEAK: soloq WR 49.30%, PR 5.93%, BR 7.32%, pro presence 41.0%; WR < 49.5 and PR >= 5.0",
+   "[kr] HOLD: soloq WR 50.15%, PR 10.32%, BR 15.86%, pro presence 41.0%; no rule matched",
+   "combined -> POPULAR_WEAK"
+  ],
+  "lever_hints": []
+ },
+ "agent_log": [
+  {
+   "turn": 1,
+   "seconds": 1.6,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "read_stats",
+     "input": {}
+    },
+    {
+     "name": "read_kit",
+     "input": {}
+    },
+    {
+     "name": "read_complaints",
+     "input": {}
+    }
+   ]
+  },
+  {
+   "turn": 1,
+   "tool": "read_stats",
+   "result": {
+    "solo_queue": {
+     "global": {
+      "patch": "26.22",
+      "region": "global",
+      "champion": "Jayce",
+      "wr": 49.3,
+      "pr": 5.93,
+      "br": 7.32,
+      "games": 126832
+     },
+     "kr": {
+      "patch": "26.22",
+      "region": "kr",
+      "champion": "Jayce",
+      "wr": 50.15,
+      "pr": 10.32,
+      "br": 15.86,
+      "games": 42977
+     }
+    },
+    "lane": "top",
+    "pro": {
+     "presence": 41.0,
+     "from_patch": "26.20"
+    },
+    "diagnosis": {
+     "champion": "Jayce",
+     "patch": "26.22",
+     "category": "POPULAR_WEAK",
+     "target": {
+      "pro_index": {
+       "lo": null,
+       "hi": 0.01
+      },
+      "soloq_index": {
+       "lo": 0.005,
+       "hi": 0.03
+      }
+     },
+     "reasons": [
+      "[global] POPULAR_WEAK: soloq WR 49.30%, PR 5.93%, BR 7.32%, pro presence 41.0%; WR < 49.5 and PR >= 5.0",
+      "[kr] HOLD: soloq WR 50.15%, PR 10.32%, BR 15.86%, pro presence 41.0%; no rule matched",
+      "combined -> POPULAR_WEAK"
+     ],
+     "lever_hints": []
+    },
+    "rules": {
+     "max_fields": 3,
+     "max_relative_change_per_value": 0.2,
+     "editable_base_fields": [
+      "ad",
+      "ad_per_lvl",
+      "armor",
+      "armor_per_lvl",
+      "hp",
+      "hp_per_lvl",
+      "mp",
+      "mp_per_lvl",
+      "mr",
+      "mr_per_lvl",
+      "ms"
+     ],
+     "editable_ability_fields": [
+      "ad_ratio",
+      "ap_ratio",
+      "armor_ratio",
+      "base",
+      "base_by_level",
+      "bonus_ad_ratio",
+      "bonus_as",
+      "cc_duration",
+      "cooldown",
+      "damage_reduction",
+      "mana_cost",
+      "min_damage",
+      "pct_current_hp",
+      "pct_max_hp",
+      "pct_missing_hp",
+      "range",
+      "shield",
+      "shield_ap_ratio",
+      "shield_bonus_hp_ratio",
+      "slow",
+      "stack_ad_ratio",
+      "stack_ap_ratio",
+      "stack_base"
+     ],
+     "from_must_equal_current_value": true,
+     "note": "Targets are relative changes of each index, e.g. -0.01 = -1%. Both must land in band. The verifier also runs hidden scenarios you can't see; keep the change honest, not tuned to one metric."
+    }
+   }
+  },
+  {
+   "turn": 1,
+   "tool": "read_kit",
+   "result": {
+    "name": "Jayce",
+    "patch": "26.22",
+    "skill_order": "QWE",
+    "resource": "mana",
+    "base": {
+     "hp": 590.0,
+     "hp_per_lvl": 109.0,
+     "mp": 375.0,
+     "mp_per_lvl": 45.0,
+     "armor": 22.0,
+     "armor_per_lvl": 5.0,
+     "mr": 30.0,
+     "mr_per_lvl": 1.3,
+     "ad": 59.0,
+     "ad_per_lvl": 4.25,
+     "as": 0.658,
+     "as_per_lvl": 3.0,
+     "ms": 335.0,
+     "range": 125.0
+    },
+    "abilities": {
+     "Q_to_the_skies": {
+      "type": "damage",
+      "damage_type": "physical",
+      "base": [
+       60.0,
+       110.0,
+       160.0,
+       210.0,
+       260.0,
+       310.0
+      ],
+      "bonus_ad_ratio": 1.35,
+      "slow": [
+       0.35,
+       0.4,
+       0.45,
+       0.5,
+       0.55,
+       0.6
+      ],
+      "slow_duration": 2.0,
+      "cooldown": [
+       16.0,
+       14.0,
+       12.0,
+       10.0,
+       8.0,
+       6.0
+      ],
+      "mana_cost": [
+       40.0
+      ],
+      "range": 600.0,
+      "tags": [
+       "burst",
+       "engage"
+      ]
+     },
+     "W_lightning_field": {
+      "type": "damage",
+      "damage_type": "magic",
+      "base": [
+       140.0,
+       200.0,
+       260.0,
+       320.0,
+       380.0,
+       440.0
+      ],
+      "ap_ratio": 1.0,
+      "cooldown": [
+       10.0
+      ],
+      "mana_cost": [
+       40.0
+      ],
+      "range": 350.0,
+      "tags": [
+       "sustained"
+      ]
+     },
+     "E_thundering_blow": {
+      "type": "damage",
+      "damage_type": "magic",
+      "bonus_ad_ratio": 1.0,
+      "pct_max_hp": [
+       0.08,
+       0.108,
+       0.136,
+       0.164,
+       0.192,
+       0.22
+      ],
+      "cooldown": [
+       20.0,
+       18.0,
+       16.0,
+       14.0,
+       12.0,
+       10.0
+      ],
+      "mana_cost": [
+       55.0
+      ],
+      "range": 240.0,
+      "tags": [
+       "burst",
+       "disengage"
+      ]
+     },
+     "Q_shock_blast": {
+      "type": "damage",
+      "damage_type": "physical",
+      "base": [
+       80.0,
+       121.0,
+       162.0,
+       203.0,
+       244.0,
+       285.0
+      ],
+      "bonus_ad_ratio": 1.3,
+      "cooldown": [
+       8.0
+      ],
+      "mana_cost": [
+       55.0,
+       60.0,
+       65.0,
+       70.0,
+       75.0,
+       80.0
+      ],
+      "range": 1050.0,
+      "recast_of": "Q_to_the_skies",
+      "tags": [
+       "poke"
+      ],
+      "notes": "Cannon form Q; shares a skill point with Hammer Q. +40% through Acceleration Gate (gate not modeled)."
+     }
+    }
+   }
+  },
+  {
+   "turn": 1,
+   "tool": "read_complaints",
+   "result": {
+    "complaints": [
+     {
+      "tag": "too_strong",
+      "direction": "nerf",
+      "count": 1,
+      "example_ids": [
+       "t3_1xm97pw"
+      ]
+     }
+    ],
+    "n_posts": 25
+   }
+  },
+  {
+   "turn": 2,
+   "seconds": 3.0,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_shock_blast.base",
+        "from": [
+         80,
+         121,
+         162,
+         203,
+         244,
+         285
+        ],
+        "to": [
+         90,
+         131,
+         170,
+         207,
+         246,
+         285
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "base.ad",
+        "from": [
+         59
+        ],
+        "to": [
+         61
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 2,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": 0.0,
+     "pro_index": -0.0005
+    },
+    "metrics_before": {
+     "lane_trade_l6": 606.9128,
+     "duel_ttk_l9": 7.28,
+     "mana_casts_to_oom": 4.0944,
+     "late_dps_l16": 328.0195,
+     "siege_score": 344.4204,
+     "utility_cc_per_10s": 1.9281,
+     "scaling_ratio": 2.4879
+    },
+    "metrics_after": {
+     "lane_trade_l6": 606.9128,
+     "duel_ttk_l9": 7.28,
+     "mana_casts_to_oom": 4.0944,
+     "late_dps_l16": 328.2483,
+     "siege_score": 344.6608,
+     "utility_cc_per_10s": 1.9281,
+     "scaling_ratio": 2.4785
+    },
+    "target": {
+     "pro_index": {
+      "lo": null,
+      "hi": 0.01
+     },
+     "soloq_index": {
+      "lo": 0.005,
+      "hi": 0.03
+     }
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": 0.0026,
+     "pro_index": 0.0003
+    },
+    "metrics_before": {
+     "lane_trade_l6": 606.9128,
+     "duel_ttk_l9": 7.28,
+     "mana_casts_to_oom": 4.0944,
+     "late_dps_l16": 328.0195,
+     "siege_score": 344.4204,
+     "utility_cc_per_10s": 1.9281,
+     "scaling_ratio": 2.4879
+    },
+    "metrics_after": {
+     "lane_trade_l6": 610.1685,
+     "duel_ttk_l9": 7.28,
+     "mana_casts_to_oom": 4.0944,
+     "late_dps_l16": 329.1639,
+     "siege_score": 345.6221,
+     "utility_cc_per_10s": 1.9281,
+     "scaling_ratio": 2.4744
+    },
+    "target": {
+     "pro_index": {
+      "lo": null,
+      "hi": 0.01
+     },
+     "soloq_index": {
+      "lo": 0.005,
+      "hi": 0.03
+     }
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "seconds": 2.9,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_to_the_skies.base",
+        "from": [
+         60,
+         110,
+         160,
+         210,
+         260,
+         310
+        ],
+        "to": [
+         70,
+         120,
+         170,
+         215,
+         262,
+         310
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "base.ad",
+        "from": [
+         59
+        ],
+        "to": [
+         63
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 3,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": 0.0064,
+     "pro_index": -0.0007
+    },
+    "metrics_before": {
+     "lane_trade_l6": 606.9128,
+     "duel_ttk_l9": 7.28,
+     "mana_casts_to_oom": 4.0944,
+     "late_dps_l16": 328.0195,
+     "siege_score": 344.4204,
+     "utility_cc_per_10s": 1.9281,
+     "scaling_ratio": 2.4879
+    },
+    "metrics_after": {
+     "lane_trade_l6": 615.0521,
+     "duel_ttk_l9": 7.28,
+     "mana_casts_to_oom": 4.0944,
+     "late_dps_l16": 328.2483,
+     "siege_score": 344.6608,
+     "utility_cc_per_10s": 1.9281,
+     "scaling_ratio": 2.4757
+    },
+    "target": {
+     "pro_index": {
+      "lo": null,
+      "hi": 0.01
+     },
+     "soloq_index": {
+      "lo": 0.005,
+      "hi": 0.03
+     }
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": 0.0051,
+     "pro_index": 0.0005
+    },
+    "metrics_before": {
+     "lane_trade_l6": 606.9128,
+     "duel_ttk_l9": 7.28,
+     "mana_casts_to_oom": 4.0944,
+     "late_dps_l16": 328.0195,
+     "siege_score": 344.4204,
+     "utility_cc_per_10s": 1.9281,
+     "scaling_ratio": 2.4879
+    },
+    "metrics_after": {
+     "lane_trade_l6": 613.4243,
+     "duel_ttk_l9": 7.28,
+     "mana_casts_to_oom": 4.0944,
+     "late_dps_l16": 330.3083,
+     "siege_score": 346.8237,
+     "utility_cc_per_10s": 1.9281,
+     "scaling_ratio": 2.4611
+    },
+    "target": {
+     "pro_index": {
+      "lo": null,
+      "hi": 0.01
+     },
+     "soloq_index": {
+      "lo": 0.005,
+      "hi": 0.03
+     }
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "seconds": 3.1,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_to_the_skies.base",
+        "from": [
+         60,
+         110,
+         160,
+         210,
+         260,
+         310
+        ],
+        "to": [
+         72,
+         125,
+         175,
+         222,
+         266,
+         310
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 4,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": 0.0095,
+     "pro_index": -0.0005
+    },
+    "metrics_before": {
+     "lane_trade_l6": 606.9128,
+     "duel_ttk_l9": 7.28,
+     "mana_casts_to_oom": 4.0944,
+     "late_dps_l16": 328.0195,
+     "siege_score": 344.4204,
+     "utility_cc_per_10s": 1.9281,
+     "scaling_ratio": 2.4879
+    },
+    "metrics_after": {
+     "lane_trade_l6": 619.1218,
+     "duel_ttk_l9": 7.28,
+     "mana_casts_to_oom": 4.0944,
+     "late_dps_l16": 328.7061,
+     "siege_score": 345.1414,
+     "utility_cc_per_10s": 1.9281,
+     "scaling_ratio": 2.4723
+    },
+    "target": {
+     "pro_index": {
+      "lo": null,
+      "hi": 0.01
+     },
+     "soloq_index": {
+      "lo": 0.005,
+      "hi": 0.03
+     }
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "seconds": 5.1,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "submit_proposal",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_to_the_skies.base",
+        "from": [
+         60,
+         110,
+         160,
+         210,
+         260,
+         310
+        ],
+        "to": [
+         72,
+         125,
+         175,
+         222,
+         266,
+         310
+        ]
+       }
+      ],
+      "rationale": "Jayce is popular but losing in global solo queue (49.3% WR at 5.9% PR), while pro presence is already high (41%), so we want to help his laning without adding late-game or coordinated power. We're buffing Hammer Q (To the Skies) base damage at early ranks (60/110/160/210/260 \u2192 72/125/175/222/266). Max rank stays at 310. This makes his early trades and all-ins stronger, but by full build he does almost exactly the same damage, so pro play gains nothing. Sim: soloq_index +0.95% (target +0.5% to +3%), pro_index -0.05% (target \u2264 +1%). The single 'too strong' complaint goes against the data and the diagnosis, so we didn't act on it."
+     }
+    }
+   ]
+  },
+  {
+   "turn": 5,
+   "tool": "submit_proposal",
+   "result": {
+    "result": "PASS",
+    "index_delta": {
+     "soloq_index": 0.0095,
+     "pro_index": -0.0005
+    }
+   }
+  }
+ ],
+ "integrity_changed": [],
+ "agent": {
+  "outcome": "PASS",
+  "usage": {
+   "input_tokens": 21301,
+   "output_tokens": 1165
+  },
+  "proposal": {
+   "champion": "Jayce",
+   "patch": "26.22",
+   "category": "POPULAR_WEAK",
+   "changes": [
+    {
+     "field": "abilities.Q_to_the_skies.base",
+     "from": [
+      60.0,
+      110.0,
+      160.0,
+      210.0,
+      260.0,
+      310.0
+     ],
+     "to": [
+      72.0,
+      125.0,
+      175.0,
+      222.0,
+      266.0,
+      310.0
+     ]
+    }
+   ],
+   "rationale": "Jayce is popular but losing in global solo queue (49.3% WR at 5.9% PR), while pro presence is already high (41%), so we want to help his laning without adding late-game or coordinated power. We're buffing Hammer Q (To the Skies) base damage at early ranks (60/110/160/210/260 \u2192 72/125/175/222/266). Max rank stays at 310. This makes his early trades and all-ins stronger, but by full build he does almost exactly the same damage, so pro play gains nothing. Sim: soloq_index +0.95% (target +0.5% to +3%), pro_index -0.05% (target \u2264 +1%). The single 'too strong' complaint goes against the data and the diagnosis, so we didn't act on it."
+  }
+ },
+ "submissions": [
+  {
+   "attempt": 1,
+   "proposal": {
+    "champion": "Jayce",
+    "patch": "26.22",
+    "category": "POPULAR_WEAK",
+    "changes": [
+     {
+      "field": "abilities.Q_to_the_skies.base",
+      "from": [
+       60.0,
+       110.0,
+       160.0,
+       210.0,
+       260.0,
+       310.0
+      ],
+      "to": [
+       72.0,
+       125.0,
+       175.0,
+       222.0,
+       266.0,
+       310.0
+      ]
+     }
+    ],
+    "rationale": "Jayce is popular but losing in global solo queue (49.3% WR at 5.9% PR), while pro presence is already high (41%), so we want to help his laning without adding late-game or coordinated power. We're buffing Hammer Q (To the Skies) base damage at early ranks (60/110/160/210/260 \u2192 72/125/175/222/266). Max rank stays at 310. This makes his early trades and all-ins stronger, but by full build he does almost exactly the same damage, so pro play gains nothing. Sim: soloq_index +0.95% (target +0.5% to +3%), pro_index -0.05% (target \u2264 +1%). The single 'too strong' complaint goes against the data and the diagnosis, so we didn't act on it."
+   },
+   "file": "proposals/26.22/jayce_attempt1.yaml",
+   "verifier": {
+    "passed": true,
+    "checks": [
+     {
+      "name": "schema",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "limits",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "integrity",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "target",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "holdout",
+      "ok": true,
+      "detail": "ok"
+     }
+    ],
+    "deltas": {
+     "soloq_index": 0.0095,
+     "pro_index": -0.0005
+    },
+    "holdout": {
+     "tank_duel_l13": 0.0023,
+     "skirmish_burst_l11": 0.0055
+    }
+   }
+  }
+ ],
+ "notes_attempts": [
+  {
+   "attempt": 1,
+   "notes": {
+    "patch_note": {
+     "champion": "Jayce",
+     "context": "Jayce has been struggling to find his footing in solo queue, so we're giving his hammer more bite in the early lane while leaving his fully built damage, and his already-strong pro presence, right where it is.",
+     "lines": [
+      {
+       "field": "abilities.Q_to_the_skies.base",
+       "label": "Hammer Q - To the Skies! Base Damage",
+       "from": [
+        60.0,
+        110.0,
+        160.0,
+        210.0,
+        260.0,
+        310.0
+       ],
+       "to": [
+        72.0,
+        125.0,
+        175.0,
+        222.0,
+        266.0,
+        310.0
+       ],
+       "text": "To the Skies! base damage increased: 60/110/160/210/260/310 \u2192 72/125/175/222/266/310"
+      }
+     ]
+    },
+    "tooltips": [
+     {
+      "ability": "Q_to_the_skies",
+      "text": "Jayce leaps to an enemy and brings his hammer down, dealing {base} (+ {bonus_ad_ratio} bonus AD) physical damage to his target and nearby enemies and slowing them by {slow} for {slow_duration} seconds. Cooldown: {cooldown} seconds. Cost: {mana_cost} mana.",
+      "values": {
+       "base": [
+        72.0,
+        125.0,
+        175.0,
+        222.0,
+        266.0,
+        310.0
+       ],
+       "bonus_ad_ratio": 1.35,
+       "slow": [
+        0.35,
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6
+       ],
+       "slow_duration": 2.0,
+       "cooldown": [
+        16.0,
+        14.0,
+        12.0,
+        10.0,
+        8.0,
+        6.0
+       ],
+       "mana_cost": [
+        40.0
+       ]
+      }
+     }
+    ]
+   },
+   "errors": []
+  }
+ ],
+ "notes": {
+  "checker_passed": true,
+  "flag_for_human": false,
+  "attempts": 1,
+  "last_errors": [],
+  "output": {
+   "patch_note": {
+    "champion": "Jayce",
+    "context": "Jayce has been struggling to find his footing in solo queue, so we're giving his hammer more bite in the early lane while leaving his fully built damage, and his already-strong pro presence, right where it is.",
+    "lines": [
+     {
+      "field": "abilities.Q_to_the_skies.base",
+      "label": "Hammer Q - To the Skies! Base Damage",
+      "from": [
+       60.0,
+       110.0,
+       160.0,
+       210.0,
+       260.0,
+       310.0
+      ],
+      "to": [
+       72.0,
+       125.0,
+       175.0,
+       222.0,
+       266.0,
+       310.0
+      ],
+      "text": "To the Skies! base damage increased: 60/110/160/210/260/310 \u2192 72/125/175/222/266/310"
+     }
+    ]
+   },
+   "tooltips": [
+    {
+     "ability": "Q_to_the_skies",
+     "text": "Jayce leaps to an enemy and brings his hammer down, dealing {base} (+ {bonus_ad_ratio} bonus AD) physical damage to his target and nearby enemies and slowing them by {slow} for {slow_duration} seconds. Cooldown: {cooldown} seconds. Cost: {mana_cost} mana.",
+     "values": {
+      "base": [
+       72.0,
+       125.0,
+       175.0,
+       222.0,
+       266.0,
+       310.0
+      ],
+      "bonus_ad_ratio": 1.35,
+      "slow": [
+       0.35,
+       0.4,
+       0.45,
+       0.5,
+       0.55,
+       0.6
+      ],
+      "slow_duration": 2.0,
+      "cooldown": [
+       16.0,
+       14.0,
+       12.0,
+       10.0,
+       8.0,
+       6.0
+      ],
+      "mana_cost": [
+       40.0
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "decision": "POPULAR_WEAK: verified patch",
+ "seconds": 24.0
+}

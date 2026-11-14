@@ -1,0 +1,21 @@
+champion: Ezreal
+patch: '26.22'
+category: PRO_JAIL
+changes:
+- field: abilities.R_trueshot_barrage.base
+  from:
+  - 350.0
+  - 550.0
+  - 750.0
+  to:
+  - 350.0
+  - 500.0
+  - 650.0
+rationale: 'Ezreal is a pro-play staple (47% presence) while underperforming in solo
+  queue (47.9% global / 48.4% KR WR). His pro value comes from late-game, coordinated
+  siege and poke, with Trueshot Barrage as a global siege/teamfight tool at the center
+  of it. We''re reducing R base damage at ranks 2 and 3 (550/750 -> 500/650) while
+  leaving rank 1 untouched. This trims his late siege and teamfight contribution (sim:
+  pro_index -1.9%, late DPS and siege score down ~2%) without touching his laning
+  or early/mid power (soloq_index unchanged), so solo queue players don''t get hit
+  on a champion who''s already below 50%.'

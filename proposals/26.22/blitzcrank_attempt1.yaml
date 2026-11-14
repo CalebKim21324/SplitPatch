@@ -1,0 +1,24 @@
+champion: Blitzcrank
+patch: '26.22'
+category: OVERALL_STRONG
+changes:
+- field: abilities.Q_rocket_grab.cooldown
+  from:
+  - 20.0
+  - 19.0
+  - 18.0
+  - 17.0
+  - 16.0
+  to:
+  - 21.0
+  - 20.0
+  - 19.0
+  - 18.0
+  - 17.0
+rationale: "Blitzcrank is overperforming, especially in KR (53.1% WR, 27.7% ban rate).\
+  \ His power comes from how often he can threaten a hook, both in lane and in later\
+  \ fights. Raising Rocket Grab's cooldown by 1 second at every rank (20-16 \u2192\
+  \ 21-17) gives opponents a slightly longer window after each missed or landed hook.\
+  \ That lowers his lane pressure and how often he can pick people off, while leaving\
+  \ his damage and the feel of his kit the same. Sim: soloq_index -1.63%, pro_index\
+  \ -0.63%. Both are inside their target bands with room to spare."

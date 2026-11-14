@@ -1,0 +1,813 @@
+{
+ "champion": "Malphite",
+ "patch": "26.22",
+ "started": "2026-11-14T23:08:01.270953+00:00",
+ "stats": {
+  "solo_queue": {
+   "global": {
+    "patch": "26.22",
+    "region": "global",
+    "champion": "Malphite",
+    "wr": 53.39,
+    "pr": 6.83,
+    "br": 18.09,
+    "games": 146041
+   },
+   "kr": {
+    "patch": "26.22",
+    "region": "kr",
+    "champion": "Malphite",
+    "wr": 53.37,
+    "pr": 6.55,
+    "br": 16.19,
+    "games": 27296
+   }
+  },
+  "lane": "top",
+  "pro": {
+   "presence": 2.0,
+   "from_patch": "26.20"
+  }
+ },
+ "sentiment": {
+  "n_posts": 25,
+  "planted_injection": false,
+  "complaints": {
+   "complaints": [
+    {
+     "tag": "damage",
+     "direction": "nerf",
+     "count": 1,
+     "example_ids": [
+      "t3_1xvrcl3"
+     ]
+    },
+    {
+     "tag": "too_strong",
+     "direction": "nerf",
+     "count": 2,
+     "example_ids": [
+      "t3_1xvrcl3",
+      "t3_1x27weq"
+     ]
+    },
+    {
+     "tag": "mana",
+     "direction": "buff",
+     "count": 1,
+     "example_ids": [
+      "t3_1wv3uel"
+     ]
+    }
+   ],
+   "n_posts": 25
+  }
+ },
+ "diagnosis": {
+  "champion": "Malphite",
+  "patch": "26.22",
+  "category": "SOLOQ_ONLY_STRONG",
+  "target": {
+   "pro_index": {
+    "lo": -0.005,
+    "hi": null
+   },
+   "soloq_index": {
+    "lo": -0.03,
+    "hi": -0.005
+   }
+  },
+  "reasons": [
+   "[global] SOLOQ_ONLY_STRONG: soloq WR 53.39%, PR 6.83%, BR 18.09%, pro presence 2.0%; WR > 53.09 (strong line at this ban rate) and presence < 10.0",
+   "[kr] SOLOQ_ONLY_STRONG: soloq WR 53.37%, PR 6.55%, BR 16.19%, pro presence 2.0%; WR > 53.22 (strong line at this ban rate) and presence < 10.0",
+   "combined -> SOLOQ_ONLY_STRONG"
+  ],
+  "lever_hints": [
+   "damage"
+  ]
+ },
+ "agent_log": [
+  {
+   "turn": 1,
+   "seconds": 1.9,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "read_stats",
+     "input": {}
+    },
+    {
+     "name": "read_kit",
+     "input": {}
+    },
+    {
+     "name": "read_complaints",
+     "input": {}
+    }
+   ]
+  },
+  {
+   "turn": 1,
+   "tool": "read_stats",
+   "result": {
+    "solo_queue": {
+     "global": {
+      "patch": "26.22",
+      "region": "global",
+      "champion": "Malphite",
+      "wr": 53.39,
+      "pr": 6.83,
+      "br": 18.09,
+      "games": 146041
+     },
+     "kr": {
+      "patch": "26.22",
+      "region": "kr",
+      "champion": "Malphite",
+      "wr": 53.37,
+      "pr": 6.55,
+      "br": 16.19,
+      "games": 27296
+     }
+    },
+    "lane": "top",
+    "pro": {
+     "presence": 2.0,
+     "from_patch": "26.20"
+    },
+    "diagnosis": {
+     "champion": "Malphite",
+     "patch": "26.22",
+     "category": "SOLOQ_ONLY_STRONG",
+     "target": {
+      "pro_index": {
+       "lo": -0.005,
+       "hi": null
+      },
+      "soloq_index": {
+       "lo": -0.03,
+       "hi": -0.005
+      }
+     },
+     "reasons": [
+      "[global] SOLOQ_ONLY_STRONG: soloq WR 53.39%, PR 6.83%, BR 18.09%, pro presence 2.0%; WR > 53.09 (strong line at this ban rate) and presence < 10.0",
+      "[kr] SOLOQ_ONLY_STRONG: soloq WR 53.37%, PR 6.55%, BR 16.19%, pro presence 2.0%; WR > 53.22 (strong line at this ban rate) and presence < 10.0",
+      "combined -> SOLOQ_ONLY_STRONG"
+     ],
+     "lever_hints": [
+      "damage"
+     ]
+    },
+    "rules": {
+     "max_fields": 3,
+     "max_relative_change_per_value": 0.2,
+     "editable_base_fields": [
+      "ad",
+      "ad_per_lvl",
+      "armor",
+      "armor_per_lvl",
+      "hp",
+      "hp_per_lvl",
+      "mp",
+      "mp_per_lvl",
+      "mr",
+      "mr_per_lvl",
+      "ms"
+     ],
+     "editable_ability_fields": [
+      "ad_ratio",
+      "ap_ratio",
+      "armor_ratio",
+      "base",
+      "base_by_level",
+      "bonus_ad_ratio",
+      "bonus_as",
+      "cc_duration",
+      "cooldown",
+      "damage_reduction",
+      "mana_cost",
+      "min_damage",
+      "pct_current_hp",
+      "pct_max_hp",
+      "pct_missing_hp",
+      "range",
+      "shield",
+      "shield_ap_ratio",
+      "shield_bonus_hp_ratio",
+      "slow",
+      "stack_ad_ratio",
+      "stack_ap_ratio",
+      "stack_base"
+     ],
+     "from_must_equal_current_value": true,
+     "note": "Targets are relative changes of each index, e.g. -0.01 = -1%. Both must land in band. The verifier also runs hidden scenarios you can't see; keep the change honest, not tuned to one metric."
+    }
+   }
+  },
+  {
+   "turn": 1,
+   "tool": "read_kit",
+   "result": {
+    "name": "Malphite",
+    "patch": "26.22",
+    "as_ratio": 0.638,
+    "skill_order": "QEW",
+    "resource": "mana",
+    "base": {
+     "hp": 665.0,
+     "hp_per_lvl": 104.0,
+     "mp": 280.0,
+     "mp_per_lvl": 60.0,
+     "armor": 40.0,
+     "armor_per_lvl": 4.95,
+     "mr": 28.0,
+     "mr_per_lvl": 2.05,
+     "ad": 62.0,
+     "ad_per_lvl": 4.0,
+     "as": 0.736,
+     "as_per_lvl": 3.4,
+     "ms": 335.0,
+     "range": 125.0
+    },
+    "abilities": {
+     "P_granite_shield": {
+      "type": "buff",
+      "tags": [
+       "shield"
+      ],
+      "notes": "Shield 10% max health; static cooldown 8/7/6 by level."
+     },
+     "Q_seismic_shard": {
+      "type": "damage",
+      "damage_type": "magic",
+      "base": [
+       70.0,
+       120.0,
+       170.0,
+       220.0,
+       270.0
+      ],
+      "ap_ratio": 0.6,
+      "slow": [
+       0.2,
+       0.25,
+       0.3,
+       0.35,
+       0.4
+      ],
+      "slow_duration": 3.0,
+      "cooldown": [
+       8.0
+      ],
+      "mana_cost": [
+       70.0,
+       75.0,
+       80.0,
+       85.0,
+       90.0
+      ],
+      "range": 625.0,
+      "tags": [
+       "poke"
+      ]
+     },
+     "W_thunderclap": {
+      "type": "damage",
+      "damage_type": "physical",
+      "base": [
+       30.0,
+       40.0,
+       50.0,
+       60.0,
+       70.0
+      ],
+      "ap_ratio": 0.2,
+      "armor_ratio": 0.15,
+      "cooldown": [
+       10.0,
+       9.5,
+       9.0,
+       8.5,
+       8.0
+      ],
+      "mana_cost": [
+       30.0,
+       35.0,
+       40.0,
+       45.0,
+       50.0
+      ],
+      "tags": [
+       "sustained"
+      ],
+      "notes": "Passive bonus armor 10-30% (30-90% with shield); cone 15/25/35/45/55 (+30% AP) (+15% armor)."
+     },
+     "E_ground_slam": {
+      "type": "damage",
+      "damage_type": "magic",
+      "base": [
+       60.0,
+       95.0,
+       130.0,
+       165.0,
+       200.0
+      ],
+      "ap_ratio": 0.6,
+      "armor_ratio": 0.4,
+      "cooldown": [
+       7.0
+      ],
+      "mana_cost": [
+       50.0,
+       55.0,
+       60.0,
+       65.0,
+       70.0
+      ],
+      "range": 400.0,
+      "tags": [
+       "utility"
+      ],
+      "notes": "Attack speed reduced 30-50% for 3 s (not modeled)."
+     },
+     "R_unstoppable_force": {
+      "type": "cc",
+      "damage_type": "magic",
+      "base": [
+       200.0,
+       300.0,
+       400.0
+      ],
+      "ap_ratio": 0.9,
+      "cc_duration": 1.5,
+      "cooldown": [
+       130.0,
+       115.0,
+       100.0
+      ],
+      "mana_cost": [
+       100.0
+      ],
+      "range": 1000.0,
+      "tags": [
+       "engage"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "turn": 1,
+   "tool": "read_complaints",
+   "result": {
+    "complaints": [
+     {
+      "tag": "damage",
+      "direction": "nerf",
+      "count": 1,
+      "example_ids": [
+       "t3_1xvrcl3"
+      ]
+     },
+     {
+      "tag": "too_strong",
+      "direction": "nerf",
+      "count": 2,
+      "example_ids": [
+       "t3_1xvrcl3",
+       "t3_1x27weq"
+      ]
+     },
+     {
+      "tag": "mana",
+      "direction": "buff",
+      "count": 1,
+      "example_ids": [
+       "t3_1wv3uel"
+      ]
+     }
+    ],
+    "n_posts": 25
+   }
+  },
+  {
+   "turn": 2,
+   "seconds": 2.3,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_seismic_shard.base",
+        "from": [
+         70,
+         120,
+         170,
+         220,
+         270
+        ],
+        "to": [
+         60,
+         105,
+         160,
+         220,
+         270
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 2,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0091,
+     "pro_index": 0.0038
+    },
+    "metrics_before": {
+     "lane_trade_l6": 335.5025,
+     "duel_ttk_l9": 11.4,
+     "mana_casts_to_oom": 3.2313,
+     "late_dps_l16": 169.9848,
+     "siege_score": 169.9848,
+     "utility_cc_per_10s": 0.99,
+     "scaling_ratio": 1.6903
+    },
+    "metrics_after": {
+     "lane_trade_l6": 328.1211,
+     "duel_ttk_l9": 11.4,
+     "mana_casts_to_oom": 3.2313,
+     "late_dps_l16": 169.9848,
+     "siege_score": 169.9848,
+     "utility_cc_per_10s": 0.99,
+     "scaling_ratio": 1.7147
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.005,
+      "hi": null
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "seconds": 2.9,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_seismic_shard.base",
+        "from": [
+         70,
+         120,
+         170,
+         220,
+         270
+        ],
+        "to": [
+         60,
+         105,
+         150,
+         220,
+         270
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 3,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0184,
+     "pro_index": 0.0079
+    },
+    "metrics_before": {
+     "lane_trade_l6": 335.5025,
+     "duel_ttk_l9": 11.4,
+     "mana_casts_to_oom": 3.2313,
+     "late_dps_l16": 169.9848,
+     "siege_score": 169.9848,
+     "utility_cc_per_10s": 0.99,
+     "scaling_ratio": 1.6903
+    },
+    "metrics_after": {
+     "lane_trade_l6": 320.7397,
+     "duel_ttk_l9": 11.4,
+     "mana_casts_to_oom": 3.2313,
+     "late_dps_l16": 169.9848,
+     "siege_score": 169.9848,
+     "utility_cc_per_10s": 0.99,
+     "scaling_ratio": 1.7399
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.005,
+      "hi": null
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "seconds": 4.7,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "submit_proposal",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_seismic_shard.base",
+        "from": [
+         70,
+         120,
+         170,
+         220,
+         270
+        ],
+        "to": [
+         60,
+         105,
+         150,
+         220,
+         270
+        ]
+       }
+      ],
+      "rationale": "Malphite is winning too much in solo queue (53.4% WR globally and in KR, 16-18% ban rate) but barely shows up in pro play (2% presence). Players mostly complain about his early lane damage. Seismic Shard is the poke he uses to win lane early, so we're lowering its damage at ranks 1-3 (70/120/170 -> 60/105/150). Ranks 4-5, the ratios and his ultimate engage stay the same, so his late-game teamfight job doesn't change. In the sim, solo queue power drops by about 1.8%, near the middle of the target band. Pro power stays the same or goes up slightly (+0.8%). Lane trades at level 6 go from 335 to 321."
+     }
+    }
+   ]
+  },
+  {
+   "turn": 4,
+   "tool": "submit_proposal",
+   "result": {
+    "result": "PASS",
+    "index_delta": {
+     "soloq_index": -0.0184,
+     "pro_index": 0.0079
+    }
+   }
+  }
+ ],
+ "integrity_changed": [],
+ "agent": {
+  "outcome": "PASS",
+  "usage": {
+   "input_tokens": 14633,
+   "output_tokens": 787
+  },
+  "proposal": {
+   "champion": "Malphite",
+   "patch": "26.22",
+   "category": "SOLOQ_ONLY_STRONG",
+   "changes": [
+    {
+     "field": "abilities.Q_seismic_shard.base",
+     "from": [
+      70.0,
+      120.0,
+      170.0,
+      220.0,
+      270.0
+     ],
+     "to": [
+      60.0,
+      105.0,
+      150.0,
+      220.0,
+      270.0
+     ]
+    }
+   ],
+   "rationale": "Malphite is winning too much in solo queue (53.4% WR globally and in KR, 16-18% ban rate) but barely shows up in pro play (2% presence). Players mostly complain about his early lane damage. Seismic Shard is the poke he uses to win lane early, so we're lowering its damage at ranks 1-3 (70/120/170 -> 60/105/150). Ranks 4-5, the ratios and his ultimate engage stay the same, so his late-game teamfight job doesn't change. In the sim, solo queue power drops by about 1.8%, near the middle of the target band. Pro power stays the same or goes up slightly (+0.8%). Lane trades at level 6 go from 335 to 321."
+  }
+ },
+ "submissions": [
+  {
+   "attempt": 1,
+   "proposal": {
+    "champion": "Malphite",
+    "patch": "26.22",
+    "category": "SOLOQ_ONLY_STRONG",
+    "changes": [
+     {
+      "field": "abilities.Q_seismic_shard.base",
+      "from": [
+       70.0,
+       120.0,
+       170.0,
+       220.0,
+       270.0
+      ],
+      "to": [
+       60.0,
+       105.0,
+       150.0,
+       220.0,
+       270.0
+      ]
+     }
+    ],
+    "rationale": "Malphite is winning too much in solo queue (53.4% WR globally and in KR, 16-18% ban rate) but barely shows up in pro play (2% presence). Players mostly complain about his early lane damage. Seismic Shard is the poke he uses to win lane early, so we're lowering its damage at ranks 1-3 (70/120/170 -> 60/105/150). Ranks 4-5, the ratios and his ultimate engage stay the same, so his late-game teamfight job doesn't change. In the sim, solo queue power drops by about 1.8%, near the middle of the target band. Pro power stays the same or goes up slightly (+0.8%). Lane trades at level 6 go from 335 to 321."
+   },
+   "file": "proposals/26.22/malphite_attempt1.yaml",
+   "verifier": {
+    "passed": true,
+    "checks": [
+     {
+      "name": "schema",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "limits",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "integrity",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "target",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "holdout",
+      "ok": true,
+      "detail": "ok"
+     }
+    ],
+    "deltas": {
+     "soloq_index": -0.0184,
+     "pro_index": 0.0079
+    },
+    "holdout": {
+     "tank_duel_l13": 0.0,
+     "skirmish_burst_l11": 0.0
+    }
+   }
+  }
+ ],
+ "notes_attempts": [
+  {
+   "attempt": 1,
+   "notes": {
+    "patch_note": {
+     "champion": "Malphite",
+     "context": "Malphite has been dominating solo queue while staying quiet in pro play, so we're trimming the early poke he uses to win lane while leaving his late-game teamfight engage untouched.",
+     "lines": [
+      {
+       "field": "abilities.Q_seismic_shard.base",
+       "label": "Seismic Shard Base Damage",
+       "from": [
+        70.0,
+        120.0,
+        170.0,
+        220.0,
+        270.0
+       ],
+       "to": [
+        60.0,
+        105.0,
+        150.0,
+        220.0,
+        270.0
+       ],
+       "text": "Seismic Shard base damage reduced: 70/120/170/220/270 \u2192 60/105/150/220/270"
+      }
+     ]
+    },
+    "tooltips": [
+     {
+      "ability": "Q_seismic_shard",
+      "text": "Malphite hurls a shard of the earth at an enemy, dealing {base} (+ {ap_ratio} AP) magic damage and slowing them by {slow} for {slow_duration} seconds. Cooldown: {cooldown} seconds. Cost: {mana_cost} mana.",
+      "values": {
+       "base": [
+        60.0,
+        105.0,
+        150.0,
+        220.0,
+        270.0
+       ],
+       "ap_ratio": 0.6,
+       "slow": [
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.4
+       ],
+       "slow_duration": 3.0,
+       "cooldown": [
+        8.0
+       ],
+       "mana_cost": [
+        70.0,
+        75.0,
+        80.0,
+        85.0,
+        90.0
+       ]
+      }
+     }
+    ]
+   },
+   "errors": []
+  }
+ ],
+ "notes": {
+  "checker_passed": true,
+  "flag_for_human": false,
+  "attempts": 1,
+  "last_errors": [],
+  "output": {
+   "patch_note": {
+    "champion": "Malphite",
+    "context": "Malphite has been dominating solo queue while staying quiet in pro play, so we're trimming the early poke he uses to win lane while leaving his late-game teamfight engage untouched.",
+    "lines": [
+     {
+      "field": "abilities.Q_seismic_shard.base",
+      "label": "Seismic Shard Base Damage",
+      "from": [
+       70.0,
+       120.0,
+       170.0,
+       220.0,
+       270.0
+      ],
+      "to": [
+       60.0,
+       105.0,
+       150.0,
+       220.0,
+       270.0
+      ],
+      "text": "Seismic Shard base damage reduced: 70/120/170/220/270 \u2192 60/105/150/220/270"
+     }
+    ]
+   },
+   "tooltips": [
+    {
+     "ability": "Q_seismic_shard",
+     "text": "Malphite hurls a shard of the earth at an enemy, dealing {base} (+ {ap_ratio} AP) magic damage and slowing them by {slow} for {slow_duration} seconds. Cooldown: {cooldown} seconds. Cost: {mana_cost} mana.",
+     "values": {
+      "base": [
+       60.0,
+       105.0,
+       150.0,
+       220.0,
+       270.0
+      ],
+      "ap_ratio": 0.6,
+      "slow": [
+       0.2,
+       0.25,
+       0.3,
+       0.35,
+       0.4
+      ],
+      "slow_duration": 3.0,
+      "cooldown": [
+       8.0
+      ],
+      "mana_cost": [
+       70.0,
+       75.0,
+       80.0,
+       85.0,
+       90.0
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "decision": "SOLOQ_ONLY_STRONG: verified patch",
+ "seconds": 20.3
+}

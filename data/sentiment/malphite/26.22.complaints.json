@@ -1,0 +1,30 @@
+{
+ "complaints": [
+  {
+   "tag": "damage",
+   "direction": "nerf",
+   "count": 1,
+   "example_ids": [
+    "t3_1xvrcl3"
+   ]
+  },
+  {
+   "tag": "too_strong",
+   "direction": "nerf",
+   "count": 2,
+   "example_ids": [
+    "t3_1xvrcl3",
+    "t3_1x27weq"
+   ]
+  },
+  {
+   "tag": "mana",
+   "direction": "buff",
+   "count": 1,
+   "example_ids": [
+    "t3_1wv3uel"
+   ]
+  }
+ ],
+ "n_posts": 25
+}

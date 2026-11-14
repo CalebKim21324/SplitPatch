@@ -1,0 +1,25 @@
+champion: Malphite
+patch: '26.22'
+category: SOLOQ_ONLY_STRONG
+changes:
+- field: abilities.Q_seismic_shard.base
+  from:
+  - 70.0
+  - 120.0
+  - 170.0
+  - 220.0
+  - 270.0
+  to:
+  - 60.0
+  - 105.0
+  - 150.0
+  - 220.0
+  - 270.0
+rationale: Malphite is winning too much in solo queue (53.4% WR globally and in KR,
+  16-18% ban rate) but barely shows up in pro play (2% presence). Players mostly complain
+  about his early lane damage. Seismic Shard is the poke he uses to win lane early,
+  so we're lowering its damage at ranks 1-3 (70/120/170 -> 60/105/150). Ranks 4-5,
+  the ratios and his ultimate engage stay the same, so his late-game teamfight job
+  doesn't change. In the sim, solo queue power drops by about 1.8%, near the middle
+  of the target band. Pro power stays the same or goes up slightly (+0.8%). Lane trades
+  at level 6 go from 335 to 321.

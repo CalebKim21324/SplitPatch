@@ -5,13 +5,13 @@
 <style>
 /* Layout: a calm product console. Sticky top bar with tabs, one view at a time, generous whitespace. */
 :root{
-  --bg:#F6F7F9; --surface:#FFFFFF; --subtle:#F1F3F6; --line:#E4E7EC; --line-2:#D5DAE1;
-  --ink:#101722; --ink-2:#3B4553; --muted:#6B7584;
+  --bg:#FFFFFF; --surface:#FFFFFF; --subtle:#F6F7F9; --line:#ECEEF2; --line-2:#DDE1E7;
+  --ink:#0E1420; --ink-2:#414B59; --muted:#737D8C;
   --accent:#2453D4; --accent-soft:#E9EEFC;
   --buff:#15803D; --buff-soft:#E8F5EC; --nerf:#C2410C; --nerf-soft:#FCEEE6; --warn:#A16207; --warn-soft:#FBF3DC;
   --solo:#2453D4; --pro:#0E7490;
   --f-sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif; --f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
-  --r:12px; --shadow:0 1px 2px rgba(16,23,34,.04),0 1px 1px rgba(16,23,34,.03);
+  --r:14px; --shadow:none;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0B0F14; --surface:#12171E; --subtle:#171D26; --line:#222A35; --line-2:#2D3644;
@@ -41,7 +41,7 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 
 /* top bar */
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
-.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:saturate(1.2) blur(12px);border-bottom:1px solid var(--line)}
 .topbar .container{display:flex;align-items:center;gap:24px;min-height:60px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;white-space:nowrap}
 .brand-mark{width:26px;height:26px;border-radius:7px;background:var(--accent);display:grid;place-items:center}
@@ -54,12 +54,12 @@ nav.tabs a:hover{background:var(--subtle);text-decoration:none}
 nav.tabs a[aria-current="page"]{background:var(--accent-soft);color:var(--accent)}
 @media (max-width:760px){nav.tabs{margin-left:0;width:100%;padding-bottom:8px}}
 
-main{padding-block:36px 72px}
-.view{display:grid;gap:28px}
+main{padding-block:48px 96px}
+.view{display:grid;gap:36px}
 .view-head{display:grid;gap:8px;max-width:760px}
 .view-head p{color:var(--ink-2);font-size:16px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);min-width:0}
-.card-pad{padding:22px}
+.card-pad{padding:26px}
 .card-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:16px}
 .grid-2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
 .grid-side{display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px;align-items:start}
@@ -82,8 +82,8 @@ main{padding-block:36px 72px}
 .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
 @media (max-width:900px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:480px){.kpis{grid-template-columns:1fr}}
-.kpi{padding:20px;display:grid;gap:6px;align-content:start}
-.kpi .v{font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.kpi{padding:22px 24px;display:grid;gap:8px;align-content:start;background:var(--subtle);border-color:transparent}
+.kpi .v{font-size:32px;font-weight:600;letter-spacing:-.03em;line-height:1.05}
 .kpi .v small{font-size:16px;color:var(--muted);font-weight:500}
 .kpi p{font-size:13px;color:var(--muted)}
 .steps{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:8px}
@@ -155,8 +155,8 @@ mark{background:var(--warn-soft);color:var(--ink);border-radius:4px;padding:0 3p
 /* tables */
 .scroll{overflow-x:auto}
 table{border-collapse:collapse;width:100%;font-size:14px}
-th{font-size:12px;font-weight:500;color:var(--muted);text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
-td{padding:12px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:12px;font-weight:500;color:var(--muted);text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--surface);position:sticky;top:0}
+td{padding:13px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
 tr:last-child td{border-bottom:0}
 td.r,th.r{text-align:right}
 td.best{font-weight:700}
@@ -192,7 +192,7 @@ footer .container{display:grid;gap:6px}
   <div class="container gutter">
     <div class="brand"><span class="brand-mark"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 10.5 5.5 7 8 9.5 12 3.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>SplitPatch <small>Balance Desk</small></div>
     <nav class="tabs" aria-label="Views">
-      <a href="#overview">Overview</a><a href="#patch">Patch 26.22</a><a href="#backtest">Backtest</a><a href="#board">Patch board</a><a href="#simulator">Simulator</a><a href="#items">Items</a>
+      <a href="#overview">Overview</a><a href="#roster">Roster scan</a><a href="#patch">Patch 26.22</a><a href="#backtest">Backtest</a><a href="#board">Patch board</a><a href="#simulator">Simulator</a><a href="#items">Items</a>
     </nav>
   </div>
 </header>
@@ -208,8 +208,8 @@ footer .container{display:grid;gap:6px}
 const DATA = /*DATA*/null;
 const PATCHES=["26.16","26.17","26.18","26.19","26.20","26.21","26.22"];
 const CHAMPS=["Azir","Kalista","Garen","Viego","Qiyana","Lee Sin"];
-const VIEWS=["overview","patch","backtest","board","simulator","items"];
-const CAT={HOLD:["No change","hold"],POPULAR_WEAK:["Popular but weak","buff"],OVERALL_WEAK:["Weak","buff"],OVERALL_STRONG:["Strong","nerf"],SOLOQ_ONLY_STRONG:["Strong in solo queue","nerf"],PRO_JAIL:["Pro-jail","nerf"]};
+const VIEWS=["overview","roster","patch","backtest","board","simulator","items"];
+const CAT={HOLD:["No change","hold"],POPULAR_WEAK:["Popular but weak","buff"],OVERALL_WEAK:["Weak","buff"],OVERALL_STRONG:["Strong","nerf"],SOLOQ_ONLY_STRONG:["Strong in solo queue","nerf"],PRO_JAIL:["Pro-jail","info"]};
 const TARGETS={PRO_JAIL:{solo:"≥ −0.25%",pro:"−3% to −0.75%"},OVERALL_STRONG:{solo:"−3% to −0.5%",pro:"−3% to −0.25%"},OVERALL_WEAK:{solo:"+0.75% to +3%",pro:"any"},SOLOQ_ONLY_STRONG:{solo:"−3% to −0.5%",pro:"≥ −0.5%"},POPULAR_WEAK:{solo:"+0.5% to +3%",pro:"≤ +1%"},HOLD:{solo:"no change",pro:"no change"}};
 const STAGES=[
   {t:"Signals",s:"built",d:"Win rate, pick rate, ban rate and games for every champion, patch and server, plus pro presence. Each win rate carries a 95% interval from its game count.",io:"lolalytics + gol.gg → one signal row per champion, patch and server"},
@@ -222,7 +222,7 @@ const STAGES=[
   {t:"Check notes",s:"built",d:"A deterministic checker confirms every changed field is covered, every number matches the diff, tooltips resolve to the new values, and words like 'reduced' match the direction.",io:"Notes → pass, or retry (up to 3)"},
   {t:"Monitor",s:"plan",d:"After the next patch, compare the real win-rate change with the prediction and recalibrate. Designed, not built yet.",io:"Next patch's stats → recalibration"}];
 
-const state={view:"overview",stage:3,patchChamp:null,boardPatch:"26.22",region:"kr",champ:"Viego",item:6699};
+const state={view:"overview",lane:"all",showAll:false,stage:3,patchChamp:null,boardPatch:"26.22",region:"kr",champ:"Viego",item:6699};
 try{Object.assign(state,JSON.parse(localStorage.getItem("sp-desk2")||"{}"))}catch(e){}
 const save=()=>{try{localStorage.setItem("sp-desk2",JSON.stringify(state))}catch(e){}};
 const $=s=>document.querySelector(s);
@@ -244,12 +244,12 @@ function seg(id,items,key,fmt,cb){const el=document.getElementById(id);el.innerH
 function viewOverview(){
   const R=DATA.run,B=DATA.backtest,E=DATA.evidence;
   const changed=R?R.traces.filter(t=>t.notes).length:0,held=R?R.traces.length-changed:0;
-  const azir=R&&R.traces.find(t=>t.champion==="Azir");
+  const azir=DATA.injection?{sentiment:DATA.injection}:(R&&R.traces.find(t=>t.champion==="Azir"));
   const k=(v,label,sub)=>`<div class="card kpi"><span class="label">${label}</span><span class="v num">${v}</span><p>${sub}</p></div>`;
   const s=STAGES[state.stage];
   return `<section class="view">
     <div class="view-head"><span class="label">DevHacks '26 · Riot Track 2</span><h1>An agent that writes verified balance patches.</h1>
-      <p>Each patch, SplitPatch reads solo queue stats, pro presence and community feedback, decides who needs a change, proposes the numbers, proves them in an independent simulator, then writes patch notes and tooltips that are checked against the change.</p></div>
+      <p>Each patch, SplitPatch scans every champion in every role, decides who needs a change and why, proposes the numbers, proves them in an independent simulator, then writes patch notes and tooltips that are checked against the change.</p></div>
     <div class="kpis">
       ${k(`${changed} <small>changes · ${held} holds</small>`,"Patch 26.22 recommendation",R?R.traces.filter(t=>t.notes).map(t=>`${t.champion} ${CAT[t.diagnosis.category][1]==="buff"?"buffed":"nerfed"}`).join(", ")+`; ${held} left alone.`:"No run yet.")}
       ${B?k(`${B.scores.all.verification.splitpatch_passed}`,"Agent patches verified","Across the 26.16–26.21 backtest. The one-shot LLM baseline: "+B.scores.all.verification.one_shot_passed+"."):""}
@@ -273,6 +273,28 @@ function viewOverview(){
   </section>`;
 }
 function bindOverview(){document.querySelector(".steps").onclick=e=>{const b=e.target.closest(".step");if(!b)return;state.stage=+b.dataset.i;save();render()}}
+
+/* ---------- roster scan ---------- */
+function viewRoster(){
+  const S=DATA.scan;if(!S)return `<section class="view"><div class="view-head"><h1>Roster scan</h1><p>No scan yet.</p></div></section>`;
+  const k=(v,label,sub)=>`<div class="card kpi"><span class="label">${label}</span><span class="v num">${v}</span><p>${sub}</p></div>`;
+  return `<section class="view">
+    <div class="view-head"><span class="label">Patch ${S.patch} · every champion, every role</span><h1>Roster scan</h1><p>Every champion's main-role stats on the global and Korean servers, Emerald+. The strong line slides with ban rate the way Riot's framework does, and a champion needs enough games on a server before that server counts.</p></div>
+    <div class="kpis">${k(S.n_champions,"Champions scanned","Main role, both servers.")}${k(S.flagged.nerf,"Too strong","Above the ban-rate-adjusted line on a server.")}${k(S.flagged.pro_jail,"Pro-jail","Pros pick them, solo queue loses on them.")}${k(S.selected.length,"Changed this patch","Most confident cases, a few per track.")}</div>
+    <div class="controls"><div class="ctl"><span class="label">Role</span><div class="seg" id="seg-lane"></div></div><div class="ctl"><span class="label">Show</span><div class="seg" id="seg-show"></div></div></div>
+    <div class="card scroll" style="max-height:640px"><table><thead><tr><th>Champion</th><th>Role</th><th class="r">Global win</th><th class="r">Korea win</th><th class="r">Pick</th><th class="r">Ban</th><th class="r">Pro</th><th>Diagnosis</th><th class="r">Confidence</th></tr></thead><tbody id="roster-body"></tbody></table></div>
+    <p class="note">Confidence is how many standard errors the win rate sits past its line on the server where the case is strongest. Selected champions are marked; the agent patches only those.</p>
+  </section>`;
+}
+function bindRoster(){
+  const lanes=["all","top","jungle","middle","bottom","support"],nm={all:"All",top:"Top",jungle:"Jungle",middle:"Mid",bottom:"Bot",support:"Support"};
+  const fill=()=>{seg("seg-lane",lanes,"lane",v=>nm[v],fill);seg("seg-show",["flagged","all"],"showMode",v=>v==="all"?"All champions":"Flagged",fill);
+    const S=DATA.scan,mode=state.showMode||"flagged";
+    const rows=S.results.filter(r=>(state.lane==="all"||r.lane===state.lane)&&(mode==="all"||r.category!=="HOLD"));
+    $("#roster-body").innerHTML=rows.map(r=>{const g=r.stats.global,kk=r.stats.kr,sel=S.selected.includes(r.champion),main=g||kk;
+      return `<tr${sel?' style="background:var(--accent-soft)"':""}><td><b>${esc(r.champion)}</b>${sel?' <span class="pill info" style="margin-left:6px">Selected</span>':""}</td><td class="muted">${nm[r.lane]}</td><td class="r num">${g?g.wr.toFixed(2)+"%":"–"}</td><td class="r num">${kk?kk.wr.toFixed(2)+"%":"–"}</td><td class="r num">${main.pr.toFixed(1)}%</td><td class="r num">${main.br.toFixed(1)}%</td><td class="r num">${r.presence?r.presence.toFixed(0)+"%":"–"}</td><td>${pill(r.category)}</td><td class="r num">${r.category==="HOLD"?"":r.severity.toFixed(1)}</td></tr>`}).join("")||`<tr><td colspan="9" class="muted">No champions match.</td></tr>`};
+  fill();
+}
 
 /* ---------- patch 26.22 ---------- */
 function viewPatch(){
@@ -425,7 +447,7 @@ function fillItems(){
 }
 
 /* ---------- router ---------- */
-const VIEW_FN={overview:[viewOverview,bindOverview],patch:[viewPatch,bindPatch],backtest:[viewBacktest,()=>{}],board:[viewBoard,bindBoard],simulator:[viewSimulator,()=>{}],items:[viewItems,bindItems]};
+const VIEW_FN={overview:[viewOverview,bindOverview],roster:[viewRoster,bindRoster],patch:[viewPatch,bindPatch],backtest:[viewBacktest,()=>{}],board:[viewBoard,bindBoard],simulator:[viewSimulator,()=>{}],items:[viewItems,bindItems]};
 function render(){
   const h=location.hash.slice(1);state.view=VIEWS.includes(h)?h:"overview";
   document.querySelectorAll("nav.tabs a").forEach(a=>a.setAttribute("aria-current",a.getAttribute("href")==="#"+state.view?"page":"false"));

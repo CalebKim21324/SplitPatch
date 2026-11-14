@@ -57,6 +57,24 @@ items:
     gold: 50
     stats: {}
     passive: Consume Restores 120 Health over 15 seconds.
+  2065:
+    name: Shurelya's Battlesong
+    gold: 2200
+    stats:
+      ap: 50.0
+      ah: 15.0
+      ms_pct: 4.0
+      mp_regen_pct: 125.0
+    passive: Inspiring Speech Grant nearby allies 30% Move Speed for 4 seconds.
+  2502:
+    name: Unending Despair
+    gold: 2800
+    stats:
+      hp: 400.0
+      armor: 50.0
+      ah: 15.0
+    passive: Anguish Every 4 seconds while in combat with champions, deal magic damage
+      to nearby enemy champions and heal for 250% of the damage dealt.
   2503:
     name: Blackfire Torch
     gold: 2800
@@ -67,6 +85,15 @@ items:
     passive: Baleful Blaze Damaging Abilities deals bonus magic damage for 3 seconds.
       Blackfire For each enemy champion, epic and large monster affected by your Baleful
       Blaze , gain 4% Ability Power .
+  2504:
+    name: Kaenic Rookern
+    gold: 2900
+    stats:
+      hp: 400.0
+      mr: 80.0
+      hp_regen_pct: 100.0
+    passive: Magebane After not taking magic damage for 15 seconds, gain a magic shield
+      .
   2510:
     name: Dusk and Dawn
     gold: 3100
@@ -78,6 +105,15 @@ items:
     passive: Spellblade (0s) After using an Ability, your next Attack deals bonus
       magic damage and heals you for On-Hit and then applies On-Hit effects an additional
       time.
+  2517:
+    name: Endless Hunger
+    gold: 3100
+    stats:
+      ad: 65.0
+      omnivamp_pct: 5.0
+      tenacity_pct: 20.0
+    passive: Famine Gain Ability Haste based on your Bonus AD. Feast When a champion
+      that you damaged recently dies, gain Omnivamp for a moderate duration.
   2520:
     name: Bastionbreaker
     gold: 3000
@@ -89,6 +125,27 @@ items:
       deals an additional true damage . Sabotage Taking down a champion within 3 seconds
       of damaging them grants Sabotage for 25000 seconds. While you have Sabotage,
       your next Attack against an Epic Monster or Turret deals an addition
+  2524:
+    name: Bandlepipes
+    gold: 2300
+    stats:
+      hp: 200.0
+      ah: 15.0
+      armor: 20.0
+      mr: 20.0
+    passive: Fanfare Slowing or Immobilizing an enemy champion grants Fanfare for
+      seconds. Fanfare grants you 20 Move Speed . While you have Fanfare, nearby allies,
+      including yourself, gain Attack Speed .
+  3004:
+    name: Manamune
+    gold: 2900
+    stats:
+      ad: 35.0
+      mp: 500.0
+      ah: 15.0
+    passive: Awe Gain bonus Attack Damage . Manaflow (8s, max 4 charges) Landing Attacks
+      and Abilities grants 3 max Mana (doubled vs. champions). Transforms into Muramana
+      at 360 max Mana .
   3006:
     name: Berserker's Greaves
     gold: 1100
@@ -103,6 +160,12 @@ items:
       ms: 45.0
       omnivamp_pct: 4.0
     passive: Slay Gain 0.6% Omnivamp on Champion takedown, stacking up to 10 times.
+  3009:
+    name: Boots of Swiftness
+    gold: 1000
+    stats:
+      ms: 55.0
+    passive: Fleetfooted Reduce the effectiveness of Slows by 25%.
   3020:
     name: Sorcerer's Shoes
     gold: 1100
@@ -170,6 +233,17 @@ items:
       armor: 25.0
       ms: 45.0
     passive: Plating Reduces incoming damage from Attacks by 10%.
+  3050:
+    name: Zeke's Convergence
+    gold: 2200
+    stats:
+      hp: 300.0
+      armor: 25.0
+      mr: 25.0
+      ah: 10.0
+    passive: Frostfire Tempest Casting your Ultimate summons a storm around you for
+      5 seconds. The storm deals 30 magic damage per second to enemy champions and
+      Slows them by 30%.
   3053:
     name: Sterak's Gage
     gold: 3200
@@ -214,6 +288,14 @@ items:
     passive: Cleave Attacks deal physical damage to nearby enemies. Ravenous Crescent
       Deal physical damage to enemies around you. Your Life Steal applies to this
       damage.
+  3075:
+    name: Thornmail
+    gold: 2450
+    stats:
+      hp: 150.0
+      armor: 75.0
+    passive: Thorns When struck by an Attack, deal magic damage to the attacker and
+      apply 40% Wounds for 3 seconds if they are a champion.
   3078:
     name: Trinity Force
     gold: 3333
@@ -224,6 +306,16 @@ items:
       ah: 15.0
     passive: Spellblade After using an Ability, your next Attack deals bonus physical
       damage On-Hit . Quicken Attacking grants 20 Move Speed for 2 seconds.
+  3084:
+    name: Heartsteel
+    gold: 3000
+    stats:
+      hp: 900.0
+      hp_regen_pct: 100.0
+    passive: Colossal Consumption (0s) per target If an enemy champion is nearby for
+      a few seconds, your next Attack against them deals 70 plus 6% of your max Health
+      as bonus physical damage and grants 10% of the damage as max Health. Goliath
+      For each 1000 max Health , gain 3% increased size, up to 30%.
   3085:
     name: Runaan's Hurricane
     gold: 2650
@@ -274,6 +366,25 @@ items:
       ap: 105.0
       mr: 40.0
     passive: Annul Grants a Spell Shield that blocks the next enemy Ability.
+  3109:
+    name: Knight's Vow
+    gold: 2300
+    stats:
+      hp: 200.0
+      armor: 40.0
+      ah: 10.0
+      hp_regen_pct: 100.0
+    passive: Sacrifice While near your Worthy ally, take 14% of the damage they receive
+      and heal for 12% of the damage they deal to champions. Pledge (0s) Designate
+      an ally as Worthy .
+  3110:
+    name: Frozen Heart
+    gold: 2500
+    stats:
+      armor: 75.0
+      mp: 400.0
+      ah: 20.0
+    passive: Winter's Caress Reduce the Attack Speed of nearby champions by 20% .
   3115:
     name: Nashor's Tooth
     gold: 2900
@@ -289,6 +400,16 @@ items:
       ap: 65.0
       hp: 400.0
     passive: Rimefrost Damaging Abilities Slow enemies by 30% for 1 second.
+  3118:
+    name: Malignance
+    gold: 2700
+    stats:
+      ap: 90.0
+      mp: 600.0
+      ah: 15.0
+    passive: Scorn Gain 20 Ultimate Ability Haste. Hatefog Damaging a champion with
+      your Ultimate burns the ground beneath them for 3s, dealing magic damage per
+      second and reducing their Magic Resist .
   3124:
     name: Guinsoo's Rageblade
     gold: 3000
@@ -403,6 +524,26 @@ items:
       against a champion deals an additional true damage . Blackout When you are near
       enemy Stealth Wards and traps, reveal them briefly. While revealing wards, your
       attacks deal bonus damage to them.
+  3190:
+    name: Locket of the Iron Solari
+    gold: 2200
+    stats:
+      hp: 200.0
+      armor: 30.0
+      mr: 30.0
+      ah: 10.0
+    passive: Devotion Grant nearby allies a 290 - 360 Shield that decays over 2.5
+      seconds.
+  3222:
+    name: Mikael's Blessing
+    gold: 2300
+    stats:
+      hp: 250.0
+      mp_regen_pct: 100.0
+      heal_shield_pct: 12.0
+      ah: 15.0
+    passive: Purify Remove all crowd control debuffs (excluding Airborne and Suppression
+      ) from an ally champion and restore 100 - 250 Health .
   3302:
     name: Terminus
     gold: 3000
@@ -413,6 +554,15 @@ items:
       between Light and Dark Attacks against champions: Light Attacks grant Armor
       and Magic Resist for 5s. Dark Attacks grant 10% Armor Penetration and Magic
       Penetration for 5s.'
+  3508:
+    name: Essence Reaver
+    gold: 3050
+    stats:
+      ad: 50.0
+      ah: 20.0
+      crit_pct: 25.0
+    passive: Spellblade After using an Ability, your next Attack deals bonus physical
+      damage and grants Mana On-Hit .
   3742:
     name: Dead Man's Plate
     gold: 2900
@@ -440,6 +590,69 @@ items:
       lethality: 15.0
       hp: 250.0
     passive: Annul Grants a Spell Shield that blocks the next enemy Ability.
+  3865:
+    name: World Atlas
+    gold: 400
+    stats: {}
+    passive: null
+  3869:
+    name: Celestial Opposition
+    gold: 400
+    stats:
+      hp: 200.0
+      hp_regen_pct: 75.0
+      mp_regen_pct: 75.0
+      gold_per_10_seconds: 9.0
+    passive: Blessing of the Mountain Reduce incoming champion damage for 2 seconds
+      after taking damage from a champion. When the effect ends, slow nearby enemies
+      by 50% for 1.5 seconds. Active (4 charges) Places an Invisible Stealth Ward
+      that grants vision.
+  3870:
+    name: Dream Maker
+    gold: 400
+    stats:
+      hp: 200.0
+      hp_regen_pct: 75.0
+      mp_regen_pct: 75.0
+      gold_per_10_seconds: 9.0
+    passive: Dream Maker Healing or Shielding another ally blows Dream Bubbles to
+      them for 3 seconds. Their next Attack deals bonus magic damage On-Hit and the
+      next damage they take is reduced. Active (4 charges) Places an Invisible Stealth
+      Ward that grants vision.
+  3871:
+    name: Zaz'Zak's Realmspike
+    gold: 400
+    stats:
+      hp: 200.0
+      hp_regen_pct: 75.0
+      mp_regen_pct: 75.0
+      gold_per_10_seconds: 9.0
+    passive: Void Explosion Dealing Ability damage to a champion causes an explosion
+      that deals magic damage . Active (4 charges) Places an Invisible Stealth Ward
+      that grants vision.
+  3876:
+    name: Solstice Sleigh
+    gold: 400
+    stats:
+      hp: 200.0
+      hp_regen_pct: 75.0
+      mp_regen_pct: 75.0
+      gold_per_10_seconds: 9.0
+    passive: Going Sledding Slowing or Immobilizing an enemy champion near allies
+      restores Health and grants 20% decaying Move Speed for 2.5 seconds to you and
+      a nearby ally. Active (4 charges) Places an Invisible Stealth Ward that grants
+      vision.
+  3877:
+    name: Bloodsong
+    gold: 400
+    stats:
+      hp: 200.0
+      hp_regen_pct: 75.0
+      mp_regen_pct: 75.0
+      gold_per_10_seconds: 9.0
+    passive: Spellblade After using an Ability, your next Attack deals bonus physical
+      damage On-Hit . If the target is a champion, they take increased damage for
+      4 seconds. Active (4 charges) Places an Invisible Stealth Ward that grants vision.
   4401:
     name: Force of Nature
     gold: 2800
@@ -524,6 +737,26 @@ items:
     passive: Echo Damaging Abilities fire 6 Echoes that deal bonus magic damage to
       the target and nearby enemies. Remaining Echoes fire on the primary target,
       dealing 20% damage.
+  6662:
+    name: Iceborn Gauntlet
+    gold: 2900
+    stats:
+      hp: 300.0
+      armor: 50.0
+      ah: 15.0
+    passive: Spellblade After using an Ability, your next Attack deals bonus physical
+      damage On-Hit and creates a frost field for 2s that Slows .
+  6664:
+    name: Hollow Radiance
+    gold: 2800
+    stats:
+      hp: 400.0
+      mr: 40.0
+      ah: 10.0
+      hp_regen_pct: 100.0
+    passive: Immolate After taking or dealing damage, deal magic damage per second
+      to nearby enemies for 3 seconds. Desolate Killing an enemy deals magic damage
+      around them.
   6665:
     name: Jak'Sho, The Protean
     gold: 3200
@@ -550,6 +783,15 @@ items:
       crit_pct: 25.0
     passive: Lifeline Taking damage that would reduce your Health below 30% grants
       a Shield for 3 seconds.
+  6675:
+    name: Navori Flickerblade
+    gold: 2650
+    stats:
+      as_pct: 40.0
+      crit_pct: 25.0
+      ms_pct: 4.0
+    passive: Transcendence Attacks reduce Basic Ability cooldowns by 15% of their
+      remaining cooldown.
   6676:
     name: The Collector
     gold: 3000

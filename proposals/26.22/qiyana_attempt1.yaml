@@ -1,6 +1,6 @@
 champion: Qiyana
 patch: '26.22'
-category: OVERALL_STRONG
+category: PRO_JAIL
 changes:
 - field: abilities.Q_edge_of_ixtal.base
   from:
@@ -10,26 +10,20 @@ changes:
   - 160.0
   - 190.0
   to:
-  - 58.0
-  - 88.0
-  - 118.0
-  - 148.0
-  - 178.0
-- field: abilities.R_supreme_display_of_talent.base
-  from:
+  - 70.0
   - 100.0
-  - 200.0
-  - 300.0
-  to:
-  - 90.0
-  - 180.0
-  - 270.0
-rationale: 'Qiyana is strong in both settings: 52.7% WR in KR solo queue and 57% pro
-  presence. We''re taking two small, readable cuts to her burst. Edge of Ixtal base
-  damage goes down by a flat 12 at every rank (70/100/130/160/190 -> 58/88/118/148/178).
-  That lowers her lane trades and early all-ins, which is where her solo queue strength
-  comes from. Supreme Display of Talent base damage drops 10% (100/200/300 -> 90/180/270).
-  That trims the coordinated teamfight and engage burst that drives her pro presence.
-  Her ratios, cooldowns, CC and mobility stay the same, so she plays the same way,
-  just with a bit less burst. Sim: soloq_index -0.70%, pro_index -0.47%, both inside
-  the target bands.'
+  - 130.0
+  - 150.0
+  - 165.0
+- field: abilities.R_supreme_display_of_talent.bonus_ad_ratio
+  from: 1.25
+  to: 1.1
+rationale: 'Qiyana is in pro jail: 57% pro presence while she sits below 49% win rate
+  in solo queue (47.7% global, 48.2% KR). Her coordinated late-game burst is what
+  keeps her picked in pro, so we''re trimming her end-of-game damage and leaving her
+  early game alone. Q (Edge of Ixtal) damage at ranks 4/5 goes from 160/190 to 150/165,
+  and R (Supreme Display of Talent) bonus AD ratio goes from 1.25 to 1.10. Q ranks
+  1-3, all base stats, W and E are unchanged, so her lane and early skirmish power
+  stay the same for solo queue players. In simulation, pro power drops by about 1.2%
+  and solo queue power doesn''t change. Lane trades and the level 9 duel are untouched;
+  only late DPS and siege damage go down slightly.'

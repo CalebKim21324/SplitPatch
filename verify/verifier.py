@@ -22,7 +22,7 @@ MAX_REL_CHANGE = 0.20
 
 BASE_FIELDS = {"hp", "hp_per_lvl", "mp", "mp_per_lvl", "armor", "armor_per_lvl", "mr", "mr_per_lvl",
                "ad", "ad_per_lvl", "ms"}
-ABILITY_FIELDS = {"base", "base_by_level", "ap_ratio", "ad_ratio", "bonus_ad_ratio", "pct_max_hp",
+ABILITY_FIELDS = {"base", "base_by_level", "ap_ratio", "armor_ratio", "ad_ratio", "bonus_ad_ratio", "pct_max_hp",
                   "pct_current_hp", "pct_missing_hp", "min_damage", "stack_base", "stack_ad_ratio",
                   "stack_ap_ratio", "shield", "shield_ap_ratio", "shield_bonus_hp_ratio", "damage_reduction",
                   "bonus_as", "slow", "cc_duration", "cooldown", "mana_cost", "range"}

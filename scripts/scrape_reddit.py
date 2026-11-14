@@ -21,7 +21,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SUBS = {"Azir": "AzirMains", "Kalista": "KalistaMains", "Garen": "GarenMains",
-        "Viego": "ViegoMains", "Qiyana": "QiyanaMains", "Lee Sin": "LeeSinMains"}
+        "Viego": "ViegoMains", "Qiyana": "QiyanaMains", "Lee Sin": "LeeSinMains",
+        "Ezreal": "EzrealMains", "Blitzcrank": "BlitzcrankMains", "Malphite": "MalphiteMains",
+        "Kog'Maw": "KogMawMains", "Jayce": "JayceMains"}
 FEEDS = ["new/.rss", "top/.rss?t=week"]
 ATOM = {"a": "http://www.w3.org/2005/Atom"}
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
@@ -79,7 +81,7 @@ def main() -> int:
             except Exception as e:  # keep going; report what failed
                 print(f"  {sub}/{feed}: {type(e).__name__} {e}")
             time.sleep(8)
-        out = ROOT / "data" / "sentiment" / champ.lower().replace(" ", "") / f"{a.patch}.jsonl"
+        out = ROOT / "data" / "sentiment" / re.sub(r"[^a-z0-9]", "", champ.lower()) / f"{a.patch}.jsonl"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows), encoding="utf-8")
         print(f"{champ}: {len(rows)} posts -> {out.relative_to(ROOT)}")

@@ -1,0 +1,28 @@
+champion: Jayce
+patch: '26.22'
+category: POPULAR_WEAK
+changes:
+- field: abilities.Q_to_the_skies.base
+  from:
+  - 60.0
+  - 110.0
+  - 160.0
+  - 210.0
+  - 260.0
+  - 310.0
+  to:
+  - 72.0
+  - 125.0
+  - 175.0
+  - 222.0
+  - 266.0
+  - 310.0
+rationale: "Jayce is popular but losing in global solo queue (49.3% WR at 5.9% PR),\
+  \ while pro presence is already high (41%), so we want to help his laning without\
+  \ adding late-game or coordinated power. We're buffing Hammer Q (To the Skies) base\
+  \ damage at early ranks (60/110/160/210/260 \u2192 72/125/175/222/266). Max rank\
+  \ stays at 310. This makes his early trades and all-ins stronger, but by full build\
+  \ he does almost exactly the same damage, so pro play gains nothing. Sim: soloq_index\
+  \ +0.95% (target +0.5% to +3%), pro_index -0.05% (target \u2264 +1%). The single\
+  \ 'too strong' complaint goes against the data and the diagnosis, so we didn't act\
+  \ on it."

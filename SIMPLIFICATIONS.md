@@ -24,3 +24,8 @@ Every place the sim or data differs from real League mechanics. Judges will ask.
 | Mana | Trades-to-oom ignores mana regen; manaless and energy champions capped at 10 | Lane-length proxy |
 | Indices | Ratio to pool mean (not z-score) so relative changes are defined; equal weights until tuned on train patches | z-score near 0 makes "-8%" meaningless |
 | Utility | CC seconds per 10 s at lvl 16 + 0.5 x slow seconds + 1.0 disengage tag bonus | Hand-set weights |
+| Roster scan | Each champion is judged in its main role only (lolalytics `defaultLane`); servers below 20k (global) / 3k (KR) games are ignored | Off-role samples are small and noisy |
+| Strong line | Slides with ban rate: 54% at or below the roster's average ban rate, down to 52.5% at 5x (Riot-style, per a secondary summary of Riot's framework) | Fixes flagging rarely banned champions like Garen |
+| New kits | Ezreal, Blitzcrank, Malphite, Kog'Maw, Jayce use the generic combo (every non-ultimate damage ability + 2 attacks) and are judged against the original six-champion pool means | No hand-written combos yet |
+| Jayce | Basic abilities have 6 ranks; the sim caps ranks at 5. Acceleration Gate and Mercury Hammer numbers omitted (not readable verbatim) | Partial kit |
+| Pro presence | Latest gol.gg pro patch (26.20) for every champion, which predates Riot's 26.21 changes | No pro games on 26.21/26.22 |

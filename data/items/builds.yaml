@@ -68,3 +68,58 @@ champions:
     - 3047
     - 3071
     item4: 6333
+  Ezreal:
+    lane: bottom
+    skill_order: QEW
+    start:
+    - 1086
+    - 2003
+    core:
+    - 3078
+    - 3158
+    - 3004
+    item4: 3161
+  Blitzcrank:
+    lane: support
+    skill_order: QEW
+    start:
+    - 3865
+    - 2003
+    core:
+    - 3869
+    - 3009
+    - 3190
+    item4: 3050
+  Malphite:
+    lane: top
+    skill_order: QEW
+    start:
+    - 1056
+    - 2003
+    core:
+    - 3047
+    - 3068
+    - 3075
+    item4: 2504
+  Kog'Maw:
+    lane: bottom
+    skill_order: WQE
+    start:
+    - 1086
+    - 2003
+    core:
+    - 3006
+    - 3124
+    - 6675
+    item4: 3302
+  Jayce:
+    lane: top
+    skill_order: QWE
+    start:
+    - 1055
+    - 2003
+    core:
+    - 3142
+    - 3158
+    - 3004
+    item4: 6699

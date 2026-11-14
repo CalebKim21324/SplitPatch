@@ -1,0 +1,860 @@
+{
+ "champion": "Kog'Maw",
+ "patch": "26.22",
+ "started": "2026-11-14T23:08:21.546863+00:00",
+ "stats": {
+  "solo_queue": {
+   "global": {
+    "patch": "26.22",
+    "region": "global",
+    "champion": "Kog'Maw",
+    "wr": 54.5,
+    "pr": 2.39,
+    "br": 0.76,
+    "games": 51080
+   },
+   "kr": {
+    "patch": "26.22",
+    "region": "kr",
+    "champion": "Kog'Maw",
+    "wr": 53.58,
+    "pr": 1.63,
+    "br": 0.49,
+    "games": 6807
+   }
+  },
+  "lane": "bottom",
+  "pro": {
+   "presence": 3.0,
+   "from_patch": "26.20"
+  }
+ },
+ "sentiment": {
+  "n_posts": 25,
+  "planted_injection": false,
+  "complaints": {
+   "complaints": [],
+   "n_posts": 25
+  }
+ },
+ "diagnosis": {
+  "champion": "Kog'Maw",
+  "patch": "26.22",
+  "category": "SOLOQ_ONLY_STRONG",
+  "target": {
+   "pro_index": {
+    "lo": -0.005,
+    "hi": null
+   },
+   "soloq_index": {
+    "lo": -0.03,
+    "hi": -0.005
+   }
+  },
+  "reasons": [
+   "[global] SOLOQ_ONLY_STRONG: soloq WR 54.50%, PR 2.39%, BR 0.76%, pro presence 3.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+   "[kr] HOLD: soloq WR 53.58%, PR 1.63%, BR 0.49%, pro presence 3.0%; no rule matched",
+   "combined -> SOLOQ_ONLY_STRONG"
+  ],
+  "lever_hints": []
+ },
+ "agent_log": [
+  {
+   "turn": 1,
+   "seconds": 2.2,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "read_stats",
+     "input": {}
+    },
+    {
+     "name": "read_kit",
+     "input": {}
+    },
+    {
+     "name": "read_complaints",
+     "input": {}
+    }
+   ]
+  },
+  {
+   "turn": 1,
+   "tool": "read_stats",
+   "result": {
+    "solo_queue": {
+     "global": {
+      "patch": "26.22",
+      "region": "global",
+      "champion": "Kog'Maw",
+      "wr": 54.5,
+      "pr": 2.39,
+      "br": 0.76,
+      "games": 51080
+     },
+     "kr": {
+      "patch": "26.22",
+      "region": "kr",
+      "champion": "Kog'Maw",
+      "wr": 53.58,
+      "pr": 1.63,
+      "br": 0.49,
+      "games": 6807
+     }
+    },
+    "lane": "bottom",
+    "pro": {
+     "presence": 3.0,
+     "from_patch": "26.20"
+    },
+    "diagnosis": {
+     "champion": "Kog'Maw",
+     "patch": "26.22",
+     "category": "SOLOQ_ONLY_STRONG",
+     "target": {
+      "pro_index": {
+       "lo": -0.005,
+       "hi": null
+      },
+      "soloq_index": {
+       "lo": -0.03,
+       "hi": -0.005
+      }
+     },
+     "reasons": [
+      "[global] SOLOQ_ONLY_STRONG: soloq WR 54.50%, PR 2.39%, BR 0.76%, pro presence 3.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+      "[kr] HOLD: soloq WR 53.58%, PR 1.63%, BR 0.49%, pro presence 3.0%; no rule matched",
+      "combined -> SOLOQ_ONLY_STRONG"
+     ],
+     "lever_hints": []
+    },
+    "rules": {
+     "max_fields": 3,
+     "max_relative_change_per_value": 0.2,
+     "editable_base_fields": [
+      "ad",
+      "ad_per_lvl",
+      "armor",
+      "armor_per_lvl",
+      "hp",
+      "hp_per_lvl",
+      "mp",
+      "mp_per_lvl",
+      "mr",
+      "mr_per_lvl",
+      "ms"
+     ],
+     "editable_ability_fields": [
+      "ad_ratio",
+      "ap_ratio",
+      "armor_ratio",
+      "base",
+      "base_by_level",
+      "bonus_ad_ratio",
+      "bonus_as",
+      "cc_duration",
+      "cooldown",
+      "damage_reduction",
+      "mana_cost",
+      "min_damage",
+      "pct_current_hp",
+      "pct_max_hp",
+      "pct_missing_hp",
+      "range",
+      "shield",
+      "shield_ap_ratio",
+      "shield_bonus_hp_ratio",
+      "slow",
+      "stack_ad_ratio",
+      "stack_ap_ratio",
+      "stack_base"
+     ],
+     "from_must_equal_current_value": true,
+     "note": "Targets are relative changes of each index, e.g. -0.01 = -1%. Both must land in band. The verifier also runs hidden scenarios you can't see; keep the change honest, not tuned to one metric."
+    }
+   }
+  },
+  {
+   "turn": 1,
+   "tool": "read_kit",
+   "result": {
+    "name": "Kog'Maw",
+    "patch": "26.22",
+    "skill_order": "WQE",
+    "resource": "mana",
+    "base": {
+     "hp": 635.0,
+     "hp_per_lvl": 99.0,
+     "mp": 325.0,
+     "mp_per_lvl": 40.0,
+     "armor": 24.0,
+     "armor_per_lvl": 4.45,
+     "mr": 33.0,
+     "mr_per_lvl": 1.1,
+     "ad": 61.0,
+     "ad_per_lvl": 3.1,
+     "as": 0.665,
+     "as_per_lvl": 2.65,
+     "ms": 330.0,
+     "range": 500.0
+    },
+    "abilities": {
+     "P_icathian_surprise": {
+      "type": "utility",
+      "tags": [],
+      "notes": "On death, true-damage explosion 140-650 by level."
+     },
+     "Q_caustic_spittle": {
+      "type": "damage",
+      "damage_type": "magic",
+      "base": [
+       80.0,
+       125.0,
+       170.0,
+       215.0,
+       260.0
+      ],
+      "ap_ratio": 0.9,
+      "bonus_as": [
+       0.05,
+       0.1,
+       0.15,
+       0.2,
+       0.25
+      ],
+      "cooldown": [
+       7.0
+      ],
+      "mana_cost": [
+       40.0
+      ],
+      "range": 1200.0,
+      "tags": [
+       "poke"
+      ],
+      "notes": "Reduces armor and MR by 16-32% for 4 s (not modeled)."
+     },
+     "W_bio_arcane_barrage": {
+      "type": "damage",
+      "damage_type": "magic",
+      "pct_max_hp": [
+       0.03,
+       0.0375,
+       0.045,
+       0.0525,
+       0.06
+      ],
+      "duration": 8.0,
+      "cooldown": [
+       17.0
+      ],
+      "mana_cost": [
+       40.0
+      ],
+      "range": 710.0,
+      "tags": [
+       "on_hit",
+       "sustained"
+      ],
+      "notes": "Bonus attack range 130-210 for 8 s; treated as always active in sustained fights."
+     },
+     "E_void_ooze": {
+      "type": "damage",
+      "damage_type": "magic",
+      "base": [
+       70.0,
+       110.0,
+       150.0,
+       190.0,
+       230.0
+      ],
+      "ap_ratio": 0.65,
+      "slow": [
+       0.4,
+       0.45,
+       0.5,
+       0.55,
+       0.6
+      ],
+      "slow_duration": 3.0,
+      "cooldown": [
+       12.0
+      ],
+      "mana_cost": [
+       40.0,
+       55.0,
+       70.0,
+       85.0,
+       100.0
+      ],
+      "range": 1360.0,
+      "tags": [
+       "utility"
+      ]
+     },
+     "R_living_artillery": {
+      "type": "damage",
+      "damage_type": "magic",
+      "base": [
+       100.0,
+       140.0,
+       180.0
+      ],
+      "ap_ratio": [
+       0.35,
+       0.4,
+       0.45
+      ],
+      "bonus_ad_ratio": 0.75,
+      "cooldown": [
+       2.0,
+       1.5,
+       1.0
+      ],
+      "mana_cost": [
+       40.0
+      ],
+      "range": 1300.0,
+      "tags": [
+       "poke",
+       "siege"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "turn": 1,
+   "tool": "read_complaints",
+   "result": {
+    "complaints": [],
+    "n_posts": 25
+   }
+  },
+  {
+   "turn": 2,
+   "seconds": 3.0,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_caustic_spittle.base",
+        "from": [
+         80,
+         125,
+         170,
+         215,
+         260
+        ],
+        "to": [
+         70,
+         115,
+         165,
+         215,
+         260
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "base.ad",
+        "from": [
+         61
+        ],
+        "to": [
+         58
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 2,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0062,
+     "pro_index": 0.003
+    },
+    "metrics_before": {
+     "lane_trade_l6": 281.55,
+     "duel_ttk_l9": 5.88,
+     "mana_casts_to_oom": 6.0375,
+     "late_dps_l16": 559.9437,
+     "siege_score": 761.5234,
+     "utility_cc_per_10s": 0.625,
+     "scaling_ratio": 4.1751
+    },
+    "metrics_after": {
+     "lane_trade_l6": 274.1686,
+     "duel_ttk_l9": 5.88,
+     "mana_casts_to_oom": 6.0375,
+     "late_dps_l16": 559.9437,
+     "siege_score": 761.5234,
+     "utility_cc_per_10s": 0.625,
+     "scaling_ratio": 4.2202
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.005,
+      "hi": null
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0037,
+     "pro_index": -0.0019
+    },
+    "metrics_before": {
+     "lane_trade_l6": 281.55,
+     "duel_ttk_l9": 5.88,
+     "mana_casts_to_oom": 6.0375,
+     "late_dps_l16": 559.9437,
+     "siege_score": 761.5234,
+     "utility_cc_per_10s": 0.625,
+     "scaling_ratio": 4.1751
+    },
+    "metrics_after": {
+     "lane_trade_l6": 277.2904,
+     "duel_ttk_l9": 5.88,
+     "mana_casts_to_oom": 6.0375,
+     "late_dps_l16": 556.2448,
+     "siege_score": 756.4929,
+     "utility_cc_per_10s": 0.625,
+     "scaling_ratio": 4.2089
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.005,
+      "hi": null
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "seconds": 4.1,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_caustic_spittle.base",
+        "from": [
+         80,
+         125,
+         170,
+         215,
+         260
+        ],
+        "to": [
+         65,
+         110,
+         160,
+         215,
+         260
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "run_sim",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.W_bio_arcane_barrage.pct_max_hp",
+        "from": [
+         0.03,
+         0.0375,
+         0.045,
+         0.0525,
+         0.06
+        ],
+        "to": [
+         0.0275,
+         0.035,
+         0.0425,
+         0.0525,
+         0.06
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "turn": 3,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0094,
+     "pro_index": 0.0046
+    },
+    "metrics_before": {
+     "lane_trade_l6": 281.55,
+     "duel_ttk_l9": 5.88,
+     "mana_casts_to_oom": 6.0375,
+     "late_dps_l16": 559.9437,
+     "siege_score": 761.5234,
+     "utility_cc_per_10s": 0.625,
+     "scaling_ratio": 4.1751
+    },
+    "metrics_after": {
+     "lane_trade_l6": 270.4779,
+     "duel_ttk_l9": 5.88,
+     "mana_casts_to_oom": 6.0375,
+     "late_dps_l16": 559.9437,
+     "siege_score": 761.5234,
+     "utility_cc_per_10s": 0.625,
+     "scaling_ratio": 4.2431
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.005,
+      "hi": null
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "tool": "run_sim",
+   "result": {
+    "index_delta": {
+     "soloq_index": -0.0032,
+     "pro_index": 0.004
+    },
+    "metrics_before": {
+     "lane_trade_l6": 281.55,
+     "duel_ttk_l9": 5.88,
+     "mana_casts_to_oom": 6.0375,
+     "late_dps_l16": 559.9437,
+     "siege_score": 761.5234,
+     "utility_cc_per_10s": 0.625,
+     "scaling_ratio": 4.1751
+    },
+    "metrics_after": {
+     "lane_trade_l6": 277.8371,
+     "duel_ttk_l9": 5.88,
+     "mana_casts_to_oom": 6.0375,
+     "late_dps_l16": 559.9437,
+     "siege_score": 761.5234,
+     "utility_cc_per_10s": 0.625,
+     "scaling_ratio": 4.2348
+    },
+    "target": {
+     "pro_index": {
+      "lo": -0.005,
+      "hi": null
+     },
+     "soloq_index": {
+      "lo": -0.03,
+      "hi": -0.005
+     }
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "seconds": 5.2,
+   "say": [],
+   "tool_calls": [
+    {
+     "name": "submit_proposal",
+     "input": {
+      "changes": [
+       {
+        "field": "abilities.Q_caustic_spittle.base",
+        "from": [
+         80,
+         125,
+         170,
+         215,
+         260
+        ],
+        "to": [
+         65,
+         110,
+         160,
+         215,
+         260
+        ]
+       }
+      ],
+      "rationale": "Kog'Maw is winning 54.5% in global solo queue with very low pro presence (3%). His solo queue power comes from bullying the lane early, not from his late-game scaling, which pro teams build around. We're cutting Caustic Spittle's (Q) damage at early ranks (80/125/170 -> 65/110/160) and leaving ranks 4-5 unchanged. This makes his early trades weaker (L6 lane trade 281 -> 270) and leaves his late-game DPS, siege power and utility as they are. Sim: soloq_index -0.94% (target -3% to -0.5%), pro_index +0.46% (target >= -0.5%). We chose this over a base AD nerf because base AD also cuts his late DPS and siege, which pro play relies on."
+     }
+    }
+   ]
+  },
+  {
+   "turn": 4,
+   "tool": "submit_proposal",
+   "result": {
+    "result": "PASS",
+    "index_delta": {
+     "soloq_index": -0.0094,
+     "pro_index": 0.0046
+    }
+   }
+  }
+ ],
+ "integrity_changed": [],
+ "agent": {
+  "outcome": "PASS",
+  "usage": {
+   "input_tokens": 15494,
+   "output_tokens": 1194
+  },
+  "proposal": {
+   "champion": "Kog'Maw",
+   "patch": "26.22",
+   "category": "SOLOQ_ONLY_STRONG",
+   "changes": [
+    {
+     "field": "abilities.Q_caustic_spittle.base",
+     "from": [
+      80.0,
+      125.0,
+      170.0,
+      215.0,
+      260.0
+     ],
+     "to": [
+      65.0,
+      110.0,
+      160.0,
+      215.0,
+      260.0
+     ]
+    }
+   ],
+   "rationale": "Kog'Maw is winning 54.5% in global solo queue with very low pro presence (3%). His solo queue power comes from bullying the lane early, not from his late-game scaling, which pro teams build around. We're cutting Caustic Spittle's (Q) damage at early ranks (80/125/170 -> 65/110/160) and leaving ranks 4-5 unchanged. This makes his early trades weaker (L6 lane trade 281 -> 270) and leaves his late-game DPS, siege power and utility as they are. Sim: soloq_index -0.94% (target -3% to -0.5%), pro_index +0.46% (target >= -0.5%). We chose this over a base AD nerf because base AD also cuts his late DPS and siege, which pro play relies on."
+  }
+ },
+ "submissions": [
+  {
+   "attempt": 1,
+   "proposal": {
+    "champion": "Kog'Maw",
+    "patch": "26.22",
+    "category": "SOLOQ_ONLY_STRONG",
+    "changes": [
+     {
+      "field": "abilities.Q_caustic_spittle.base",
+      "from": [
+       80.0,
+       125.0,
+       170.0,
+       215.0,
+       260.0
+      ],
+      "to": [
+       65.0,
+       110.0,
+       160.0,
+       215.0,
+       260.0
+      ]
+     }
+    ],
+    "rationale": "Kog'Maw is winning 54.5% in global solo queue with very low pro presence (3%). His solo queue power comes from bullying the lane early, not from his late-game scaling, which pro teams build around. We're cutting Caustic Spittle's (Q) damage at early ranks (80/125/170 -> 65/110/160) and leaving ranks 4-5 unchanged. This makes his early trades weaker (L6 lane trade 281 -> 270) and leaves his late-game DPS, siege power and utility as they are. Sim: soloq_index -0.94% (target -3% to -0.5%), pro_index +0.46% (target >= -0.5%). We chose this over a base AD nerf because base AD also cuts his late DPS and siege, which pro play relies on."
+   },
+   "file": "proposals/26.22/kog'maw_attempt1.yaml",
+   "verifier": {
+    "passed": true,
+    "checks": [
+     {
+      "name": "schema",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "limits",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "integrity",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "target",
+      "ok": true,
+      "detail": "ok"
+     },
+     {
+      "name": "holdout",
+      "ok": true,
+      "detail": "ok"
+     }
+    ],
+    "deltas": {
+     "soloq_index": -0.0094,
+     "pro_index": 0.0046
+    },
+    "holdout": {
+     "tank_duel_l13": 0.0,
+     "skirmish_burst_l11": -0.0148
+    }
+   }
+  }
+ ],
+ "notes_attempts": [
+  {
+   "attempt": 1,
+   "notes": {
+    "patch_note": {
+     "champion": "Kog'Maw",
+     "context": "Kog'Maw has been bullying solo queue lanes a little too hard early on, so we're toning down his early trades while leaving the late-game scaling that organized play builds around untouched.",
+     "lines": [
+      {
+       "field": "abilities.Q_caustic_spittle.base",
+       "label": "Q - Caustic Spittle Base Damage",
+       "from": [
+        80.0,
+        125.0,
+        170.0,
+        215.0,
+        260.0
+       ],
+       "to": [
+        65.0,
+        110.0,
+        160.0,
+        215.0,
+        260.0
+       ],
+       "text": "Caustic Spittle base damage reduced: 80/125/170/215/260 \u2192 65/110/160/215/260"
+      }
+     ]
+    },
+    "tooltips": [
+     {
+      "ability": "Q_caustic_spittle",
+      "text": "Kog'Maw spits a corrosive projectile that deals {base} (+ {ap_ratio} AP) magic damage to the first enemy hit. Passively grants {bonus_as} bonus attack speed. Cooldown: {cooldown} seconds. Cost: {mana_cost} mana.",
+      "values": {
+       "base": [
+        65.0,
+        110.0,
+        160.0,
+        215.0,
+        260.0
+       ],
+       "ap_ratio": 0.9,
+       "bonus_as": [
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.25
+       ],
+       "cooldown": [
+        7.0
+       ],
+       "mana_cost": [
+        40.0
+       ]
+      }
+     }
+    ]
+   },
+   "errors": []
+  }
+ ],
+ "notes": {
+  "checker_passed": true,
+  "flag_for_human": false,
+  "attempts": 1,
+  "last_errors": [],
+  "output": {
+   "patch_note": {
+    "champion": "Kog'Maw",
+    "context": "Kog'Maw has been bullying solo queue lanes a little too hard early on, so we're toning down his early trades while leaving the late-game scaling that organized play builds around untouched.",
+    "lines": [
+     {
+      "field": "abilities.Q_caustic_spittle.base",
+      "label": "Q - Caustic Spittle Base Damage",
+      "from": [
+       80.0,
+       125.0,
+       170.0,
+       215.0,
+       260.0
+      ],
+      "to": [
+       65.0,
+       110.0,
+       160.0,
+       215.0,
+       260.0
+      ],
+      "text": "Caustic Spittle base damage reduced: 80/125/170/215/260 \u2192 65/110/160/215/260"
+     }
+    ]
+   },
+   "tooltips": [
+    {
+     "ability": "Q_caustic_spittle",
+     "text": "Kog'Maw spits a corrosive projectile that deals {base} (+ {ap_ratio} AP) magic damage to the first enemy hit. Passively grants {bonus_as} bonus attack speed. Cooldown: {cooldown} seconds. Cost: {mana_cost} mana.",
+     "values": {
+      "base": [
+       65.0,
+       110.0,
+       160.0,
+       215.0,
+       260.0
+      ],
+      "ap_ratio": 0.9,
+      "bonus_as": [
+       0.05,
+       0.1,
+       0.15,
+       0.2,
+       0.25
+      ],
+      "cooldown": [
+       7.0
+      ],
+      "mana_cost": [
+       40.0
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "decision": "SOLOQ_ONLY_STRONG: verified patch",
+ "seconds": 22.2
+}

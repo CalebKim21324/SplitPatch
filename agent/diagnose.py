@@ -23,6 +23,16 @@ class Thresholds:
     wr_pro_jail: float = 49.0
     pr_high: float = 5.0
     wr_popular_weak: float = 49.5
+    # Riot-style ban-rate band: with avg_br set, the "strong" line slides from strong_line_low_ban
+    # (champion banned at or below the average rate) down to wr_strong at 5x the average ban rate.
+    avg_br: float | None = None
+    strong_line_low_ban: float = 54.0
+
+    def strong_line(self, br: float) -> float:
+        if not self.avg_br:
+            return self.wr_strong
+        ratio = min(max((br / self.avg_br - 1) / 4, 0.0), 1.0)
+        return self.strong_line_low_ban - (self.strong_line_low_ban - self.wr_strong) * ratio
 
 
 # Bands are calibrated to the scale of OUR indices: Riot's five real changes in 26.17-26.22 move
@@ -54,12 +64,13 @@ def categorize(soloq: SoloQRow, pro: ProRow, t: Thresholds = Thresholds()) -> tu
     hi, lo = pres >= t.presence_high, pres < t.presence_low
     facts = f"soloq WR {wr:.2f}%, PR {pr:.2f}%, BR {br:.2f}%, pro presence {pres:.1f}%"
 
+    line = round(t.strong_line(br), 2)
     if hi and wr < t.wr_pro_jail:
         return Category.PRO_JAIL, [facts, f"presence >= {t.presence_high} and WR < {t.wr_pro_jail}"]
-    if wr > t.wr_strong and (hi or br >= t.br_high):
-        return Category.OVERALL_STRONG, [facts, f"WR > {t.wr_strong} and (presence >= {t.presence_high} or BR >= {t.br_high})"]
-    if wr > t.wr_strong and lo:
-        return Category.SOLOQ_ONLY_STRONG, [facts, f"WR > {t.wr_strong} and presence < {t.presence_low}"]
+    if wr > line and (hi or br >= t.br_high):
+        return Category.OVERALL_STRONG, [facts, f"WR > {line} (strong line at this ban rate) and (presence >= {t.presence_high} or BR >= {t.br_high})"]
+    if wr > line and lo:
+        return Category.SOLOQ_ONLY_STRONG, [facts, f"WR > {line} (strong line at this ban rate) and presence < {t.presence_low}"]
     if wr < t.wr_weak and not hi:
         return Category.OVERALL_WEAK, [facts, f"WR < {t.wr_weak} and presence < {t.presence_high}"]
     if wr < t.wr_popular_weak and pr >= t.pr_high:
@@ -93,13 +104,15 @@ _SEVERITY = {Category.OVERALL_STRONG: 3, Category.PRO_JAIL: 2, Category.SOLOQ_ON
 
 
 def diagnose_regions(rows: dict[str, SoloQRow], pro: ProRow, complaints: Complaints | None = None,
-                     t: Thresholds = Thresholds()) -> Diagnosis:
+                     t: Thresholds = Thresholds(), avg_br: dict[str, float] | None = None) -> Diagnosis:
     """Combine per-server diagnoses (docs/WORKFLOW.md step 2).
 
     Nerf if strong on ANY server (most severe wins). Popular-weak if popular-weak on any server and
     strong on none. Overall-weak only if weak on EVERY server (Riot's buff asymmetry). Else hold.
     """
-    per = {r: diagnose(s, pro.model_copy(update={"patch": s.patch}), complaints, t) for r, s in rows.items()}
+    from dataclasses import replace
+    per = {r: diagnose(s, pro.model_copy(update={"patch": s.patch}), complaints,
+                       replace(t, avg_br=avg_br[r]) if avg_br and r in avg_br else t) for r, s in rows.items()}
     cats = {r: d.category for r, d in per.items()}
     reasons = [f"[{r}] {d.category.value}: {'; '.join(d.reasons)}" for r, d in per.items()]
     strong = [c for c in cats.values() if c in STRONG]

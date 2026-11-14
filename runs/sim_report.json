@@ -570,7 +570,7 @@
     "category": "SOLOQ_ONLY_STRONG",
     "reasons": [
      "soloq WR 53.23%, PR 7.15%, BR 5.72%, pro presence 0.0%",
-     "WR > 52.5 and presence < 10.0"
+     "WR > 52.5 (strong line at this ban rate) and presence < 10.0"
     ]
    },
    "kr": {
@@ -609,7 +609,7 @@
     "category": "SOLOQ_ONLY_STRONG",
     "reasons": [
      "soloq WR 53.18%, PR 7.16%, BR 5.30%, pro presence 1.0%",
-     "WR > 52.5 and presence < 10.0"
+     "WR > 52.5 (strong line at this ban rate) and presence < 10.0"
     ]
    },
    "kr": {
@@ -620,7 +620,7 @@
     "category": "SOLOQ_ONLY_STRONG",
     "reasons": [
      "soloq WR 52.71%, PR 3.71%, BR 1.76%, pro presence 1.0%",
-     "WR > 52.5 and presence < 10.0"
+     "WR > 52.5 (strong line at this ban rate) and presence < 10.0"
     ]
    }
   },
@@ -648,7 +648,7 @@
     "category": "SOLOQ_ONLY_STRONG",
     "reasons": [
      "soloq WR 52.81%, PR 6.80%, BR 4.97%, pro presence 0.0%",
-     "WR > 52.5 and presence < 10.0"
+     "WR > 52.5 (strong line at this ban rate) and presence < 10.0"
     ]
    },
    "kr": {
@@ -659,7 +659,7 @@
     "category": "SOLOQ_ONLY_STRONG",
     "reasons": [
      "soloq WR 53.30%, PR 3.81%, BR 1.60%, pro presence 0.0%",
-     "WR > 52.5 and presence < 10.0"
+     "WR > 52.5 (strong line at this ban rate) and presence < 10.0"
     ]
    }
   },
@@ -687,7 +687,7 @@
     "category": "SOLOQ_ONLY_STRONG",
     "reasons": [
      "soloq WR 52.83%, PR 6.43%, BR 4.74%, pro presence 0.0%",
-     "WR > 52.5 and presence < 10.0"
+     "WR > 52.5 (strong line at this ban rate) and presence < 10.0"
     ]
    },
    "kr": {
@@ -698,7 +698,7 @@
     "category": "SOLOQ_ONLY_STRONG",
     "reasons": [
      "soloq WR 52.97%, PR 3.77%, BR 1.63%, pro presence 0.0%",
-     "WR > 52.5 and presence < 10.0"
+     "WR > 52.5 (strong line at this ban rate) and presence < 10.0"
     ]
    }
   },
@@ -726,7 +726,7 @@
     "category": "SOLOQ_ONLY_STRONG",
     "reasons": [
      "soloq WR 52.74%, PR 6.21%, BR 4.56%, pro presence 0.0%",
-     "WR > 52.5 and presence < 10.0"
+     "WR > 52.5 (strong line at this ban rate) and presence < 10.0"
     ]
    },
    "kr": {
@@ -737,7 +737,7 @@
     "category": "SOLOQ_ONLY_STRONG",
     "reasons": [
      "soloq WR 53.52%, PR 3.37%, BR 1.47%, pro presence 0.0%",
-     "WR > 52.5 and presence < 10.0"
+     "WR > 52.5 (strong line at this ban rate) and presence < 10.0"
     ]
    }
   },
@@ -765,7 +765,7 @@
     "category": "SOLOQ_ONLY_STRONG",
     "reasons": [
      "soloq WR 52.93%, PR 6.30%, BR 4.60%, pro presence 0.0%",
-     "WR > 52.5 and presence < 10.0"
+     "WR > 52.5 (strong line at this ban rate) and presence < 10.0"
     ]
    },
    "kr": {
@@ -804,7 +804,7 @@
     "category": "SOLOQ_ONLY_STRONG",
     "reasons": [
      "soloq WR 52.78%, PR 6.22%, BR 4.54%, pro presence 0.0%",
-     "WR > 52.5 and presence < 10.0"
+     "WR > 52.5 (strong line at this ban rate) and presence < 10.0"
     ]
    },
    "kr": {
@@ -1205,7 +1205,7 @@
     "category": "OVERALL_STRONG",
     "reasons": [
      "soloq WR 53.84%, PR 1.99%, BR 10.66%, pro presence 61.0%",
-     "WR > 52.5 and (presence >= 30.0 or BR >= 20.0)"
+     "WR > 52.5 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)"
     ]
    }
   },
@@ -1244,7 +1244,7 @@
     "category": "OVERALL_STRONG",
     "reasons": [
      "soloq WR 54.47%, PR 1.92%, BR 13.98%, pro presence 61.0%",
-     "WR > 52.5 and (presence >= 30.0 or BR >= 20.0)"
+     "WR > 52.5 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)"
     ]
    }
   },
@@ -1283,7 +1283,7 @@
     "category": "OVERALL_STRONG",
     "reasons": [
      "soloq WR 54.82%, PR 1.79%, BR 18.20%, pro presence 57.0%",
-     "WR > 52.5 and (presence >= 30.0 or BR >= 20.0)"
+     "WR > 52.5 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)"
     ]
    }
   },
@@ -1322,7 +1322,7 @@
     "category": "OVERALL_STRONG",
     "reasons": [
      "soloq WR 52.54%, PR 1.80%, BR 15.58%, pro presence 57.0%",
-     "WR > 52.5 and (presence >= 30.0 or BR >= 20.0)"
+     "WR > 52.5 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)"
     ]
    }
   },
@@ -1361,7 +1361,7 @@
     "category": "OVERALL_STRONG",
     "reasons": [
      "soloq WR 52.73%, PR 1.65%, BR 15.76%, pro presence 57.0%",
-     "WR > 52.5 and (presence >= 30.0 or BR >= 20.0)"
+     "WR > 52.5 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)"
     ]
    }
   },
@@ -1400,7 +1400,7 @@
     "category": "OVERALL_STRONG",
     "reasons": [
      "soloq WR 52.54%, PR 26.29%, BR 54.07%, pro presence 43.0%",
-     "WR > 52.5 and (presence >= 30.0 or BR >= 20.0)"
+     "WR > 52.5 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)"
     ]
    }
   },

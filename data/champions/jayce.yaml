@@ -1,0 +1,50 @@
+# Jayce, patch 26.22. Ratios/percentages are fractions. SPOT-CHECK every number.
+# Base stats: wiki infobox (matches Data Dragon 16.22.1). Abilities: wiki, verbatim, read 2026-11-14.
+# Jayce's basic abilities have 6 ranks; the sim caps ranks at 5 (SIMPLIFICATIONS.md).
+# Not included (not readable verbatim): Acceleration Gate, Hyper Charge totals, Mercury Hammer transform numbers.
+name: Jayce
+patch: "26.22"
+skill_order: "QWE"   # lolalytics 26.22 Emerald+
+base: {hp: 590, hp_per_lvl: 109, mp: 375, mp_per_lvl: 45, armor: 22, armor_per_lvl: 5, mr: 30, mr_per_lvl: 1.3,
+       ad: 59, ad_per_lvl: 4.25, as: 0.658, as_per_lvl: 3, ms: 335, range: 125}
+abilities:
+  Q_to_the_skies:
+    type: damage
+    damage_type: physical
+    base: [60, 110, 160, 210, 260, 310]
+    bonus_ad_ratio: 1.35
+    slow: [0.35, 0.40, 0.45, 0.50, 0.55, 0.60]
+    slow_duration: 2
+    cooldown: [16, 14, 12, 10, 8, 6]
+    mana_cost: [40]
+    range: 600
+    tags: [burst, engage]
+  W_lightning_field:
+    type: damage
+    damage_type: magic
+    base: [140, 200, 260, 320, 380, 440]   # total over 4 s
+    ap_ratio: 1.0
+    cooldown: [10]
+    mana_cost: [40]
+    range: 350
+    tags: [sustained]
+  E_thundering_blow:
+    type: damage
+    damage_type: magic
+    pct_max_hp: [0.08, 0.108, 0.136, 0.164, 0.192, 0.22]
+    bonus_ad_ratio: 1.0
+    cooldown: [20, 18, 16, 14, 12, 10]
+    mana_cost: [55]
+    range: 240
+    tags: [burst, disengage]
+  Q_shock_blast:
+    type: damage
+    damage_type: physical
+    base: [80, 121, 162, 203, 244, 285]
+    bonus_ad_ratio: 1.30
+    cooldown: [8]
+    mana_cost: [55, 60, 65, 70, 75, 80]
+    range: 1050
+    recast_of: Q_to_the_skies
+    tags: [poke]
+    notes: "Cannon form Q; shares a skill point with Hammer Q. +40% through Acceleration Gate (gate not modeled)."

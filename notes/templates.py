@@ -7,14 +7,14 @@ from __future__ import annotations
 
 from schemas import Ability, Kit
 
-PCT_FIELDS = {"ap_ratio", "ad_ratio", "bonus_ad_ratio", "pct_max_hp", "pct_current_hp", "pct_missing_hp",
+PCT_FIELDS = {"ap_ratio", "armor_ratio", "ad_ratio", "bonus_ad_ratio", "pct_max_hp", "pct_current_hp", "pct_missing_hp",
               "stack_ad_ratio", "stack_ap_ratio", "shield_ap_ratio", "shield_bonus_hp_ratio",
               "damage_reduction", "bonus_as", "bonus_ms", "slow"}
 
 _PHRASES = [
     ("base", "{base}"), ("base_by_level", "(+ {base_by_level} based on level)"),
     ("ad_ratio", "(+ {ad_ratio} AD)"), ("bonus_ad_ratio", "(+ {bonus_ad_ratio} bonus AD)"),
-    ("ap_ratio", "(+ {ap_ratio} AP)"), ("pct_max_hp", "(+ {pct_max_hp} of the target's maximum health)"),
+    ("ap_ratio", "(+ {ap_ratio} AP)"), ("armor_ratio", "(+ {armor_ratio} armor)"), ("pct_max_hp", "(+ {pct_max_hp} of the target's maximum health)"),
     ("pct_current_hp", "(+ {pct_current_hp} of the target's current health)"),
     ("pct_missing_hp", "(+ {pct_missing_hp} of the target's missing health)"),
 ]

@@ -20,7 +20,8 @@ PATCHES = [f"26.{n}" for n in range(16, 23)]
 
 
 def slug(champ: str) -> str:
-    return champ.lower().replace(" ", "")
+    import re
+    return re.sub(r"[^a-z0-9]", "", champ.lower())
 
 
 def load_kit(champ: str, patch: str | None = None) -> Kit:
@@ -62,4 +63,12 @@ def dummies() -> dict[str, dict]:
 
 
 def combo(champ: str) -> dict:
-    return _yaml(ROOT / "sim" / "combos.yaml")[champ]
+    """Hand-written combo if there is one; otherwise every non-ultimate damage ability once + 2 attacks."""
+    combos = _yaml(ROOT / "sim" / "combos.yaml")
+    if champ in combos:
+        return combos[champ]
+    kit = load_kit(champ)
+    dmg = [k for k, ab in kit.abilities.items()
+           if not k.startswith(("P_", "R_")) and not ab.recast_of and "on_hit" not in ab.tags
+           and any(v is not None for v in (ab.base, ab.base_by_level, ab.ad_ratio, ab.bonus_ad_ratio, ab.armor_ratio, ab.pct_max_hp))]
+    return {"trade": dmg + ["AA", "AA"]}

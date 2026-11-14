@@ -1,0 +1,597 @@
+{
+ "Urgot": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "99"
+ },
+ "Kayle": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "42"
+ },
+ "Sion": {
+  "presence": 3.0,
+  "from_patch": "26.20",
+  "gol_id": "82"
+ },
+ "Teemo": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "91"
+ },
+ "Tryndamere": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "95"
+ },
+ "Singed": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "81"
+ },
+ "Irelia": {
+  "presence": 2.0,
+  "from_patch": "26.20",
+  "gol_id": "32"
+ },
+ "Gangplank": {
+  "presence": 1.0,
+  "from_patch": "26.20",
+  "gol_id": "26"
+ },
+ "Malphite": {
+  "presence": 2.0,
+  "from_patch": "26.20",
+  "gol_id": "53"
+ },
+ "Rumble": {
+  "presence": 50.0,
+  "from_patch": "26.20",
+  "gol_id": "75"
+ },
+ "Heimerdinger": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "31"
+ },
+ "Nasus": {
+  "presence": 1.0,
+  "from_patch": "26.20",
+  "gol_id": "61"
+ },
+ "Mordekaiser": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "58"
+ },
+ "Kennen": {
+  "presence": 2.0,
+  "from_patch": "26.20",
+  "gol_id": "43"
+ },
+ "Garen": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "27"
+ },
+ "Riven": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "74"
+ },
+ "Shen": {
+  "presence": 8.0,
+  "from_patch": "26.20",
+  "gol_id": "79"
+ },
+ "Fiora": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "23"
+ },
+ "Darius": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "15"
+ },
+ "Jayce": {
+  "presence": 41.0,
+  "from_patch": "26.20",
+  "gol_id": "36"
+ },
+ "Camille": {
+  "presence": 28.0,
+  "from_patch": "26.20",
+  "gol_id": "134"
+ },
+ "Kled": {
+  "presence": 5.0,
+  "from_patch": "26.20",
+  "gol_id": "132"
+ },
+ "Illaoi": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "128"
+ },
+ "Ornn": {
+  "presence": 8.0,
+  "from_patch": "26.20",
+  "gol_id": "138"
+ },
+ "Ambessa": {
+  "presence": 33.0,
+  "from_patch": "26.20",
+  "gol_id": "169"
+ },
+ "Sett": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "148"
+ },
+ "Gwen": {
+  "presence": 5.0,
+  "from_patch": "26.20",
+  "gol_id": "155"
+ },
+ "K'Sante": {
+  "presence": 43.0,
+  "from_patch": "26.20",
+  "gol_id": "162"
+ },
+ "Zaahen": {
+  "presence": 9.0,
+  "from_patch": "26.20",
+  "gol_id": "172"
+ },
+ "Xin Zhao": {
+  "presence": 19.0,
+  "from_patch": "26.20",
+  "gol_id": "110"
+ },
+ "Fiddlesticks": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "22"
+ },
+ "Master Yi": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "56"
+ },
+ "Warwick": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "107"
+ },
+ "Nunu & Willump": {
+  "presence": 0.0,
+  "from_patch": null,
+  "gol_id": null
+ },
+ "Evelynn": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "20"
+ },
+ "Cho'Gath": {
+  "presence": 2.0,
+  "from_patch": "26.20",
+  "gol_id": "13"
+ },
+ "Amumu": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "5"
+ },
+ "Rammus": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "71"
+ },
+ "Shaco": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "78"
+ },
+ "Elise": {
+  "presence": 1.0,
+  "from_patch": "26.20",
+  "gol_id": "19"
+ },
+ "Wukong": {
+  "presence": 34.0,
+  "from_patch": "26.20",
+  "gol_id": "108"
+ },
+ "Skarner": {
+  "presence": 21.0,
+  "from_patch": "26.20",
+  "gol_id": "84"
+ },
+ "Nidalee": {
+  "presence": 2.0,
+  "from_patch": "26.20",
+  "gol_id": "63"
+ },
+ "Udyr": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "98"
+ },
+ "Shyvana": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "80"
+ },
+ "Sejuani": {
+  "presence": 7.0,
+  "from_patch": "26.20",
+  "gol_id": "77"
+ },
+ "Kayn": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "137"
+ },
+ "Zac": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "113"
+ },
+ "Taliyah": {
+  "presence": 15.0,
+  "from_patch": "26.20",
+  "gol_id": "131"
+ },
+ "Bel'Veth": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "160"
+ },
+ "Kindred": {
+  "presence": 2.0,
+  "from_patch": "26.20",
+  "gol_id": "127"
+ },
+ "Briar": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "165"
+ },
+ "Qiyana": {
+  "presence": 57.0,
+  "from_patch": "26.20",
+  "gol_id": "145"
+ },
+ "Rek'Sai": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "122"
+ },
+ "Lillia": {
+  "presence": 1.0,
+  "from_patch": "26.20",
+  "gol_id": "149"
+ },
+ "Naafiri": {
+  "presence": 17.0,
+  "from_patch": "26.20",
+  "gol_id": "164"
+ },
+ "Annie": {
+  "presence": 11.0,
+  "from_patch": "26.20",
+  "gol_id": "7"
+ },
+ "Twisted Fate": {
+  "presence": 8.0,
+  "from_patch": "26.20",
+  "gol_id": "96"
+ },
+ "LeBlanc": {
+  "presence": 12.0,
+  "from_patch": "26.20",
+  "gol_id": "46"
+ },
+ "Vladimir": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "105"
+ },
+ "Ryze": {
+  "presence": 18.0,
+  "from_patch": "26.20",
+  "gol_id": "76"
+ },
+ "Anivia": {
+  "presence": 11.0,
+  "from_patch": "26.20",
+  "gol_id": "6"
+ },
+ "Kassadin": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "40"
+ },
+ "Veigar": {
+  "presence": 1.0,
+  "from_patch": "26.20",
+  "gol_id": "102"
+ },
+ "Katarina": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "41"
+ },
+ "Orianna": {
+  "presence": 53.0,
+  "from_patch": "26.20",
+  "gol_id": "67"
+ },
+ "Cassiopeia": {
+  "presence": 56.0,
+  "from_patch": "26.20",
+  "gol_id": "12"
+ },
+ "Xerath": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "109"
+ },
+ "Ahri": {
+  "presence": 16.0,
+  "from_patch": "26.20",
+  "gol_id": "2"
+ },
+ "Fizz": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "24"
+ },
+ "Lissandra": {
+  "presence": 4.0,
+  "from_patch": "26.20",
+  "gol_id": "49"
+ },
+ "Diana": {
+  "presence": 1.0,
+  "from_patch": "26.20",
+  "gol_id": "16"
+ },
+ "Aurelion Sol": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "130"
+ },
+ "Zoe": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "139"
+ },
+ "Akshan": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "156"
+ },
+ "Zed": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "114"
+ },
+ "Ekko": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "125"
+ },
+ "Azir": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "120"
+ },
+ "Vex": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "157"
+ },
+ "Mel": {
+  "presence": 2.0,
+  "from_patch": "26.20",
+  "gol_id": "170"
+ },
+ "Aurora": {
+  "presence": 9.0,
+  "from_patch": "26.20",
+  "gol_id": "168"
+ },
+ "Hwei": {
+  "presence": 2.0,
+  "from_patch": "26.20",
+  "gol_id": "166"
+ },
+ "Sivir": {
+  "presence": 8.0,
+  "from_patch": "26.20",
+  "gol_id": "83"
+ },
+ "Miss Fortune": {
+  "presence": 6.0,
+  "from_patch": "26.20",
+  "gol_id": "57"
+ },
+ "Ashe": {
+  "presence": 19.0,
+  "from_patch": "26.20",
+  "gol_id": "8"
+ },
+ "Twitch": {
+  "presence": 1.0,
+  "from_patch": "26.20",
+  "gol_id": "97"
+ },
+ "Vayne": {
+  "presence": 14.0,
+  "from_patch": "26.20",
+  "gol_id": "101"
+ },
+ "Ezreal": {
+  "presence": 47.0,
+  "from_patch": "26.20",
+  "gol_id": "21"
+ },
+ "Kog'Maw": {
+  "presence": 3.0,
+  "from_patch": "26.20",
+  "gol_id": "45"
+ },
+ "Ziggs": {
+  "presence": 8.0,
+  "from_patch": "26.20",
+  "gol_id": "115"
+ },
+ "Draven": {
+  "presence": 8.0,
+  "from_patch": "26.20",
+  "gol_id": "18"
+ },
+ "Jhin": {
+  "presence": 31.0,
+  "from_patch": "26.20",
+  "gol_id": "129"
+ },
+ "Zeri": {
+  "presence": 8.0,
+  "from_patch": "26.20",
+  "gol_id": "158"
+ },
+ "Jinx": {
+  "presence": 3.0,
+  "from_patch": "26.20",
+  "gol_id": "37"
+ },
+ "Samira": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "151"
+ },
+ "Xayah": {
+  "presence": 14.0,
+  "from_patch": "26.20",
+  "gol_id": "135"
+ },
+ "Nilah": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "161"
+ },
+ "Smolder": {
+  "presence": 1.0,
+  "from_patch": "26.20",
+  "gol_id": "167"
+ },
+ "Alistar": {
+  "presence": 28.0,
+  "from_patch": "26.20",
+  "gol_id": "4"
+ },
+ "Soraka": {
+  "presence": 1.0,
+  "from_patch": "26.20",
+  "gol_id": "86"
+ },
+ "Morgana": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "59"
+ },
+ "Zilean": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "116"
+ },
+ "Sona": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "85"
+ },
+ "Janna": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "33"
+ },
+ "Taric": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "90"
+ },
+ "Blitzcrank": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "9"
+ },
+ "Maokai": {
+  "presence": 13.0,
+  "from_patch": "26.20",
+  "gol_id": "55"
+ },
+ "Poppy": {
+  "presence": 11.0,
+  "from_patch": "26.20",
+  "gol_id": "69"
+ },
+ "Leona": {
+  "presence": 9.0,
+  "from_patch": "26.20",
+  "gol_id": "48"
+ },
+ "Zyra": {
+  "presence": 1.0,
+  "from_patch": "26.20",
+  "gol_id": "117"
+ },
+ "Seraphine": {
+  "presence": 41.0,
+  "from_patch": "26.20",
+  "gol_id": "152"
+ },
+ "Vel'Koz": {
+  "presence": 1.0,
+  "from_patch": "26.20",
+  "gol_id": "123"
+ },
+ "Braum": {
+  "presence": 2.0,
+  "from_patch": "26.20",
+  "gol_id": "118"
+ },
+ "Tahm Kench": {
+  "presence": 1.0,
+  "from_patch": "26.20",
+  "gol_id": "126"
+ },
+ "Senna": {
+  "presence": 0.0,
+  "from_patch": "26.20",
+  "gol_id": "146"
+ },
+ "Nami": {
+  "presence": 3.0,
+  "from_patch": "26.20",
+  "gol_id": "60"
+ },
+ "Thresh": {
+  "presence": 3.0,
+  "from_patch": "26.20",
+  "gol_id": "92"
+ },
+ "Rakan": {
+  "presence": 16.0,
+  "from_patch": "26.20",
+  "gol_id": "136"
+ },
+ "Rell": {
+  "presence": 7.0,
+  "from_patch": "26.20",
+  "gol_id": "153"
+ }
+}

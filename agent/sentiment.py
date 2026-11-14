@@ -47,7 +47,8 @@ SCHEMA = {
 
 
 def posts_path(champ: str, patch: str) -> Path:
-    return ROOT / "data" / "sentiment" / champ.lower().replace(" ", "") / f"{patch}.jsonl"
+    import re
+    return ROOT / "data" / "sentiment" / re.sub(r"[^a-z0-9]", "", champ.lower()) / f"{patch}.jsonl"
 
 
 def complaints_path(champ: str, patch: str) -> Path:

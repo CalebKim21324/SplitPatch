@@ -1,0 +1,5646 @@
+{
+ "patch": "26.22",
+ "avg_ban_rate": {
+  "global": 5.273410404624275,
+  "kr": 5.270289017341041
+ },
+ "n_champions": 171,
+ "flagged": {
+  "nerf": 21,
+  "pro_jail": 5,
+  "buff": 1
+ },
+ "selected": [
+  "Blitzcrank",
+  "Malphite",
+  "Kog'Maw",
+  "Ezreal",
+  "Qiyana",
+  "Jayce"
+ ],
+ "results": [
+  {
+   "champion": "Ezreal",
+   "lane": "bottom",
+   "category": "PRO_JAIL",
+   "severity": 13.0,
+   "reasons": [
+    "[global] PRO_JAIL: soloq WR 47.86%, PR 15.11%, BR 4.51%, pro presence 47.0%; presence >= 30.0 and WR < 49.0",
+    "[kr] PRO_JAIL: soloq WR 48.36%, PR 20.33%, BR 6.63%, pro presence 47.0%; presence >= 30.0 and WR < 49.0",
+    "combined -> PRO_JAIL"
+   ],
+   "presence": 47.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Ezreal",
+     "wr": 47.86,
+     "pr": 15.11,
+     "br": 4.51,
+     "games": 323515
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Ezreal",
+     "wr": 48.36,
+     "pr": 20.33,
+     "br": 6.63,
+     "games": 84686
+    }
+   }
+  },
+  {
+   "champion": "Qiyana",
+   "lane": "jungle",
+   "category": "PRO_JAIL",
+   "severity": 10.7,
+   "reasons": [
+    "[global] PRO_JAIL: soloq WR 47.68%, PR 7.62%, BR 15.62%, pro presence 57.0%; presence >= 30.0 and WR < 49.0",
+    "[kr] PRO_JAIL: soloq WR 48.24%, PR 8.98%, BR 15.75%, pro presence 57.0%; presence >= 30.0 and WR < 49.0",
+    "combined -> PRO_JAIL"
+   ],
+   "presence": 57.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Qiyana",
+     "wr": 47.68,
+     "pr": 7.62,
+     "br": 15.62,
+     "games": 162994
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Qiyana",
+     "wr": 48.24,
+     "pr": 8.98,
+     "br": 15.75,
+     "games": 37405
+    }
+   }
+  },
+  {
+   "champion": "K'Sante",
+   "lane": "top",
+   "category": "PRO_JAIL",
+   "severity": 8.1,
+   "reasons": [
+    "[global] PRO_JAIL: soloq WR 47.67%, PR 4.28%, BR 2.71%, pro presence 43.0%; presence >= 30.0 and WR < 49.0",
+    "[kr] POPULAR_WEAK: soloq WR 49.16%, PR 7.32%, BR 3.40%, pro presence 43.0%; WR < 49.5 and PR >= 5.0",
+    "combined -> PRO_JAIL"
+   ],
+   "presence": 43.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "K'Sante",
+     "wr": 47.67,
+     "pr": 4.28,
+     "br": 2.71,
+     "games": 91441
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "K'Sante",
+     "wr": 49.16,
+     "pr": 7.32,
+     "br": 3.4,
+     "games": 30481
+    }
+   }
+  },
+  {
+   "champion": "Blitzcrank",
+   "lane": "support",
+   "category": "OVERALL_STRONG",
+   "severity": 2.4,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.02%, PR 7.29%, BR 15.83%, pro presence 0.0%; no rule matched",
+    "[kr] OVERALL_STRONG: soloq WR 53.10%, PR 9.50%, BR 27.73%, pro presence 0.0%; WR > 52.5 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)",
+    "combined -> OVERALL_STRONG"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Blitzcrank",
+     "wr": 53.02,
+     "pr": 7.29,
+     "br": 15.83,
+     "games": 156175
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Blitzcrank",
+     "wr": 53.1,
+     "pr": 9.5,
+     "br": 27.73,
+     "games": 39570
+    }
+   }
+  },
+  {
+   "champion": "Malphite",
+   "lane": "top",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 2.3,
+   "reasons": [
+    "[global] SOLOQ_ONLY_STRONG: soloq WR 53.39%, PR 6.83%, BR 18.09%, pro presence 2.0%; WR > 53.09 (strong line at this ban rate) and presence < 10.0",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 53.37%, PR 6.55%, BR 16.19%, pro presence 2.0%; WR > 53.22 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 2.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Malphite",
+     "wr": 53.39,
+     "pr": 6.83,
+     "br": 18.09,
+     "games": 146041
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Malphite",
+     "wr": 53.37,
+     "pr": 6.55,
+     "br": 16.19,
+     "games": 27296
+    }
+   }
+  },
+  {
+   "champion": "Kog'Maw",
+   "lane": "bottom",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 2.3,
+   "reasons": [
+    "[global] SOLOQ_ONLY_STRONG: soloq WR 54.50%, PR 2.39%, BR 0.76%, pro presence 3.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+    "[kr] HOLD: soloq WR 53.58%, PR 1.63%, BR 0.49%, pro presence 3.0%; no rule matched",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 3.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Kog'Maw",
+     "wr": 54.5,
+     "pr": 2.39,
+     "br": 0.76,
+     "games": 51080
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Kog'Maw",
+     "wr": 53.58,
+     "pr": 1.63,
+     "br": 0.49,
+     "games": 6807
+    }
+   }
+  },
+  {
+   "champion": "Thresh",
+   "lane": "support",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 2.1,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.87%, PR 13.71%, BR 12.40%, pro presence 3.0%; no rule matched",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 53.57%, PR 13.68%, BR 17.62%, pro presence 3.0%; WR > 53.12 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 3.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Thresh",
+     "wr": 52.87,
+     "pr": 13.71,
+     "br": 12.4,
+     "games": 293500
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Thresh",
+     "wr": 53.57,
+     "pr": 13.68,
+     "br": 17.62,
+     "games": 56980
+    }
+   }
+  },
+  {
+   "champion": "Zyra",
+   "lane": "support",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 1.7,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.96%, PR 2.54%, BR 4.74%, pro presence 1.0%; no rule matched",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 54.32%, PR 3.46%, BR 10.42%, pro presence 1.0%; WR > 53.63 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 1.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Zyra",
+     "wr": 52.96,
+     "pr": 2.54,
+     "br": 4.74,
+     "games": 54376
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Zyra",
+     "wr": 54.32,
+     "pr": 3.46,
+     "br": 10.42,
+     "games": 14421
+    }
+   }
+  },
+  {
+   "champion": "Rumble",
+   "lane": "top",
+   "category": "PRO_JAIL",
+   "severity": 1.5,
+   "reasons": [
+    "[global] PRO_JAIL: soloq WR 48.63%, PR 1.86%, BR 0.57%, pro presence 50.0%; presence >= 30.0 and WR < 49.0",
+    "[kr] HOLD: soloq WR 49.93%, PR 2.81%, BR 1.53%, pro presence 50.0%; no rule matched",
+    "combined -> PRO_JAIL"
+   ],
+   "presence": 50.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Rumble",
+     "wr": 48.63,
+     "pr": 1.86,
+     "br": 0.57,
+     "games": 39843
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Rumble",
+     "wr": 49.93,
+     "pr": 2.81,
+     "br": 1.53,
+     "games": 11724
+    }
+   }
+  },
+  {
+   "champion": "Jayce",
+   "lane": "top",
+   "category": "POPULAR_WEAK",
+   "severity": 1.4,
+   "reasons": [
+    "[global] POPULAR_WEAK: soloq WR 49.30%, PR 5.93%, BR 7.32%, pro presence 41.0%; WR < 49.5 and PR >= 5.0",
+    "[kr] HOLD: soloq WR 50.15%, PR 10.32%, BR 15.86%, pro presence 41.0%; no rule matched",
+    "combined -> POPULAR_WEAK"
+   ],
+   "presence": 41.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Jayce",
+     "wr": 49.3,
+     "pr": 5.93,
+     "br": 7.32,
+     "games": 126832
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Jayce",
+     "wr": 50.15,
+     "pr": 10.32,
+     "br": 15.86,
+     "games": 42977
+    }
+   }
+  },
+  {
+   "champion": "Wukong",
+   "lane": "jungle",
+   "category": "OVERALL_STRONG",
+   "severity": 1.4,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.74%, PR 6.74%, BR 5.86%, pro presence 34.0%; no rule matched",
+    "[kr] OVERALL_STRONG: soloq WR 54.38%, PR 6.85%, BR 5.71%, pro presence 34.0%; WR > 53.97 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)",
+    "combined -> OVERALL_STRONG"
+   ],
+   "presence": 34.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Wukong",
+     "wr": 53.74,
+     "pr": 6.74,
+     "br": 5.86,
+     "games": 144079
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Wukong",
+     "wr": 54.38,
+     "pr": 6.85,
+     "br": 5.71,
+     "games": 28535
+    }
+   }
+  },
+  {
+   "champion": "Lillia",
+   "lane": "jungle",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 1.1,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.95%, PR 4.94%, BR 5.16%, pro presence 1.0%; no rule matched",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 54.34%, PR 4.94%, BR 5.62%, pro presence 1.0%; WR > 53.98 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 1.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Lillia",
+     "wr": 53.95,
+     "pr": 4.94,
+     "br": 5.16,
+     "games": 105613
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Lillia",
+     "wr": 54.34,
+     "pr": 4.94,
+     "br": 5.62,
+     "games": 20589
+    }
+   }
+  },
+  {
+   "champion": "Kled",
+   "lane": "top",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 1.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.60%, PR 1.74%, BR 0.98%, pro presence 5.0%; no rule matched",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 54.55%, PR 1.80%, BR 0.70%, pro presence 5.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 5.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Kled",
+     "wr": 52.6,
+     "pr": 1.74,
+     "br": 0.98,
+     "games": 37217
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Kled",
+     "wr": 54.55,
+     "pr": 1.8,
+     "br": 0.7,
+     "games": 7494
+    }
+   }
+  },
+  {
+   "champion": "Rek'Sai",
+   "lane": "jungle",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 1.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.30%, PR 1.34%, BR 0.59%, pro presence 0.0%; no rule matched",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 54.54%, PR 2.02%, BR 1.27%, pro presence 0.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Rek'Sai",
+     "wr": 53.3,
+     "pr": 1.34,
+     "br": 0.59,
+     "games": 28615
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Rek'Sai",
+     "wr": 54.54,
+     "pr": 2.02,
+     "br": 1.27,
+     "games": 8429
+    }
+   }
+  },
+  {
+   "champion": "Katarina",
+   "lane": "middle",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 0.9,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.06%, PR 6.31%, BR 12.43%, pro presence 0.0%; no rule matched",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 54.31%, PR 5.17%, BR 5.00%, pro presence 0.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Katarina",
+     "wr": 53.06,
+     "pr": 6.31,
+     "br": 12.43,
+     "games": 135038
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Katarina",
+     "wr": 54.31,
+     "pr": 5.17,
+     "br": 5.0,
+     "games": 21524
+    }
+   }
+  },
+  {
+   "champion": "Irelia",
+   "lane": "top",
+   "category": "OVERALL_STRONG",
+   "severity": 0.7,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.17%, PR 4.44%, BR 13.23%, pro presence 2.0%; no rule matched",
+    "[kr] OVERALL_STRONG: soloq WR 52.96%, PR 6.03%, BR 22.92%, pro presence 2.0%; WR > 52.74 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)",
+    "combined -> OVERALL_STRONG"
+   ],
+   "presence": 2.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Irelia",
+     "wr": 52.17,
+     "pr": 4.44,
+     "br": 13.23,
+     "games": 95014
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Irelia",
+     "wr": 52.96,
+     "pr": 6.03,
+     "br": 22.92,
+     "games": 25103
+    }
+   }
+  },
+  {
+   "champion": "Rell",
+   "lane": "support",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 0.7,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.24%, PR 3.98%, BR 1.43%, pro presence 7.0%; no rule matched",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 54.24%, PR 4.40%, BR 1.52%, pro presence 7.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 7.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Rell",
+     "wr": 53.24,
+     "pr": 3.98,
+     "br": 1.43,
+     "games": 85235
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Rell",
+     "wr": 54.24,
+     "pr": 4.4,
+     "br": 1.52,
+     "games": 18327
+    }
+   }
+  },
+  {
+   "champion": "Gangplank",
+   "lane": "top",
+   "category": "OVERALL_STRONG",
+   "severity": 0.6,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.79%, PR 5.03%, BR 8.96%, pro presence 1.0%; no rule matched",
+    "[kr] OVERALL_STRONG: soloq WR 52.74%, PR 6.09%, BR 25.57%, pro presence 1.0%; WR > 52.56 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)",
+    "combined -> OVERALL_STRONG"
+   ],
+   "presence": 1.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Gangplank",
+     "wr": 52.79,
+     "pr": 5.03,
+     "br": 8.96,
+     "games": 107553
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Gangplank",
+     "wr": 52.74,
+     "pr": 6.09,
+     "br": 25.57,
+     "games": 25354
+    }
+   }
+  },
+  {
+   "champion": "Zilean",
+   "lane": "support",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 0.6,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.46%, PR 2.79%, BR 1.78%, pro presence 0.0%; no rule matched",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 54.34%, PR 2.12%, BR 0.60%, pro presence 0.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Zilean",
+     "wr": 53.46,
+     "pr": 2.79,
+     "br": 1.78,
+     "games": 59675
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Zilean",
+     "wr": 54.34,
+     "pr": 2.12,
+     "br": 0.6,
+     "games": 8848
+    }
+   }
+  },
+  {
+   "champion": "Warwick",
+   "lane": "jungle",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 0.4,
+   "reasons": [
+    "[global] SOLOQ_ONLY_STRONG: soloq WR 54.09%, PR 2.80%, BR 1.75%, pro presence 0.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+    "[kr] HOLD: soloq WR 53.35%, PR 2.22%, BR 0.66%, pro presence 0.0%; no rule matched",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Warwick",
+     "wr": 54.09,
+     "pr": 2.8,
+     "br": 1.75,
+     "games": 59777
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Warwick",
+     "wr": 53.35,
+     "pr": 2.22,
+     "br": 0.66,
+     "games": 9235
+    }
+   }
+  },
+  {
+   "champion": "Sejuani",
+   "lane": "jungle",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 0.4,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.71%, PR 2.22%, BR 0.28%, pro presence 7.0%; no rule matched",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 54.24%, PR 1.46%, BR 0.10%, pro presence 7.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 7.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Sejuani",
+     "wr": 53.71,
+     "pr": 2.22,
+     "br": 0.28,
+     "games": 47449
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Sejuani",
+     "wr": 54.24,
+     "pr": 1.46,
+     "br": 0.1,
+     "games": 6101
+    }
+   }
+  },
+  {
+   "champion": "LeBlanc",
+   "lane": "middle",
+   "category": "OVERALL_STRONG",
+   "severity": 0.3,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.52%, PR 5.74%, BR 18.80%, pro presence 12.0%; no rule matched",
+    "[kr] OVERALL_STRONG: soloq WR 52.58%, PR 7.35%, BR 42.94%, pro presence 12.0%; WR > 52.5 (strong line at this ban rate) and (presence >= 30.0 or BR >= 20.0)",
+    "combined -> OVERALL_STRONG"
+   ],
+   "presence": 12.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "LeBlanc",
+     "wr": 52.52,
+     "pr": 5.74,
+     "br": 18.8,
+     "games": 123027
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "LeBlanc",
+     "wr": 52.58,
+     "pr": 7.35,
+     "br": 42.94,
+     "games": 30605
+    }
+   }
+  },
+  {
+   "champion": "Orianna",
+   "lane": "middle",
+   "category": "PRO_JAIL",
+   "severity": 0.3,
+   "reasons": [
+    "[global] PRO_JAIL: soloq WR 48.95%, PR 5.22%, BR 0.63%, pro presence 53.0%; presence >= 30.0 and WR < 49.0",
+    "[kr] HOLD: soloq WR 49.90%, PR 7.30%, BR 1.27%, pro presence 53.0%; no rule matched",
+    "combined -> PRO_JAIL"
+   ],
+   "presence": 53.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Orianna",
+     "wr": 48.95,
+     "pr": 5.22,
+     "br": 0.63,
+     "games": 111708
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Orianna",
+     "wr": 49.9,
+     "pr": 7.3,
+     "br": 1.27,
+     "games": 30435
+    }
+   }
+  },
+  {
+   "champion": "Sion",
+   "lane": "top",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 0.2,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.31%, PR 3.89%, BR 0.80%, pro presence 3.0%; no rule matched",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 54.08%, PR 4.08%, BR 0.77%, pro presence 3.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 3.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Sion",
+     "wr": 52.31,
+     "pr": 3.89,
+     "br": 0.8,
+     "games": 83162
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Sion",
+     "wr": 54.08,
+     "pr": 4.08,
+     "br": 0.77,
+     "games": 17017
+    }
+   }
+  },
+  {
+   "champion": "Twitch",
+   "lane": "bottom",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 0.2,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.25%, PR 5.02%, BR 7.94%, pro presence 1.0%; no rule matched",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 54.13%, PR 1.84%, BR 1.04%, pro presence 1.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 1.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Twitch",
+     "wr": 53.25,
+     "pr": 5.02,
+     "br": 7.94,
+     "games": 107486
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Twitch",
+     "wr": 54.13,
+     "pr": 1.84,
+     "br": 1.04,
+     "games": 7672
+    }
+   }
+  },
+  {
+   "champion": "Fiddlesticks",
+   "lane": "jungle",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 0.1,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.92%, PR 1.82%, BR 1.11%, pro presence 0.0%; no rule matched",
+    "[kr] SOLOQ_ONLY_STRONG: soloq WR 54.07%, PR 1.22%, BR 0.41%, pro presence 0.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Fiddlesticks",
+     "wr": 52.92,
+     "pr": 1.82,
+     "br": 1.11,
+     "games": 38982
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Fiddlesticks",
+     "wr": 54.07,
+     "pr": 1.22,
+     "br": 0.41,
+     "games": 5077
+    }
+   }
+  },
+  {
+   "champion": "Rammus",
+   "lane": "jungle",
+   "category": "SOLOQ_ONLY_STRONG",
+   "severity": 0.1,
+   "reasons": [
+    "[global] SOLOQ_ONLY_STRONG: soloq WR 54.04%, PR 1.45%, BR 3.98%, pro presence 0.0%; WR > 54.0 (strong line at this ban rate) and presence < 10.0",
+    "[kr] HOLD: soloq WR 53.14%, PR 1.11%, BR 1.33%, pro presence 0.0%; no rule matched",
+    "combined -> SOLOQ_ONLY_STRONG"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Rammus",
+     "wr": 54.04,
+     "pr": 1.45,
+     "br": 3.98,
+     "games": 30907
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Rammus",
+     "wr": 53.14,
+     "pr": 1.11,
+     "br": 1.33,
+     "games": 4614
+    }
+   }
+  },
+  {
+   "champion": "Olaf",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.71%, PR 3.25%, BR 3.81%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.93%, PR 4.90%, BR 5.92%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Olaf",
+     "wr": 51.71,
+     "pr": 3.25,
+     "br": 3.81,
+     "games": 69556
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Olaf",
+     "wr": 51.93,
+     "pr": 4.9,
+     "br": 5.92,
+     "games": 20423
+    }
+   }
+  },
+  {
+   "champion": "Urgot",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.27%, PR 2.18%, BR 0.83%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.95%, PR 1.14%, BR 0.16%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Urgot",
+     "wr": 52.27,
+     "pr": 2.18,
+     "br": 0.83,
+     "games": 46701
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Urgot",
+     "wr": 52.95,
+     "pr": 1.14,
+     "br": 0.16,
+     "games": 4763
+    }
+   }
+  },
+  {
+   "champion": "Kayle",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.79%, PR 2.82%, BR 1.79%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.62%, PR 1.39%, BR 0.32%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Kayle",
+     "wr": 53.79,
+     "pr": 2.82,
+     "br": 1.79,
+     "games": 60283
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Kayle",
+     "wr": 53.62,
+     "pr": 1.39,
+     "br": 0.32,
+     "games": 5787
+    }
+   }
+  },
+  {
+   "champion": "Teemo",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.84%, PR 3.75%, BR 7.27%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.61%, PR 3.63%, BR 6.36%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Teemo",
+     "wr": 52.84,
+     "pr": 3.75,
+     "br": 7.27,
+     "games": 80208
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Teemo",
+     "wr": 52.61,
+     "pr": 3.63,
+     "br": 6.36,
+     "games": 15129
+    }
+   }
+  },
+  {
+   "champion": "Tryndamere",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.22%, PR 2.79%, BR 2.85%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.56%, PR 2.38%, BR 1.08%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Tryndamere",
+     "wr": 52.22,
+     "pr": 2.79,
+     "br": 2.85,
+     "games": 59657
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Tryndamere",
+     "wr": 52.56,
+     "pr": 2.38,
+     "br": 1.08,
+     "games": 9920
+    }
+   }
+  },
+  {
+   "champion": "Jax",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.35%, PR 6.03%, BR 9.54%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.53%, PR 7.59%, BR 12.54%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Jax",
+     "wr": 51.35,
+     "pr": 6.03,
+     "br": 9.54,
+     "games": 128971
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Jax",
+     "wr": 51.53,
+     "pr": 7.59,
+     "br": 12.54,
+     "games": 31606
+    }
+   }
+  },
+  {
+   "champion": "Singed",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.66%, PR 2.08%, BR 0.69%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.82%, PR 2.12%, BR 0.62%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Singed",
+     "wr": 53.66,
+     "pr": 2.08,
+     "br": 0.69,
+     "games": 44370
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Singed",
+     "wr": 53.82,
+     "pr": 2.12,
+     "br": 0.62,
+     "games": 8831
+    }
+   }
+  },
+  {
+   "champion": "Dr. Mundo",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.99%, PR 3.45%, BR 2.29%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.87%, PR 2.69%, BR 0.47%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Dr. Mundo",
+     "wr": 51.99,
+     "pr": 3.45,
+     "br": 2.29,
+     "games": 73821
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Dr. Mundo",
+     "wr": 50.87,
+     "pr": 2.69,
+     "br": 0.47,
+     "games": 11210
+    }
+   }
+  },
+  {
+   "champion": "Trundle",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.86%, PR 1.69%, BR 0.50%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.83%, PR 0.89%, BR 0.16%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Trundle",
+     "wr": 50.86,
+     "pr": 1.69,
+     "br": 0.5,
+     "games": 36198
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Trundle",
+     "wr": 51.83,
+     "pr": 0.89,
+     "br": 0.16,
+     "games": 3710
+    }
+   }
+  },
+  {
+   "champion": "Renekton",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.10%, PR 6.34%, BR 4.46%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.67%, PR 6.12%, BR 4.62%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Renekton",
+     "wr": 51.1,
+     "pr": 6.34,
+     "br": 4.46,
+     "games": 135568
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Renekton",
+     "wr": 51.67,
+     "pr": 6.12,
+     "br": 4.62,
+     "games": 25507
+    }
+   }
+  },
+  {
+   "champion": "Heimerdinger",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.19%, PR 1.15%, BR 2.24%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.61%, PR 1.21%, BR 2.34%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Heimerdinger",
+     "wr": 52.19,
+     "pr": 1.15,
+     "br": 2.24,
+     "games": 24574
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Heimerdinger",
+     "wr": 52.61,
+     "pr": 1.21,
+     "br": 2.34,
+     "games": 5048
+    }
+   }
+  },
+  {
+   "champion": "Nasus",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.34%, PR 3.40%, BR 9.29%, pro presence 1.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.28%, PR 2.68%, BR 5.00%, pro presence 1.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 1.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Nasus",
+     "wr": 52.34,
+     "pr": 3.4,
+     "br": 9.29,
+     "games": 72730
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Nasus",
+     "wr": 51.28,
+     "pr": 2.68,
+     "br": 5.0,
+     "games": 11165
+    }
+   }
+  },
+  {
+   "champion": "Gragas",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.11%, PR 2.35%, BR 0.77%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.97%, PR 2.58%, BR 0.36%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Gragas",
+     "wr": 51.11,
+     "pr": 2.35,
+     "br": 0.77,
+     "games": 50174
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Gragas",
+     "wr": 50.97,
+     "pr": 2.58,
+     "br": 0.36,
+     "games": 10768
+    }
+   }
+  },
+  {
+   "champion": "Pantheon",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.74%, PR 3.62%, BR 3.56%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.98%, PR 4.13%, BR 5.26%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Pantheon",
+     "wr": 51.74,
+     "pr": 3.62,
+     "br": 3.56,
+     "games": 77337
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Pantheon",
+     "wr": 51.98,
+     "pr": 4.13,
+     "br": 5.26,
+     "games": 17208
+    }
+   }
+  },
+  {
+   "champion": "Mordekaiser",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.42%, PR 5.14%, BR 8.45%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.31%, PR 3.41%, BR 2.43%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Mordekaiser",
+     "wr": 52.42,
+     "pr": 5.14,
+     "br": 8.45,
+     "games": 109785
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Mordekaiser",
+     "wr": 52.31,
+     "pr": 3.41,
+     "br": 2.43,
+     "games": 14217
+    }
+   }
+  },
+  {
+   "champion": "Yorick",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.89%, PR 2.72%, BR 5.84%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.22%, PR 2.55%, BR 5.27%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Yorick",
+     "wr": 50.89,
+     "pr": 2.72,
+     "br": 5.84,
+     "games": 58138
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Yorick",
+     "wr": 51.22,
+     "pr": 2.55,
+     "br": 5.27,
+     "games": 10612
+    }
+   }
+  },
+  {
+   "champion": "Kennen",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.57%, PR 1.89%, BR 1.28%, pro presence 2.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.12%, PR 2.83%, BR 2.02%, pro presence 2.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 2.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Kennen",
+     "wr": 51.57,
+     "pr": 1.89,
+     "br": 1.28,
+     "games": 40501
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Kennen",
+     "wr": 52.12,
+     "pr": 2.83,
+     "br": 2.02,
+     "games": 11796
+    }
+   }
+  },
+  {
+   "champion": "Garen",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.79%, PR 6.20%, BR 4.54%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.40%, PR 3.11%, BR 1.45%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Garen",
+     "wr": 52.79,
+     "pr": 6.2,
+     "br": 4.54,
+     "games": 132614
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Garen",
+     "wr": 52.4,
+     "pr": 3.11,
+     "br": 1.45,
+     "games": 12977
+    }
+   }
+  },
+  {
+   "champion": "Riven",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.35%, PR 2.32%, BR 1.45%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.50%, PR 1.64%, BR 0.15%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Riven",
+     "wr": 51.35,
+     "pr": 2.32,
+     "br": 1.45,
+     "games": 49621
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Riven",
+     "wr": 52.5,
+     "pr": 1.64,
+     "br": 0.15,
+     "games": 6828
+    }
+   }
+  },
+  {
+   "champion": "Shen",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.74%, PR 3.55%, BR 0.74%, pro presence 8.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.49%, PR 2.05%, BR 0.20%, pro presence 8.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 8.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Shen",
+     "wr": 52.74,
+     "pr": 3.55,
+     "br": 0.74,
+     "games": 75801
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Shen",
+     "wr": 53.49,
+     "pr": 2.05,
+     "br": 0.2,
+     "games": 8547
+    }
+   }
+  },
+  {
+   "champion": "Volibear",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.23%, PR 3.77%, BR 2.04%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.93%, PR 3.27%, BR 1.22%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Volibear",
+     "wr": 51.23,
+     "pr": 3.77,
+     "br": 2.04,
+     "games": 80561
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Volibear",
+     "wr": 51.93,
+     "pr": 3.27,
+     "br": 1.22,
+     "games": 13641
+    }
+   }
+  },
+  {
+   "champion": "Fiora",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.36%, PR 4.33%, BR 5.92%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.36%, PR 4.70%, BR 4.53%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Fiora",
+     "wr": 52.36,
+     "pr": 4.33,
+     "br": 5.92,
+     "games": 92591
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Fiora",
+     "wr": 52.36,
+     "pr": 4.7,
+     "br": 4.53,
+     "games": 19584
+    }
+   }
+  },
+  {
+   "champion": "Darius",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.94%, PR 7.23%, BR 14.96%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.36%, PR 4.73%, BR 9.03%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Darius",
+     "wr": 52.94,
+     "pr": 7.23,
+     "br": 14.96,
+     "games": 154607
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Darius",
+     "wr": 53.36,
+     "pr": 4.73,
+     "br": 9.03,
+     "games": 19697
+    }
+   }
+  },
+  {
+   "champion": "Gnar",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.24%, PR 4.12%, BR 1.31%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.91%, PR 4.70%, BR 2.12%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Gnar",
+     "wr": 50.24,
+     "pr": 4.12,
+     "br": 1.31,
+     "games": 88175
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Gnar",
+     "wr": 50.91,
+     "pr": 4.7,
+     "br": 2.12,
+     "games": 19574
+    }
+   }
+  },
+  {
+   "champion": "Camille",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.04%, PR 4.48%, BR 1.70%, pro presence 28.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.31%, PR 4.75%, BR 0.83%, pro presence 28.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 28.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Camille",
+     "wr": 52.04,
+     "pr": 4.48,
+     "br": 1.7,
+     "games": 95691
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Camille",
+     "wr": 52.31,
+     "pr": 4.75,
+     "br": 0.83,
+     "games": 19774
+    }
+   }
+  },
+  {
+   "champion": "Aatrox",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.55%, PR 6.35%, BR 7.09%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.28%, PR 6.69%, BR 3.49%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Aatrox",
+     "wr": 51.55,
+     "pr": 6.35,
+     "br": 7.09,
+     "games": 135720
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Aatrox",
+     "wr": 51.28,
+     "pr": 6.69,
+     "br": 3.49,
+     "games": 27877
+    }
+   }
+  },
+  {
+   "champion": "Illaoi",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.64%, PR 2.53%, BR 5.77%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.80%, PR 1.81%, BR 1.82%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Illaoi",
+     "wr": 52.64,
+     "pr": 2.53,
+     "br": 5.77,
+     "games": 54116
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Illaoi",
+     "wr": 52.8,
+     "pr": 1.81,
+     "br": 1.82,
+     "games": 7560
+    }
+   }
+  },
+  {
+   "champion": "Ornn",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.87%, PR 3.96%, BR 0.61%, pro presence 8.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.60%, PR 2.60%, BR 0.14%, pro presence 8.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 8.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Ornn",
+     "wr": 52.87,
+     "pr": 3.96,
+     "br": 0.61,
+     "games": 84697
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Ornn",
+     "wr": 51.6,
+     "pr": 2.6,
+     "br": 0.14,
+     "games": 10826
+    }
+   }
+  },
+  {
+   "champion": "Ambessa",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 49.43%, PR 4.40%, BR 4.89%, pro presence 33.0%; no rule matched",
+    "[kr] HOLD: soloq WR 49.63%, PR 5.56%, BR 2.50%, pro presence 33.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 33.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Ambessa",
+     "wr": 49.43,
+     "pr": 4.4,
+     "br": 4.89,
+     "games": 94118
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Ambessa",
+     "wr": 49.63,
+     "pr": 5.56,
+     "br": 2.5,
+     "games": 23183
+    }
+   }
+  },
+  {
+   "champion": "Sett",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.55%, PR 5.89%, BR 2.91%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.72%, PR 3.61%, BR 1.03%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Sett",
+     "wr": 52.55,
+     "pr": 5.89,
+     "br": 2.91,
+     "games": 125863
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Sett",
+     "wr": 53.72,
+     "pr": 3.61,
+     "br": 1.03,
+     "games": 15042
+    }
+   }
+  },
+  {
+   "champion": "Gwen",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.30%, PR 2.51%, BR 3.25%, pro presence 5.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.13%, PR 1.91%, BR 0.79%, pro presence 5.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 5.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Gwen",
+     "wr": 52.3,
+     "pr": 2.51,
+     "br": 3.25,
+     "games": 53728
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Gwen",
+     "wr": 51.13,
+     "pr": 1.91,
+     "br": 0.79,
+     "games": 7944
+    }
+   }
+  },
+  {
+   "champion": "Zaahen",
+   "lane": "top",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.42%, PR 3.43%, BR 1.25%, pro presence 9.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.62%, PR 3.32%, BR 0.59%, pro presence 9.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 9.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Zaahen",
+     "wr": 52.42,
+     "pr": 3.43,
+     "br": 1.25,
+     "games": 73299
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Zaahen",
+     "wr": 52.62,
+     "pr": 3.32,
+     "br": 0.59,
+     "games": 13812
+    }
+   }
+  },
+  {
+   "champion": "Xin Zhao",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.31%, PR 3.09%, BR 0.73%, pro presence 19.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.97%, PR 4.76%, BR 1.43%, pro presence 19.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 19.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Xin Zhao",
+     "wr": 52.31,
+     "pr": 3.09,
+     "br": 0.73,
+     "games": 66096
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Xin Zhao",
+     "wr": 52.97,
+     "pr": 4.76,
+     "br": 1.43,
+     "games": 19842
+    }
+   }
+  },
+  {
+   "champion": "Master Yi",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.81%, PR 5.83%, BR 16.15%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.71%, PR 3.97%, BR 3.51%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Master Yi",
+     "wr": 52.81,
+     "pr": 5.83,
+     "br": 16.15,
+     "games": 124705
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Master Yi",
+     "wr": 51.71,
+     "pr": 3.97,
+     "br": 3.51,
+     "games": 16534
+    }
+   }
+  },
+  {
+   "champion": "Nunu & Willump",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.85%, PR 2.05%, BR 0.50%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.93%, PR 1.72%, BR 1.05%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Nunu & Willump",
+     "wr": 52.85,
+     "pr": 2.05,
+     "br": 0.5,
+     "games": 43812
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Nunu & Willump",
+     "wr": 52.93,
+     "pr": 1.72,
+     "br": 1.05,
+     "games": 7168
+    }
+   }
+  },
+  {
+   "champion": "Evelynn",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.42%, PR 3.59%, BR 2.48%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.31%, PR 2.33%, BR 0.97%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Evelynn",
+     "wr": 52.42,
+     "pr": 3.59,
+     "br": 2.48,
+     "games": 76792
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Evelynn",
+     "wr": 53.31,
+     "pr": 2.33,
+     "br": 0.97,
+     "games": 9706
+    }
+   }
+  },
+  {
+   "champion": "Karthus",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.85%, PR 1.35%, BR 0.91%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.93%, PR 1.19%, BR 1.16%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Karthus",
+     "wr": 50.85,
+     "pr": 1.35,
+     "br": 0.91,
+     "games": 28795
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Karthus",
+     "wr": 51.93,
+     "pr": 1.19,
+     "br": 1.16,
+     "games": 4955
+    }
+   }
+  },
+  {
+   "champion": "Cho'Gath",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.61%, PR 4.96%, BR 7.84%, pro presence 2.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.68%, PR 3.03%, BR 1.70%, pro presence 2.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 2.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Cho'Gath",
+     "wr": 53.61,
+     "pr": 4.96,
+     "br": 7.84,
+     "games": 106130
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Cho'Gath",
+     "wr": 53.68,
+     "pr": 3.03,
+     "br": 1.7,
+     "games": 12640
+    }
+   }
+  },
+  {
+   "champion": "Amumu",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.84%, PR 1.83%, BR 0.99%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.72%, PR 0.78%, BR 0.10%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Amumu",
+     "wr": 52.84,
+     "pr": 1.83,
+     "br": 0.99,
+     "games": 39212
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Amumu",
+     "wr": 52.72,
+     "pr": 0.78,
+     "br": 0.1,
+     "games": 3234
+    }
+   }
+  },
+  {
+   "champion": "Shaco",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.64%, PR 4.10%, BR 18.28%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.16%, PR 3.19%, BR 23.63%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Shaco",
+     "wr": 52.64,
+     "pr": 4.1,
+     "br": 18.28,
+     "games": 87752
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Shaco",
+     "wr": 51.16,
+     "pr": 3.19,
+     "br": 23.63,
+     "games": 13310
+    }
+   }
+  },
+  {
+   "champion": "Nocturne",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.20%, PR 4.07%, BR 8.89%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.76%, PR 3.50%, BR 6.45%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Nocturne",
+     "wr": 51.2,
+     "pr": 4.07,
+     "br": 8.89,
+     "games": 87089
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Nocturne",
+     "wr": 50.76,
+     "pr": 3.5,
+     "br": 6.45,
+     "games": 14585
+    }
+   }
+  },
+  {
+   "champion": "Jarvan IV",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.30%, PR 8.11%, BR 1.89%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.42%, PR 8.56%, BR 1.18%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Jarvan IV",
+     "wr": 51.3,
+     "pr": 8.11,
+     "br": 1.89,
+     "games": 173364
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Jarvan IV",
+     "wr": 51.42,
+     "pr": 8.56,
+     "br": 1.18,
+     "games": 35659
+    }
+   }
+  },
+  {
+   "champion": "Elise",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.35%, PR 2.75%, BR 1.97%, pro presence 1.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.72%, PR 3.19%, BR 4.65%, pro presence 1.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 1.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Elise",
+     "wr": 52.35,
+     "pr": 2.75,
+     "br": 1.97,
+     "games": 58783
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Elise",
+     "wr": 53.72,
+     "pr": 3.19,
+     "br": 4.65,
+     "games": 13311
+    }
+   }
+  },
+  {
+   "champion": "Lee Sin",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 49.86%, PR 13.08%, BR 15.23%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.08%, PR 24.19%, BR 47.36%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Lee Sin",
+     "wr": 49.86,
+     "pr": 13.08,
+     "br": 15.23,
+     "games": 279563
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Lee Sin",
+     "wr": 51.08,
+     "pr": 24.19,
+     "br": 47.36,
+     "games": 100772
+    }
+   }
+  },
+  {
+   "champion": "Skarner",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.52%, PR 1.07%, BR 0.28%, pro presence 21.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.04%, PR 0.96%, BR 0.20%, pro presence 21.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 21.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Skarner",
+     "wr": 52.52,
+     "pr": 1.07,
+     "br": 0.28,
+     "games": 22826
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Skarner",
+     "wr": 53.04,
+     "pr": 0.96,
+     "br": 0.2,
+     "games": 4001
+    }
+   }
+  },
+  {
+   "champion": "Nidalee",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.02%, PR 2.37%, BR 2.24%, pro presence 2.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.34%, PR 5.25%, BR 8.75%, pro presence 2.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 2.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Nidalee",
+     "wr": 52.02,
+     "pr": 2.37,
+     "br": 2.24,
+     "games": 50630
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Nidalee",
+     "wr": 53.34,
+     "pr": 5.25,
+     "br": 8.75,
+     "games": 21889
+    }
+   }
+  },
+  {
+   "champion": "Udyr",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.07%, PR 1.74%, BR 0.95%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Udyr",
+     "wr": 53.07,
+     "pr": 1.74,
+     "br": 0.95,
+     "games": 37252
+    }
+   }
+  },
+  {
+   "champion": "Talon",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.72%, PR 5.12%, BR 8.43%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.94%, PR 5.20%, BR 4.03%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Talon",
+     "wr": 51.72,
+     "pr": 5.12,
+     "br": 8.43,
+     "games": 109444
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Talon",
+     "wr": 50.94,
+     "pr": 5.2,
+     "br": 4.03,
+     "games": 21657
+    }
+   }
+  },
+  {
+   "champion": "Shyvana",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.60%, PR 3.96%, BR 4.46%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.41%, PR 1.07%, BR 0.37%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Shyvana",
+     "wr": 53.6,
+     "pr": 3.96,
+     "br": 4.46,
+     "games": 84625
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Shyvana",
+     "wr": 52.41,
+     "pr": 1.07,
+     "br": 0.37,
+     "games": 4478
+    }
+   }
+  },
+  {
+   "champion": "Graves",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.14%, PR 7.33%, BR 8.52%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.40%, PR 6.58%, BR 5.69%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Graves",
+     "wr": 51.14,
+     "pr": 7.33,
+     "br": 8.52,
+     "games": 156801
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Graves",
+     "wr": 50.4,
+     "pr": 6.58,
+     "br": 5.69,
+     "games": 27431
+    }
+   }
+  },
+  {
+   "champion": "Rengar",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 49.86%, PR 3.92%, BR 7.46%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 49.75%, PR 1.42%, BR 0.98%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Rengar",
+     "wr": 49.86,
+     "pr": 3.92,
+     "br": 7.46,
+     "games": 83769
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Rengar",
+     "wr": 49.75,
+     "pr": 1.42,
+     "br": 0.98,
+     "games": 5922
+    }
+   }
+  },
+  {
+   "champion": "Hecarim",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.23%, PR 5.12%, BR 7.79%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.57%, PR 5.21%, BR 3.70%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Hecarim",
+     "wr": 51.23,
+     "pr": 5.12,
+     "br": 7.79,
+     "games": 109406
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Hecarim",
+     "wr": 50.57,
+     "pr": 5.21,
+     "br": 3.7,
+     "games": 21721
+    }
+   }
+  },
+  {
+   "champion": "Kha'Zix",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.36%, PR 6.05%, BR 4.00%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.80%, PR 4.32%, BR 1.44%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Kha'Zix",
+     "wr": 51.36,
+     "pr": 6.05,
+     "br": 4.0,
+     "games": 129258
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Kha'Zix",
+     "wr": 51.8,
+     "pr": 4.32,
+     "br": 1.44,
+     "games": 18017
+    }
+   }
+  },
+  {
+   "champion": "Kayn",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.04%, PR 6.62%, BR 5.58%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.84%, PR 3.38%, BR 0.65%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Kayn",
+     "wr": 52.04,
+     "pr": 6.62,
+     "br": 5.58,
+     "games": 141629
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Kayn",
+     "wr": 52.84,
+     "pr": 3.38,
+     "br": 0.65,
+     "games": 14098
+    }
+   }
+  },
+  {
+   "champion": "Zac",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.23%, PR 2.54%, BR 1.01%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.45%, PR 2.97%, BR 0.83%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Zac",
+     "wr": 53.23,
+     "pr": 2.54,
+     "br": 1.01,
+     "games": 54375
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Zac",
+     "wr": 53.45,
+     "pr": 2.97,
+     "br": 0.83,
+     "games": 12387
+    }
+   }
+  },
+  {
+   "champion": "Taliyah",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.66%, PR 2.87%, BR 1.30%, pro presence 15.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.78%, PR 5.17%, BR 2.42%, pro presence 15.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 15.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Taliyah",
+     "wr": 51.66,
+     "pr": 2.87,
+     "br": 1.3,
+     "games": 61358
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Taliyah",
+     "wr": 52.78,
+     "pr": 5.17,
+     "br": 2.42,
+     "games": 21560
+    }
+   }
+  },
+  {
+   "champion": "Bel'Veth",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.09%, PR 2.62%, BR 3.93%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.06%, PR 1.09%, BR 0.55%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Bel'Veth",
+     "wr": 53.09,
+     "pr": 2.62,
+     "br": 3.93,
+     "games": 55938
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Bel'Veth",
+     "wr": 53.06,
+     "pr": 1.09,
+     "br": 0.55,
+     "games": 4542
+    }
+   }
+  },
+  {
+   "champion": "Kindred",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.35%, PR 2.56%, BR 1.84%, pro presence 2.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.82%, PR 2.71%, BR 1.02%, pro presence 2.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 2.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Kindred",
+     "wr": 52.35,
+     "pr": 2.56,
+     "br": 1.84,
+     "games": 54818
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Kindred",
+     "wr": 52.82,
+     "pr": 2.71,
+     "br": 1.02,
+     "games": 11297
+    }
+   }
+  },
+  {
+   "champion": "Briar",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.42%, PR 4.08%, BR 8.90%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.53%, PR 2.97%, BR 2.12%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Briar",
+     "wr": 53.42,
+     "pr": 4.08,
+     "br": 8.9,
+     "games": 87222
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Briar",
+     "wr": 52.53,
+     "pr": 2.97,
+     "br": 2.12,
+     "games": 12382
+    }
+   }
+  },
+  {
+   "champion": "Viego",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.69%, PR 7.99%, BR 6.46%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.83%, PR 6.46%, BR 1.41%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Viego",
+     "wr": 51.69,
+     "pr": 7.99,
+     "br": 6.46,
+     "games": 170817
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Viego",
+     "wr": 50.83,
+     "pr": 6.46,
+     "br": 1.41,
+     "games": 26897
+    }
+   }
+  },
+  {
+   "champion": "Vi",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.88%, PR 4.79%, BR 1.60%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.63%, PR 6.92%, BR 3.63%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Vi",
+     "wr": 50.88,
+     "pr": 4.79,
+     "br": 1.6,
+     "games": 102361
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Vi",
+     "wr": 51.63,
+     "pr": 6.92,
+     "br": 3.63,
+     "games": 28818
+    }
+   }
+  },
+  {
+   "champion": "Naafiri",
+   "lane": "jungle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.15%, PR 4.54%, BR 9.77%, pro presence 17.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.47%, PR 7.44%, BR 16.24%, pro presence 17.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 17.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Naafiri",
+     "wr": 52.15,
+     "pr": 4.54,
+     "br": 9.77,
+     "games": 97004
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Naafiri",
+     "wr": 52.47,
+     "pr": 7.44,
+     "br": 16.24,
+     "games": 31005
+    }
+   }
+  },
+  {
+   "champion": "Annie",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.61%, PR 2.03%, BR 0.56%, pro presence 11.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.47%, PR 1.42%, BR 0.25%, pro presence 11.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 11.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Annie",
+     "wr": 52.61,
+     "pr": 2.03,
+     "br": 0.56,
+     "games": 43376
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Annie",
+     "wr": 53.47,
+     "pr": 1.42,
+     "br": 0.25,
+     "games": 5915
+    }
+   }
+  },
+  {
+   "champion": "Galio",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.36%, PR 4.71%, BR 2.20%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 49.82%, PR 6.51%, BR 3.11%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Galio",
+     "wr": 50.36,
+     "pr": 4.71,
+     "br": 2.2,
+     "games": 100783
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Galio",
+     "wr": 49.82,
+     "pr": 6.51,
+     "br": 3.11,
+     "games": 27131
+    }
+   }
+  },
+  {
+   "champion": "Twisted Fate",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.66%, PR 4.97%, BR 1.56%, pro presence 8.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.56%, PR 9.99%, BR 6.08%, pro presence 8.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 8.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Twisted Fate",
+     "wr": 52.66,
+     "pr": 4.97,
+     "br": 1.56,
+     "games": 106487
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Twisted Fate",
+     "wr": 53.56,
+     "pr": 9.99,
+     "br": 6.08,
+     "games": 41612
+    }
+   }
+  },
+  {
+   "champion": "Vladimir",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.23%, PR 4.06%, BR 6.36%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.65%, PR 2.18%, BR 0.61%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Vladimir",
+     "wr": 53.23,
+     "pr": 4.06,
+     "br": 6.36,
+     "games": 86970
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Vladimir",
+     "wr": 53.65,
+     "pr": 2.18,
+     "br": 0.61,
+     "games": 9096
+    }
+   }
+  },
+  {
+   "champion": "Ryze",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 48.76%, PR 1.96%, BR 0.34%, pro presence 18.0%; no rule matched",
+    "[kr] HOLD: soloq WR 49.37%, PR 2.64%, BR 0.61%, pro presence 18.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 18.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Ryze",
+     "wr": 48.76,
+     "pr": 1.96,
+     "br": 0.34,
+     "games": 42014
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Ryze",
+     "wr": 49.37,
+     "pr": 2.64,
+     "br": 0.61,
+     "games": 11018
+    }
+   }
+  },
+  {
+   "champion": "Anivia",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.57%, PR 2.31%, BR 2.30%, pro presence 11.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.29%, PR 2.47%, BR 2.27%, pro presence 11.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 11.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Anivia",
+     "wr": 51.57,
+     "pr": 2.31,
+     "br": 2.3,
+     "games": 49518
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Anivia",
+     "wr": 52.29,
+     "pr": 2.47,
+     "br": 2.27,
+     "games": 10272
+    }
+   }
+  },
+  {
+   "champion": "Kassadin",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.35%, PR 2.91%, BR 2.54%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.34%, PR 2.02%, BR 0.28%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Kassadin",
+     "wr": 52.35,
+     "pr": 2.91,
+     "br": 2.54,
+     "games": 62263
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Kassadin",
+     "wr": 52.34,
+     "pr": 2.02,
+     "br": 0.28,
+     "games": 8401
+    }
+   }
+  },
+  {
+   "champion": "Veigar",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.08%, PR 3.17%, BR 1.05%, pro presence 1.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.22%, PR 1.22%, BR 0.16%, pro presence 1.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 1.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Veigar",
+     "wr": 53.08,
+     "pr": 3.17,
+     "br": 1.05,
+     "games": 67804
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Veigar",
+     "wr": 53.22,
+     "pr": 1.22,
+     "br": 0.16,
+     "games": 5081
+    }
+   }
+  },
+  {
+   "champion": "Cassiopeia",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 49.29%, PR 1.56%, BR 1.32%, pro presence 56.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.14%, PR 1.94%, BR 1.61%, pro presence 56.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 56.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Cassiopeia",
+     "wr": 49.29,
+     "pr": 1.56,
+     "br": 1.32,
+     "games": 33345
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Cassiopeia",
+     "wr": 51.14,
+     "pr": 1.94,
+     "br": 1.61,
+     "games": 8100
+    }
+   }
+  },
+  {
+   "champion": "Akali",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.68%, PR 8.30%, BR 18.10%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.25%, PR 9.66%, BR 19.44%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Akali",
+     "wr": 50.68,
+     "pr": 8.3,
+     "br": 18.1,
+     "games": 177659
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Akali",
+     "wr": 51.25,
+     "pr": 9.66,
+     "br": 19.44,
+     "games": 40227
+    }
+   }
+  },
+  {
+   "champion": "Malzahar",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.89%, PR 4.71%, BR 9.46%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.73%, PR 3.00%, BR 2.44%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Malzahar",
+     "wr": 51.89,
+     "pr": 4.71,
+     "br": 9.46,
+     "games": 100822
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Malzahar",
+     "wr": 51.73,
+     "pr": 3.0,
+     "br": 2.44,
+     "games": 12514
+    }
+   }
+  },
+  {
+   "champion": "Xerath",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.91%, PR 4.00%, BR 8.05%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.14%, PR 4.00%, BR 11.33%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Xerath",
+     "wr": 52.91,
+     "pr": 4.0,
+     "br": 8.05,
+     "games": 85638
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Xerath",
+     "wr": 51.14,
+     "pr": 4.0,
+     "br": 11.33,
+     "games": 16659
+    }
+   }
+  },
+  {
+   "champion": "Ahri",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.03%, PR 11.49%, BR 3.65%, pro presence 16.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.86%, PR 9.19%, BR 1.74%, pro presence 16.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 16.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Ahri",
+     "wr": 53.03,
+     "pr": 11.49,
+     "br": 3.65,
+     "games": 245973
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Ahri",
+     "wr": 52.86,
+     "pr": 9.19,
+     "br": 1.74,
+     "games": 38283
+    }
+   }
+  },
+  {
+   "champion": "Fizz",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.33%, PR 4.86%, BR 7.32%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.31%, PR 3.50%, BR 3.19%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Fizz",
+     "wr": 53.33,
+     "pr": 4.86,
+     "br": 7.32,
+     "games": 104098
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Fizz",
+     "wr": 52.31,
+     "pr": 3.5,
+     "br": 3.19,
+     "games": 14567
+    }
+   }
+  },
+  {
+   "champion": "Viktor",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.89%, PR 7.75%, BR 9.36%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 49.71%, PR 9.66%, BR 12.01%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Viktor",
+     "wr": 50.89,
+     "pr": 7.75,
+     "br": 9.36,
+     "games": 166035
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Viktor",
+     "wr": 49.71,
+     "pr": 9.66,
+     "br": 12.01,
+     "games": 40243
+    }
+   }
+  },
+  {
+   "champion": "Lissandra",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.60%, PR 5.60%, BR 4.50%, pro presence 4.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.97%, PR 5.27%, BR 2.42%, pro presence 4.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 4.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Lissandra",
+     "wr": 52.6,
+     "pr": 5.6,
+     "br": 4.5,
+     "games": 119840
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Lissandra",
+     "wr": 52.97,
+     "pr": 5.27,
+     "br": 2.42,
+     "games": 21947
+    }
+   }
+  },
+  {
+   "champion": "Diana",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.03%, PR 3.38%, BR 3.46%, pro presence 1.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.40%, PR 3.28%, BR 1.63%, pro presence 1.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 1.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Diana",
+     "wr": 53.03,
+     "pr": 3.38,
+     "br": 3.46,
+     "games": 72488
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Diana",
+     "wr": 52.4,
+     "pr": 3.28,
+     "br": 1.63,
+     "games": 13678
+    }
+   }
+  },
+  {
+   "champion": "Syndra",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.25%, PR 9.39%, BR 8.51%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.22%, PR 9.57%, BR 6.49%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Syndra",
+     "wr": 51.25,
+     "pr": 9.39,
+     "br": 8.51,
+     "games": 200998
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Syndra",
+     "wr": 51.22,
+     "pr": 9.57,
+     "br": 6.49,
+     "games": 39871
+    }
+   }
+  },
+  {
+   "champion": "Aurelion Sol",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.50%, PR 1.94%, BR 0.74%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.58%, PR 1.42%, BR 0.21%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Aurelion Sol",
+     "wr": 52.5,
+     "pr": 1.94,
+     "br": 0.74,
+     "games": 41536
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Aurelion Sol",
+     "wr": 53.58,
+     "pr": 1.42,
+     "br": 0.21,
+     "games": 5911
+    }
+   }
+  },
+  {
+   "champion": "Zoe",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.08%, PR 2.80%, BR 3.51%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.50%, PR 3.31%, BR 5.44%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Zoe",
+     "wr": 52.08,
+     "pr": 2.8,
+     "br": 3.51,
+     "games": 59878
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Zoe",
+     "wr": 53.5,
+     "pr": 3.31,
+     "br": 5.44,
+     "games": 13782
+    }
+   }
+  },
+  {
+   "champion": "Yasuo",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.90%, PR 8.09%, BR 25.48%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.79%, PR 5.84%, BR 19.09%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Yasuo",
+     "wr": 50.9,
+     "pr": 8.09,
+     "br": 25.48,
+     "games": 173262
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Yasuo",
+     "wr": 50.79,
+     "pr": 5.84,
+     "br": 19.09,
+     "games": 24318
+    }
+   }
+  },
+  {
+   "champion": "Akshan",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.83%, PR 2.24%, BR 1.99%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.35%, PR 1.55%, BR 0.68%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Akshan",
+     "wr": 51.83,
+     "pr": 2.24,
+     "br": 1.99,
+     "games": 47932
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Akshan",
+     "wr": 53.35,
+     "pr": 1.55,
+     "br": 0.68,
+     "games": 6459
+    }
+   }
+  },
+  {
+   "champion": "Zed",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.43%, PR 8.11%, BR 24.95%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.22%, PR 7.54%, BR 23.34%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Zed",
+     "wr": 51.43,
+     "pr": 8.11,
+     "br": 24.95,
+     "games": 173759
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Zed",
+     "wr": 52.22,
+     "pr": 7.54,
+     "br": 23.34,
+     "games": 31413
+    }
+   }
+  },
+  {
+   "champion": "Ekko",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.92%, PR 5.31%, BR 3.33%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.93%, PR 3.70%, BR 1.20%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Ekko",
+     "wr": 53.92,
+     "pr": 5.31,
+     "br": 3.33,
+     "games": 113749
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Ekko",
+     "wr": 51.93,
+     "pr": 3.7,
+     "br": 1.2,
+     "games": 15397
+    }
+   }
+  },
+  {
+   "champion": "Azir",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 49.31%, PR 1.77%, BR 0.30%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 48.87%, PR 2.01%, BR 0.17%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Azir",
+     "wr": 49.31,
+     "pr": 1.77,
+     "br": 0.3,
+     "games": 37926
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Azir",
+     "wr": 48.87,
+     "pr": 2.01,
+     "br": 0.17,
+     "games": 8387
+    }
+   }
+  },
+  {
+   "champion": "Sylas",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.22%, PR 6.72%, BR 16.79%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 49.83%, PR 9.77%, BR 26.59%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Sylas",
+     "wr": 50.22,
+     "pr": 6.72,
+     "br": 16.79,
+     "games": 143965
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Sylas",
+     "wr": 49.83,
+     "pr": 9.77,
+     "br": 26.59,
+     "games": 40692
+    }
+   }
+  },
+  {
+   "champion": "Vex",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.91%, PR 2.93%, BR 4.36%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.93%, PR 3.40%, BR 5.58%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Vex",
+     "wr": 53.91,
+     "pr": 2.93,
+     "br": 4.36,
+     "games": 62687
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Vex",
+     "wr": 53.93,
+     "pr": 3.4,
+     "br": 5.58,
+     "games": 14162
+    }
+   }
+  },
+  {
+   "champion": "Yone",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.77%, PR 7.31%, BR 14.00%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.22%, PR 9.37%, BR 16.35%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Yone",
+     "wr": 51.77,
+     "pr": 7.31,
+     "br": 14.0,
+     "games": 156467
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Yone",
+     "wr": 50.22,
+     "pr": 9.37,
+     "br": 16.35,
+     "games": 39028
+    }
+   }
+  },
+  {
+   "champion": "Mel",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 49.34%, PR 1.67%, BR 6.51%, pro presence 2.0%; no rule matched",
+    "[kr] HOLD: soloq WR 48.56%, PR 0.75%, BR 2.53%, pro presence 2.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 2.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Mel",
+     "wr": 49.34,
+     "pr": 1.67,
+     "br": 6.51,
+     "games": 35840
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Mel",
+     "wr": 48.56,
+     "pr": 0.75,
+     "br": 2.53,
+     "games": 3124
+    }
+   }
+  },
+  {
+   "champion": "Locke",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 49.89%, PR 5.51%, BR 29.09%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.13%, PR 5.82%, BR 34.00%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Locke",
+     "wr": 49.89,
+     "pr": 5.51,
+     "br": 29.09,
+     "games": 117934
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Locke",
+     "wr": 50.13,
+     "pr": 5.82,
+     "br": 34.0,
+     "games": 24228
+    }
+   }
+  },
+  {
+   "champion": "Aurora",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.25%, PR 2.58%, BR 1.41%, pro presence 9.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.42%, PR 2.73%, BR 0.70%, pro presence 9.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 9.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Aurora",
+     "wr": 52.25,
+     "pr": 2.58,
+     "br": 1.41,
+     "games": 55203
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Aurora",
+     "wr": 52.42,
+     "pr": 2.73,
+     "br": 0.7,
+     "games": 11382
+    }
+   }
+  },
+  {
+   "champion": "Hwei",
+   "lane": "middle",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.11%, PR 3.59%, BR 2.28%, pro presence 2.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.87%, PR 3.55%, BR 1.70%, pro presence 2.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 2.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Hwei",
+     "wr": 53.11,
+     "pr": 3.59,
+     "br": 2.28,
+     "games": 76898
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Hwei",
+     "wr": 52.87,
+     "pr": 3.55,
+     "br": 1.7,
+     "games": 14793
+    }
+   }
+  },
+  {
+   "champion": "Sivir",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.64%, PR 4.75%, BR 1.71%, pro presence 8.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.56%, PR 4.03%, BR 2.34%, pro presence 8.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 8.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Sivir",
+     "wr": 52.64,
+     "pr": 4.75,
+     "br": 1.71,
+     "games": 101672
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Sivir",
+     "wr": 52.56,
+     "pr": 4.03,
+     "br": 2.34,
+     "games": 16784
+    }
+   }
+  },
+  {
+   "champion": "Tristana",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.88%, PR 6.02%, BR 4.94%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.99%, PR 4.50%, BR 5.46%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Tristana",
+     "wr": 51.88,
+     "pr": 6.02,
+     "br": 4.94,
+     "games": 129017
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Tristana",
+     "wr": 50.99,
+     "pr": 4.5,
+     "br": 5.46,
+     "games": 18752
+    }
+   }
+  },
+  {
+   "champion": "Miss Fortune",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.69%, PR 8.05%, BR 1.55%, pro presence 6.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.89%, PR 7.27%, BR 2.02%, pro presence 6.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 6.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Miss Fortune",
+     "wr": 52.69,
+     "pr": 8.05,
+     "br": 1.55,
+     "games": 172348
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Miss Fortune",
+     "wr": 52.89,
+     "pr": 7.27,
+     "br": 2.02,
+     "games": 30303
+    }
+   }
+  },
+  {
+   "champion": "Ashe",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.85%, PR 6.45%, BR 1.75%, pro presence 19.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.07%, PR 5.32%, BR 1.88%, pro presence 19.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 19.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Ashe",
+     "wr": 51.85,
+     "pr": 6.45,
+     "br": 1.75,
+     "games": 138202
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Ashe",
+     "wr": 52.07,
+     "pr": 5.32,
+     "br": 1.88,
+     "games": 22159
+    }
+   }
+  },
+  {
+   "champion": "Corki",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.89%, PR 4.05%, BR 0.64%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.71%, PR 5.50%, BR 0.89%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Corki",
+     "wr": 51.89,
+     "pr": 4.05,
+     "br": 0.64,
+     "games": 86758
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Corki",
+     "wr": 51.71,
+     "pr": 5.5,
+     "br": 0.89,
+     "games": 22928
+    }
+   }
+  },
+  {
+   "champion": "Caitlyn",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.36%, PR 11.92%, BR 21.21%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 49.85%, PR 9.80%, BR 14.16%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Caitlyn",
+     "wr": 50.36,
+     "pr": 11.92,
+     "br": 21.21,
+     "games": 255338
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Caitlyn",
+     "wr": 49.85,
+     "pr": 9.8,
+     "br": 14.16,
+     "games": 40847
+    }
+   }
+  },
+  {
+   "champion": "Vayne",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.28%, PR 3.36%, BR 3.68%, pro presence 14.0%; no rule matched",
+    "[kr] HOLD: soloq WR 48.93%, PR 1.82%, BR 2.43%, pro presence 14.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 14.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Vayne",
+     "wr": 51.28,
+     "pr": 3.36,
+     "br": 3.68,
+     "games": 71856
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Vayne",
+     "wr": 48.93,
+     "pr": 1.82,
+     "br": 2.43,
+     "games": 7600
+    }
+   }
+  },
+  {
+   "champion": "Varus",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.10%, PR 3.31%, BR 0.86%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.45%, PR 3.20%, BR 1.38%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Varus",
+     "wr": 51.1,
+     "pr": 3.31,
+     "br": 0.86,
+     "games": 70888
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Varus",
+     "wr": 51.45,
+     "pr": 3.2,
+     "br": 1.38,
+     "games": 13319
+    }
+   }
+  },
+  {
+   "champion": "Ziggs",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.52%, PR 1.35%, BR 0.67%, pro presence 8.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.00%, PR 1.26%, BR 0.41%, pro presence 8.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 8.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Ziggs",
+     "wr": 52.52,
+     "pr": 1.35,
+     "br": 0.67,
+     "games": 29007
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Ziggs",
+     "wr": 53.0,
+     "pr": 1.26,
+     "br": 0.41,
+     "games": 5245
+    }
+   }
+  },
+  {
+   "champion": "Draven",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.80%, PR 3.89%, BR 14.74%, pro presence 8.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.40%, PR 2.29%, BR 7.34%, pro presence 8.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 8.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Draven",
+     "wr": 51.8,
+     "pr": 3.89,
+     "br": 14.74,
+     "games": 83394
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Draven",
+     "wr": 52.4,
+     "pr": 2.29,
+     "br": 7.34,
+     "games": 9555
+    }
+   }
+  },
+  {
+   "champion": "Kai'Sa",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.25%, PR 24.14%, BR 4.99%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.62%, PR 27.59%, BR 6.76%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Kai'Sa",
+     "wr": 51.25,
+     "pr": 24.14,
+     "br": 4.99,
+     "games": 516964
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Kai'Sa",
+     "wr": 51.62,
+     "pr": 27.59,
+     "br": 6.76,
+     "games": 114952
+    }
+   }
+  },
+  {
+   "champion": "Jhin",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.04%, PR 19.55%, BR 2.92%, pro presence 31.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.37%, PR 26.53%, BR 5.21%, pro presence 31.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 31.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Jhin",
+     "wr": 52.04,
+     "pr": 19.55,
+     "br": 2.92,
+     "games": 418715
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Jhin",
+     "wr": 52.37,
+     "pr": 26.53,
+     "br": 5.21,
+     "games": 110521
+    }
+   }
+  },
+  {
+   "champion": "Zeri",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.99%, PR 4.63%, BR 1.03%, pro presence 8.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.78%, PR 5.36%, BR 1.01%, pro presence 8.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 8.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Zeri",
+     "wr": 52.99,
+     "pr": 4.63,
+     "br": 1.03,
+     "games": 99055
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Zeri",
+     "wr": 53.78,
+     "pr": 5.36,
+     "br": 1.01,
+     "games": 22329
+    }
+   }
+  },
+  {
+   "champion": "Jinx",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.11%, PR 10.91%, BR 5.28%, pro presence 3.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.49%, PR 9.01%, BR 4.66%, pro presence 3.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 3.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Jinx",
+     "wr": 53.11,
+     "pr": 10.91,
+     "br": 5.28,
+     "games": 233744
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Jinx",
+     "wr": 52.49,
+     "pr": 9.01,
+     "br": 4.66,
+     "games": 37545
+    }
+   }
+  },
+  {
+   "champion": "Lucian",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.88%, PR 8.66%, BR 2.33%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.44%, PR 10.46%, BR 5.48%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Lucian",
+     "wr": 50.88,
+     "pr": 8.66,
+     "br": 2.33,
+     "games": 185363
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Lucian",
+     "wr": 51.44,
+     "pr": 10.46,
+     "br": 5.48,
+     "games": 43599
+    }
+   }
+  },
+  {
+   "champion": "Samira",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.28%, PR 3.56%, BR 5.52%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.58%, PR 2.07%, BR 1.00%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Samira",
+     "wr": 52.28,
+     "pr": 3.56,
+     "br": 5.52,
+     "games": 76263
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Samira",
+     "wr": 53.58,
+     "pr": 2.07,
+     "br": 1.0,
+     "games": 8639
+    }
+   }
+  },
+  {
+   "champion": "Kalista",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.58%, PR 4.22%, BR 2.45%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.90%, PR 4.72%, BR 3.43%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Kalista",
+     "wr": 50.58,
+     "pr": 4.22,
+     "br": 2.45,
+     "games": 90277
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Kalista",
+     "wr": 50.9,
+     "pr": 4.72,
+     "br": 3.43,
+     "games": 19656
+    }
+   }
+  },
+  {
+   "champion": "Xayah",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.57%, PR 8.49%, BR 3.81%, pro presence 14.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.36%, PR 12.27%, BR 10.87%, pro presence 14.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 14.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Xayah",
+     "wr": 53.57,
+     "pr": 8.49,
+     "br": 3.81,
+     "games": 181878
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Xayah",
+     "wr": 53.36,
+     "pr": 12.27,
+     "br": 10.87,
+     "games": 51139
+    }
+   }
+  },
+  {
+   "champion": "Aphelios",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.70%, PR 6.21%, BR 3.18%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.56%, PR 9.55%, BR 5.82%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Aphelios",
+     "wr": 51.7,
+     "pr": 6.21,
+     "br": 3.18,
+     "games": 133031
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Aphelios",
+     "wr": 51.56,
+     "pr": 9.55,
+     "br": 5.82,
+     "games": 39775
+    }
+   }
+  },
+  {
+   "champion": "Yunara",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.93%, PR 12.09%, BR 5.87%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.52%, PR 11.37%, BR 5.21%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Yunara",
+     "wr": 50.93,
+     "pr": 12.09,
+     "br": 5.87,
+     "games": 258934
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Yunara",
+     "wr": 51.52,
+     "pr": 11.37,
+     "br": 5.21,
+     "games": 47384
+    }
+   }
+  },
+  {
+   "champion": "Nilah",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.87%, PR 1.05%, BR 1.82%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Nilah",
+     "wr": 53.87,
+     "pr": 1.05,
+     "br": 1.82,
+     "games": 22583
+    }
+   }
+  },
+  {
+   "champion": "Smolder",
+   "lane": "bottom",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.08%, PR 5.16%, BR 1.77%, pro presence 1.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.35%, PR 2.48%, BR 0.27%, pro presence 1.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 1.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Smolder",
+     "wr": 53.08,
+     "pr": 5.16,
+     "br": 1.77,
+     "games": 110464
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Smolder",
+     "wr": 52.35,
+     "pr": 2.48,
+     "br": 0.27,
+     "games": 10320
+    }
+   }
+  },
+  {
+   "champion": "Alistar",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.64%, PR 6.68%, BR 2.62%, pro presence 28.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.28%, PR 8.57%, BR 3.16%, pro presence 28.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 28.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Alistar",
+     "wr": 52.64,
+     "pr": 6.68,
+     "br": 2.62,
+     "games": 143053
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Alistar",
+     "wr": 53.28,
+     "pr": 8.57,
+     "br": 3.16,
+     "games": 35710
+    }
+   }
+  },
+  {
+   "champion": "Soraka",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.60%, PR 4.39%, BR 2.17%, pro presence 1.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.32%, PR 2.63%, BR 0.21%, pro presence 1.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 1.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Soraka",
+     "wr": 52.6,
+     "pr": 4.39,
+     "br": 2.17,
+     "games": 94100
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Soraka",
+     "wr": 51.32,
+     "pr": 2.63,
+     "br": 0.21,
+     "games": 10939
+    }
+   }
+  },
+  {
+   "champion": "Morgana",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.07%, PR 3.97%, BR 18.36%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.64%, PR 3.11%, BR 9.93%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Morgana",
+     "wr": 52.07,
+     "pr": 3.97,
+     "br": 18.36,
+     "games": 85017
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Morgana",
+     "wr": 50.64,
+     "pr": 3.11,
+     "br": 9.93,
+     "games": 12941
+    }
+   }
+  },
+  {
+   "champion": "Sona",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.95%, PR 2.87%, BR 0.21%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.58%, PR 1.12%, BR 0.05%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Sona",
+     "wr": 52.95,
+     "pr": 2.87,
+     "br": 0.21,
+     "games": 61384
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Sona",
+     "wr": 52.58,
+     "pr": 1.12,
+     "br": 0.05,
+     "games": 4677
+    }
+   }
+  },
+  {
+   "champion": "Janna",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.68%, PR 4.37%, BR 1.11%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.07%, PR 1.20%, BR 0.10%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Janna",
+     "wr": 52.68,
+     "pr": 4.37,
+     "br": 1.11,
+     "games": 93612
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Janna",
+     "wr": 52.07,
+     "pr": 1.2,
+     "br": 0.1,
+     "games": 4997
+    }
+   }
+  },
+  {
+   "champion": "Karma",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 49.99%, PR 7.70%, BR 3.29%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.34%, PR 8.54%, BR 4.42%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Karma",
+     "wr": 49.99,
+     "pr": 7.7,
+     "br": 3.29,
+     "games": 164826
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Karma",
+     "wr": 50.34,
+     "pr": 8.54,
+     "br": 4.42,
+     "games": 35575
+    }
+   }
+  },
+  {
+   "champion": "Taric",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.73%, PR 1.16%, BR 0.21%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.88%, PR 0.80%, BR 0.11%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Taric",
+     "wr": 53.73,
+     "pr": 1.16,
+     "br": 0.21,
+     "games": 24785
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Taric",
+     "wr": 52.88,
+     "pr": 0.8,
+     "br": 0.11,
+     "games": 3349
+    }
+   }
+  },
+  {
+   "champion": "Swain",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.69%, PR 2.89%, BR 2.32%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.57%, PR 2.55%, BR 1.10%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Swain",
+     "wr": 50.69,
+     "pr": 2.89,
+     "br": 2.32,
+     "games": 61885
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Swain",
+     "wr": 51.57,
+     "pr": 2.55,
+     "br": 1.1,
+     "games": 10632
+    }
+   }
+  },
+  {
+   "champion": "Maokai",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.36%, PR 1.89%, BR 0.21%, pro presence 13.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.82%, PR 2.51%, BR 0.20%, pro presence 13.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 13.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Maokai",
+     "wr": 53.36,
+     "pr": 1.89,
+     "br": 0.21,
+     "games": 40546
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Maokai",
+     "wr": 53.82,
+     "pr": 2.51,
+     "br": 0.2,
+     "games": 10461
+    }
+   }
+  },
+  {
+   "champion": "Brand",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.38%, PR 2.15%, BR 2.83%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.83%, PR 1.01%, BR 0.37%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Brand",
+     "wr": 51.38,
+     "pr": 2.15,
+     "br": 2.83,
+     "games": 46100
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Brand",
+     "wr": 51.83,
+     "pr": 1.01,
+     "br": 0.37,
+     "games": 4212
+    }
+   }
+  },
+  {
+   "champion": "Poppy",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.94%, PR 1.69%, BR 3.16%, pro presence 11.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.75%, PR 2.60%, BR 7.43%, pro presence 11.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 11.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Poppy",
+     "wr": 52.94,
+     "pr": 1.69,
+     "br": 3.16,
+     "games": 36200
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Poppy",
+     "wr": 53.75,
+     "pr": 2.6,
+     "br": 7.43,
+     "games": 10841
+    }
+   }
+  },
+  {
+   "champion": "Leona",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.47%, PR 8.57%, BR 10.35%, pro presence 9.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.65%, PR 9.28%, BR 9.97%, pro presence 9.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 9.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Leona",
+     "wr": 53.47,
+     "pr": 8.57,
+     "br": 10.35,
+     "games": 183578
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Leona",
+     "wr": 53.65,
+     "pr": 9.28,
+     "br": 9.97,
+     "games": 38664
+    }
+   }
+  },
+  {
+   "champion": "Lux",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.22%, PR 6.16%, BR 4.43%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.83%, PR 5.59%, BR 2.60%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Lux",
+     "wr": 51.22,
+     "pr": 6.16,
+     "br": 4.43,
+     "games": 131978
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Lux",
+     "wr": 51.83,
+     "pr": 5.59,
+     "br": 2.6,
+     "games": 23286
+    }
+   }
+  },
+  {
+   "champion": "Nautilus",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.95%, PR 11.63%, BR 16.50%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.02%, PR 14.81%, BR 20.26%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Nautilus",
+     "wr": 50.95,
+     "pr": 11.63,
+     "br": 16.5,
+     "games": 248991
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Nautilus",
+     "wr": 51.02,
+     "pr": 14.81,
+     "br": 20.26,
+     "games": 61715
+    }
+   }
+  },
+  {
+   "champion": "Lulu",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.36%, PR 12.86%, BR 15.47%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.10%, PR 13.14%, BR 20.34%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Lulu",
+     "wr": 51.36,
+     "pr": 12.86,
+     "br": 15.47,
+     "games": 275358
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Lulu",
+     "wr": 51.1,
+     "pr": 13.14,
+     "br": 20.34,
+     "games": 54756
+    }
+   }
+  },
+  {
+   "champion": "Seraphine",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.84%, PR 7.11%, BR 4.86%, pro presence 41.0%; no rule matched",
+    "[kr] HOLD: soloq WR 52.84%, PR 5.42%, BR 1.98%, pro presence 41.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 41.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Seraphine",
+     "wr": 52.84,
+     "pr": 7.11,
+     "br": 4.86,
+     "games": 152287
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Seraphine",
+     "wr": 52.84,
+     "pr": 5.42,
+     "br": 1.98,
+     "games": 22593
+    }
+   }
+  },
+  {
+   "champion": "Vel'Koz",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.68%, PR 3.28%, BR 2.16%, pro presence 1.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.27%, PR 2.47%, BR 0.82%, pro presence 1.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 1.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Vel'Koz",
+     "wr": 52.68,
+     "pr": 3.28,
+     "br": 2.16,
+     "games": 70173
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Vel'Koz",
+     "wr": 53.27,
+     "pr": 2.47,
+     "br": 0.82,
+     "games": 10308
+    }
+   }
+  },
+  {
+   "champion": "Braum",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.33%, PR 5.03%, BR 6.21%, pro presence 2.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.64%, PR 5.08%, BR 6.06%, pro presence 2.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 2.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Braum",
+     "wr": 53.33,
+     "pr": 5.03,
+     "br": 6.21,
+     "games": 107820
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Braum",
+     "wr": 53.64,
+     "pr": 5.08,
+     "br": 6.06,
+     "games": 21179
+    }
+   }
+  },
+  {
+   "champion": "Tahm Kench",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.03%, PR 2.14%, BR 2.38%, pro presence 1.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.97%, PR 1.96%, BR 0.50%, pro presence 1.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 1.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Tahm Kench",
+     "wr": 52.03,
+     "pr": 2.14,
+     "br": 2.38,
+     "games": 45845
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Tahm Kench",
+     "wr": 51.97,
+     "pr": 1.96,
+     "br": 0.5,
+     "games": 8176
+    }
+   }
+  },
+  {
+   "champion": "Senna",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 53.47%, PR 5.66%, BR 1.28%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.77%, PR 3.89%, BR 0.74%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Senna",
+     "wr": 53.47,
+     "pr": 5.66,
+     "br": 1.28,
+     "games": 121310
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Senna",
+     "wr": 53.77,
+     "pr": 3.89,
+     "br": 0.74,
+     "games": 16227
+    }
+   }
+  },
+  {
+   "champion": "Nami",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.51%, PR 8.87%, BR 1.14%, pro presence 3.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.96%, PR 2.34%, BR 0.16%, pro presence 3.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 3.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Nami",
+     "wr": 52.51,
+     "pr": 8.87,
+     "br": 1.14,
+     "games": 190026
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Nami",
+     "wr": 50.96,
+     "pr": 2.34,
+     "br": 0.16,
+     "games": 9767
+    }
+   }
+  },
+  {
+   "champion": "Yuumi",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 49.64%, PR 5.52%, BR 8.55%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.54%, PR 6.54%, BR 14.22%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Yuumi",
+     "wr": 49.64,
+     "pr": 5.52,
+     "br": 8.55,
+     "games": 118308
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Yuumi",
+     "wr": 50.54,
+     "pr": 6.54,
+     "br": 14.22,
+     "games": 27240
+    }
+   }
+  },
+  {
+   "champion": "Bard",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.35%, PR 4.04%, BR 1.64%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.32%, PR 5.92%, BR 1.92%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Bard",
+     "wr": 50.35,
+     "pr": 4.04,
+     "br": 1.64,
+     "games": 86559
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Bard",
+     "wr": 51.32,
+     "pr": 5.92,
+     "br": 1.92,
+     "games": 24663
+    }
+   }
+  },
+  {
+   "champion": "Rakan",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 52.72%, PR 4.84%, BR 0.43%, pro presence 16.0%; no rule matched",
+    "[kr] HOLD: soloq WR 53.16%, PR 6.38%, BR 0.76%, pro presence 16.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 16.0,
+   "pro_patch": "26.20",
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Rakan",
+     "wr": 52.72,
+     "pr": 4.84,
+     "br": 0.43,
+     "games": 103659
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Rakan",
+     "wr": 53.16,
+     "pr": 6.38,
+     "br": 0.76,
+     "games": 26582
+    }
+   }
+  },
+  {
+   "champion": "Neeko",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 50.37%, PR 1.95%, BR 0.79%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.92%, PR 2.95%, BR 1.83%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Neeko",
+     "wr": 50.37,
+     "pr": 1.95,
+     "br": 0.79,
+     "games": 41800
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Neeko",
+     "wr": 50.92,
+     "pr": 2.95,
+     "br": 1.83,
+     "games": 12275
+    }
+   }
+  },
+  {
+   "champion": "Pyke",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.11%, PR 5.63%, BR 23.13%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.70%, PR 5.65%, BR 33.73%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Pyke",
+     "wr": 51.11,
+     "pr": 5.63,
+     "br": 23.13,
+     "games": 120572
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Pyke",
+     "wr": 50.7,
+     "pr": 5.65,
+     "br": 33.73,
+     "games": 23537
+    }
+   }
+  },
+  {
+   "champion": "Renata Glasc",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.27%, PR 2.19%, BR 0.54%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 51.03%, PR 1.80%, BR 0.45%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Renata Glasc",
+     "wr": 51.27,
+     "pr": 2.19,
+     "br": 0.54,
+     "games": 46809
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Renata Glasc",
+     "wr": 51.03,
+     "pr": 1.8,
+     "br": 0.45,
+     "games": 7501
+    }
+   }
+  },
+  {
+   "champion": "Milio",
+   "lane": "support",
+   "category": "HOLD",
+   "severity": 0.0,
+   "reasons": [
+    "[global] HOLD: soloq WR 51.80%, PR 6.32%, BR 4.31%, pro presence 0.0%; no rule matched",
+    "[kr] HOLD: soloq WR 50.93%, PR 3.78%, BR 1.04%, pro presence 0.0%; no rule matched",
+    "combined -> HOLD"
+   ],
+   "presence": 0.0,
+   "pro_patch": null,
+   "stats": {
+    "global": {
+     "patch": "26.22",
+     "region": "global",
+     "champion": "Milio",
+     "wr": 51.8,
+     "pr": 6.32,
+     "br": 4.31,
+     "games": 135350
+    },
+    "kr": {
+     "patch": "26.22",
+     "region": "kr",
+     "champion": "Milio",
+     "wr": 50.93,
+     "pr": 3.78,
+     "br": 1.04,
+     "games": 15746
+    }
+   }
+  }
+ ]
+}

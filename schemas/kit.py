@@ -52,6 +52,7 @@ class Ability(Strict):
     base: PerRank = None           # damage per rank
     base_by_level: PerRank = None  # [lvl1, lvl18] flat bonus "based on level", added to base
     ap_ratio: Ratio = None
+    armor_ratio: Ratio = None      # of total armor (e.g. Malphite)
     ad_ratio: Ratio = None         # total AD ratio
     bonus_ad_ratio: Ratio = None
     pct_max_hp: PerRank = None     # of target's maximum health
@@ -110,7 +111,7 @@ class Kit(Strict):
         out = [f"base.{k}" for k, v in self.base.model_dump().items() if v is None]
         for key, ab in self.abilities.items():
             want = set() if key.startswith("P_") or ab.recast_of else {"cooldown"}
-            sources = (ab.base, ab.base_by_level, ab.ad_ratio, ab.bonus_ad_ratio,
+            sources = (ab.base, ab.base_by_level, ab.ad_ratio, ab.bonus_ad_ratio, ab.armor_ratio,
                        ab.pct_max_hp, ab.pct_current_hp, ab.pct_missing_hp)
             if ab.type == "damage" and all(s is None for s in sources):
                 want |= {"base"}

@@ -34,7 +34,20 @@ def minor(p: str) -> int:
     return int(p.split(".")[1])
 
 
+def scan_for(patch: str) -> dict | None:
+    p = ROOT / "data" / "stats" / f"scan_{patch}.json"
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
+
+
 def stats_for(champ: str, patch: str):
+    scan = scan_for(patch)
+    hit = next((r for r in scan["results"] if r["champion"] == champ), None) if scan else None
+    if hit:  # whole-roster scan: main-lane stats for every server that passed the sample gate
+        rows = {g: SoloQRow(**v) for g, v in hit["stats"].items()}
+        pr = ProRow(patch=patch, champion=champ, presence=hit["presence"])
+        summary = {"solo_queue": {g: r.model_dump() for g, r in rows.items()}, "lane": hit["lane"],
+                   "pro": {"presence": hit["presence"], "from_patch": hit["pro_patch"] or "none"}}
+        return rows, pr, summary
     soloq = [SoloQRow(**r) for r in csv.DictReader(open(ROOT / "data/stats/soloq.csv", encoding="utf-8"))]
     pro = [ProRow(**{k: (v or None) for k, v in r.items()})
            for r in csv.DictReader(open(ROOT / "data/stats/pro.csv", encoding="utf-8"))]
@@ -63,7 +76,8 @@ def run_champion(champ: str, patch: str, use_llm: bool, plant: bool, before: dic
                           "complaints": complaints.model_dump() if complaints else None}
 
     # 2. diagnose (deterministic)
-    diag = diagnose_regions(rows, pro, complaints)
+    scan = scan_for(patch)
+    diag = diagnose_regions(rows, pro, complaints, avg_br=scan["avg_ban_rate"] if scan else None)
     trace["diagnosis"] = diag.model_dump(mode="json")
     if diag.category == Category.HOLD:
         trace["decision"] = "HOLD"
@@ -153,7 +167,10 @@ def main() -> int:
     ap.add_argument("--no-llm", action="store_true")
     ap.add_argument("--plant-injection", action="store_true")
     ap.add_argument("--render-only", action="store_true", help="re-render patch_notes.md from summary.json")
+    ap.add_argument("--from-scan", action="store_true", help="patch the champions the roster scan selected")
     a = ap.parse_args()
+    if a.from_scan:
+        a.champions = scan_for(a.patch)["selected"]
     if a.render_only:
         out = ROOT / "proposals" / a.patch
         traces = json.loads((out / "summary.json").read_text(encoding="utf-8"))["traces"]
