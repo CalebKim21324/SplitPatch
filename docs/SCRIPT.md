@@ -46,9 +46,11 @@ Here it is on the live patch, 26.22. It scanned 171 champions, **[click]** flagg
 
 **DEMO** (1:46–2:20). Switch to the demo tab.
 - *Agent run tab: click **Ezreal**, then **Replay run**.*
-  Ezreal shows up in almost half of pro games but loses in solo queue. That's what we call pro-jail. The agent tested three ideas. Only the ultimate change lowers pro power without touching solo queue. The verifier passes all five checks, and the patch note and tooltip are checked against the change.
+  Ezreal shows up in almost half of pro games but loses in solo queue. The agent tested three ideas. Only the ultimate change cuts pro power without touching solo queue, and the verifier passes it.
+- *Click the **Patch notes** tab and scroll slowly.*
+  Then it writes the patch notes, in the same format players already read every two weeks, with every number checked against the change.
 - *Click the **Safety checks** tab, then **Run attacks**.*
-  We also attacked our own checks. Fifteen of fifteen bad patches were rejected, eight of eight wrong notes were caught, and a planted prompt injection never reached the agent.
+  And we attacked our own checks. Fifteen of fifteen bad patches were rejected, and eight of eight wrong notes were caught.
 
 **9 · Patch 26.22, written by the agent** (2:20–2:26). Switch back to the slides.
 Here's the full patch it wrote. Each change is aimed at a specific group of players.
