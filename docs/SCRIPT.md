@@ -45,8 +45,8 @@ That's the rule we built around: the agent never grades its own work.
 Here it is on the live patch, 26.22. It scanned 171 champions, **[click]** flagged 27, **[click]** and planned six changes for patch 26.23. All six passed on the first try. Let me show you one.
 
 **DEMO** (1:46–2:20). Switch to the demo tab.
-- *Agent run tab: click **Ezreal**, then **Replay run**.*
-  Ezreal shows up in almost half of pro games but loses in solo queue. The agent tested three ideas. Only the ultimate change cuts pro power without touching solo queue, and the verifier passes it.
+- *Agent run tab: Blitzcrank is already selected. Click **Replay run**.*
+  Blitzcrank wins 53% of games and gets banned in over a quarter of Korean games. The agent tests three ideas. Less damage and less range miss their targets, but one more second on the hook cooldown lands in both, and the verifier passes it.
 - *Click the **Patch notes** tab and scroll slowly.*
   Then it writes the patch notes, in the same format players already read every two weeks, with every number checked against the change.
 - *Click the **Safety checks** tab, then **Run attacks**.*

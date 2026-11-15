@@ -18,8 +18,8 @@ Most balance work shouldn't be automated. **[click]** Champions and art are crea
 On the live patch, it scanned 171 champions, **[click]** flagged 27, **[click]** and planned six changes for 26.23. Here's the demo.
 
 **Demo** (1:05)
-- *Agent run tab: click **Ezreal**, then **Replay run**.*
-  Ezreal is in almost half of pro games but loses in solo queue. The agent tests three ideas. Only the ultimate change cuts pro power without touching solo queue, and the verifier passes it.
+- *Agent run tab: Blitzcrank is already selected. Click **Replay run**.*
+  Blitzcrank wins 53% of games and gets banned in over a quarter of Korean games. The agent tests three ideas. Less damage and less range miss their targets, but one more second on the hook cooldown lands in both, and the verifier passes it.
 - *Patch notes tab: scroll slowly.*
   It writes the patch notes in the format players already know, with every number checked against the change.
 - *Safety checks tab: click **Run attacks**.*
