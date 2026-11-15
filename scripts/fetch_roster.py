@@ -71,6 +71,8 @@ def main() -> int:
             print(f"{region:6s} {lane:8s} {len(rows)} rows, {kept} main-lane champions", flush=True)
             time.sleep(2)
     path = ROOT / "data" / "stats" / "roster.csv"
+    if path.exists():  # keep other patches' rows; replace this patch's
+        out = [r for r in csv.DictReader(open(path, encoding="utf-8")) if r["patch"] != label] + out
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(out[0]))
         w.writeheader()

@@ -1,0 +1,108 @@
+# Riot's Summoner's Rift champion changes, read from the official patch notes (leagueoflegends.com,
+# /news/game-updates/league-of-legends-patch-26-NN-notes/), read 2026-11-15.
+# Champions section plus SR mid-patch updates; ARAM, Arena, Classic and items excluded.
+# direction: buff / nerf / adjust (mixed or rework). Judged from the old => new numbers and designer text.
+# Eval only: loaded by eval/, never by agent/.
+"26.17":
+  - {champion: "Aurelion Sol", direction: buff, summary: "Q mana cost and W cooldown down"}
+  - {champion: "Cho'Gath", direction: buff, summary: "E base damage up"}
+  - {champion: "Graves", direction: nerf, summary: "Q bonus AD ratios down"}
+  - {champion: "Irelia", direction: buff, summary: "Q AD ratio, W and R AP ratios up"}
+  - {champion: "LeBlanc", direction: buff, summary: "AS ratio, W and RW AP ratios up"}
+  - {champion: "Nasus", direction: nerf, summary: "Passive life steal down"}
+  - {champion: "Nocturne", direction: nerf, summary: "Health and armor down"}
+  - {champion: "Qiyana", direction: buff, summary: "Q damage and AD ratio up"}
+  - {champion: "Thresh", direction: nerf, summary: "E damage and AP ratio down"}
+  - {champion: "Trundle", direction: buff, summary: "W bonus attack speed up"}
+  - {champion: "Vayne", direction: nerf, summary: "Top lane: Q mana, W true damage down"}
+  - {champion: "Xerath", direction: nerf, summary: "Health and Q damage down"}
+  - {champion: "Yasuo", direction: buff, summary: "Crit damage penalty reduced"}
+  - {champion: "Yone", direction: buff, summary: "Crit damage penalty reduced"}
+"26.18":
+  - {champion: "Bard", direction: nerf, summary: "Base armor and armor growth down"}
+  - {champion: "Cassiopeia", direction: adjust, summary: "Laning damage cut, Q and R AP ratios up"}
+  - {champion: "Ekko", direction: buff, summary: "Q mana down, return AP ratio up"}
+  - {champion: "Kassadin", direction: buff, summary: "Q AP ratio and R damage up"}
+  - {champion: "Master Yi", direction: buff, summary: "Armor growth and R move speed up"}
+  - {champion: "Nautilus", direction: nerf, summary: "Base AD and Q damage down"}
+  - {champion: "Seraphine", direction: nerf, summary: "E cooldown up to flat 11s"}
+  - {champion: "Syndra", direction: nerf, summary: "Passive mana down, W cooldown up"}
+  - {champion: "Viego", direction: buff, summary: "AD growth and passive heal up"}
+  - {champion: "Zaahen", direction: buff, summary: "Q2 damage up"}
+  - {champion: "Zeri", direction: nerf, summary: "W AD ratios down"}
+"26.19":
+  - {champion: "Aatrox", direction: buff, summary: "W cooldown down, E heal ratio up"}
+  - {champion: "Aphelios", direction: buff, summary: "Most weapons buffed"}
+  - {champion: "Aurora", direction: buff, summary: "E damage and R duration up"}
+  - {champion: "Draven", direction: buff, summary: "Base AD up"}
+  - {champion: "Elise", direction: buff, summary: "Passive damage and W attack speed up"}
+  - {champion: "Fiora", direction: buff, summary: "Health growth and R heal up"}
+  - {champion: "Kha'Zix", direction: buff, summary: "Passive, W slow and evolved E range up"}
+  - {champion: "Lillia", direction: buff, summary: "Base armor and R sleep up"}
+  - {champion: "Lucian", direction: adjust, summary: "Passive on-hit down, Q damage up"}
+  - {champion: "Master Yi", direction: buff, summary: "Q refund keeps scaling with haste"}
+  - {champion: "Nasus", direction: nerf, summary: "Q bonus damage down"}
+  - {champion: "Nocturne", direction: nerf, summary: "R cooldown up"}
+  - {champion: "Poppy", direction: nerf, summary: "Q monster damage cap down"}
+  - {champion: "Rumble", direction: adjust, summary: "Overheat AS down, monster cap up"}
+  - {champion: "Ryze", direction: nerf, summary: "Q damage and E mana worse"}
+  - {champion: "Vi", direction: nerf, summary: "Passive shield and base AD down"}
+  - {champion: "Volibear", direction: buff, summary: "Passive attack speed and damage up"}
+"26.20":
+  - {champion: "Ambessa", direction: nerf, summary: "Passive damage down"}
+  - {champion: "Ashe", direction: nerf, summary: "AD growth 3.5 to 3"}
+  - {champion: "Cassiopeia", direction: nerf, summary: "Base health and mana down"}
+  - {champion: "Diana", direction: buff, summary: "W shield ratio 11% to 14%"}
+  - {champion: "Kennen", direction: buff, summary: "E bonus attack speed up"}
+  - {champion: "Kindred", direction: buff, summary: "W monster bonus and E slow up"}
+  - {champion: "K'Sante", direction: nerf, summary: "W mana up, damage reduction down"}
+  - {champion: "Lillia", direction: buff, summary: "R duration scales to 3s"}
+  - {champion: "Lucian", direction: buff, summary: "AD growth 2.5 to 2.9"}
+  - {champion: "Mordekaiser", direction: buff, summary: "Q scaling up, R cooldown down"}
+  - {champion: "Neeko", direction: buff, summary: "E damage and root up"}
+  - {champion: "Smolder", direction: buff, summary: "Passive damage and R heal up"}
+  - {champion: "Swain", direction: buff, summary: "MR and W damage up, armor down"}
+  - {champion: "Tahm Kench", direction: buff, summary: "Q healing up"}
+  - {champion: "Vayne", direction: buff, summary: "Q mana cost down"}
+  - {champion: "Yunara", direction: nerf, summary: "Q on-hit down, W slows don't stack"}
+"26.21":
+  - {champion: "Azir", direction: buff, summary: "Mana growth 40 to 50"}
+  - {champion: "Caitlyn", direction: adjust, summary: "Headshot down, Q damage up"}
+  - {champion: "Darius", direction: buff, summary: "Q max-rank cooldown 4s"}
+  - {champion: "Jinx", direction: nerf, summary: "Base health and AD growth down"}
+  - {champion: "Lee Sin", direction: nerf, summary: "W cooldown up, R damage down"}
+  - {champion: "Locke", direction: adjust, summary: "Mana down, scaling up"}
+  - {champion: "Miss Fortune", direction: buff, summary: "E damage and R crit damage up"}
+  - {champion: "Nidalee", direction: nerf, summary: "W damage and E attack speed down"}
+  - {champion: "Nunu & Willump", direction: buff, summary: "R max damage up"}
+  - {champion: "Orianna", direction: buff, summary: "Q and W AP ratios up"}
+  - {champion: "Qiyana", direction: nerf, summary: "Q damage partly reverted"}
+  - {champion: "Rammus", direction: nerf, summary: "W resist scaling down"}
+  - {champion: "Ryze", direction: buff, summary: "Q damage, move speed and W AP up"}
+  - {champion: "Sion", direction: buff, summary: "Health growth and R damage up"}
+  - {champion: "Taliyah", direction: buff, summary: "E damage and AP ratio up"}
+  - {champion: "Taric", direction: buff, summary: "Spells cast on untargetable allies"}
+  - {champion: "Tristana", direction: nerf, summary: "Early Q attack speed down"}
+  - {champion: "Twisted Fate", direction: buff, summary: "R reveals untargetable units"}
+  - {champion: "Varus", direction: adjust, summary: "Mid-patch: passive and Q up, W down"}
+  - {champion: "Vel'Koz", direction: buff, summary: "Passive damage and AP ratio up"}
+  - {champion: "Viktor", direction: nerf, summary: "Move speed and Q shield down"}
+  - {champion: "Wukong", direction: adjust, summary: "Regen up, W armor scaling down"}
+  - {champion: "Xin Zhao", direction: buff, summary: "Q AD and E AS scaling up"}
+  - {champion: "Yone", direction: nerf, summary: "Q AD ratio 110% to 105%"}
+  - {champion: "Zyra", direction: buff, summary: "W seed recharge down"}
+"26.22":
+  - {champion: "Aurelion Sol", direction: buff, summary: "E damage and AP ratio up"}
+  - {champion: "Corki", direction: buff, summary: "R and Big One damage up"}
+  - {champion: "Kayle", direction: buff, summary: "Q and R cooldowns down"}
+  - {champion: "Locke", direction: nerf, summary: "Q stack damage and W duration down"}
+  - {champion: "Maokai", direction: buff, summary: "Q max-health damage up"}
+  - {champion: "Mel", direction: adjust, summary: "Midscope: early power moved to scaling"}
+  - {champion: "Naafiri", direction: buff, summary: "Q heal and W bonus AD up"}
+  - {champion: "Rumble", direction: buff, summary: "R damage and AP ratio up"}
+  - {champion: "Shen", direction: buff, summary: "Q monster damage up"}
+  - {champion: "Smolder", direction: buff, summary: "W explosion damage up"}
+  - {champion: "Thresh", direction: nerf, summary: "AD and R damage down"}
+  - {champion: "Viktor", direction: buff, summary: "Health growth and R AP ratio up"}
+  - {champion: "Yasuo", direction: nerf, summary: "Q AD ratio 105% to 100%"}
+  - {champion: "Zaahen", direction: buff, summary: "Q cooldown down"}

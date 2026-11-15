@@ -214,6 +214,28 @@ tr.us td:first-child{box-shadow:inset 3px 0 0 var(--red)}
 .gh{color:var(--ink3);font-size:12px;font-weight:600;padding:6px 4px}
 .foot{border-top:1px solid var(--line);padding-block:24px;color:var(--ink3);font-size:13px}
 
+
+/* backtest */
+.btgroup + .btgroup{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.btlab{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.btrow{display:grid;grid-template-columns:260px minmax(0,1fr) 110px;gap:16px;align-items:center;padding:10px 0}
+@media (max-width:700px){.btrow{grid-template-columns:minmax(0,1fr) 90px}.btrow .btbar{grid-column:1/-1;grid-row:2}}
+.btname{display:flex;flex-direction:column;min-width:0}
+.btrow.us .btname b{color:var(--red)}
+.btbar{height:22px;background:var(--sub);border-radius:6px;overflow:hidden}
+.btbar i{display:block;height:100%;width:0;border-radius:6px;transition:width 1s cubic-bezier(.2,.8,.2,1)}
+.btnum{display:flex;flex-direction:column;align-items:flex-end}
+.btnum b{font-family:var(--display);font-size:24px;line-height:1}
+.btp{display:grid;grid-template-columns:150px minmax(0,1fr) 200px;gap:16px;align-items:center;padding:14px 0;border-top:1px solid var(--line)}
+.btp:first-child{border-top:none}
+@media (max-width:800px){.btp{grid-template-columns:minmax(0,1fr)}}
+.btpl{display:flex;flex-direction:column}
+.btchips{display:flex;flex-wrap:wrap;gap:6px;min-width:0}
+.btchip{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;padding:5px 10px;border-radius:999px}
+.btchip .arr{font-size:10px}
+.btriot{text-align:right}
+@media (max-width:800px){.btriot{text-align:left}}
+
 /* patch notes, laid out like a live-service patch notes article */
 .pn{max-width:820px;margin:0 auto}
 .pn .crumb{font-family:var(--mono);font-size:12px;color:var(--ink3)}
@@ -320,11 +342,10 @@ tr.us td:first-child{box-shadow:inset 3px 0 0 var(--red)}
 </section>
 
 <section class="wrap view" id="v-backtest" hidden>
-  <div class="vhead"><div><h2>Backtest against Riot’s real patches</h2><p>For six champions over patches 26.16 to 26.21, each system saw only that patch’s data and made a call. We scored it against what Riot changed in the next patch. Patches 26.19 to 26.21 were held out while we tuned.</p></div></div>
-  <div class="panel"><div class="tblwrap"><table id="score"></table></div>
-    <p class="small muted" style="margin:12px 0 0">The rule baseline scores well on agreement because Riot holds most champions most patches, and the rule almost always says hold. It never caught a real change.</p></div>
-  <div class="panel"><div class="ph"><div><h3>Call by call</h3><div class="muted small">Top: SplitPatch’s call. Bottom: what Riot did next patch. Outlined: they match.</div></div></div><div class="tblwrap"><div class="grid6" id="grid6"></div></div>
-    <p class="small muted" style="margin:12px 0 0">Six of SplitPatch’s twelve false alarms are Garen nerfs, raised when the strong line was a flat 52.5%. Garen is banned a lot, so the ban-rate line now clears him in 26.22. The backtest hasn’t been rerun with that line, because it needs every champion’s ban rate for each old patch.</p></div>
+  <div class="vhead"><div><h2>Did it pick the champions Riot actually changed?</h2><p>We replayed the scan on every patch from 26.16 to 26.21, using only that patch’s stats, and checked its picks against Riot’s real patch notes for the next patch.</p></div></div>
+  <div class="panel"><div class="ph"><div><h3>Picks Riot also changed, in the same direction</h3><div class="muted small" id="btsub"></div></div></div><div id="btbars"></div></div>
+  <div class="panel"><div class="ph"><div><h3>Patch by patch</h3><div class="muted small">SplitPatch’s picks from each patch’s stats, checked against Riot’s next patch notes.</div></div><div class="legend" id="btlegend" style="margin:0"></div></div><div id="bttl"></div></div>
+  <p class="small muted" id="btfoot" style="margin:14px 2px 0"></p>
 </section>
 </main>
 <footer class="wrap foot">SplitPatch · DevHacks ’26 · Stats: lolalytics (Emerald+), gol.gg. Kits: League of Legends Wiki, checked by hand. The simulator is a simplified model, not the game.</footer>
@@ -488,20 +509,29 @@ $('#attack').addEventListener('click',()=>{atimers.forEach(clearTimeout);atimers
 });
 
 /* ---------- backtest ---------- */
-const bt=D.backtest,rows=bt.rows,sa=bt.scores.all;
-const caught=k=>rows.filter(r=>r.riot!=='hold'&&(r[k]||{}).direction===r.riot).length,nChg=rows.filter(r=>r.riot!=='hold').length;
-const fa=k=>rows.filter(r=>r.riot==='hold'&&(r[k]||{}).direction&&(r[k]||{}).direction!=='hold').length;
-const frac=s=>{const [a,b]=s.split('/').map(Number);return b?a/b:0};
-const meter=(txt,f,col)=>`<div class="meter"><span class="num" style="min-width:48px">${txt}</span><span class="bar"><i data-w="${(f*100).toFixed(0)}" style="width:0;background:${col}"></i></span></div>`;
-const SYS=[['rule','Rule baseline','Flags on win rate only'],['one_shot','One-shot LLM','Same data, one prompt, no tools'],['splitpatch','SplitPatch','Agent + simulator + verifier']];
-$('#score').innerHTML=`<tr><th>System</th><th>Riot changes caught</th><th>False alarms</th><th>Proposals that pass the verifier</th><th>Agreement, all calls</th></tr>`+SYS.map(([k,n,d])=>{
-  const ver=k==='rule'?'—':k==='one_shot'?sa.verification.one_shot_passed:sa.verification.splitpatch_passed;
-  return `<tr class="${k==='splitpatch'?'us':''}"><td><b>${n}</b><div class="small muted">${d}</div></td><td>${meter(caught(k)+'/'+nChg,caught(k)/nChg,'var(--ok)')}</td><td>${meter(String(fa(k)),fa(k)/31,'var(--nerf)')}</td><td>${ver==='—'?'<span class="muted">no patch written</span>':meter(ver,frac(ver),'var(--ok)')}</td><td class="n">${sa[k].direction_agreement}</td></tr>`}).join('');
-const champsB=[...new Set(rows.map(r=>r.champion))],patches=[...new Set(rows.map(r=>r.patch))].sort();
-const ARW={nerf:['▼','var(--nerf)','var(--nerf-soft)'],buff:['▲','var(--buff)','var(--buff-soft)'],hold:['–','#86847E','var(--hold-soft)']};
-const g6=$('#grid6');g6.style.gridTemplateColumns=`110px repeat(${patches.length},minmax(64px,1fr))`;
-g6.innerHTML='<div class="gh"></div>'+patches.map(p=>`<div class="gh" style="text-align:center">${p}</div>`).join('')+champsB.map(c=>`<div class="gh" style="color:var(--ink)">${esc(c)}</div>`+patches.map(p=>{const r=rows.find(x=>x.champion===c&&x.patch===p);if(!r)return '<div></div>';const s=r.splitpatch.direction,rt=r.riot,a=ARW[s],b=ARW[rt],ok=s===rt;
-  return `<div class="cell" style="background:${a[2]};${ok?'box-shadow:inset 0 0 0 2px var(--ok)':''}" title="SplitPatch: ${s}. Riot next patch: ${rt}"><span style="color:${a[1]}">${a[0]} ${s}</span><small>Riot: ${b[0]} ${rt}</small></div>`}).join('')).join('');
+(function(){
+  const B=D.roster_bt;if(!B){$('#btbars').innerHTML='<p class="muted">Run eval/roster_backtest.py to fill this view.</p>';return}
+  const T=B.totals,pc=(a,b)=>b?Math.round(a/b*100):0;
+  $('#btsub').textContent=`${T.splitpatch.picks} picks over ${B.patches.length} patches. Each system gets the same number of nerfs and buffs per patch. SplitPatch matched Riot about ${Math.round(T.splitpatch.next/T.chance.next)}× as often as random picks, and more often than the win-rate rule.`;
+  const bar=(name,desc,hit,of,col,bold)=>`<div class="btrow${bold?' us':''}"><div class="btname"><b>${name}</b><span class="muted small">${desc}</span></div><div class="btbar"><i data-w="${pc(hit,of)}" style="background:${col}"></i></div><div class="btnum"><b class="num">${pc(hit,of)}%</b><span class="muted small num">${typeof hit==='number'&&hit%1?hit.toFixed(1):hit} of ${of}</span></div></div>`;
+  $('#btbars').innerHTML=
+    `<div class="btgroup"><div class="btlab">Next patch</div>`+
+    bar('SplitPatch','whole-roster scan, ban-rate line, pro presence',T.splitpatch.next,T.splitpatch.picks,'var(--red)',1)+
+    bar('Win-rate rule','nerf the highest win rates, buff the lowest',T.rule.next,T.rule.picks,'#55534D')+
+    bar('Random picks','expected by chance',T.chance.next,T.chance.picks,'#B9B7B0')+`</div>`+
+    `<div class="btgroup"><div class="btlab">Next patch or the one after</div>`+
+    bar('SplitPatch','',T.splitpatch.within2,T.splitpatch.picks,'var(--red)',1)+
+    bar('Win-rate rule','',T.rule.within2,T.rule.picks,'#55534D')+`</div>`;
+  const ST={hit:['✓','var(--ok)','var(--ok-soft)','Riot did it next patch'],late:['✓','#A15C00','#FFF1DC','Riot did it a patch later'],opp:['✕','var(--nerf)','var(--nerf-soft)','Riot went the other way'],none:['–','#86847E','var(--hold-soft)','Riot didn’t change it']};
+  const st=p=>p.next?'hit':p.within2?'late':(p.riot_next&&p.riot_next!=='adjust'&&p.riot_next!==p.dir)?'opp':'none';
+  $('#btlegend').innerHTML=Object.values(ST).map(s=>`<span class="chip" style="color:${s[1]};background:${s[2]}">${s[3]}</span>`).join('');
+  $('#bttl').innerHTML=B.patches.map(P=>{
+    const hits=P.splitpatch.filter(p=>p.next).length, rc=P.riot.filter(r=>r.dir!=='adjust'&&r.in_data), fl=rc.filter(r=>r.flagged).length;
+    return `<div class="btp"><div class="btpl"><b class="num">${P.data_patch} → ${P.riot_patch}</b><span class="muted small">${hits} of ${P.splitpatch.length} matched</span></div>
+      <div class="btchips">${P.splitpatch.map(p=>{const s=ST[st(p)];return `<span class="btchip" style="background:${s[2]};color:${s[1]}" title="${esc(p.champion)}: SplitPatch ${p.dir}. ${s[3]}${p.riot_next?' ('+p.riot_next+')':''}"><span class="arr">${p.dir==='nerf'?'▼':'▲'}</span>${esc(p.champion)}<b>${s[0]}</b></span>`}).join('')}</div>
+      <div class="btriot muted small">Riot changed ${rc.length} · SplitPatch had flagged ${fl}</div></div>`}).join('');
+  $('#btfoot').innerHTML=`Riot’s changes come from the official patch notes for 26.17 to 26.22 (Summoner’s Rift champions only). ▼ = SplitPatch called a nerf, ▲ = a buff. Riot changed ${T.riot_changes} champions in a clear direction over this window; SplitPatch’s scan had flagged ${T.riot_flagged} of them the patch before. Most Riot changes come from things stats don’t show, like reworks, feel and upcoming content, so a stats-only scan can’t catch them. Picks from 26.21 can only be checked one patch ahead. In an earlier six-champion test, all 14 patches SplitPatch wrote passed the verifier, against 8 of 12 from a one-shot LLM.`;
+})();
 
 /* ---------- patch notes ---------- */
 (function(){
@@ -582,7 +612,7 @@ const VIEWS=['run','notes','roster','safety','backtest'];
 function route(){const v=(location.hash||'#run').slice(1);const name=VIEWS.includes(v)?v:'run';
   VIEWS.forEach(k=>$('#v-'+k).hidden=k!==name);
   document.querySelectorAll('.nav a').forEach(a=>a.classList.toggle('on',a.dataset.v===name));
-  if(name==='backtest')setTimeout(()=>document.querySelectorAll('.meter i').forEach(i=>i.style.width=i.dataset.w+'%'),60);
+  if(name==='backtest'){document.querySelectorAll('.btbar i').forEach(i=>i.style.width='0');setTimeout(()=>document.querySelectorAll('.btbar i').forEach(i=>i.style.width=i.dataset.w+'%'),60)}
   if(name==='roster')renderChart();}
 addEventListener('hashchange',route);
 renderFilters();renderRun(false);route();

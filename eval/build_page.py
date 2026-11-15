@@ -49,7 +49,9 @@ def compact(d):
     points = [{"c": r["champion"], "lane": r["lane"], "cat": r["category"], "sev": r.get("severity"),
                "presence": r.get("presence"), "g": r["stats"].get("global"), "kr": r["stats"].get("kr")}
               for r in sc["results"]]
-    return {"patch": d["run"]["patch"], "runs": runs,
+    rb = ROOT / "runs" / "backtest" / "roster_backtest.json"
+    roster_bt = json.loads(rb.read_text(encoding="utf-8")) if rb.exists() else None
+    return {"patch": d["run"]["patch"], "runs": runs, "roster_bt": roster_bt,
             "scan": {k: sc[k] for k in ("avg_ban_rate", "n_champions", "flagged", "selected")} | {"points": points},
             "injection": d["injection"], "evidence": d["evidence"], "backtest": d["backtest"]}
 

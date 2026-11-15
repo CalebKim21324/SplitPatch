@@ -1,0 +1,1386 @@
+{
+ "patches": [
+  {
+   "data_patch": "26.16",
+   "riot_patch": "26.17",
+   "n_champions": 173,
+   "flagged": {
+    "nerf": 26,
+    "pro_jail": 5,
+    "buff": 2
+   },
+   "splitpatch": [
+    {
+     "champion": "Nasus",
+     "dir": "nerf",
+     "riot_next": "nerf",
+     "riot_after": null,
+     "next": true,
+     "within2": true,
+     "category": "OVERALL_STRONG"
+    },
+    {
+     "champion": "Jinx",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "SOLOQ_ONLY_STRONG"
+    },
+    {
+     "champion": "Rammus",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "SOLOQ_ONLY_STRONG"
+    },
+    {
+     "champion": "Ezreal",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "PRO_JAIL"
+    },
+    {
+     "champion": "K'Sante",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "PRO_JAIL"
+    },
+    {
+     "champion": "Mel",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "OVERALL_WEAK"
+    },
+    {
+     "champion": "Viego",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": "buff",
+     "next": false,
+     "within2": true,
+     "category": "POPULAR_WEAK"
+    }
+   ],
+   "rule": [
+    {
+     "champion": "Rammus",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Nasus",
+     "dir": "nerf",
+     "riot_next": "nerf",
+     "riot_after": null,
+     "next": true,
+     "within2": true
+    },
+    {
+     "champion": "Jinx",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Vex",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Taric",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Mel",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Ezreal",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    }
+   ],
+   "chance_hits": 0.27,
+   "riot": [
+    {
+     "champion": "Aurelion Sol",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Cho'Gath",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Graves",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Irelia",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "LeBlanc",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Nasus",
+     "dir": "nerf",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Nocturne",
+     "dir": "nerf",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Qiyana",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Thresh",
+     "dir": "nerf",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Trundle",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Vayne",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Xerath",
+     "dir": "nerf",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Yasuo",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Yone",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    }
+   ]
+  },
+  {
+   "data_patch": "26.17",
+   "riot_patch": "26.18",
+   "n_champions": 173,
+   "flagged": {
+    "nerf": 20,
+    "pro_jail": 3,
+    "buff": 4
+   },
+   "splitpatch": [
+    {
+     "champion": "Nasus",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": "nerf",
+     "next": false,
+     "within2": true,
+     "category": "OVERALL_STRONG"
+    },
+    {
+     "champion": "Thresh",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "SOLOQ_ONLY_STRONG"
+    },
+    {
+     "champion": "Rammus",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "SOLOQ_ONLY_STRONG"
+    },
+    {
+     "champion": "Ezreal",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "PRO_JAIL"
+    },
+    {
+     "champion": "Ryze",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": "nerf",
+     "next": false,
+     "within2": true,
+     "category": "PRO_JAIL"
+    },
+    {
+     "champion": "K'Sante",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "POPULAR_WEAK"
+    },
+    {
+     "champion": "Mel",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "OVERALL_WEAK"
+    }
+   ],
+   "rule": [
+    {
+     "champion": "Rammus",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Taric",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Jinx",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Warwick",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Vex",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Mel",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Ezreal",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    }
+   ],
+   "chance_hits": 0.2,
+   "riot": [
+    {
+     "champion": "Bard",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Cassiopeia",
+     "dir": "adjust",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Ekko",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Kassadin",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Master Yi",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Nautilus",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Seraphine",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Syndra",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Viego",
+     "dir": "buff",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Zaahen",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Zeri",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    }
+   ]
+  },
+  {
+   "data_patch": "26.18",
+   "riot_patch": "26.19",
+   "n_champions": 173,
+   "flagged": {
+    "nerf": 20,
+    "pro_jail": 5,
+    "buff": 1
+   },
+   "splitpatch": [
+    {
+     "champion": "Nasus",
+     "dir": "nerf",
+     "riot_next": "nerf",
+     "riot_after": null,
+     "next": true,
+     "within2": true,
+     "category": "OVERALL_STRONG"
+    },
+    {
+     "champion": "Thresh",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "SOLOQ_ONLY_STRONG"
+    },
+    {
+     "champion": "Jinx",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "SOLOQ_ONLY_STRONG"
+    },
+    {
+     "champion": "Ezreal",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "PRO_JAIL"
+    },
+    {
+     "champion": "Orianna",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "PRO_JAIL"
+    },
+    {
+     "champion": "Mel",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "OVERALL_WEAK"
+    }
+   ],
+   "rule": [
+    {
+     "champion": "Rammus",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Kog'Maw",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Jinx",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Vex",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Braum",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Mel",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    }
+   ],
+   "chance_hits": 0.2,
+   "riot": [
+    {
+     "champion": "Aatrox",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Aphelios",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Aurora",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Draven",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Elise",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Fiora",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Kha'Zix",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Lillia",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Lucian",
+     "dir": "adjust",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Master Yi",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Nasus",
+     "dir": "nerf",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Nocturne",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Poppy",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Rumble",
+     "dir": "adjust",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Ryze",
+     "dir": "nerf",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Vi",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Volibear",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    }
+   ]
+  },
+  {
+   "data_patch": "26.19",
+   "riot_patch": "26.20",
+   "n_champions": 173,
+   "flagged": {
+    "nerf": 18,
+    "pro_jail": 5,
+    "buff": 3
+   },
+   "splitpatch": [
+    {
+     "champion": "Jinx",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": "nerf",
+     "next": false,
+     "within2": true,
+     "category": "SOLOQ_ONLY_STRONG"
+    },
+    {
+     "champion": "Blitzcrank",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "OVERALL_STRONG"
+    },
+    {
+     "champion": "Rammus",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": "nerf",
+     "next": false,
+     "within2": true,
+     "category": "SOLOQ_ONLY_STRONG"
+    },
+    {
+     "champion": "Ezreal",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "PRO_JAIL"
+    },
+    {
+     "champion": "Ryze",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": "buff",
+     "next": false,
+     "within2": false,
+     "category": "PRO_JAIL"
+    },
+    {
+     "champion": "Jayce",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "POPULAR_WEAK"
+    },
+    {
+     "champion": "Mel",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "OVERALL_WEAK"
+    }
+   ],
+   "rule": [
+    {
+     "champion": "Rammus",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": "nerf",
+     "next": false,
+     "within2": true
+    },
+    {
+     "champion": "Jinx",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": "nerf",
+     "next": false,
+     "within2": true
+    },
+    {
+     "champion": "Warwick",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Taric",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": "buff",
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Vex",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Ryze",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": "buff",
+     "next": false,
+     "within2": true
+    },
+    {
+     "champion": "Mel",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    }
+   ],
+   "chance_hits": 0.27,
+   "riot": [
+    {
+     "champion": "Ambessa",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Ashe",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Cassiopeia",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Diana",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Kennen",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Kindred",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "K'Sante",
+     "dir": "nerf",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Lillia",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Lucian",
+     "dir": "buff",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Mordekaiser",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Neeko",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Smolder",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Swain",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Tahm Kench",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Vayne",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Yunara",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    }
+   ]
+  },
+  {
+   "data_patch": "26.20",
+   "riot_patch": "26.21",
+   "n_champions": 173,
+   "flagged": {
+    "nerf": 12,
+    "pro_jail": 4,
+    "buff": 4
+   },
+   "splitpatch": [
+    {
+     "champion": "Rammus",
+     "dir": "nerf",
+     "riot_next": "nerf",
+     "riot_after": null,
+     "next": true,
+     "within2": true,
+     "category": "SOLOQ_ONLY_STRONG"
+    },
+    {
+     "champion": "Thresh",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": "nerf",
+     "next": false,
+     "within2": true,
+     "category": "SOLOQ_ONLY_STRONG"
+    },
+    {
+     "champion": "Blitzcrank",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "OVERALL_STRONG"
+    },
+    {
+     "champion": "Ezreal",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "PRO_JAIL"
+    },
+    {
+     "champion": "Orianna",
+     "dir": "nerf",
+     "riot_next": "buff",
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "PRO_JAIL"
+    },
+    {
+     "champion": "Ryze",
+     "dir": "buff",
+     "riot_next": "buff",
+     "riot_after": null,
+     "next": true,
+     "within2": true,
+     "category": "OVERALL_WEAK"
+    },
+    {
+     "champion": "Jayce",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "POPULAR_WEAK"
+    }
+   ],
+   "rule": [
+    {
+     "champion": "Rammus",
+     "dir": "nerf",
+     "riot_next": "nerf",
+     "riot_after": null,
+     "next": true,
+     "within2": true
+    },
+    {
+     "champion": "Jinx",
+     "dir": "nerf",
+     "riot_next": "nerf",
+     "riot_after": null,
+     "next": true,
+     "within2": true
+    },
+    {
+     "champion": "Wukong",
+     "dir": "nerf",
+     "riot_next": "adjust",
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Kog'Maw",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Warwick",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Ryze",
+     "dir": "buff",
+     "riot_next": "buff",
+     "riot_after": null,
+     "next": true,
+     "within2": true
+    },
+    {
+     "champion": "Mel",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": "adjust",
+     "next": false,
+     "within2": false
+    }
+   ],
+   "chance_hits": 0.38,
+   "riot": [
+    {
+     "champion": "Azir",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Caitlyn",
+     "dir": "adjust",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Darius",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Jinx",
+     "dir": "nerf",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Lee Sin",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Locke",
+     "dir": "adjust",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Miss Fortune",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Nidalee",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Nunu & Willump",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Orianna",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Qiyana",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Rammus",
+     "dir": "nerf",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Ryze",
+     "dir": "buff",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Sion",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Taliyah",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Taric",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Tristana",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Twisted Fate",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Varus",
+     "dir": "adjust",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Vel'Koz",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Viktor",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Wukong",
+     "dir": "adjust",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Xin Zhao",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Yone",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Zyra",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    }
+   ]
+  },
+  {
+   "data_patch": "26.21",
+   "riot_patch": "26.22",
+   "n_champions": 173,
+   "flagged": {
+    "nerf": 18,
+    "pro_jail": 7,
+    "buff": 1
+   },
+   "splitpatch": [
+    {
+     "champion": "Thresh",
+     "dir": "nerf",
+     "riot_next": "nerf",
+     "riot_after": null,
+     "next": true,
+     "within2": true,
+     "category": "SOLOQ_ONLY_STRONG"
+    },
+    {
+     "champion": "Blitzcrank",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "OVERALL_STRONG"
+    },
+    {
+     "champion": "Zyra",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "SOLOQ_ONLY_STRONG"
+    },
+    {
+     "champion": "Qiyana",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "PRO_JAIL"
+    },
+    {
+     "champion": "Ezreal",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "PRO_JAIL"
+    },
+    {
+     "champion": "Lee Sin",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false,
+     "category": "POPULAR_WEAK"
+    }
+   ],
+   "rule": [
+    {
+     "champion": "Nilah",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Rammus",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Kog'Maw",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Vex",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Taric",
+     "dir": "nerf",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    },
+    {
+     "champion": "Qiyana",
+     "dir": "buff",
+     "riot_next": null,
+     "riot_after": null,
+     "next": false,
+     "within2": false
+    }
+   ],
+   "chance_hits": 0.14,
+   "riot": [
+    {
+     "champion": "Aurelion Sol",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Corki",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Kayle",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Locke",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Maokai",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Mel",
+     "dir": "adjust",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Naafiri",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Rumble",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Shen",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Smolder",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Thresh",
+     "dir": "nerf",
+     "flagged": true,
+     "in_data": true
+    },
+    {
+     "champion": "Viktor",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Yasuo",
+     "dir": "nerf",
+     "flagged": false,
+     "in_data": true
+    },
+    {
+     "champion": "Zaahen",
+     "dir": "buff",
+     "flagged": false,
+     "in_data": true
+    }
+   ]
+  }
+ ],
+ "totals": {
+  "splitpatch": {
+   "picks": 40,
+   "next": 5,
+   "within2": 11
+  },
+  "rule": {
+   "picks": 40,
+   "next": 4,
+   "within2": 7
+  },
+  "chance": {
+   "picks": 40,
+   "next": 1.5
+  },
+  "riot_changes": 89,
+  "riot_flagged": 13
+ }
+}
