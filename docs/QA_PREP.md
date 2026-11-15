@@ -60,7 +60,7 @@ There are two separate questions there. The first is whether a patch is valid, m
 
 **Thirteen percent sounds low.**
 
-It is low, and I show it on purpose because it's the honest number. Most of Riot's changes in a given patch come from things a stats scan can't see, like reworks, champions that feel bad to play against, upcoming skins and events, or pro play at Worlds. Over those six patches Riot made 89 clear buffs and nerfs, and a lot of them had nothing to do with win rate. So the fair comparison is against the alternatives, and SplitPatch beats both of them: about three times random, and ahead of the win-rate rule on both measures. It also called some changes early. It flagged Viego for a buff a patch before Riot buffed him, and it flagged Qiyana for a nerf before Riot nerfed her in 26.21. Those are the cases where a designer would want an early warning.
+It is low, and I show it on purpose because it's the honest number. Most of Riot's changes in a given patch come from things a stats scan can't see, like reworks, champions that feel bad to play against, upcoming skins and events, or pro play at Worlds. Over those six patches Riot made 89 clear buffs and nerfs, and a lot of them had nothing to do with win rate. So the fair comparison is against the alternatives, and SplitPatch beats both of them: about three times random, and ahead of the win-rate rule on both measures. It also called some changes early. It flagged Viego for a buff a patch before Riot buffed him in 26.18, and in my earlier six-champion test it flagged Qiyana for a nerf several patches before Riot nerfed her in 26.21. Those are the cases where a designer would want an early warning.
 
 **Did you compare against just asking an LLM?**
 
