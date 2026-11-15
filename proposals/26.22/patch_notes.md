@@ -1,6 +1,8 @@
-# Patch 26.22: SplitPatch recommended balance changes
+# Patch 26.23: SplitPatch recommended balance changes
 
-_Generated 2026-11-14 23:10 UTC. Every change below passed the independent verifier, and every line and tooltip passed the notes checker._
+_Built from patch 26.22 data._
+
+_Generated 2026-11-15 06:32 UTC. Every change below passed the independent verifier, and every line and tooltip passed the notes checker._
 
 ## Champions
 

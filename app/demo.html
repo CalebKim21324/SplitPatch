@@ -278,7 +278,7 @@ tr.us td:first-child{box-shadow:inset 3px 0 0 var(--red)}
 </section>
 
 <section class="wrap view" id="v-run">
-  <div class="vhead"><div><h2>Watch the agent patch a champion</h2><p>Pick a champion from this patch. Each step below is the real logged run, replayed. The agent only sees validated complaint tags, never raw Reddit text.</p></div>
+  <div class="vhead"><div><h2>Watch the agent patch a champion</h2><p>Pick one of the six champions in the proposed patch. Each step below is the real logged run, replayed. The agent only sees validated complaint tags, never raw Reddit text.</p></div>
     <button class="btn primary" id="replay"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z" fill="currentColor"/></svg>Replay run</button></div>
   <div class="pipe" id="pipe"></div>
   <div class="runlay">
@@ -331,6 +331,7 @@ tr.us td:first-child{box-shadow:inset 3px 0 0 var(--red)}
 
 <script>
 const D=/*DATA*/null;
+const NEXT=(()=>{const [a,b]=D.patch.split('.').map(Number);return a+'.'+(b+1)})();
 const $=s=>document.querySelector(s), esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const CAT={OVERALL_STRONG:['nerf','Too strong'],SOLOQ_ONLY_STRONG:['nerf','Too strong in solo queue'],PRO_JAIL:['pro','Pro-jail'],POPULAR_WEAK:['buff','Popular but weak'],OVERALL_WEAK:['buff','Weak'],HOLD:['hold','Hold']};
@@ -338,7 +339,7 @@ const chip=c=>`<span class="chip c-${CAT[c][0]}">${CAT[c][1]}</span>`;
 const PCT=/_ratio$|^ratio$|pct_|^slow$|damage_reduction|bonus_as/;
 function fmt(key,v){const one=x=>PCT.test(key)?(+(x*100).toFixed(2))+'%':(+(+x).toFixed(2));return Array.isArray(v)?v.map(one).join('/'):one(v)}
 function label(field){const p=field.split('.');if(p[0]==='base')return 'Base '+p[1].replace(/_/g,' ');const a=p[1].split('_');return a[0]+' '+a.slice(1).map(w=>w[0].toUpperCase()+w.slice(1)).join(' ')+' · '+p[2].replace(/_/g,' ')}
-document.getElementById('patchchip').textContent='patch '+D.patch;
+document.getElementById('patchchip').textContent='patch '+NEXT+' · from '+D.patch+' data';
 
 /* funnel */
 const sc=D.scan, nflag=sc.flagged.nerf+sc.flagged.pro_jail+sc.flagged.buff;
@@ -395,7 +396,7 @@ function renderRun(animate){
     <div class="small muted" style="margin-bottom:6px">Reads ${reads}, then tests changes. Shaded bars are the target bands from the diagnosis; the dot is where the change lands.</div>${att}</div>
   <div class="panel stage" data-p="3"><div class="ph"><h3>Independent verifier</h3><span class="chip ${v&&v.passed?'c-ok':'c-nerf'}">${v&&v.passed?'pass':'fail'}</span></div><div class="checks">${checks}</div></div>
   <div class="panel stage" data-p="4"><div class="ph"><h3>Patch notes and tooltip</h3><span class="chip ${r.notes.checker_passed?'c-ok':'c-nerf'}">checker ${r.notes.checker_passed?'passed':'failed'} · try ${r.notes.attempts}</span></div>
-    <div class="note"><div class="nh"><b>${esc(r.champion)}</b><span class="mono small">Patch ${D.patch}</span></div><div class="nb">
+    <div class="note"><div class="nh"><b>${esc(r.champion)}</b><span class="mono small">Patch ${NEXT}</span></div><div class="nb">
       <p class="ctx">${esc(o.patch_note.context)}</p>${o.patch_note.lines.map(l=>`<div class="line">${esc(l.text)}</div>`).join('')}${tips}</div></div>
     ${r.proposal?`<div class="why"><b>Agent’s rationale.</b> ${esc(r.proposal.rationale)}</div>`:''}</div>`;
   const pipe=[...document.querySelectorAll('#pipe span')];
@@ -459,7 +460,7 @@ function renderDetail(){
   const p=sc.points.find(q=>q.c===picked)||sc.points[0];const sel=sc.selected.includes(p.c);const ri=D.runs.findIndex(r=>r.champion===p.c);
   const row=(k,d)=>d?`<dt>${k}</dt><dd>${d.wr.toFixed(2)}% WR · ${d.pr.toFixed(1)}% PR · ${d.br.toFixed(1)}% BR</dd>`:'';
   const flagged=sc.points.filter(q=>q.cat!=='HOLD'&&(lane==='all'||q.lane===lane)).sort((a,b)=>(b.sev||0)-(a.sev||0));
-  $('#detail').innerHTML=`<div class="panel"><div class="small muted" style="text-transform:capitalize">${p.lane}</div><h3>${esc(p.c)}</h3><div style="margin-top:8px">${chip(p.cat)}${sel?' <span class="chip c-ok">patched in '+D.patch+'</span>':''}</div>
+  $('#detail').innerHTML=`<div class="panel"><div class="small muted" style="text-transform:capitalize">${p.lane}</div><h3>${esc(p.c)}</h3><div style="margin-top:8px">${chip(p.cat)}${sel?' <span class="chip c-ok">in patch '+NEXT+'</span>':''}</div>
    <dl class="kv">${row('Global',p.g)}${row('Korea',p.kr)}<dt>Pro presence</dt><dd>${p.presence!=null?p.presence.toFixed(0)+'%':'not fetched (far from a line)'}</dd>${p.sev!=null?`<dt>Severity</dt><dd>${p.sev.toFixed(1)}</dd>`:''}</dl>
    ${ri>=0?`<button class="btn" style="margin-top:14px" id="openrun">Open the agent run →</button>`:''}
    <div class="flaglist">${flagged.map(q=>`<button class="flag" data-c="${esc(q.c)}"><span>${esc(q.c)}${sc.selected.includes(q.c)?'<span class="sel">PATCHED</span>':''}</span>${chip(q.cat)}</button>`).join('')}</div></div>`;
@@ -504,7 +505,7 @@ g6.innerHTML='<div class="gh"></div>'+patches.map(p=>`<div class="gh" style="tex
 
 /* ---------- patch notes ---------- */
 (function(){
-  const nextPatch=(()=>{const [a,b]=D.patch.split('.').map(Number);return a+'.'+(b+1)})();
+  const nextPatch=NEXT;
   const n=x=>String(+(+x).toFixed(2));
   const one=v=>Array.isArray(v)?(v.every(x=>x===v[0])?[v[0]]:v):[v];
   const ranks=(v,f=n,unit='')=>one(v).map(f).join(' / ')+unit;

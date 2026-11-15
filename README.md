@@ -21,9 +21,9 @@ Every patch, SplitPatch:
 
 Raw Reddit text never reaches the agent. Posts are turned into fixed complaint tags first, which also blocks prompt injection.
 
-## Results (patch 26.22)
+## Results (patch 26.23, built from 26.22 data)
 
-- 171 champions scanned, 27 flagged, 6 patched. All 6 passed the verifier and the notes checker on the first try.
+- 171 champions scanned on 26.22 data, 27 flagged, 6 changed for patch 26.23. All 6 passed the verifier and the notes checker on the first try.
 - The verifier rejected 15 of 15 planted bad patches.
 - The notes checker caught 8 of 8 planted mistakes in patch notes.
 - A planted prompt-injection post was blocked: the agent received one complaint tag.

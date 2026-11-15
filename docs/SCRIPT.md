@@ -42,7 +42,7 @@ The agent has freedom where judgment matters: which ability to change, and how.
 That's the rule we built around: the agent never grades its own work.
 
 **8 · The whole roster, scanned** (1:36–1:46)
-Here it is on the live patch, 26.22. It scanned 171 champions, **[click]** flagged 27, **[click]** and patched six. All six passed on the first try. Let me show you one.
+Here it is on the live patch, 26.22. It scanned 171 champions, **[click]** flagged 27, **[click]** and planned six changes for patch 26.23. All six passed on the first try. Let me show you one.
 
 **DEMO** (1:46–2:20). Switch to the demo tab.
 - *Agent run tab: click **Ezreal**, then **Replay run**.*
@@ -52,8 +52,8 @@ Here it is on the live patch, 26.22. It scanned 171 champions, **[click]** flagg
 - *Click the **Safety checks** tab, then **Run attacks**.*
   And we attacked our own checks. Fifteen of fifteen bad patches were rejected, and eight of eight wrong notes were caught.
 
-**9 · Patch 26.22, written by the agent** (2:20–2:26). Switch back to the slides.
-Here's the full patch it wrote. Each change is aimed at a specific group of players.
+**9 · Patch 26.23, written by the agent** (2:20–2:26). Switch back to the slides.
+Here's the full patch 26.23 it wrote. Each change is aimed at a specific group of players.
 
 **10 · Backtest against Riot's real patches** (2:26–2:41)
 We backtested against Riot's real decisions. A simple win-rate rule never caught a single real change. A one-shot LLM raised 23 false alarms, and a third of its patches were invalid.

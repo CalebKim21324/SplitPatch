@@ -130,8 +130,14 @@ def _why(t: dict) -> str:
     return "; ".join(parts) + f"; pro presence {s['pro']['presence']:.0f}% ({s['pro']['from_patch']}). Inside every band."
 
 
+def next_patch(patch: str) -> str:
+    major, minor = patch.split(".")
+    return f"{major}.{int(minor) + 1}"
+
+
 def render_markdown(patch: str, traces: list[dict]) -> str:
-    out = [f"# Patch {patch}: SplitPatch recommended balance changes", "",
+    out = [f"# Patch {next_patch(patch)}: SplitPatch recommended balance changes", "",
+           f"_Built from patch {patch} data._", "",
            f"_Generated {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC. Every change below passed the independent "
            "verifier, and every line and tooltip passed the notes checker._", ""]
     changed = [t for t in traces if t.get("notes")]
